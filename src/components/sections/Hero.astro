@@ -1,0 +1,101 @@
+---
+import Container from "../ui/Container.astro";
+import Button from "../ui/Button.astro";
+import { Image } from "astro:assets";
+import heroImage from "../../assets/images/IMG_3247.jpg";
+---
+
+<section
+  class="relative h-[90vh] min-h-[600px] flex items-center overflow-hidden"
+>
+  <!-- Background Image with Stronger Overlay -->
+  <div class="absolute inset-0 z-0">
+    <!-- Zdjęcie tła -->
+    <Image
+      src={heroImage}
+      alt="Nowoczesny dom jednorodzinny w Bielsku-Białej"
+      class="w-full h-full object-cover"
+      quality="high"
+      loading="eager"
+    />
+
+    <!-- WARSTWA 1: Bazowy ciemny overlay -->
+    <div class="absolute inset-0 bg-navy-900/40"></div>
+
+    <!-- WARSTWA 2: Gradient poziomy - mocniejszy po lewej -->
+    <div
+      class="absolute inset-0 bg-gradient-to-r from-navy-900/60 via-navy-900/50 via-40% to-transparent"
+    >
+    </div>
+
+    <!-- WARSTWA 3: Gradient dolny dla głębi -->
+    <div
+      class="absolute inset-0 bg-gradient-to-t from-navy-900/20 via-transparent to-transparent"
+    >
+    </div>
+
+    <!-- WARSTWA 4: Subtelny gradient górny -->
+    <div
+      class="absolute inset-0 bg-gradient-to-b from-navy-900/0 via-transparent to-transparent"
+    >
+    </div>
+  </div>
+
+  <!-- Content - Left Aligned, closer to edge -->
+  <Container class="relative z-10 !mx-0 !max-w-none">
+    <div
+      class="space-y-2 md:space-y-4 md:ml-6 lg:ml-12 xl:ml-48 opacity-0 translate-y-8 animate-fade-in-up lg:max-w-4xl"
+    >
+      <h1
+        class="font-heading font-bold text-2xl md:text-3xl lg:text-4xl text-white leading-tight drop-shadow-xl"
+      >
+        Budujemy domy w <br />
+        <span class="text-sky-300 text-3xl md:text-4xl lg:text-5xl"
+          >Bielsku-Białej</span
+        > i okolicach
+      </h1>
+
+      <p
+        class="text-xl text-lg md:text-xl text-white/90 max-w-xl leading-relaxed drop-shadow-lg"
+      >
+        12 zrealizowanych projektów. Solidność potwierdzona przez lata.<br />
+        Tworzymy miejsca, które nazwiesz domem.
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4 pt-4">
+        <Button
+          href="#domy"
+          variant="primary"
+          class="!text-lg !px-8 !py-4 shadow-xl shadow-navy-900/30 hover:scale-105 transition-transform"
+        >
+          Chcę kupić dom
+        </Button>
+        <Button
+          href="#kontakt"
+          variant="secondary"
+          class="!text-lg !px-8 !py-4 shadow-xl shadow-black/20 hover:scale-105 transition-transform"
+        >
+          Chcę budować
+        </Button>
+      </div>
+    </div>
+  </Container>
+</section>
+
+<style>
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(2rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in-up {
+    animation: fade-in-up 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    animation-delay: 0.2s;
+  }
+</style>

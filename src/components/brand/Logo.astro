@@ -1,0 +1,11 @@
+---
+import LogoIcon from './LogoIcon.astro';
+
+interface Props {
+  class?: string;
+}
+
+const { class: className } = Astro.props;
+---
+
+<LogoIcon class:list={["h-10 w-auto", className]} />

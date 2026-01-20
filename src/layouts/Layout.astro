@@ -1,0 +1,48 @@
+---
+import '@fontsource/montserrat/700.css';
+import '@fontsource/inter/400.css';
+import '@fontsource/inter/500.css';
+import '../styles/global.css';
+
+interface Props {
+	title: string;
+	description?: string;
+}
+
+const { 
+	title = 'INVESTDOM - Budowa Domów Bielsko-Biała',
+	description = 'Budujemy domy w Bielsku-Białej. Solidność, osobisty nadzór właściciela, 12 projektów. Stan surowy, deweloperski, pod klucz.'
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="pl" class="scroll-smooth">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content={description} />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		
+		<!-- Schema.org -->
+		<script type="application/ld+json" is:inline>
+			{
+			  "@context": "https://schema.org",
+			  "@type": "RealEstateAgent",
+			  "name": "INVESTDOM",
+			  "address": {
+				"@type": "PostalAddress",
+				"streetAddress": "ul. Na Lasu 25",
+				"addressLocality": "Bielsko-Biała",
+				"addressCountry": "PL"
+			  },
+			  "telephone": "+48571328983",
+			  "areaServed": "Bielsko-Biała"
+			}
+		</script>
+	</head>
+	<body class="font-sans text-slate-800 bg-stone-50 antialiased selection:bg-navy-900 selection:text-white">
+		<slot />
+	</body>
+</html>

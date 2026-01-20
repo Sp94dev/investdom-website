@@ -1,0 +1,75 @@
+---
+import Container from '../ui/Container.astro';
+import Button from '../ui/Button.astro';
+import Logo from '../brand/Logo.astro';
+import LogoIcon from '../brand/LogoIcon.astro';
+
+const navLinks = [
+  { href: '#o-firmie', label: 'O firmie' },
+  { href: '#domy', label: 'Domy' },
+  { href: '#uslugi', label: 'Usługi' },
+];
+---
+
+<header class="fixed top-0 w-full z-50 bg-stone-50/90 backdrop-blur-md border-b border-stone-200 transition-all duration-300" id="main-header">
+  <Container>
+    <div class="flex items-center justify-between h-20">
+      <!-- Logo Variants -->
+      <a href="/" class="group">
+        <!-- Desktop/Tablet -->
+        <div class="hidden md:block">
+          <Logo />
+        </div>
+        <!-- Mobile -->
+        <div class="md:hidden">
+          <LogoIcon class="h-10 w-auto" />
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center gap-8">
+        {navLinks.map(link => (
+          <a href={link.href} class="text-sm font-medium text-slate-600 hover:text-navy-900 transition-colors">
+            {link.label}
+          </a>
+        ))}
+        <Button href="#kontakt" variant="primary" class="!py-2 !px-4 text-sm">
+          Kontakt
+        </Button>
+      </nav>
+
+      <!-- Mobile Menu Button (Hamburger) -->
+      <button class="md:hidden text-navy-900" aria-label="Menu" id="menu-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+      </button>
+    </div>
+  </Container>
+
+  <!-- Mobile Menu (Hidden by default) -->
+  <div class="md:hidden absolute top-20 left-0 w-full bg-stone-50 border-b border-stone-200 p-4 transition-transform origin-top scale-y-0" id="mobile-menu">
+    <nav class="flex flex-col gap-4">
+      {navLinks.map(link => (
+        <a href={link.href} class="text-lg font-medium text-slate-700 hover:text-navy-900">
+          {link.label}
+        </a>
+      ))}
+      <Button href="#kontakt" class="w-full justify-center">
+        Kontakt
+      </Button>
+    </nav>
+  </div>
+</header>
+
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  if (menuBtn && mobileMenu) {
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('scale-y-0');
+      mobileMenu.classList.toggle('scale-y-100');
+    });
+  }
+</script>
