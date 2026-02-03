@@ -139,20 +139,7 @@ import Button from "../ui/Button.astro";
           Wyślij wiadomość
         </h3>
         <div id="form-container">
-          <form
-            id="contact-form"
-            action="https://formsubmit.co/kontakt@investdom.com.pl"
-            method="POST"
-            class="space-y-6"
-          >
-            <input type="hidden" name="_captcha" value="false" />
-            <input type="hidden" name="_template" value="table" />
-            <input type="text" name="_honey" style="display:none" />
-            <input
-              type="hidden"
-              name="_subject"
-              value="Nowa wiadomość z formularza InvestDom"
-            />
+          <form id="contact-form" class="space-y-6">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
                 <label
@@ -239,7 +226,7 @@ import Button from "../ui/Button.astro";
                 placeholder="Napisz, czym możemy Ci pomóc..."></textarea>
             </div>
 
-            <div id="result" class="text-center text-sm font-medium hidden">
+            <div id="status" class="text-center text-sm font-medium hidden">
             </div>
 
             <Button
@@ -255,84 +242,116 @@ import Button from "../ui/Button.astro";
 
         <script is:inline>
           const form = document.getElementById("contact-form");
-          const result = document.getElementById("result");
+          const status = document.getElementById("status");
           const submitBtn = document.getElementById("submit-btn");
           const originalBtnText = submitBtn.innerText;
 
-          form.addEventListener("submit", function (e) {
+          form.addEventListener("submit", async function (e) {
             e.preventDefault();
 
-            // Phone validation
-            const phoneInput = document.getElementById("phone");
-            const phoneValue = phoneInput.value;
-            // Clean non-digit characters for length check
-            const digitsOnly = phoneValue.replace(/\D/g, "");
+            // Pobierz wartości pól
+            const name = document.getElementById("name").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const phone = document.getElementById("phone").value.trim();
+            const temat_wybrany =
+              document.getElementById("subject-select").value;
+            const message = document.getElementById("message").value.trim();
 
-            if (digitsOnly.length < 9 || digitsOnly.length > 15) {
-              result.innerText =
-                "Proszę podać poprawny numer telefonu (minimum 9 cyfr).";
-              result.classList.remove("hidden", "text-green-600");
-              result.classList.add("text-red-600");
-              result.style.display = "block";
+            // Walidacja wymaganych pól
+            if (!name || !email || !message) {
+              showStatus("Proszę wypełnić wszystkie wymagane pola.", "error");
               return;
             }
 
-            const formData = new FormData(form);
-            const object = Object.fromEntries(formData);
-            const json = JSON.stringify(object);
+            // Walidacja telefonu
+            const digitsOnly = phone.replace(/\D/g, "");
+            if (digitsOnly.length < 9 || digitsOnly.length > 15) {
+              showStatus(
+                "Proszę podać poprawny numer telefonu (minimum 9 cyfr).",
+                "error",
+              );
+              return;
+            }
 
-            result.classList.add("hidden");
-            result.style.display = "none";
-            result.classList.remove("text-green-600", "text-red-600");
-            submitBtn.innerText = "Wysyłanie...";
+            // Walidacja email
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+              showStatus("Proszę podać poprawny adres email.", "error");
+              return;
+            }
+
+            // Przygotuj dane do wysłania
+            const formDataObj = { name, email, phone, temat_wybrany, message };
+
+            // Pokaż status wysyłania
+            showStatus("Wysyłanie wiadomości...", "loading");
             submitBtn.disabled = true;
             submitBtn.classList.add("opacity-75", "cursor-not-allowed");
 
-            fetch("https://formsubmit.co/ajax/kontakt@investdom.com.pl", {
-              method: "POST",
-              headers: {
-                "Content-Type": "application/json",
-                Accept: "application/json",
-              },
-              body: json,
-            })
-              .then(async (response) => {
-                let json = await response.json();
-                console.log(response);
-                if (response.status == 200) {
-                  result.innerText =
-                    "Dziękujemy! Wiadomość została wysłana pomyślnie.";
-                  result.classList.remove("hidden");
-                  result.style.display = "block";
-                  result.classList.add("text-green-600");
-                  form.reset();
-                } else {
-                  console.log(response);
-                  result.innerText =
-                    json.message ||
-                    "Coś poszło nie tak. Spróbuj ponownie później.";
-                  result.classList.remove("hidden");
-                  result.style.display = "block";
-                  result.classList.add("text-red-600");
-                }
-              })
-              .catch((error) => {
-                console.log(error);
-                result.innerText = "Wystąpił błąd. Spróbuj ponownie później.";
-                result.classList.remove("hidden");
-                result.style.display = "block";
-                result.classList.add("text-red-600");
-              })
-              .finally(() => {
-                submitBtn.innerText = originalBtnText;
-                submitBtn.disabled = false;
-                submitBtn.classList.remove("opacity-75", "cursor-not-allowed");
-                setTimeout(() => {
-                  result.style.display = "none";
-                  result.classList.add("hidden");
-                }, 5000);
+            try {
+              const response = await fetch("/api/contact", {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                  Accept: "application/json",
+                },
+                body: JSON.stringify(formDataObj),
               });
+
+              const result = await response.json();
+
+              if (response.ok && result.success) {
+                showStatus(
+                  "Dziękujemy! Wiadomość została wysłana pomyślnie.",
+                  "success",
+                );
+                form.reset();
+              } else {
+                console.error("Błąd serwera:", result.error);
+                showStatus(
+                  result.error ||
+                    "Coś poszło nie tak. Spróbuj ponownie później.",
+                  "error",
+                );
+              }
+            } catch (error) {
+              console.error("Błąd sieci:", error);
+              showStatus(
+                "Wystąpił błąd połączenia. Sprawdź internet i spróbuj ponownie.",
+                "error",
+              );
+            } finally {
+              submitBtn.disabled = false;
+              submitBtn.classList.remove("opacity-75", "cursor-not-allowed");
+
+              // Ukryj status po 5 sekundach (tylko dla sukcesu)
+              if (status.classList.contains("text-green-600")) {
+                setTimeout(() => {
+                  status.classList.add("hidden");
+                  status.style.display = "none";
+                }, 5000);
+              }
+            }
           });
+
+          function showStatus(message, type) {
+            status.innerText = message;
+            status.classList.remove(
+              "hidden",
+              "text-green-600",
+              "text-red-600",
+              "text-navy-600",
+            );
+            status.style.display = "block";
+
+            if (type === "success") {
+              status.classList.add("text-green-600");
+            } else if (type === "error") {
+              status.classList.add("text-red-600");
+            } else if (type === "loading") {
+              status.classList.add("text-navy-600");
+            }
+          }
         </script>
       </div>
     </div>

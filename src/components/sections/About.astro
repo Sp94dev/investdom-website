@@ -1,24 +1,25 @@
 ---
-import Container from '../ui/Container.astro';
-import { Image } from 'astro:assets';
-import heroImage from '../../assets/images/IMG_3247.jpg';
+import Container from "../ui/Container.astro";
+import { Image } from "astro:assets";
+import heroImage from "../../assets/images/IMG_3247.jpg";
 
 const features = [
   {
     icon: "shield-check",
     title: "Solidność",
-    description: "Budujemy jak dla siebie. Używamy sprawdzonych materiałów i technologii."
+    description:
+      "Budujemy jak dla siebie. Używamy sprawdzonych materiałów i technologii.",
   },
   {
     icon: "user-group",
     title: "Osobisty Nadzór",
-    description: "Właściciel firmy osobiście dogląda każdego etapu budowy."
+    description: "Właściciel firmy osobiście dogląda każdego etapu budowy.",
   },
   {
     icon: "map-pin",
     title: "Działamy Lokalnie",
-    description: "Specjalizujemy się w rynku bielskim. Znamy specyfikę terenu."
-  }
+    description: "Specjalizujemy się w rynku bielskim. Znamy specyfikę terenu.",
+  },
 ];
 ---
 
@@ -26,8 +27,13 @@ const features = [
   <Container>
     <!-- Section Header -->
     <div class="text-center mb-16">
-      <span class="inline-block px-4 py-2 bg-navy-900/10 text-navy-900 text-sm font-medium rounded-full mb-4">O firmie</span>
-      <h2 class="font-heading font-bold text-3xl md:text-4xl text-navy-900 mb-6">
+      <span
+        class="inline-block px-4 py-2 bg-navy-900/10 text-navy-900 text-sm font-medium rounded-full mb-4"
+        >O firmie</span
+      >
+      <h2
+        class="font-heading font-bold text-3xl md:text-4xl text-navy-900 mb-6"
+      >
         Dlaczego warto nam zaufać?
       </h2>
     </div>
@@ -36,24 +42,31 @@ const features = [
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
       <!-- Image -->
       <div class="relative rounded-2xl overflow-hidden shadow-2xl">
-        <Image 
-          src={heroImage} 
+        <Image
+          src={heroImage}
           alt="Pracownicy INVESTDOM na budowie"
           class="w-full h-[400px] object-cover"
-          quality="high"
+          width={800}
+          height={600}
+          quality={80}
+          loading="lazy"
+          decoding="async"
         />
-        <div class="absolute inset-0 bg-gradient-to-t from-navy-900/40 via-transparent to-transparent"></div>
+        <div
+          class="absolute inset-0 bg-gradient-to-t from-navy-900/40 via-transparent to-transparent"
+        >
+        </div>
       </div>
 
       <!-- Text Content -->
       <div class="space-y-6">
         <p class="text-lg text-slate-600 leading-relaxed">
-          Jesteśmy firmą rodzinną z Bielska-Białej. Od lat realizujemy marzenia o własnym domu, 
-          stawiając na jakość, uczciwość i transparentność.
+          Jesteśmy firmą rodzinną z Bielska-Białej. Od lat realizujemy marzenia
+          o własnym domu, stawiając na jakość, uczciwość i transparentność.
         </p>
         <p class="text-lg text-slate-600 leading-relaxed">
-          Każdy projekt traktujemy jak własny. Dzięki temu nasze domy wyróżniają się 
-          solidnością wykonania i dbałością o najdrobniejsze detale.
+          Każdy projekt traktujemy jak własny. Dzięki temu nasze domy wyróżniają
+          się solidnością wykonania i dbałością o najdrobniejsze detale.
         </p>
         <div class="pt-4">
           <div class="flex items-center gap-4">
@@ -73,30 +86,73 @@ const features = [
 
     <!-- Features Grid -->
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      {features.map((feature) => (
-        <div class="group p-8 rounded-2xl bg-stone-50 border border-stone-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-          <div class="w-16 h-16 bg-navy-900 rounded-2xl flex items-center justify-center mb-6 text-white group-hover:rotate-3 transition-transform duration-300">
-            {feature.icon === 'shield-check' && (
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.746 3.746 0 0 1 21 12Z" />
-              </svg>
-            )}
-            {feature.icon === 'user-group' && (
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z" />
-              </svg>
-            )}
-            {feature.icon === 'map-pin' && (
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
-                 <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-                 <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
-              </svg>
-            )}
+      {
+        features.map((feature) => (
+          <div class="group p-8 rounded-2xl bg-stone-50 border border-stone-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+            <div class="w-16 h-16 bg-navy-900 rounded-2xl flex items-center justify-center mb-6 text-white group-hover:rotate-3 transition-transform duration-300">
+              {feature.icon === "shield-check" && (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-8 h-8"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.746 3.746 0 0 1 21 12Z"
+                  />
+                </svg>
+              )}
+              {feature.icon === "user-group" && (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-8 h-8"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z"
+                  />
+                </svg>
+              )}
+              {feature.icon === "map-pin" && (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-8 h-8"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+                  />
+                </svg>
+              )}
+            </div>
+            <h3 class="font-heading font-bold text-xl text-navy-900 mb-3">
+              {feature.title}
+            </h3>
+            <p class="text-slate-600 leading-relaxed text-sm">
+              {feature.description}
+            </p>
           </div>
-          <h3 class="font-heading font-bold text-xl text-navy-900 mb-3">{feature.title}</h3>
-          <p class="text-slate-600 leading-relaxed text-sm">{feature.description}</p>
-        </div>
-      ))}
+        ))
+      }
     </div>
   </Container>
 </section>
