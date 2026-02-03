@@ -1,48 +1,89 @@
 ---
-import '@fontsource/montserrat/700.css';
-import '@fontsource/inter/400.css';
-import '@fontsource/inter/500.css';
-import '../styles/global.css';
+import "@fontsource/montserrat/700.css";
+import "@fontsource/inter/400.css";
+import "@fontsource/inter/500.css";
+import "../styles/global.css";
 
 interface Props {
-	title: string;
-	description?: string;
+  title: string;
+  description?: string;
+  ogImage?: string;
 }
 
-const { 
-	title = 'INVESTDOM - Budowa Domów Bielsko-Biała',
-	description = 'Budujemy domy w Bielsku-Białej. Solidność, osobisty nadzór właściciela, 12 projektów. Stan surowy, deweloperski, pod klucz.'
+const siteUrl = "https://investdom.com.pl";
+const {
+  title = "INVESTDOM - Budowa Domów Bielsko-Biała",
+  description = "Budujemy domy w Bielsku-Białej. Solidność, osobisty nadzór właściciela, 12 projektów. Stan surowy, deweloperski, pod klucz.",
+  ogImage = "/og-image.jpg",
 } = Astro.props;
+
+const canonicalUrl = new URL(Astro.url.pathname, siteUrl).href;
 ---
 
 <!doctype html>
 <html lang="pl" class="scroll-smooth">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content={description} />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-		
-		<!-- Schema.org -->
-		<script type="application/ld+json" is:inline>
-			{
-			  "@context": "https://schema.org",
-			  "@type": "RealEstateAgent",
-			  "name": "INVESTDOM",
-			  "address": {
-				"@type": "PostalAddress",
-				"streetAddress": "ul. Na Lasu 25",
-				"addressLocality": "Bielsko-Biała",
-				"addressCountry": "PL"
-			  },
-			  "telephone": "+48571328983",
-			  "areaServed": "Bielsko-Biała"
-			}
-		</script>
-	</head>
-	<body class="font-sans text-slate-800 bg-stone-50 antialiased selection:bg-navy-900 selection:text-white">
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="INVESTDOM" />
+    <link rel="canonical" href={canonicalUrl} />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={`${siteUrl}${ogImage}`} />
+    <meta property="og:locale" content="pl_PL" />
+    <meta property="og:site_name" content="INVESTDOM" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content={canonicalUrl} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={`${siteUrl}${ogImage}`} />
+
+    <!-- Schema.org -->
+    <script type="application/ld+json" is:inline>
+      {
+        "@context": "https://schema.org",
+        "@type": "RealEstateAgent",
+        "name": "INVESTDOM",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "ul. Na Lasu 25",
+          "addressLocality": "Bielsko-Biała",
+          "addressCountry": "PL"
+        },
+        "telephone": "+48571328983",
+        "areaServed": "Bielsko-Biała"
+      }
+    </script>
+
+    <!-- Google Analytics (via Partytown) -->
+    <script
+      type="text/partytown"
+      src="https://www.googletagmanager.com/gtag/js?id=G-C16GWHGY83"></script>
+    <script type="text/partytown">
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-C16GWHGY83");
+    </script>
+  </head>
+  <body
+    class="font-sans text-slate-800 bg-stone-50 antialiased selection:bg-navy-900 selection:text-white"
+  >
+    <slot />
+  </body>
 </html>
