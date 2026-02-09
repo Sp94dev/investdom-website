@@ -31,8 +31,66 @@ const canonicalUrl = new URL(Astro.url.pathname, siteUrl).href;
     <title>{title}</title>
 
     <!-- SEO Meta Tags -->
-    <meta name="robots" content="index, follow" />
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="bingbot" content="index, follow" />
     <meta name="author" content="INVESTDOM" />
+    <meta name="publisher" content="INVESTDOM" />
+    <meta name="copyright" content="INVESTDOM" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="rating" content="general" />
+    <meta name="distribution" content="global" />
+    <meta name="coverage" content="Poland" />
+    <meta name="language" content="Polish" />
+    <meta
+      name="category"
+      content="Budownictwo, Nieruchomości, Usługi budowlane"
+    />
+    <meta name="classification" content="Business" />
+    <meta name="subject" content="Budowa domów jednorodzinnych Bielsko-Biała" />
+    <meta
+      name="topic"
+      content="Budowa domów, domy pod klucz, firma budowlana"
+    />
+    <meta name="summary" content={description} />
+    <meta
+      name="keywords"
+      content="budowa domów, domy Bielsko-Biała, budowa domu Bielsko-Biała, sprzedaż domów, domy pod klucz, stan surowy, stan deweloperski, remont domów, generalny wykonawca, powiat bielski, powiat cieszyński, powiat żywiecki, powiat czechowicki, Czechowice-Dziedzice, Żywiec, Cieszyn, Wisła, Ustroń, Szczyrk, domy jednorodzinne, budowa domu jednorodzinnego, firma budowlana Bielsko-Biała, ekipa budowlana, domy na sprzedaż, nowe domy, inwestycje mieszkaniowe, działki budowlane, projekty domów, budownictwo mieszkaniowe, usługi budowlane, wykonawca budowlany, firma remontowa, budowa fundamentów, budowa dachu, wykończenia wnętrz, stan zero, budowa murów, izolacje, ocieplenie domu"
+    />
+
+    <!-- Geo Meta Tags -->
+    <meta name="geo.region" content="PL-24" />
+    <meta name="geo.placename" content="Bielsko-Biała" />
+    <meta name="geo.position" content="49.8224;19.0446" />
+    <meta name="ICBM" content="49.8224, 19.0446" />
+
+    <!-- Dublin Core Meta Tags -->
+    <meta name="DC.title" content={title} />
+    <meta name="DC.creator" content="INVESTDOM" />
+    <meta name="DC.subject" content="Budowa domów jednorodzinnych" />
+    <meta name="DC.description" content={description} />
+    <meta name="DC.publisher" content="INVESTDOM" />
+    <meta name="DC.language" content="pl" />
+    <meta name="DC.coverage" content="Bielsko-Biała, Polska" />
+    <meta name="DC.rights" content="Copyright INVESTDOM" />
+
+    <!-- Contact Meta Tags -->
+    <meta name="contact" content="kontakt@investdom.pl" />
+    <meta name="reply-to" content="kontakt@investdom.pl" />
+
+    <!-- Verification & Other -->
+    <meta name="format-detection" content="telephone=yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="INVESTDOM" />
+    <meta name="application-name" content="INVESTDOM" />
+    <meta name="theme-color" content="#1e3a5f" />
+    <meta name="msapplication-TileColor" content="#1e3a5f" />
+
     <link rel="canonical" href={canonicalUrl} />
 
     <!-- Open Graph / Facebook -->
@@ -41,8 +99,28 @@ const canonicalUrl = new URL(Astro.url.pathname, siteUrl).href;
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:image" content={`${siteUrl}${ogImage}`} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="INVESTDOM - Budowa Domów Bielsko-Biała"
+    />
     <meta property="og:locale" content="pl_PL" />
     <meta property="og:site_name" content="INVESTDOM" />
+    <meta property="og:see_also" content="https://investdom.com.pl" />
+
+    <!-- Business Open Graph -->
+    <meta
+      property="business:contact_data:street_address"
+      content="ul. Na Lasu 25"
+    />
+    <meta property="business:contact_data:locality" content="Bielsko-Biała" />
+    <meta property="business:contact_data:postal_code" content="43-300" />
+    <meta property="business:contact_data:country_name" content="Polska" />
+    <meta
+      property="business:contact_data:phone_number"
+      content="+48571328983"
+    />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
@@ -50,21 +128,57 @@ const canonicalUrl = new URL(Astro.url.pathname, siteUrl).href;
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={`${siteUrl}${ogImage}`} />
+    <meta
+      name="twitter:image:alt"
+      content="INVESTDOM - Budowa Domów Bielsko-Biała"
+    />
 
     <!-- Schema.org -->
     <script type="application/ld+json" is:inline>
       {
         "@context": "https://schema.org",
-        "@type": "RealEstateAgent",
+        "@type": ["RealEstateAgent", "HomeAndConstructionBusiness"],
         "name": "INVESTDOM",
+        "description": "Firma budowlana specjalizująca się w budowie domów jednorodzinnych w Bielsku-Białej i okolicach. Oferujemy budowę domów w stanie surowym, deweloperskim i pod klucz.",
+        "url": "https://investdom.com.pl",
+        "logo": "https://investdom.com.pl/logo.png",
+        "image": "https://investdom.com.pl/og-image.jpg",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "ul. Na Lasu 25",
           "addressLocality": "Bielsko-Biała",
+          "postalCode": "43-300",
+          "addressRegion": "śląskie",
           "addressCountry": "PL"
         },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "49.8224",
+          "longitude": "19.0446"
+        },
         "telephone": "+48571328983",
-        "areaServed": "Bielsko-Biała"
+        "areaServed": [
+          { "@type": "City", "name": "Bielsko-Biała" },
+          { "@type": "AdministrativeArea", "name": "powiat bielski" },
+          { "@type": "AdministrativeArea", "name": "powiat cieszyński" },
+          { "@type": "AdministrativeArea", "name": "powiat żywiecki" },
+          { "@type": "AdministrativeArea", "name": "powiat czechowicki" },
+          { "@type": "City", "name": "Czechowice-Dziedzice" },
+          { "@type": "City", "name": "Żywiec" },
+          { "@type": "City", "name": "Cieszyn" },
+          { "@type": "City", "name": "Wisła" },
+          { "@type": "City", "name": "Ustroń" },
+          { "@type": "City", "name": "Szczyrk" }
+        ],
+        "serviceType": [
+          "Budowa domów jednorodzinnych",
+          "Budowa domów pod klucz",
+          "Budowa domów w stanie surowym",
+          "Budowa domów w stanie deweloperskim",
+          "Remont domów",
+          "Generalny wykonawca"
+        ],
+        "priceRange": "$$"
       }
     </script>
 
