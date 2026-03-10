@@ -13,7 +13,7 @@ interface Props {
 const siteUrl = "https://investdom.com.pl";
 const {
   title = "INVESTDOM - Budowa Domów Bielsko-Biała",
-  description = "Budujemy domy w Bielsku-Białej. Solidność, osobisty nadzór właściciela, 12 projektów. Stan surowy, deweloperski, pod klucz.",
+  description = "Budujemy domy w Bielsku-Białej. Solidność, osobisty nadzór właściciela. Stan surowy, deweloperski, pod klucz.",
   ogImage = "/og-image.jpg",
 } = Astro.props;
 
@@ -112,7 +112,7 @@ const canonicalUrl = new URL(Astro.url.pathname, siteUrl).href;
     <!-- Business Open Graph -->
     <meta
       property="business:contact_data:street_address"
-      content="ul. Na Lasu 25"
+      content="ul. Do Lasu 25"
     />
     <meta property="business:contact_data:locality" content="Bielsko-Biała" />
     <meta property="business:contact_data:postal_code" content="43-300" />
@@ -145,7 +145,7 @@ const canonicalUrl = new URL(Astro.url.pathname, siteUrl).href;
         "image": "https://investdom.com.pl/og-image.jpg",
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "ul. Na Lasu 25",
+          "streetAddress": "ul. Do Lasu 25",
           "addressLocality": "Bielsko-Biała",
           "postalCode": "43-300",
           "addressRegion": "śląskie",

@@ -1,22 +1,27 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Header from '../components/layout/Header.astro';
-import Footer from '../components/layout/Footer.astro';
-import Hero from '../components/sections/Hero.astro';
-import About from '../components/sections/About.astro';
-import Properties from '../components/sections/Properties.astro';
-import Services from '../components/sections/Services.astro';
-import Contact from '../components/sections/Contact.astro';
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/layout/Header.astro";
+import Footer from "../components/layout/Footer.astro";
+import Hero from "../components/sections/Hero.astro";
+import About from "../components/sections/About.astro";
+import Properties from "../components/sections/Properties.astro";
+import Services from "../components/sections/Services.astro";
+import Contact from "../components/sections/Contact.astro";
+import FAQ from "../components/sections/FAQ.astro";
 ---
 
-<Layout title="INVESTDOM - Budowa Domów Bielsko-Biała | 12+ Zrealizowanych Projektów">
-	<Header />
-	<main>
-		<Hero />
-		<About />
-		<Properties />
-		<Services />
-		<Contact />
-	</main>
-	<Footer />
+<Layout
+  title="Budowa Domów Bielsko-Biała | Nowe Domy na Sprzedaż | INVESTDOM"
+  description="Szukasz profesjonalnej firmy budowlanej w Bielsku-Białej? INVESTDOM to kompleksowa budowa domów pod klucz oraz nowoczesne domy na sprzedaż. Zobacz nasze realizacje i projekty domów!"
+>
+  <Header />
+  <main>
+    <Hero />
+    <About />
+    <Properties />
+    <Services />
+    <FAQ />
+    <Contact />
+  </main>
+  <Footer />
 </Layout>

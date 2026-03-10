@@ -7,32 +7,33 @@ const currentYear = new Date().getFullYear();
 
 <footer class="bg-navy-900 text-stone-100 py-12 border-t border-navy-800">
   <Container>
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-      <div class="col-span-1 md:col-span-2">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-8">
+      <div class="col-span-1 md:col-span-2 lg:col-span-2">
         <div class="mb-4 bg-stone-50 p-2 inline-block rounded max-w-[200px]">
           <Logo />
         </div>
         <p class="text-stone-300 max-w-sm">
           Budujemy domy z pasją i zaangażowaniem. Solidność potwierdzona latami
-          doświadczenia na rynku w Bielsku-Białej.
+          doświadczenia w okolicach Bielska-Białej.
         </p>
       </div>
       <div>
         <h3 class="font-heading font-bold text-lg mb-4">Kontakt</h3>
         <ul class="space-y-2 text-stone-300">
-          <li>ul. Na Lasu 25</li>
+          <li>ul. Do Lasu 25</li>
           <li>43-300 Bielsko-Biała</li>
           <li>
             <a
               href="tel:+48571328983"
+              data-astro-reload
               class="hover:text-white transition-colors">+48 571 328 983</a
             >
           </li>
           <li>
             <a
-              href="mailto:kontakt@investdom.com.pl"
-              class="hover:text-white transition-colors"
-              >kontakt@investdom.com.pl</a
+              href="mailto:kontakt@investdom.pl"
+              data-astro-reload
+              class="hover:text-white transition-colors">kontakt@investdom.pl</a
             >
           </li>
         </ul>
@@ -41,21 +42,37 @@ const currentYear = new Date().getFullYear();
         <h3 class="font-heading font-bold text-lg mb-4">Nawigacja</h3>
         <ul class="space-y-2 text-stone-300">
           <li>
-            <a href="#o-firmie" class="hover:text-white transition-colors"
-              >O firmie</a>
+            <a href="/#o-firmie" class="hover:text-white transition-colors"
+              >O firmie</a
+            >
           </li>
           <li>
-            <a href="#domy" class="hover:text-white transition-colors"
-              >Domy na sprzedaż</a>
+            <a
+              href="/domy-na-sprzedaz-bielsko"
+              class="hover:text-white transition-colors">Domy na sprzedaż</a
+            >
           </li>
           <li>
-            <a href="#uslugi" class="hover:text-white transition-colors"
-              >Usługi budowlane</a>
+            <a href="/#uslugi" class="hover:text-white transition-colors"
+              >Usługi budowlane</a
+            >
           </li>
           <li>
-            <a href="#kontakt" class="hover:text-white transition-colors"
-              >Kontakt</a>
+            <a href="/#kontakt" class="hover:text-white transition-colors"
+              >Kontakt</a
+            >
           </li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-heading font-bold text-lg mb-4">Gdzie budujemy?</h3>
+        <ul class="space-y-2 text-stone-300">
+          <li>Bielsko-Biała</li>
+          <li>Hałcnów</li>
+          <li>Komorowice</li>
+          <li>Szczyrk</li>
+          <li>Żywiec</li>
+          <li>Czechowice-Dziedzice</li>
         </ul>
       </div>
     </div>

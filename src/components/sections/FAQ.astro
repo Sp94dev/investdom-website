@@ -1,0 +1,72 @@
+---
+import Container from "../ui/Container.astro";
+
+const faqs = [
+  {
+    question: "Ile kosztuje budowa domu w Bielsku-Białej?",
+    answer:
+      "Ceny budowy domów w regionie śląskim zaczynają się od około 3000-3500 zł netto za metr kwadratowy w stanie surowym. Ostateczny koszt zależy od wybranego projektu, technologii oraz standardu wykończenia. Oferujemy bezpłatną, indywidualną wycenę dla każdego projektu.",
+  },
+  {
+    question: "Czy budujecie domy na działce klienta?",
+    answer:
+      "Tak, realizujemy budowę domów jednorodzinnych na działkach powierzonych przez Klienta. Głównie działamy na terenie Bielska-Białej oraz w okolicznych miejscowościach (m.in. Czechowice-Dziedzice, Żywiec, Szczyrk, Cieszyn). Pomagamy też w ocenie działki pod kątem budowlanym przed rozpoczęciem prac.",
+  },
+  {
+    question: "Ile trwa budowa domu pod klucz?",
+    answer:
+      "Czas budowy domu jednorodzinnego pod klucz wynosi zazwyczaj od 9 do 14 miesięcy, w zależności od warunków atmosferycznych, wielkości budynku i wybranej technologii. Stan surowy zamknięty jesteśmy w stanie osiągnąć często już po 3-4 miesiącach.",
+  },
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: faq.answer,
+    },
+  })),
+};
+---
+
+<section class="py-20 bg-stone-50 border-t border-stone-200">
+  <Container>
+    <div class="max-w-3xl mx-auto">
+      <div class="text-center mb-12">
+        <span
+          class="inline-block px-4 py-2 bg-navy-900/10 text-navy-900 text-sm font-medium rounded-full mb-4"
+          >FAQ</span
+        >
+        <h2
+          class="font-heading font-bold text-3xl md:text-4xl text-navy-900 mb-6"
+        >
+          Najczęstsze Pytania
+        </h2>
+        <p class="text-lg text-slate-600">
+          Poznaj odpowiedzi na pytania, które najczęściej zadają nam inwestorzy
+          przed rozpoczęciem budowy.
+        </p>
+      </div>
+
+      <div class="space-y-6">
+        {
+          faqs.map((faq, index) => (
+            <div class="bg-white rounded-2xl p-6 md:p-8 shadow-sm border border-stone-100">
+              <h3 class="font-bold text-xl text-navy-900 mb-4">
+                {faq.question}
+              </h3>
+              <p class="text-slate-600 leading-relaxed">{faq.answer}</p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </Container>
+
+  <!-- FAQ Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+</section>
