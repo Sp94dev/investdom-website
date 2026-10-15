@@ -3,6 +3,7 @@ import "@fontsource/montserrat/700.css";
 import "@fontsource/inter/400.css";
 import "@fontsource/inter/500.css";
 import "../styles/global.css";
+import { getCanonicalUrl } from "../lib/seo.mjs";
 
 interface Props {
   title: string;
@@ -10,14 +11,16 @@ interface Props {
   ogImage?: string;
 }
 
-const siteUrl = "https://investdom.com.pl";
+const site = Astro.site;
+if (!site) throw new Error("The canonical site URL must be configured in Astro.");
+const siteUrl = site.origin;
 const {
   title = "INVESTDOM - Budowa Domów Bielsko-Biała",
   description = "Budujemy domy w Bielsku-Białej. Solidność, osobisty nadzór właściciela. Stan surowy, deweloperski, pod klucz.",
   ogImage = "/og-image.jpg",
 } = Astro.props;
 
-const canonicalUrl = new URL(Astro.url.pathname, siteUrl).href;
+const canonicalUrl = getCanonicalUrl(Astro.url.pathname, site);
 ---
 
 <!doctype html>

@@ -1,5 +1,14 @@
 {
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
-  "framework": "astro"
+  "framework": "astro",
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "investdom.com.pl" }],
+      "destination": "https://www.investdom.com.pl/:path*",
+      "permanent": true
+    }
+  ]
 }
