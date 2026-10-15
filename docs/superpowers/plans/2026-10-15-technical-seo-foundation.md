@@ -10,6 +10,18 @@
 
 **Spec:** [Audyt i kryteria odbioru](../../seo-audit.md). Dane bazowe: `docs/seo-evidence/2026-10-15-baseline.json`.
 
+## Aktualizacja po ponownym audycie SEO/GEO — 15.10.2026
+
+Pełne wyniki i kolejność kolejnych paczek: [seo-geo-audit.md](../../seo-geo-audit.md). Produkcja nadal ma poprzednie dane i canonical; PR #1 pozostaje draft. Publiczny preview wymaga logowania Vercel.
+
+- [ ] Dokończyć zadania 3–5 poniżej; do zakresu dodać poprawne `label[for]` dla `select#subject-select` i kontrolę fokusu zamkniętego menu mobilnego. Nie zmieniać wyglądu ani wysyłać prawdziwych formularzy podczas kontroli.
+- [ ] Po akceptacji wdrożenia powtórzyć kontrolę HTTP na produkcji: kontakt, canonical, sitemap, slash, 404, raw HTML i dostęp botów. Sam wynik lokalnego buildu nie potwierdza produkcji.
+- [ ] Przed rozwojem treści potwierdzić m.in. działkę 700 m², cenę/dostępność i zdjęcia etapów inwestycji; pozyskać własne materiały i dane firmy.
+- [ ] Zaplanować osobny PR treści: 2–3 realizacje, szczegółowa oferta i uzupełnienie usługi na podstawie potwierdzonych faktów.
+- [ ] Manualnie zweryfikować GSC/Bing/Profil Firmy; uruchomić monitoring cytowań i leadów według raportu GEO.
+
+Nie nadawać `llms.txt`, Content-Signal, WebMCP ani katalogom agentów priorytetu ponad potwierdzone błędy. Audyt nie zmienia polityki treningu modeli i nie gwarantuje cytowań.
+
 ## Global Constraints
 
 - Zachować wygląd, kadrowanie zdjęć, typografię, animacje i funkcjonalność.
