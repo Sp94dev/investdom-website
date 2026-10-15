@@ -1,6 +1,7 @@
 ---
 import Container from "../ui/Container.astro";
 import Logo from "../brand/Logo.astro";
+import { company } from "../../data/company.mjs";
 
 const currentYear = new Date().getFullYear();
 ---
@@ -20,20 +21,20 @@ const currentYear = new Date().getFullYear();
       <div>
         <h3 class="font-heading font-bold text-lg mb-4">Kontakt</h3>
         <ul class="space-y-2 text-stone-300">
-          <li>ul. Do Lasu 25</li>
-          <li>43-300 Bielsko-Biała</li>
+          <li>{company.address.streetAddress}</li>
+          <li>{company.address.postalCode} {company.address.addressLocality}</li>
           <li>
             <a
-              href="tel:+48571328983"
+              href={`tel:${company.telephone}`}
               data-astro-reload
-              class="hover:text-white transition-colors">+48 571 328 983</a
+              class="hover:text-white transition-colors">{company.telephoneDisplay}</a
             >
           </li>
           <li>
             <a
-              href="mailto:kontakt@investdom.pl"
+              href={`mailto:${company.email}`}
               data-astro-reload
-              class="hover:text-white transition-colors">kontakt@investdom.pl</a
+              class="hover:text-white transition-colors">{company.email}</a
             >
           </li>
         </ul>

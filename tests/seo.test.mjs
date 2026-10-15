@@ -83,3 +83,51 @@ test('built sitemap contains only the four canonical, indexable URLs', async () 
     'https://www.investdom.com.pl/projekty-domow',
   ]);
 });
+
+test('visible contact details and telephone links use the confirmed business data', () => {
+  for (const page of pages) {
+    const body = page.html.split('<body')[1];
+    assert.match(body, /href="tel:\+48571328993"/);
+    assert.match(body, /\+48 571 328 993/);
+    assert.match(body, /ul\. Do lasu 25/);
+    assert.doesNotMatch(body, /571\s*328\s*983|Na Lasu/);
+  }
+});
+
+test('business JSON-LD describes the confirmed builder without unsupported claims', () => {
+  for (const page of pages) {
+    const business = page.schemas.find((schema) => [schema['@type']].flat().includes('HomeAndConstructionBusiness'));
+    assert.ok(business, page.path);
+    assert.equal(business['@id'], 'https://www.investdom.com.pl/#organization');
+    assert.equal(business['@type'], 'HomeAndConstructionBusiness');
+    assert.equal(business.url, 'https://www.investdom.com.pl/');
+    assert.equal(business.telephone, '+48571328993');
+    assert.equal(business.address.streetAddress, 'ul. Do lasu 25');
+    for (const key of ['geo', 'priceRange', 'serviceType', 'aggregateRating', 'review']) assert.equal(business[key], undefined, key);
+    assert.ok(!business.areaServed.some((area) => area.name === 'powiat czechowicki'));
+  }
+});
+
+test('the service page connects its real service to the same business entity', () => {
+  for (const page of pages) {
+    const service = page.schemas.find((schema) => schema['@type'] === 'Service');
+    if (page.path !== '/budowa-domow-pod-klucz') {
+      assert.equal(service, undefined);
+      continue;
+    }
+    assert.ok(service, 'The service must be present in server-rendered HTML');
+    assert.equal(service.url, 'https://www.investdom.com.pl/budowa-domow-pod-klucz');
+    assert.equal(service.provider['@id'], 'https://www.investdom.com.pl/#organization');
+    assert.equal(service.serviceType, 'Budowa domów pod klucz');
+    assert.equal(service.offers, undefined, 'Unverified offer data must not become schema');
+  }
+});
+
+test('JSON-LD serialization preserves text without permitting script termination', async () => {
+  const { serializeJsonLd } = await import('../src/lib/seo.mjs');
+  assert.equal(typeof serializeJsonLd, 'function');
+  const name = '</script><script>alert(1)</script> & dom';
+  const encoded = serializeJsonLd({ name });
+  assert.ok(!encoded.includes('<'));
+  assert.equal(JSON.parse(encoded).name, name);
+});

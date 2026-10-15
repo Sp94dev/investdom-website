@@ -1,6 +1,7 @@
 ---
 import Container from "../ui/Container.astro";
 import Button from "../ui/Button.astro";
+import { company } from "../../data/company.mjs";
 ---
 
 <section
@@ -58,11 +59,11 @@ import Button from "../ui/Button.astro";
                 Zadzwoń do nas
               </p>
               <a
-                href="tel:+48571328993"
+                href={`tel:${company.telephone}`}
                 data-astro-reload
                 class="text-2xl font-bold text-white hover:text-sky-300 transition-colors"
               >
-                +48 571 328 993
+                {company.telephoneDisplay}
               </a>
             </div>
           </div>
@@ -91,11 +92,11 @@ import Button from "../ui/Button.astro";
                 Napisz e-mail
               </p>
               <a
-                href="mailto:kontakt@investdom.pl"
+                href={`mailto:${company.email}`}
                 data-astro-reload
                 class="text-xl font-medium text-white hover:text-sky-300 transition-colors"
               >
-                kontakt@investdom.pl
+                {company.email}
               </a>
               <p class="text-stone-400 text-sm mt-1">Odpowiadamy w 24h</p>
             </div>
@@ -128,8 +129,8 @@ import Button from "../ui/Button.astro";
               <p class="text-stone-400 text-sm uppercase tracking-wider mb-1">
                 Biuro
               </p>
-              <p class="text-lg text-white">ul. Na Lasu 25</p>
-              <p class="text-stone-300">43-300 Bielsko-Biała</p>
+              <p class="text-lg text-white">{company.address.streetAddress}</p>
+              <p class="text-stone-300">{company.address.postalCode} {company.address.addressLocality}</p>
             </div>
           </div>
         </div>
