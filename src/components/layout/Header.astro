@@ -81,6 +81,7 @@ const navLinks = [
     class="md:hidden absolute top-20 left-0 w-full bg-stone-50 border-b border-stone-200 p-4 transition-transform origin-top scale-y-0"
     id="mobile-menu"
     aria-hidden="true"
+    inert
   >
     <nav
       class="flex flex-col gap-4"
@@ -107,16 +108,40 @@ const navLinks = [
   const mobileMenu = document.getElementById("mobile-menu");
 
   if (menuBtn && mobileMenu) {
-    menuBtn.addEventListener("click", () => {
-      const isExpanded = menuBtn.getAttribute("aria-expanded") === "true";
-      menuBtn.setAttribute("aria-expanded", (!isExpanded).toString());
+    const setMenuOpen = (open: boolean) => {
+      if (!open && mobileMenu.contains(document.activeElement)) {
+        menuBtn.focus();
+      }
+      menuBtn.setAttribute("aria-expanded", open.toString());
       menuBtn.setAttribute(
         "aria-label",
-        isExpanded ? "Otwórz menu nawigacyjne" : "Zamknij menu nawigacyjne",
+        open ? "Zamknij menu nawigacyjne" : "Otwórz menu nawigacyjne",
       );
-      mobileMenu.setAttribute("aria-hidden", isExpanded.toString());
-      mobileMenu.classList.toggle("scale-y-0");
-      mobileMenu.classList.toggle("scale-y-100");
+      mobileMenu.inert = !open;
+      mobileMenu.setAttribute("aria-hidden", (!open).toString());
+      mobileMenu.classList.toggle("scale-y-0", !open);
+      mobileMenu.classList.toggle("scale-y-100", open);
+    };
+
+    menuBtn.addEventListener("click", () => {
+      setMenuOpen(menuBtn.getAttribute("aria-expanded") !== "true");
+    });
+
+    mobileMenu.addEventListener("click", (event) => {
+      if (event.target instanceof Element && event.target.closest("a")) {
+        setMenuOpen(false);
+      }
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && menuBtn.getAttribute("aria-expanded") === "true") {
+        setMenuOpen(false);
+        menuBtn.focus();
+      }
+    });
+
+    window.matchMedia("(min-width: 48rem)").addEventListener("change", (event) => {
+      if (event.matches) setMenuOpen(false);
     });
   }
 </script>
