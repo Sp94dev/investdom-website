@@ -219,14 +219,21 @@ const activeSection = sectionByPath[Astro.url.pathname.replace(/\/+$/, "")];
     opacity: 1;
   }
 
-  #main-header :global(a[data-section-link="kontakt"]) {
-    outline: 2px solid transparent;
-    outline-offset: 3px;
+  #main-header :global(a[data-section-link="kontakt"][aria-current]) {
+    background-color: var(--color-navy-800);
   }
 
-  #main-header :global(a[data-section-link="kontakt"][aria-current]),
+  #main-header :global(a[data-section-link="kontakt"][aria-current]:hover) {
+    background-color: var(--color-navy-700);
+  }
+
+  #main-header :global(a[data-section-link="kontakt"]:focus:not(:focus-visible)) {
+    box-shadow: none;
+  }
+
   #main-header :global(a[data-section-link="kontakt"]:focus-visible) {
-    outline-color: var(--color-navy-900);
+    outline: 2px solid var(--color-navy-900);
+    outline-offset: 3px;
   }
 
   @media (prefers-reduced-motion: reduce) {

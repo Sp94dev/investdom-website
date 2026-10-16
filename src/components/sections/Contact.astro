@@ -137,12 +137,12 @@ import { company } from "../../data/company.mjs";
       </div>
 
       <!-- Contact Form -->
-      <div class="bg-white p-8 rounded-2xl shadow-xl">
-        <h3 class="font-heading font-bold text-2xl text-navy-900 mb-6">
+      <div class="bg-white p-8 rounded-2xl shadow-xl" data-contact-form-panel>
+        <h3 id="contact-form-heading" class="font-heading font-bold text-2xl text-navy-900 mb-6">
           Wyślij wiadomość
         </h3>
         <div id="form-container">
-          <form id="contact-form" class="space-y-6">
+          <form id="contact-form" aria-labelledby="contact-form-heading" tabindex="-1" class="space-y-6">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
                 <label
@@ -241,6 +241,12 @@ import { company } from "../../data/company.mjs";
             </Button>
           </form>
         </div>
+
+        <script>
+          import { setupContactNavigation } from "../../scripts/contact-navigation";
+
+          setupContactNavigation();
+        </script>
 
         <script is:inline>
           const form = document.getElementById("contact-form");
