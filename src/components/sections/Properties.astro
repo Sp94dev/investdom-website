@@ -2,7 +2,7 @@
 import Container from '../ui/Container.astro';
 import Button from '../ui/Button.astro';
 import PropertySpecs from '../ui/PropertySpecs.astro';
-import { Image } from 'astro:assets';
+import { Picture } from 'astro:assets';
 import houseImage from '../../assets/images/nowoczesny-dom-na-sprzedaz-bielsko.jpg';
 
 const properties = [
@@ -45,13 +45,18 @@ const properties = [
           <div class="grid grid-cols-1 lg:grid-cols-2">
             <!-- Image -->
             <div class="relative h-72 lg:h-full min-h-[300px]">
-              <Image 
+              <Picture
                 src={property.image} 
-                alt={`Realizacja budowy domu jednorodzinnego w Bielsku-Białej przez firmę INVESTDOM - ${property.title}`}
+                alt="Dom z pierwszego etapu inwestycji INVESTDOM w Pisarzowicach"
                 class="absolute inset-0 w-full h-full object-cover"
+                pictureAttributes={{ class: "contents" }}
                 width={800}
                 height={600}
-                quality={80}
+                widths={[400, 640, 800, 1200, 1600]}
+                sizes="(min-width: 1024px) 800px, (min-width: 640px) calc(100vw - 48px), max(calc(100vw - 32px), 400px)"
+                formats={["avif", "webp"]}
+                fallbackFormat="webp"
+                quality={45}
                 loading="lazy"
                 decoding="async"
               />

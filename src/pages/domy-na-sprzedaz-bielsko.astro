@@ -1,11 +1,13 @@
 ---
+export const prerender = true;
+
 import Layout from "../layouts/Layout.astro";
 import PropertySpecs from "../components/ui/PropertySpecs.astro";
 import Header from "../components/layout/Header.astro";
 import Footer from "../components/layout/Footer.astro";
 import Container from "../components/ui/Container.astro";
 import Button from "../components/ui/Button.astro";
-import { Image } from "astro:assets";
+import { Picture } from "astro:assets";
 import houseImage from "../assets/images/nowoczesny-dom-na-sprzedaz-bielsko.jpg";
 
 const districts = [
@@ -30,7 +32,7 @@ const districts = [
 
 <Layout
   title="Nowe domy na sprzedaż Bielsko-Biała | Inwestycje | INVESTDOM"
-  description="Poznaj nasze aktualne inwestycje deweloperskie w Bielsku-Białej i okolicach. Gotowe domy na sprzedaż w stanie deweloperskim m.in w atrakcyjnych dzielnicach, takich jak Pisarzowice."
+  description="Poznaj inwestycję INVESTDOM w Pisarzowicach koło Bielska-Białej. Sprawdź informacje o drugim etapie budowy domów i skontaktuj się w sprawie oferty."
 >
   <Header />
   <main class="pt-32 pb-16 bg-stone-50 min-h-screen">
@@ -54,23 +56,31 @@ const districts = [
 
       <div class="space-y-16">
         {
-          districts.map((district) => (
+          districts.map((district, districtIndex) => (
             <div>
               <h2 class="text-3xl font-bold text-navy-900 mb-8 border-b border-stone-200 pb-4">
                 Inwestycje: {district.name}
               </h2>
 
               <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                {district.offers.map((offer) => (
+                {district.offers.map((offer, offerIndex) => (
                   <div class="bg-white rounded-3xl overflow-hidden shadow-lg border border-stone-100 flex flex-col">
                     <div class="relative h-64">
-                      <Image
+                      <Picture
                         src={offer.image}
-                        alt={offer.title}
+                        alt="Dom z pierwszego etapu inwestycji INVESTDOM w Pisarzowicach"
                         class="absolute inset-0 w-full h-full object-cover"
+                        pictureAttributes={{ class: "contents" }}
                         width={800}
                         height={600}
-                        quality={80}
+                        widths={[400, 640, 800, 1200, 1600]}
+                        sizes="(min-width: 1280px) 592px, (min-width: 1024px) calc((100vw - 96px) / 2), (min-width: 640px) calc(100vw - 48px), max(calc(100vw - 32px), 342px)"
+                        formats={["avif", "webp"]}
+                        fallbackFormat="webp"
+                        quality={45}
+                        loading={districtIndex === 0 && offerIndex === 0 ? "eager" : "lazy"}
+                        fetchpriority={districtIndex === 0 && offerIndex === 0 ? "high" : "auto"}
+                        decoding="async"
                       />
                       <div class="absolute top-4 left-4">
                         <span class="px-3 py-1 bg-green-700 text-white text-xs font-bold rounded-full shadow-lg uppercase tracking-wide">
