@@ -5,6 +5,8 @@ export const company = {
   telephone: '+48571328993',
   telephoneDisplay: '+48 571 328 993',
   email: 'kontakt@investdom.pl',
+  // Google Business Profile supplied by the owner on 2026-10-16.
+  googleBusinessProfile: 'https://share.google/O1Nye5JlpKbt5C3nc',
   address: {
     streetAddress: 'ul. Do lasu 25',
     addressLocality: 'Bielsko-Biała',

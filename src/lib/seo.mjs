@@ -26,6 +26,7 @@ export function getBusinessSchema(site) {
     image: new URL('/og-image.jpg', site).href,
     telephone: company.telephone,
     email: company.email,
+    sameAs: [company.googleBusinessProfile],
     address: { '@type': 'PostalAddress', ...company.address },
     areaServed: company.citiesServed.map((name) => ({ '@type': 'City', name })),
   };
