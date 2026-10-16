@@ -5,15 +5,23 @@ import Logo from "../brand/Logo.astro";
 import LogoIcon from "../brand/LogoIcon.astro";
 
 const navLinks = [
-  { href: "/#o-firmie", label: "O firmie" },
-  { href: "/#domy", label: "Domy" },
-  { href: "/#uslugi", label: "Usługi" },
+  { id: "o-firmie", href: "/#o-firmie", label: "O firmie" },
+  { id: "domy", href: "/#domy", label: "Domy" },
+  { id: "uslugi", href: "/#uslugi", label: "Usługi" },
 ];
+
+const sectionByPath: Record<string, string> = {
+  "/domy-na-sprzedaz-bielsko": "domy",
+  "/projekty-domow": "domy",
+  "/budowa-domow-pod-klucz": "uslugi",
+};
+const activeSection = sectionByPath[Astro.url.pathname.replace(/\/+$/, "")];
 ---
 
 <header
   class="fixed top-0 w-full z-50 bg-stone-50/90 backdrop-blur-md border-b border-stone-200 transition-all duration-300"
   id="main-header"
+  data-track-sections={Astro.url.pathname === "/" ? "true" : undefined}
 >
   <Container>
     <div class="flex items-center justify-between h-20">
@@ -39,13 +47,15 @@ const navLinks = [
           navLinks.map((link) => (
             <a
               href={link.href}
+              data-section-link={link.id}
+              aria-current={activeSection === link.id ? "location" : undefined}
               class="text-sm font-medium text-slate-600 hover:text-navy-900 transition-colors"
             >
               {link.label}
             </a>
           ))
         }
-        <Button href="/#kontakt" variant="primary" class="!py-2 !px-4 text-sm">
+        <Button href="/#kontakt" data-section-link="kontakt" variant="primary" class="!py-2 !px-4 text-sm">
           Kontakt
         </Button>
       </nav>
@@ -92,18 +102,22 @@ const navLinks = [
         navLinks.map((link) => (
           <a
             href={link.href}
+            data-section-link={link.id}
+            aria-current={activeSection === link.id ? "location" : undefined}
             class="text-lg font-medium text-slate-700 hover:text-navy-900"
           >
             {link.label}
           </a>
         ))
       }
-      <Button href="/#kontakt" class="w-full justify-center"> Kontakt </Button>
+      <Button href="/#kontakt" data-section-link="kontakt" class="w-full justify-center"> Kontakt </Button>
     </nav>
   </div>
 </header>
 
 <script>
+  import { setupSectionNavigation } from "../../scripts/section-navigation";
+
   const menuBtn = document.getElementById("menu-btn");
   const mobileMenu = document.getElementById("mobile-menu");
 
@@ -144,4 +158,20 @@ const navLinks = [
       if (event.matches) setMenuOpen(false);
     });
   }
+
+  setupSectionNavigation();
 </script>
+
+<style>
+  #main-header :global(a[data-section-link][aria-current]:not([data-section-link="kontakt"])) {
+    color: var(--color-navy-900);
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.45em;
+  }
+
+  #main-header :global(a[data-section-link="kontakt"][aria-current]) {
+    outline: 2px solid var(--color-navy-900);
+    outline-offset: 3px;
+  }
+</style>
