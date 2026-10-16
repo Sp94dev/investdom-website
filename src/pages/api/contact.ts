@@ -14,7 +14,6 @@ interface ContactFormData {
 const subjectLabels: Record<string, string> = {
   kupno: 'Chcę kupić dom',
   budowa: 'Zlecenie budowy domu',
-  remont: 'Remont / Wykończenie',
   inne: 'Inne zapytanie',
 };
 
