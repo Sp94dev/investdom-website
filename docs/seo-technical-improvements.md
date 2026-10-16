@@ -32,11 +32,27 @@ Zakres: techniczny punkt 2 kolejnej paczki po PR #1. Zmiany przygotowano na bran
 - Sześć porównywalnych zrzutów Chromium: 375×812, 412×915, 390×844 DPR3 i desktop 1440×1000 na głównej oraz mobilne oferty/projekty. Geometria mierzonych sekcji i zdjęć nie różni się o więcej niż 0,5 CSS px; brak poziomego overflow. Oceniono wygląd hero przed/po.
 - axe WCAG A/AA: osiem kontroli czterech stron na mobile/desktop i cztery kontrole komunikatów formularza, bez wykrytych naruszeń. To kontrola automatyczna, nie pełny audyt WCAG.
 - Kontakt: bezpośredni #kontakt, kliknięcie przy już istniejącym fragmencie, menu mobilne, klawiatura/Escape/inert, scrollspy bez zmiany hash/fokusu przy ręcznym scrollu, reduced motion oraz płynne przewijanie przechodzą kontrolę Chromium.
+- WebP fallback działa po kontrolowanym oznaczeniu AVIF jako nieobsługiwanego. Partytown: lokalny stub potwierdził jedną inicjalizację/config GA4 oraz forward `dataLayer.push` w nowej i ponownej sesji workera; nie wysyłano danych do produkcyjnej analityki.
+- Świeży niezależny przegląd całego diffu `e15dcbd..f45e2f4`: brak usterek wymagających poprawki.
 - Walidacja telefonu/e-mail i trzy wyniki wysyłki: sukces, błąd serwera i błąd sieci. Wysyłkę przechwycono lokalnie; nie wysyłano prawdziwej wiadomości. Treści czterech stron są dostępne bez JavaScript.
 
 ## Pomiary Lighthouse
 
-Wyniki będą uzupełnione po zakończeniu trzech przebiegów każdego wariantu przed i po. Zestaw obejmuje mobile głównej/usługi/ofert/projektów oraz desktop głównej. Lighthouse 13.5 i Chromium 156, ten sam lokalny serwer zbudowanego wyjścia Vercel; nie używano dev jako punktu porównania. Transport Google Analytics jest blokowany w obu fazach, aby nie generować zdarzeń w produkcyjnej usłudze.
+Wykonano 30 przebiegów (po trzy na każdy wariant w obu fazach). Lighthouse 13.5 i Chromium 156, ten sam lokalny serwer zbudowanego wyjścia Vercel; nie używano dev jako punktu porównania. Transport Google Analytics był blokowany w obu fazach. **Serwer porównawczy nie odtwarza kompresji HTML/CSS ani CDN Vercel; poniższe liczby nie są wynikiem wdrożonej produkcji.**
+
+| Wariant | Performance przed → po | LCP przed → po | TBT przed → po |
+|---|---:|---:|---:|
+| home-mobile | 60 → 90 | 4.66 → 3.39 s | 851 → 0 ms |
+| service-mobile | 100 → 100 | 1.51 → 1.51 s | 38 → 23 ms |
+| offers-mobile | 99 → 100 | 1.96 → 1.66 s | 108 → 59 ms |
+| projects-mobile | 99 → 100 | 1.66 → 1.66 s | 98 → 32 ms |
+| home-desktop | 98 → 100 | 0.93 → 0.65 s | 43 → 0 ms |
+
+Mediany A11y i SEO: 100 przed i po we wszystkich wariantach; CLS: 0. Best Practices pozostaje 81: ostrzeżenie `FencedFrame` występuje również w świeżej sesji Partytown 0.14.5 po aktualizacji integracji do 2.1.8. Aktualizacja nie usunęła tego problemu upstream. Lokalny cel mobile ≥95 i LCP ≤2,5 s nie został osiągnięty na głównej; wynik wymaga osobnej kontroli na wdrożonym CDN.
+
+Rozrzut Performance na głównej mobile: 49–82 przed, 65–90 po; część prób zawiera ostrzeżenie o wolnym CPU. Spadek mediany TBT nie jest gwarancją poprawy INP ani samodzielnym dowodem działania jednej konkretnej optymalizacji. Wariant hero 1920 px ma 180 003 B AVIF zamiast 429 016 B WebP (−58,04%); ekran DPR3 może wybrać większy, ostrzejszy wariant.
+
+[Surowe wyniki i mediany, geometria, kontrola formularza, fallback i analityka](seo-evidence/2026-10-16-images-metadata.json).
 
 ## Ograniczenia i odbiór
 
