@@ -10,6 +10,8 @@
 
 **Spec:** [Aktualny pomiar i wymagania](../../preview-score-audit.md). Dowody: `docs/seo-evidence/2026-10-16-preview-scores.json`. Szerszy kontekst: [audyt GEO](../../seo-geo-audit.md).
 
+**Aktualizacja celu po decyzji właściciela:** pomiary Agent Readiness prowadzić teraz na produkcji `https://www.investdom.com.pl/`. Rozszerzenie o kryteria Cloudflare i pełną ścieżkę 20 → 53 → 80 → 100 znajduje się w [osobnym planie produkcyjnego Agent Readiness](2026-10-16-production-agent-readiness.md). Prognozy zależą od rzeczywistych zaliczeń. Tabele preview poniżej pozostają historyczną bazą techniczną; nie używać skanu przekierowanego na login Vercel jako wyniku INVESTDOM. Nowy plan uzupełnia prace nad wydajnością i GEO, a nie potwierdza ich wdrożenia.
+
 ## Global Constraints
 
 - Pracować od `616871b` lub nowszego na aktualnym branchu `seo/technical-foundation`; nie cofać poprawionego a11y. Plan zastępuje niezakończone zadania 3–5 wcześniejszego planu w pokrywającym się zakresie.
