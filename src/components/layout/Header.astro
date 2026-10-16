@@ -5,15 +5,23 @@ import Logo from "../brand/Logo.astro";
 import LogoIcon from "../brand/LogoIcon.astro";
 
 const navLinks = [
-  { href: "/#o-firmie", label: "O firmie" },
-  { href: "/#domy", label: "Domy" },
-  { href: "/#uslugi", label: "Usługi" },
+  { id: "o-firmie", href: "/#o-firmie", label: "O firmie" },
+  { id: "domy", href: "/#domy", label: "Domy" },
+  { id: "uslugi", href: "/#uslugi", label: "Usługi" },
 ];
+
+const sectionByPath: Record<string, string> = {
+  "/domy-na-sprzedaz-bielsko": "domy",
+  "/projekty-domow": "domy",
+  "/budowa-domow-pod-klucz": "uslugi",
+};
+const activeSection = sectionByPath[Astro.url.pathname.replace(/\/+$/, "")];
 ---
 
 <header
   class="fixed top-0 w-full z-50 bg-stone-50/90 backdrop-blur-md border-b border-stone-200 transition-all duration-300"
   id="main-header"
+  data-track-sections={Astro.url.pathname === "/" ? "true" : undefined}
 >
   <Container>
     <div class="flex items-center justify-between h-20">
@@ -31,23 +39,27 @@ const navLinks = [
 
       <!-- Desktop Nav -->
       <nav
-        class="hidden md:flex items-center gap-8"
+        class="relative hidden md:flex items-center gap-8"
         role="navigation"
         aria-label="Menu główne"
+        data-section-nav
       >
         {
           navLinks.map((link) => (
             <a
               href={link.href}
+              data-section-link={link.id}
+              aria-current={activeSection === link.id ? "location" : undefined}
               class="text-sm font-medium text-slate-600 hover:text-navy-900 transition-colors"
             >
-              {link.label}
+              <span data-section-label>{link.label}</span>
             </a>
           ))
         }
-        <Button href="/#kontakt" variant="primary" class="!py-2 !px-4 text-sm">
+        <Button href="/#kontakt" data-section-link="kontakt" variant="primary" class="!py-2 !px-4 text-sm">
           Kontakt
         </Button>
+        <span class="section-nav-indicator" data-section-indicator aria-hidden="true"></span>
       </nav>
 
       <!-- Mobile Menu Button (Hamburger) -->
@@ -81,42 +93,154 @@ const navLinks = [
     class="md:hidden absolute top-20 left-0 w-full bg-stone-50 border-b border-stone-200 p-4 transition-transform origin-top scale-y-0"
     id="mobile-menu"
     aria-hidden="true"
+    inert
   >
     <nav
-      class="flex flex-col gap-4"
+      class="relative flex flex-col gap-4"
       role="navigation"
       aria-label="Menu mobilne"
+      data-section-nav
     >
       {
         navLinks.map((link) => (
           <a
             href={link.href}
+            data-section-link={link.id}
+            aria-current={activeSection === link.id ? "location" : undefined}
             class="text-lg font-medium text-slate-700 hover:text-navy-900"
           >
-            {link.label}
+            <span data-section-label>{link.label}</span>
           </a>
         ))
       }
-      <Button href="/#kontakt" class="w-full justify-center"> Kontakt </Button>
+      <Button href="/#kontakt" data-section-link="kontakt" class="w-full justify-center"> Kontakt </Button>
+      <span class="section-nav-indicator" data-section-indicator aria-hidden="true"></span>
     </nav>
   </div>
 </header>
 
 <script>
+  import { setupSectionNavigation } from "../../scripts/section-navigation";
+
   const menuBtn = document.getElementById("menu-btn");
   const mobileMenu = document.getElementById("mobile-menu");
 
   if (menuBtn && mobileMenu) {
-    menuBtn.addEventListener("click", () => {
-      const isExpanded = menuBtn.getAttribute("aria-expanded") === "true";
-      menuBtn.setAttribute("aria-expanded", (!isExpanded).toString());
+    const setMenuOpen = (open: boolean) => {
+      if (!open && mobileMenu.contains(document.activeElement)) {
+        menuBtn.focus();
+      }
+      menuBtn.setAttribute("aria-expanded", open.toString());
       menuBtn.setAttribute(
         "aria-label",
-        isExpanded ? "Otwórz menu nawigacyjne" : "Zamknij menu nawigacyjne",
+        open ? "Zamknij menu nawigacyjne" : "Otwórz menu nawigacyjne",
       );
-      mobileMenu.setAttribute("aria-hidden", isExpanded.toString());
-      mobileMenu.classList.toggle("scale-y-0");
-      mobileMenu.classList.toggle("scale-y-100");
+      mobileMenu.inert = !open;
+      mobileMenu.setAttribute("aria-hidden", (!open).toString());
+      mobileMenu.classList.toggle("scale-y-0", !open);
+      mobileMenu.classList.toggle("scale-y-100", open);
+    };
+
+    menuBtn.addEventListener("click", () => {
+      setMenuOpen(menuBtn.getAttribute("aria-expanded") !== "true");
+    });
+
+    mobileMenu.addEventListener("click", (event) => {
+      if (event.target instanceof Element && event.target.closest("a")) {
+        setMenuOpen(false);
+      }
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && menuBtn.getAttribute("aria-expanded") === "true") {
+        setMenuOpen(false);
+        menuBtn.focus();
+      }
+    });
+
+    window.matchMedia("(min-width: 48rem)").addEventListener("change", (event) => {
+      if (event.matches) setMenuOpen(false);
     });
   }
+
+  setupSectionNavigation();
 </script>
+
+<style>
+  #main-header :global(a[data-section-link]) {
+    transition: color 220ms ease, background-color 220ms ease, outline-color 180ms ease;
+  }
+
+  #main-header :global(a[data-section-link][aria-current]:not([data-section-link="kontakt"])) {
+    color: var(--color-navy-900);
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.45em;
+  }
+
+  #main-header[data-animated-navigation] :global(a[data-section-link]:not([data-section-link="kontakt"])) {
+    text-decoration-line: none;
+  }
+
+  [data-section-label] {
+    display: inline-block;
+    text-decoration: inherit;
+    text-underline-offset: inherit;
+  }
+
+  .section-nav-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: var(--indicator-width, 0px);
+    height: 2px;
+    transform: translate3d(var(--indicator-x, 0px), var(--indicator-y, 0px), 0);
+    pointer-events: none;
+  }
+
+  .section-nav-indicator[data-moving] {
+    transition:
+      transform 280ms cubic-bezier(0.22, 1, 0.36, 1),
+      width 280ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .section-nav-indicator::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 999px;
+    background: var(--color-navy-900);
+    opacity: 0;
+    transition: opacity 180ms ease;
+  }
+
+  .section-nav-indicator[data-visible]::after {
+    opacity: 1;
+  }
+
+  #main-header :global(a[data-section-link="kontakt"][aria-current]) {
+    background-color: var(--color-navy-800);
+  }
+
+  #main-header :global(a[data-section-link="kontakt"][aria-current]:hover) {
+    background-color: var(--color-navy-700);
+  }
+
+  #main-header :global(a[data-section-link="kontakt"]:focus:not(:focus-visible)) {
+    box-shadow: none;
+  }
+
+  #main-header :global(a[data-section-link="kontakt"]:focus-visible) {
+    outline: 2px solid var(--color-navy-900);
+    outline-offset: 3px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    #main-header :global(a[data-section-link]),
+    .section-nav-indicator[data-moving],
+    .section-nav-indicator::after {
+      transition: none;
+    }
+  }
+</style>

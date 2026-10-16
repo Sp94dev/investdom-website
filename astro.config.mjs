@@ -8,7 +8,8 @@ import partytown from '@astrojs/partytown';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://investdom.com.pl',
+  site: 'https://www.investdom.com.pl',
+  trailingSlash: 'never',
   output: 'server',
   adapter: vercel(),
   vite: {

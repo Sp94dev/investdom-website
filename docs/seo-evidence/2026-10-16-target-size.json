@@ -1,0 +1,29 @@
+{
+  "scope": "Local development server after link target size fix; not deployed preview.",
+  "fetch_time": "2026-10-16T06:46:28.035Z",
+  "lighthouse_version": "13.5.0",
+  "form_factor": "mobile",
+  "runtime_error": null,
+  "audit": {
+    "id": "target-size",
+    "title": "Touch targets have sufficient size and spacing.",
+    "description": "Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.13/target-size).",
+    "score": 1,
+    "scoreDisplayMode": "binary",
+    "details": {
+      "type": "table",
+      "headings": [
+        {
+          "key": "node",
+          "valueType": "node",
+          "subItemsHeading": {
+            "key": "relatedNode",
+            "valueType": "node"
+          },
+          "label": "Failing Elements"
+        }
+      ],
+      "items": []
+    }
+  }
+}

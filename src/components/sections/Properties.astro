@@ -1,6 +1,7 @@
 ---
 import Container from '../ui/Container.astro';
 import Button from '../ui/Button.astro';
+import PropertySpecs from '../ui/PropertySpecs.astro';
 import { Image } from 'astro:assets';
 import houseImage from '../../assets/images/nowoczesny-dom-na-sprzedaz-bielsko.jpg';
 
@@ -55,7 +56,7 @@ const properties = [
                 decoding="async"
               />
               <div class="absolute top-4 left-4">
-                <span class="px-4 py-2 bg-green-500 text-white text-sm font-bold rounded-full shadow-lg">
+                <span class="px-4 py-2 bg-green-700 text-white text-sm font-bold rounded-full shadow-lg">
                   Na sprzedaż
                 </span>
               </div>
@@ -75,21 +76,7 @@ const properties = [
                 {property.location}
               </p>
 
-              <!-- Specs Grid -->
-              <div class="grid grid-cols-3 gap-4 mb-6">
-                <div class="bg-stone-50 p-4 rounded-xl text-center">
-                  <span class="block text-xs text-slate-500 uppercase tracking-wide mb-1">Powierzchnia</span>
-                  <span class="block font-bold text-lg text-navy-900">{property.size}</span>
-                </div>
-                <div class="bg-stone-50 p-4 rounded-xl text-center">
-                  <span class="block text-xs text-slate-500 uppercase tracking-wide mb-1">Działka</span>
-                  <span class="block font-bold text-lg text-navy-900">{property.plot}</span>
-                </div>
-                <div class="bg-stone-50 p-4 rounded-xl text-center">
-                  <span class="block text-xs text-slate-500 uppercase tracking-wide mb-1">Status</span>
-                  <span class="block font-bold text-sm text-navy-900">{property.status}</span>
-                </div>
-              </div>
+              <PropertySpecs size={property.size} plot={property.plot} status={property.status} />
 
               <!-- Price -->
               <div class="mb-6 pb-6 border-b border-stone-100">

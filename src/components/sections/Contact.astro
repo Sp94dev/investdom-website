@@ -1,6 +1,7 @@
 ---
 import Container from "../ui/Container.astro";
 import Button from "../ui/Button.astro";
+import { company } from "../../data/company.mjs";
 ---
 
 <section
@@ -34,7 +35,7 @@ import Button from "../ui/Button.astro";
         </div>
 
         <div class="space-y-6">
-          <div class="flex items-start gap-4">
+          <div class="flex items-center gap-4">
             <div
               class="w-12 h-12 bg-navy-800 rounded-lg flex items-center justify-center shrink-0"
             >
@@ -54,20 +55,20 @@ import Button from "../ui/Button.astro";
               </svg>
             </div>
             <div>
-              <p class="text-stone-400 text-sm uppercase tracking-wider mb-1">
+              <p class="text-stone-300 text-sm uppercase tracking-wider mb-1">
                 Zadzwoń do nas
               </p>
               <a
-                href="tel:+48571328993"
+                href={`tel:${company.telephone}`}
                 data-astro-reload
                 class="text-2xl font-bold text-white hover:text-sky-300 transition-colors"
               >
-                +48 571 328 993
+                {company.telephoneDisplay}
               </a>
             </div>
           </div>
 
-          <div class="flex items-start gap-4">
+          <div class="flex items-center gap-4">
             <div
               class="w-12 h-12 bg-navy-800 rounded-lg flex items-center justify-center shrink-0"
             >
@@ -87,21 +88,21 @@ import Button from "../ui/Button.astro";
               </svg>
             </div>
             <div>
-              <p class="text-stone-400 text-sm uppercase tracking-wider mb-1">
+              <p class="text-stone-300 text-sm uppercase tracking-wider mb-1">
                 Napisz e-mail
               </p>
               <a
-                href="mailto:kontakt@investdom.pl"
+                href={`mailto:${company.email}`}
                 data-astro-reload
                 class="text-xl font-medium text-white hover:text-sky-300 transition-colors"
               >
-                kontakt@investdom.pl
+                {company.email}
               </a>
-              <p class="text-stone-400 text-sm mt-1">Odpowiadamy w 24h</p>
+              <p class="text-stone-300 text-sm mt-1">Odpowiadamy w 24h</p>
             </div>
           </div>
 
-          <div class="flex items-start gap-4">
+          <div class="flex items-center gap-4">
             <div
               class="w-12 h-12 bg-navy-800 rounded-lg flex items-center justify-center shrink-0"
             >
@@ -125,23 +126,23 @@ import Button from "../ui/Button.astro";
               </svg>
             </div>
             <div>
-              <p class="text-stone-400 text-sm uppercase tracking-wider mb-1">
+              <p class="text-stone-300 text-sm uppercase tracking-wider mb-1">
                 Biuro
               </p>
-              <p class="text-lg text-white">ul. Na Lasu 25</p>
-              <p class="text-stone-300">43-300 Bielsko-Biała</p>
+              <p class="text-lg text-white">{company.address.streetAddress}</p>
+              <p class="text-stone-300">{company.address.postalCode} {company.address.addressLocality}</p>
             </div>
           </div>
         </div>
       </div>
 
       <!-- Contact Form -->
-      <div class="bg-white p-8 rounded-2xl shadow-xl">
-        <h3 class="font-heading font-bold text-2xl text-navy-900 mb-6">
+      <div class="bg-white p-8 rounded-2xl shadow-xl" data-contact-form-panel>
+        <h3 id="contact-form-heading" class="font-heading font-bold text-2xl text-navy-900 mb-6">
           Wyślij wiadomość
         </h3>
         <div id="form-container">
-          <form id="contact-form" class="space-y-6">
+          <form id="contact-form" aria-labelledby="contact-form-heading" tabindex="-1" class="space-y-6">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
                 <label
@@ -197,7 +198,7 @@ import Button from "../ui/Button.astro";
 
             <div>
               <label
-                for="subject"
+                for="subject-select"
                 class="block text-sm font-medium text-slate-700 mb-2"
                 >Temat</label
               >
@@ -208,7 +209,6 @@ import Button from "../ui/Button.astro";
               >
                 <option value="kupno">Chcę kupić dom</option>
                 <option value="budowa">Zlecenie budowy domu</option>
-                <option value="remont">Remont / Wykończenie</option>
                 <option value="inne">Inne zapytanie</option>
               </select>
             </div>
@@ -241,6 +241,12 @@ import Button from "../ui/Button.astro";
             </Button>
           </form>
         </div>
+
+        <script>
+          import { setupContactNavigation } from "../../scripts/contact-navigation";
+
+          setupContactNavigation();
+        </script>
 
         <script is:inline>
           const form = document.getElementById("contact-form");

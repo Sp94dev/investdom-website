@@ -1,0 +1,2798 @@
+{
+  "checked_at": "2026-10-15T20:41:12.934489+00:00",
+  "method": "Raw HTTP GET, requests + BeautifulSoup; no JavaScript execution. No real crawler IP verification.",
+  "http": [
+    {
+      "environment": "production",
+      "requested": "https://www.investdom.com.pl/",
+      "final_url": "https://www.investdom.com.pl/",
+      "status": 200,
+      "redirects": [],
+      "headers": {
+        "content-type": "text/html"
+      },
+      "title": "Budowa Domów Bielsko-Biała | Nowe Domy na Sprzedaż | INVESTDOM",
+      "canonical": [
+        "https://investdom.com.pl/"
+      ],
+      "phones": [
+        "tel:+48571328993",
+        "tel:+48571328983"
+      ],
+      "meta": {
+        "description": "Szukasz profesjonalnej firmy budowlanej w Bielsku-Białej? INVESTDOM to kompleksowa budowa domów pod klucz oraz nowoczesne domy na sprzedaż. Zobacz nasze realizacje i projekty domów!",
+        "viewport": "width=device-width",
+        "generator": "Astro v5.16.11",
+        "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        "googlebot": "index, follow",
+        "bingbot": "index, follow",
+        "author": "INVESTDOM",
+        "publisher": "INVESTDOM",
+        "copyright": "INVESTDOM",
+        "revisit-after": "7 days",
+        "rating": "general",
+        "distribution": "global",
+        "coverage": "Poland",
+        "language": "Polish",
+        "category": "Budownictwo, Nieruchomości, Usługi budowlane",
+        "classification": "Business",
+        "subject": "Budowa domów jednorodzinnych Bielsko-Biała",
+        "topic": "Budowa domów, domy pod klucz, firma budowlana",
+        "summary": "Szukasz profesjonalnej firmy budowlanej w Bielsku-Białej? INVESTDOM to kompleksowa budowa domów pod klucz oraz nowoczesne domy na sprzedaż. Zobacz nasze realizacje i projekty domów!",
+        "keywords": "budowa domów, domy Bielsko-Biała, budowa domu Bielsko-Biała, sprzedaż domów, domy pod klucz, stan surowy, stan deweloperski, remont domów, generalny wykonawca, powiat bielski, powiat cieszyński, powiat żywiecki, powiat czechowicki, Czechowice-Dziedzice, Żywiec, Cieszyn, Wisła, Ustroń, Szczyrk, domy jednorodzinne, budowa domu jednorodzinnego, firma budowlana Bielsko-Biała, ekipa budowlana, domy na sprzedaż, nowe domy, inwestycje mieszkaniowe, działki budowlane, projekty domów, budownictwo mieszkaniowe, usługi budowlane, wykonawca budowlany, firma remontowa, budowa fundamentów, budowa dachu, wykończenia wnętrz, stan zero, budowa murów, izolacje, ocieplenie domu",
+        "geo.region": "PL-24",
+        "geo.placename": "Bielsko-Biała",
+        "geo.position": "49.8224;19.0446",
+        "ICBM": "49.8224, 19.0446",
+        "DC.title": "Budowa Domów Bielsko-Biała | Nowe Domy na Sprzedaż | INVESTDOM",
+        "DC.creator": "INVESTDOM",
+        "DC.subject": "Budowa domów jednorodzinnych",
+        "DC.description": "Szukasz profesjonalnej firmy budowlanej w Bielsku-Białej? INVESTDOM to kompleksowa budowa domów pod klucz oraz nowoczesne domy na sprzedaż. Zobacz nasze realizacje i projekty domów!",
+        "DC.publisher": "INVESTDOM",
+        "DC.language": "pl",
+        "DC.coverage": "Bielsko-Biała, Polska",
+        "DC.rights": "Copyright INVESTDOM",
+        "contact": "kontakt@investdom.pl",
+        "reply-to": "kontakt@investdom.pl",
+        "format-detection": "telephone=yes",
+        "mobile-web-app-capable": "yes",
+        "apple-mobile-web-app-capable": "yes",
+        "apple-mobile-web-app-status-bar-style": "default",
+        "apple-mobile-web-app-title": "INVESTDOM",
+        "application-name": "INVESTDOM",
+        "theme-color": "#1e3a5f",
+        "msapplication-TileColor": "#1e3a5f",
+        "og:type": "website",
+        "og:url": "https://investdom.com.pl/",
+        "og:title": "Budowa Domów Bielsko-Biała | Nowe Domy na Sprzedaż | INVESTDOM",
+        "og:description": "Szukasz profesjonalnej firmy budowlanej w Bielsku-Białej? INVESTDOM to kompleksowa budowa domów pod klucz oraz nowoczesne domy na sprzedaż. Zobacz nasze realizacje i projekty domów!",
+        "og:image": "https://investdom.com.pl/og-image.jpg",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "INVESTDOM - Budowa Domów Bielsko-Biała",
+        "og:locale": "pl_PL",
+        "og:site_name": "INVESTDOM",
+        "og:see_also": "https://investdom.com.pl",
+        "business:contact_data:street_address": "ul. Do Lasu 25",
+        "business:contact_data:locality": "Bielsko-Biała",
+        "business:contact_data:postal_code": "43-300",
+        "business:contact_data:country_name": "Polska",
+        "business:contact_data:phone_number": "+48571328993",
+        "twitter:card": "summary_large_image",
+        "twitter:url": "https://investdom.com.pl/",
+        "twitter:title": "Budowa Domów Bielsko-Biała | Nowe Domy na Sprzedaż | INVESTDOM",
+        "twitter:description": "Szukasz profesjonalnej firmy budowlanej w Bielsku-Białej? INVESTDOM to kompleksowa budowa domów pod klucz oraz nowoczesne domy na sprzedaż. Zobacz nasze realizacje i projekty domów!",
+        "twitter:image": "https://investdom.com.pl/og-image.jpg",
+        "twitter:image:alt": "INVESTDOM - Budowa Domów Bielsko-Biała"
+      },
+      "headings": [
+        {
+          "level": "h1",
+          "text": "Kompleksowa Budowa Domów w Bielsku-Białej i na Śląsku"
+        },
+        {
+          "level": "h2",
+          "text": "Sprawdzona Firma Budowlana – Dlaczego warto wybrać INVESTDOM?"
+        },
+        {
+          "level": "h3",
+          "text": "Gwarancja Terminowości i Solidności"
+        },
+        {
+          "level": "h3",
+          "text": "Osobisty Nadzór Właściciela"
+        },
+        {
+          "level": "h3",
+          "text": "15+ Lat Doświadczenia"
+        },
+        {
+          "level": "h2",
+          "text": "Nowe Domy na Sprzedaż w Bielsku-Białej i Okolicach"
+        },
+        {
+          "level": "h3",
+          "text": "Dom Wolnostojący Pisarzowice (Etap II)"
+        },
+        {
+          "level": "h2",
+          "text": "Budowa Domów Pod Klucz i w Stanie Deweloperskim od A do Z"
+        },
+        {
+          "level": "h3",
+          "text": "Stan surowy"
+        },
+        {
+          "level": "h3",
+          "text": "Stan deweloperski"
+        },
+        {
+          "level": "h3",
+          "text": "Budowa pod klucz"
+        },
+        {
+          "level": "h3",
+          "text": "Budowa na działce Klienta"
+        },
+        {
+          "level": "h3",
+          "text": "Remonty"
+        },
+        {
+          "level": "h3",
+          "text": "Wykończenia"
+        },
+        {
+          "level": "h2",
+          "text": "Najczęstsze Pytania"
+        },
+        {
+          "level": "h3",
+          "text": "Ile kosztuje budowa domu w Bielsku-Białej?"
+        },
+        {
+          "level": "h3",
+          "text": "Czy budujecie domy na działce klienta?"
+        },
+        {
+          "level": "h3",
+          "text": "Ile trwa budowa domu pod klucz?"
+        },
+        {
+          "level": "h2",
+          "text": "Skontaktuj się z nami"
+        },
+        {
+          "level": "h3",
+          "text": "Wyślij wiadomość"
+        },
+        {
+          "level": "h3",
+          "text": "Kontakt"
+        },
+        {
+          "level": "h3",
+          "text": "Nawigacja"
+        },
+        {
+          "level": "h3",
+          "text": "Gdzie budujemy?"
+        }
+      ],
+      "schemas": [
+        {
+          "@context": "https://schema.org",
+          "@type": [
+            "RealEstateAgent",
+            "HomeAndConstructionBusiness"
+          ],
+          "name": "INVESTDOM",
+          "description": "Firma budowlana specjalizująca się w budowie domów jednorodzinnych w Bielsku-Białej i okolicach. Oferujemy budowę domów w stanie surowym, deweloperskim i pod klucz.",
+          "url": "https://investdom.com.pl",
+          "logo": "https://investdom.com.pl/logo.png",
+          "image": "https://investdom.com.pl/og-image.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "ul. Do Lasu 25",
+            "addressLocality": "Bielsko-Biała",
+            "postalCode": "43-300",
+            "addressRegion": "śląskie",
+            "addressCountry": "PL"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "49.8224",
+            "longitude": "19.0446"
+          },
+          "telephone": "+48571328993",
+          "areaServed": [
+            {
+              "@type": "City",
+              "name": "Bielsko-Biała"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "powiat bielski"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "powiat cieszyński"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "powiat żywiecki"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "powiat czechowicki"
+            },
+            {
+              "@type": "City",
+              "name": "Czechowice-Dziedzice"
+            },
+            {
+              "@type": "City",
+              "name": "Żywiec"
+            },
+            {
+              "@type": "City",
+              "name": "Cieszyn"
+            },
+            {
+              "@type": "City",
+              "name": "Wisła"
+            },
+            {
+              "@type": "City",
+              "name": "Ustroń"
+            },
+            {
+              "@type": "City",
+              "name": "Szczyrk"
+            }
+          ],
+          "serviceType": [
+            "Budowa domów jednorodzinnych",
+            "Budowa domów pod klucz",
+            "Budowa domów w stanie surowym",
+            "Budowa domów w stanie deweloperskim",
+            "Remont domów",
+            "Generalny wykonawca"
+          ],
+          "priceRange": "$$"
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Ile kosztuje budowa domu w Bielsku-Białej?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ceny budowy domów w regionie śląskim zaczynają się od około 3000-3500 zł netto za metr kwadratowy w stanie surowym. Ostateczny koszt zależy od wybranego projektu, technologii oraz standardu wykończenia. Oferujemy bezpłatną, indywidualną wycenę dla każdego projektu."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Czy budujecie domy na działce klienta?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Tak, realizujemy budowę domów jednorodzinnych na działkach powierzonych przez Klienta. Głównie działamy na terenie Bielska-Białej oraz w okolicznych miejscowościach (m.in. Czechowice-Dziedzice, Żywiec, Szczyrk, Cieszyn). Pomagamy też w ocenie działki pod kątem budowlanym przed rozpoczęciem prac."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Ile trwa budowa domu pod klucz?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Czas budowy domu jednorodzinnego pod klucz wynosi zazwyczaj od 9 do 14 miesięcy, w zależności od warunków atmosferycznych, wielkości budynku i wybranej technologii. Stan surowy zamknięty jesteśmy w stanie osiągnąć często już po 3-4 miesiącach."
+              }
+            }
+          ]
+        }
+      ],
+      "images": [
+        {
+          "src": "/logo.svg",
+          "alt": "InvestDom Logo",
+          "loading": null,
+          "fetchpriority": null,
+          "width": null,
+          "height": null,
+          "srcset": null
+        },
+        {
+          "src": "/logo.svg",
+          "alt": "InvestDom Logo",
+          "loading": null,
+          "fetchpriority": null,
+          "width": null,
+          "height": null,
+          "srcset": null
+        },
+        {
+          "src": "/_image?href=%2F_astro%2Fbudowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv.jpg&w=1920&h=1080&q=75&f=webp",
+          "alt": "Realizacja budowy domu jednorodzinnego w Bielsku-Białej przez firmę INVESTDOM",
+          "loading": "eager",
+          "fetchpriority": "high",
+          "width": "1920",
+          "height": "1080",
+          "srcset": null
+        },
+        {
+          "src": "/_image?href=%2F_astro%2Fbudowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv.jpg&w=800&h=600&q=80&f=webp",
+          "alt": "Realizacja budowy domu jednorodzinnego w Bielsku-Białej przez firmę INVESTDOM",
+          "loading": "lazy",
+          "fetchpriority": "auto",
+          "width": "800",
+          "height": "600",
+          "srcset": null
+        },
+        {
+          "src": "/_image?href=%2F_astro%2Fnowoczesny-dom-na-sprzedaz-bielsko.CFyHeYfm.jpg&w=800&h=600&q=80&f=webp",
+          "alt": "Realizacja budowy domu jednorodzinnego w Bielsku-Białej przez firmę INVESTDOM - Dom Wolnostojący Pisarzowice (Etap II)",
+          "loading": "lazy",
+          "fetchpriority": "auto",
+          "width": "800",
+          "height": "600",
+          "srcset": null
+        },
+        {
+          "src": "/logo.svg",
+          "alt": "InvestDom Logo",
+          "loading": null,
+          "fetchpriority": null,
+          "width": null,
+          "height": null,
+          "srcset": null
+        }
+      ],
+      "address_strings": [
+        "ul. Na Lasu 25",
+        "ul. Do Lasu 25"
+      ]
+    },
+    {
+      "environment": "production",
+      "requested": "https://www.investdom.com.pl/budowa-domow-pod-klucz",
+      "final_url": "https://www.investdom.com.pl/budowa-domow-pod-klucz",
+      "status": 200,
+      "redirects": [],
+      "headers": {
+        "content-type": "text/html"
+      },
+      "title": "Budowa domów pod klucz Bielsko-Biała | Etapy i standardy | INVESTDOM",
+      "canonical": [
+        "https://investdom.com.pl/budowa-domow-pod-klucz"
+      ],
+      "phones": [
+        "tel:+48571328983"
+      ],
+      "meta": {
+        "description": "Dowiedz się, jak wygląda proces budowy domu pod klucz z INVESTDOM. Sprawdź nasze standardy materiałowe i etapy realizacji od fundamentów po wykończenie.",
+        "viewport": "width=device-width",
+        "generator": "Astro v5.16.11",
+        "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        "googlebot": "index, follow",
+        "bingbot": "index, follow",
+        "author": "INVESTDOM",
+        "publisher": "INVESTDOM",
+        "copyright": "INVESTDOM",
+        "revisit-after": "7 days",
+        "rating": "general",
+        "distribution": "global",
+        "coverage": "Poland",
+        "language": "Polish",
+        "category": "Budownictwo, Nieruchomości, Usługi budowlane",
+        "classification": "Business",
+        "subject": "Budowa domów jednorodzinnych Bielsko-Biała",
+        "topic": "Budowa domów, domy pod klucz, firma budowlana",
+        "summary": "Dowiedz się, jak wygląda proces budowy domu pod klucz z INVESTDOM. Sprawdź nasze standardy materiałowe i etapy realizacji od fundamentów po wykończenie.",
+        "keywords": "budowa domów, domy Bielsko-Biała, budowa domu Bielsko-Biała, sprzedaż domów, domy pod klucz, stan surowy, stan deweloperski, remont domów, generalny wykonawca, powiat bielski, powiat cieszyński, powiat żywiecki, powiat czechowicki, Czechowice-Dziedzice, Żywiec, Cieszyn, Wisła, Ustroń, Szczyrk, domy jednorodzinne, budowa domu jednorodzinnego, firma budowlana Bielsko-Biała, ekipa budowlana, domy na sprzedaż, nowe domy, inwestycje mieszkaniowe, działki budowlane, projekty domów, budownictwo mieszkaniowe, usługi budowlane, wykonawca budowlany, firma remontowa, budowa fundamentów, budowa dachu, wykończenia wnętrz, stan zero, budowa murów, izolacje, ocieplenie domu",
+        "geo.region": "PL-24",
+        "geo.placename": "Bielsko-Biała",
+        "geo.position": "49.8224;19.0446",
+        "ICBM": "49.8224, 19.0446",
+        "DC.title": "Budowa domów pod klucz Bielsko-Biała | Etapy i standardy | INVESTDOM",
+        "DC.creator": "INVESTDOM",
+        "DC.subject": "Budowa domów jednorodzinnych",
+        "DC.description": "Dowiedz się, jak wygląda proces budowy domu pod klucz z INVESTDOM. Sprawdź nasze standardy materiałowe i etapy realizacji od fundamentów po wykończenie.",
+        "DC.publisher": "INVESTDOM",
+        "DC.language": "pl",
+        "DC.coverage": "Bielsko-Biała, Polska",
+        "DC.rights": "Copyright INVESTDOM",
+        "contact": "kontakt@investdom.pl",
+        "reply-to": "kontakt@investdom.pl",
+        "format-detection": "telephone=yes",
+        "mobile-web-app-capable": "yes",
+        "apple-mobile-web-app-capable": "yes",
+        "apple-mobile-web-app-status-bar-style": "default",
+        "apple-mobile-web-app-title": "INVESTDOM",
+        "application-name": "INVESTDOM",
+        "theme-color": "#1e3a5f",
+        "msapplication-TileColor": "#1e3a5f",
+        "og:type": "website",
+        "og:url": "https://investdom.com.pl/budowa-domow-pod-klucz",
+        "og:title": "Budowa domów pod klucz Bielsko-Biała | Etapy i standardy | INVESTDOM",
+        "og:description": "Dowiedz się, jak wygląda proces budowy domu pod klucz z INVESTDOM. Sprawdź nasze standardy materiałowe i etapy realizacji od fundamentów po wykończenie.",
+        "og:image": "https://investdom.com.pl/og-image.jpg",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "INVESTDOM - Budowa Domów Bielsko-Biała",
+        "og:locale": "pl_PL",
+        "og:site_name": "INVESTDOM",
+        "og:see_also": "https://investdom.com.pl",
+        "business:contact_data:street_address": "ul. Do Lasu 25",
+        "business:contact_data:locality": "Bielsko-Biała",
+        "business:contact_data:postal_code": "43-300",
+        "business:contact_data:country_name": "Polska",
+        "business:contact_data:phone_number": "+48571328993",
+        "twitter:card": "summary_large_image",
+        "twitter:url": "https://investdom.com.pl/budowa-domow-pod-klucz",
+        "twitter:title": "Budowa domów pod klucz Bielsko-Biała | Etapy i standardy | INVESTDOM",
+        "twitter:description": "Dowiedz się, jak wygląda proces budowy domu pod klucz z INVESTDOM. Sprawdź nasze standardy materiałowe i etapy realizacji od fundamentów po wykończenie.",
+        "twitter:image": "https://investdom.com.pl/og-image.jpg",
+        "twitter:image:alt": "INVESTDOM - Budowa Domów Bielsko-Biała"
+      },
+      "headings": [
+        {
+          "level": "h1",
+          "text": "Budowa domów pod klucz – krok po kroku"
+        },
+        {
+          "level": "h2",
+          "text": "Etap 1: Prace ziemne i fundamenty"
+        },
+        {
+          "level": "h2",
+          "text": "Etap 2: Stan surowy (ściany, strop, dach)"
+        },
+        {
+          "level": "h2",
+          "text": "Etap 3: Stan deweloperski"
+        },
+        {
+          "level": "h2",
+          "text": "Etap 4: Prace wykończeniowe (Pod Klucz)"
+        },
+        {
+          "level": "h3",
+          "text": "Nasze standardy materiałowe"
+        },
+        {
+          "level": "h3",
+          "text": "Kontakt"
+        },
+        {
+          "level": "h3",
+          "text": "Nawigacja"
+        },
+        {
+          "level": "h3",
+          "text": "Gdzie budujemy?"
+        }
+      ],
+      "schemas": [
+        {
+          "@context": "https://schema.org",
+          "@type": [
+            "RealEstateAgent",
+            "HomeAndConstructionBusiness"
+          ],
+          "name": "INVESTDOM",
+          "description": "Firma budowlana specjalizująca się w budowie domów jednorodzinnych w Bielsku-Białej i okolicach. Oferujemy budowę domów w stanie surowym, deweloperskim i pod klucz.",
+          "url": "https://investdom.com.pl",
+          "logo": "https://investdom.com.pl/logo.png",
+          "image": "https://investdom.com.pl/og-image.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "ul. Do Lasu 25",
+            "addressLocality": "Bielsko-Biała",
+            "postalCode": "43-300",
+            "addressRegion": "śląskie",
+            "addressCountry": "PL"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "49.8224",
+            "longitude": "19.0446"
+          },
+          "telephone": "+48571328993",
+          "areaServed": [
+            {
+              "@type": "City",
+              "name": "Bielsko-Biała"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "powiat bielski"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "powiat cieszyński"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "powiat żywiecki"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "powiat czechowicki"
+            },
+            {
+              "@type": "City",
+              "name": "Czechowice-Dziedzice"
+            },
+            {
+              "@type": "City",
+              "name": "Żywiec"
+            },
+            {
+              "@type": "City",
+              "name": "Cieszyn"
+            },
+            {
+              "@type": "City",
+              "name": "Wisła"
+            },
+            {
+              "@type": "City",
+              "name": "Ustroń"
+            },
+            {
+              "@type": "City",
+              "name": "Szczyrk"
+            }
+          ],
+          "serviceType": [
+            "Budowa domów jednorodzinnych",
+            "Budowa domów pod klucz",
+            "Budowa domów w stanie surowym",
+            "Budowa domów w stanie deweloperskim",
+            "Remont domów",
+            "Generalny wykonawca"
+          ],
+          "priceRange": "$$"
+        }
+      ],
+      "images": [
+        {
+          "src": "/logo.svg",
+          "alt": "InvestDom Logo",
+          "loading": null,
+          "fetchpriority": null,
+          "width": null,
+          "height": null,
+          "srcset": null
+        },
+        {
+          "src": "/logo.svg",
+          "alt": "InvestDom Logo",
+          "loading": null,
+          "fetchpriority": null,
+          "width": null,
+          "height": null,
+          "srcset": null
+        },
+        {
+          "src": "/logo.svg",
+          "alt": "InvestDom Logo",
+          "loading": null,
+          "fetchpriority": null,
+          "width": null,
+          "height": null,
+          "srcset": null
+        }
+      ],
+      "address_strings": [
+        "ul. Do Lasu 25"
+      ]
+    },
+    {
+      "environment": "production",
+      "requested": "https://www.investdom.com.pl/domy-na-sprzedaz-bielsko",
+      "final_url": "https://www.investdom.com.pl/domy-na-sprzedaz-bielsko",
+      "status": 200,
+      "redirects": [],
+      "headers": {
+        "content-type": "text/html"
+      },
+      "title": "Nowe domy na sprzedaż Bielsko-Biała | Inwestycje | INVESTDOM",
+      "canonical": [
+        "https://investdom.com.pl/domy-na-sprzedaz-bielsko"
+      ],
+      "phones": [
+        "tel:+48571328983"
+      ],
+      "meta": {
+        "description": "Poznaj nasze aktualne inwestycje deweloperskie w Bielsku-Białej i okolicach. Gotowe domy na sprzedaż w stanie deweloperskim m.in w atrakcyjnych dzielnicach, takich jak Pisarzowice.",
+        "viewport": "width=device-width",
+        "generator": "Astro v5.16.11",
+        "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        "googlebot": "index, follow",
+        "bingbot": "index, follow",
+        "author": "INVESTDOM",
+        "publisher": "INVESTDOM",
+        "copyright": "INVESTDOM",
+        "revisit-after": "7 days",
+        "rating": "general",
+        "distribution": "global",
+        "coverage": "Poland",
+        "language": "Polish",
+        "category": "Budownictwo, Nieruchomości, Usługi budowlane",
+        "classification": "Business",
+        "subject": "Budowa domów jednorodzinnych Bielsko-Biała",
+        "topic": "Budowa domów, domy pod klucz, firma budowlana",
+        "summary": "Poznaj nasze aktualne inwestycje deweloperskie w Bielsku-Białej i okolicach. Gotowe domy na sprzedaż w stanie deweloperskim m.in w atrakcyjnych dzielnicach, takich jak Pisarzowice.",
+        "keywords": "budowa domów, domy Bielsko-Biała, budowa domu Bielsko-Biała, sprzedaż domów, domy pod klucz, stan surowy, stan deweloperski, remont domów, generalny wykonawca, powiat bielski, powiat cieszyński, powiat żywiecki, powiat czechowicki, Czechowice-Dziedzice, Żywiec, Cieszyn, Wisła, Ustroń, Szczyrk, domy jednorodzinne, budowa domu jednorodzinnego, firma budowlana Bielsko-Biała, ekipa budowlana, domy na sprzedaż, nowe domy, inwestycje mieszkaniowe, działki budowlane, projekty domów, budownictwo mieszkaniowe, usługi budowlane, wykonawca budowlany, firma remontowa, budowa fundamentów, budowa dachu, wykończenia wnętrz, stan zero, budowa murów, izolacje, ocieplenie domu",
+        "geo.region": "PL-24",
+        "geo.placename": "Bielsko-Biała",
+        "geo.position": "49.8224;19.0446",
+        "ICBM": "49.8224, 19.0446",
+        "DC.title": "Nowe domy na sprzedaż Bielsko-Biała | Inwestycje | INVESTDOM",
+        "DC.creator": "INVESTDOM",
+        "DC.subject": "Budowa domów jednorodzinnych",
+        "DC.description": "Poznaj nasze aktualne inwestycje deweloperskie w Bielsku-Białej i okolicach. Gotowe domy na sprzedaż w stanie deweloperskim m.in w atrakcyjnych dzielnicach, takich jak Pisarzowice.",
+        "DC.publisher": "INVESTDOM",
+        "DC.language": "pl",
+        "DC.coverage": "Bielsko-Biała, Polska",
+        "DC.rights": "Copyright INVESTDOM",
+        "contact": "kontakt@investdom.pl",
+        "reply-to": "kontakt@investdom.pl",
+        "format-detection": "telephone=yes",
+        "mobile-web-app-capable": "yes",
+        "apple-mobile-web-app-capable": "yes",
+        "apple-mobile-web-app-status-bar-style": "default",
+        "apple-mobile-web-app-title": "INVESTDOM",
+        "application-name": "INVESTDOM",
+        "theme-color": "#1e3a5f",
+        "msapplication-TileColor": "#1e3a5f",
+        "og:type": "website",
+        "og:url": "https://investdom.com.pl/domy-na-sprzedaz-bielsko",
+        "og:title": "Nowe domy na sprzedaż Bielsko-Biała | Inwestycje | INVESTDOM",
+        "og:description": "Poznaj nasze aktualne inwestycje deweloperskie w Bielsku-Białej i okolicach. Gotowe domy na sprzedaż w stanie deweloperskim m.in w atrakcyjnych dzielnicach, takich jak Pisarzowice.",
+        "og:image": "https://investdom.com.pl/og-image.jpg",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "INVESTDOM - Budowa Domów Bielsko-Biała",
+        "og:locale": "pl_PL",
+        "og:site_name": "INVESTDOM",
+        "og:see_also": "https://investdom.com.pl",
+        "business:contact_data:street_address": "ul. Do Lasu 25",
+        "business:contact_data:locality": "Bielsko-Biała",
+        "business:contact_data:postal_code": "43-300",
+        "business:contact_data:country_name": "Polska",
+        "business:contact_data:phone_number": "+48571328993",
+        "twitter:card": "summary_large_image",
+        "twitter:url": "https://investdom.com.pl/domy-na-sprzedaz-bielsko",
+        "twitter:title": "Nowe domy na sprzedaż Bielsko-Biała | Inwestycje | INVESTDOM",
+        "twitter:description": "Poznaj nasze aktualne inwestycje deweloperskie w Bielsku-Białej i okolicach. Gotowe domy na sprzedaż w stanie deweloperskim m.in w atrakcyjnych dzielnicach, takich jak Pisarzowice.",
+        "twitter:image": "https://investdom.com.pl/og-image.jpg",
+        "twitter:image:alt": "INVESTDOM - Budowa Domów Bielsko-Biała"
+      },
+      "headings": [
+        {
+          "level": "h1",
+          "text": "Nowe domy na sprzedaż w Bielsku-Białej"
+        },
+        {
+          "level": "h2",
+          "text": "Inwestycje: Pisarzowice"
+        },
+        {
+          "level": "h3",
+          "text": "Dom Wolnostojący Pisarzowice (Etap II)"
+        },
+        {
+          "level": "h3",
+          "text": "Kontakt"
+        },
+        {
+          "level": "h3",
+          "text": "Nawigacja"
+        },
+        {
+          "level": "h3",
+          "text": "Gdzie budujemy?"
+        }
+      ],
+      "schemas": [
+        {
+          "@context": "https://schema.org",
+          "@type": [
+            "RealEstateAgent",
+            "HomeAndConstructionBusiness"
+          ],
+          "name": "INVESTDOM",
+          "description": "Firma budowlana specjalizująca się w budowie domów jednorodzinnych w Bielsku-Białej i okolicach. Oferujemy budowę domów w stanie surowym, deweloperskim i pod klucz.",
+          "url": "https://investdom.com.pl",
+          "logo": "https://investdom.com.pl/logo.png",
+          "image": "https://investdom.com.pl/og-image.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "ul. Do Lasu 25",
+            "addressLocality": "Bielsko-Biała",
+            "postalCode": "43-300",
+            "addressRegion": "śląskie",
+            "addressCountry": "PL"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "49.8224",
+            "longitude": "19.0446"
+          },
+          "telephone": "+48571328993",
+          "areaServed": [
+            {
+              "@type": "City",
+              "name": "Bielsko-Biała"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "powiat bielski"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "powiat cieszyński"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "powiat żywiecki"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "powiat czechowicki"
+            },
+            {
+              "@type": "City",
+              "name": "Czechowice-Dziedzice"
+            },
+            {
+              "@type": "City",
+              "name": "Żywiec"
+            },
+            {
+              "@type": "City",
+              "name": "Cieszyn"
+            },
+            {
+              "@type": "City",
+              "name": "Wisła"
+            },
+            {
+              "@type": "City",
+              "name": "Ustroń"
+            },
+            {
+              "@type": "City",
+              "name": "Szczyrk"
+            }
+          ],
+          "serviceType": [
+            "Budowa domów jednorodzinnych",
+            "Budowa domów pod klucz",
+            "Budowa domów w stanie surowym",
+            "Budowa domów w stanie deweloperskim",
+            "Remont domów",
+            "Generalny wykonawca"
+          ],
+          "priceRange": "$$"
+        }
+      ],
+      "images": [
+        {
+          "src": "/logo.svg",
+          "alt": "InvestDom Logo",
+          "loading": null,
+          "fetchpriority": null,
+          "width": null,
+          "height": null,
+          "srcset": null
+        },
+        {
+          "src": "/logo.svg",
+          "alt": "InvestDom Logo",
+          "loading": null,
+          "fetchpriority": null,
+          "width": null,
+          "height": null,
+          "srcset": null
+        },
+        {
+          "src": "/_image?href=%2F_astro%2Fnowoczesny-dom-na-sprzedaz-bielsko.CFyHeYfm.jpg&w=800&h=600&q=80&f=webp",
+          "alt": "Dom Wolnostojący Pisarzowice (Etap II)",
+          "loading": "lazy",
+          "fetchpriority": "auto",
+          "width": "800",
+          "height": "600",
+          "srcset": null
+        },
+        {
+          "src": "/logo.svg",
+          "alt": "InvestDom Logo",
+          "loading": null,
+          "fetchpriority": null,
+          "width": null,
+          "height": null,
+          "srcset": null
+        }
+      ],
+      "address_strings": [
+        "ul. Do Lasu 25"
+      ]
+    },
+    {
+      "environment": "production",
+      "requested": "https://www.investdom.com.pl/projekty-domow",
+      "final_url": "https://www.investdom.com.pl/projekty-domow",
+      "status": 200,
+      "redirects": [],
+      "headers": {
+        "content-type": "text/html"
+      },
+      "title": "Projekty Domów Bielsko-Biała | Autorskie Projekty | INVESTDOM",
+      "canonical": [
+        "https://investdom.com.pl/projekty-domow"
+      ],
+      "phones": [
+        "tel:+48571328983"
+      ],
+      "meta": {
+        "description": "Zobacz naszą bazę sprawdzonych projektów domów jednorodzinnych. Domy parterowe, z poddaszem użytkowym i piętrowe, gotowe do realizacji w Bielsku-Białej i okolicach.",
+        "viewport": "width=device-width",
+        "generator": "Astro v5.16.11",
+        "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        "googlebot": "index, follow",
+        "bingbot": "index, follow",
+        "author": "INVESTDOM",
+        "publisher": "INVESTDOM",
+        "copyright": "INVESTDOM",
+        "revisit-after": "7 days",
+        "rating": "general",
+        "distribution": "global",
+        "coverage": "Poland",
+        "language": "Polish",
+        "category": "Budownictwo, Nieruchomości, Usługi budowlane",
+        "classification": "Business",
+        "subject": "Budowa domów jednorodzinnych Bielsko-Biała",
+        "topic": "Budowa domów, domy pod klucz, firma budowlana",
+        "summary": "Zobacz naszą bazę sprawdzonych projektów domów jednorodzinnych. Domy parterowe, z poddaszem użytkowym i piętrowe, gotowe do realizacji w Bielsku-Białej i okolicach.",
+        "keywords": "budowa domów, domy Bielsko-Biała, budowa domu Bielsko-Biała, sprzedaż domów, domy pod klucz, stan surowy, stan deweloperski, remont domów, generalny wykonawca, powiat bielski, powiat cieszyński, powiat żywiecki, powiat czechowicki, Czechowice-Dziedzice, Żywiec, Cieszyn, Wisła, Ustroń, Szczyrk, domy jednorodzinne, budowa domu jednorodzinnego, firma budowlana Bielsko-Biała, ekipa budowlana, domy na sprzedaż, nowe domy, inwestycje mieszkaniowe, działki budowlane, projekty domów, budownictwo mieszkaniowe, usługi budowlane, wykonawca budowlany, firma remontowa, budowa fundamentów, budowa dachu, wykończenia wnętrz, stan zero, budowa murów, izolacje, ocieplenie domu",
+        "geo.region": "PL-24",
+        "geo.placename": "Bielsko-Biała",
+        "geo.position": "49.8224;19.0446",
+        "ICBM": "49.8224, 19.0446",
+        "DC.title": "Projekty Domów Bielsko-Biała | Autorskie Projekty | INVESTDOM",
+        "DC.creator": "INVESTDOM",
+        "DC.subject": "Budowa domów jednorodzinnych",
+        "DC.description": "Zobacz naszą bazę sprawdzonych projektów domów jednorodzinnych. Domy parterowe, z poddaszem użytkowym i piętrowe, gotowe do realizacji w Bielsku-Białej i okolicach.",
+        "DC.publisher": "INVESTDOM",
+        "DC.language": "pl",
+        "DC.coverage": "Bielsko-Biała, Polska",
+        "DC.rights": "Copyright INVESTDOM",
+        "contact": "kontakt@investdom.pl",
+        "reply-to": "kontakt@investdom.pl",
+        "format-detection": "telephone=yes",
+        "mobile-web-app-capable": "yes",
+        "apple-mobile-web-app-capable": "yes",
+        "apple-mobile-web-app-status-bar-style": "default",
+        "apple-mobile-web-app-title": "INVESTDOM",
+        "application-name": "INVESTDOM",
+        "theme-color": "#1e3a5f",
+        "msapplication-TileColor": "#1e3a5f",
+        "og:type": "website",
+        "og:url": "https://investdom.com.pl/projekty-domow",
+        "og:title": "Projekty Domów Bielsko-Biała | Autorskie Projekty | INVESTDOM",
+        "og:description": "Zobacz naszą bazę sprawdzonych projektów domów jednorodzinnych. Domy parterowe, z poddaszem użytkowym i piętrowe, gotowe do realizacji w Bielsku-Białej i okolicach.",
+        "og:image": "https://investdom.com.pl/og-image.jpg",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "INVESTDOM - Budowa Domów Bielsko-Biała",
+        "og:locale": "pl_PL",
+        "og:site_name": "INVESTDOM",
+        "og:see_also": "https://investdom.com.pl",
+        "business:contact_data:street_address": "ul. Do Lasu 25",
+        "business:contact_data:locality": "Bielsko-Biała",
+        "business:contact_data:postal_code": "43-300",
+        "business:contact_data:country_name": "Polska",
+        "business:contact_data:phone_number": "+48571328993",
+        "twitter:card": "summary_large_image",
+        "twitter:url": "https://investdom.com.pl/projekty-domow",
+        "twitter:title": "Projekty Domów Bielsko-Biała | Autorskie Projekty | INVESTDOM",
+        "twitter:description": "Zobacz naszą bazę sprawdzonych projektów domów jednorodzinnych. Domy parterowe, z poddaszem użytkowym i piętrowe, gotowe do realizacji w Bielsku-Białej i okolicach.",
+        "twitter:image": "https://investdom.com.pl/og-image.jpg",
+        "twitter:image:alt": "INVESTDOM - Budowa Domów Bielsko-Biała"
+      },
+      "headings": [
+        {
+          "level": "h1",
+          "text": "Autorskie Projekty Domów"
+        },
+        {
+          "level": "h3",
+          "text": "Dom Wolnostojący Pisarzowice (Etap II)"
+        },
+        {
+          "level": "h3",
+          "text": "Kontakt"
+        },
+        {
+          "level": "h3",
+          "text": "Nawigacja"
+        },
+        {
+          "level": "h3",
+          "text": "Gdzie budujemy?"
+        }
+      ],
+      "schemas": [
+        {
+          "@context": "https://schema.org",
+          "@type": [
+            "RealEstateAgent",
+            "HomeAndConstructionBusiness"
+          ],
+          "name": "INVESTDOM",
+          "description": "Firma budowlana specjalizująca się w budowie domów jednorodzinnych w Bielsku-Białej i okolicach. Oferujemy budowę domów w stanie surowym, deweloperskim i pod klucz.",
+          "url": "https://investdom.com.pl",
+          "logo": "https://investdom.com.pl/logo.png",
+          "image": "https://investdom.com.pl/og-image.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "ul. Do Lasu 25",
+            "addressLocality": "Bielsko-Biała",
+            "postalCode": "43-300",
+            "addressRegion": "śląskie",
+            "addressCountry": "PL"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "49.8224",
+            "longitude": "19.0446"
+          },
+          "telephone": "+48571328993",
+          "areaServed": [
+            {
+              "@type": "City",
+              "name": "Bielsko-Biała"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "powiat bielski"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "powiat cieszyński"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "powiat żywiecki"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "powiat czechowicki"
+            },
+            {
+              "@type": "City",
+              "name": "Czechowice-Dziedzice"
+            },
+            {
+              "@type": "City",
+              "name": "Żywiec"
+            },
+            {
+              "@type": "City",
+              "name": "Cieszyn"
+            },
+            {
+              "@type": "City",
+              "name": "Wisła"
+            },
+            {
+              "@type": "City",
+              "name": "Ustroń"
+            },
+            {
+              "@type": "City",
+              "name": "Szczyrk"
+            }
+          ],
+          "serviceType": [
+            "Budowa domów jednorodzinnych",
+            "Budowa domów pod klucz",
+            "Budowa domów w stanie surowym",
+            "Budowa domów w stanie deweloperskim",
+            "Remont domów",
+            "Generalny wykonawca"
+          ],
+          "priceRange": "$$"
+        }
+      ],
+      "images": [
+        {
+          "src": "/logo.svg",
+          "alt": "InvestDom Logo",
+          "loading": null,
+          "fetchpriority": null,
+          "width": null,
+          "height": null,
+          "srcset": null
+        },
+        {
+          "src": "/logo.svg",
+          "alt": "InvestDom Logo",
+          "loading": null,
+          "fetchpriority": null,
+          "width": null,
+          "height": null,
+          "srcset": null
+        },
+        {
+          "src": "/_image?href=%2F_astro%2Fnowoczesny-dom-na-sprzedaz-bielsko.CFyHeYfm.jpg&w=400&h=300&f=webp",
+          "alt": "Dom Wolnostojący Pisarzowice (Etap II)",
+          "loading": "lazy",
+          "fetchpriority": "auto",
+          "width": "400",
+          "height": "300",
+          "srcset": null
+        },
+        {
+          "src": "/logo.svg",
+          "alt": "InvestDom Logo",
+          "loading": null,
+          "fetchpriority": null,
+          "width": null,
+          "height": null,
+          "srcset": null
+        }
+      ],
+      "address_strings": [
+        "ul. Do Lasu 25"
+      ]
+    },
+    {
+      "environment": "production",
+      "requested": "https://www.investdom.com.pl/robots.txt",
+      "final_url": "https://www.investdom.com.pl/robots.txt",
+      "status": 200,
+      "redirects": [],
+      "headers": {
+        "content-type": "text/plain; charset=utf-8"
+      },
+      "title": null,
+      "canonical": [],
+      "phones": [],
+      "meta": {},
+      "headings": [],
+      "schemas": [],
+      "images": [],
+      "address_strings": []
+    },
+    {
+      "environment": "production",
+      "requested": "https://www.investdom.com.pl/sitemap-index.xml",
+      "final_url": "https://www.investdom.com.pl/sitemap-index.xml",
+      "status": 200,
+      "redirects": [],
+      "headers": {
+        "content-type": "application/xml"
+      },
+      "title": null,
+      "canonical": [],
+      "phones": [],
+      "meta": {},
+      "headings": [],
+      "schemas": [],
+      "images": [],
+      "address_strings": []
+    },
+    {
+      "environment": "production",
+      "requested": "https://www.investdom.com.pl/sitemap-0.xml",
+      "final_url": "https://www.investdom.com.pl/sitemap-0.xml",
+      "status": 200,
+      "redirects": [],
+      "headers": {
+        "content-type": "application/xml"
+      },
+      "title": null,
+      "canonical": [],
+      "phones": [],
+      "meta": {},
+      "headings": [],
+      "schemas": [],
+      "images": [],
+      "address_strings": []
+    },
+    {
+      "environment": "production",
+      "requested": "https://www.investdom.com.pl/llms.txt",
+      "final_url": "https://www.investdom.com.pl/llms.txt",
+      "status": 404,
+      "redirects": [],
+      "headers": {
+        "content-type": "text/plain; charset=utf-8"
+      },
+      "title": null,
+      "canonical": [],
+      "phones": [],
+      "meta": {},
+      "headings": [],
+      "schemas": [],
+      "images": [],
+      "address_strings": []
+    },
+    {
+      "environment": "production",
+      "requested": "https://www.investdom.com.pl/seo-geo-audit-nieistniejaca-strona",
+      "final_url": "https://www.investdom.com.pl/seo-geo-audit-nieistniejaca-strona",
+      "status": 404,
+      "redirects": [],
+      "headers": {
+        "content-type": "text/plain; charset=utf-8"
+      },
+      "title": null,
+      "canonical": [],
+      "phones": [],
+      "meta": {},
+      "headings": [],
+      "schemas": [],
+      "images": [],
+      "address_strings": []
+    },
+    {
+      "environment": "production",
+      "requested": "https://www.investdom.com.pl/projekty-domow/",
+      "final_url": "https://www.investdom.com.pl/projekty-domow/",
+      "status": 200,
+      "redirects": [],
+      "headers": {
+        "content-type": "text/html"
+      },
+      "title": "Projekty Domów Bielsko-Biała | Autorskie Projekty | INVESTDOM",
+      "canonical": [
+        "https://investdom.com.pl/projekty-domow/"
+      ],
+      "phones": [
+        "tel:+48571328983"
+      ],
+      "meta": {
+        "description": "Zobacz naszą bazę sprawdzonych projektów domów jednorodzinnych. Domy parterowe, z poddaszem użytkowym i piętrowe, gotowe do realizacji w Bielsku-Białej i okolicach.",
+        "viewport": "width=device-width",
+        "generator": "Astro v5.16.11",
+        "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        "googlebot": "index, follow",
+        "bingbot": "index, follow",
+        "author": "INVESTDOM",
+        "publisher": "INVESTDOM",
+        "copyright": "INVESTDOM",
+        "revisit-after": "7 days",
+        "rating": "general",
+        "distribution": "global",
+        "coverage": "Poland",
+        "language": "Polish",
+        "category": "Budownictwo, Nieruchomości, Usługi budowlane",
+        "classification": "Business",
+        "subject": "Budowa domów jednorodzinnych Bielsko-Biała",
+        "topic": "Budowa domów, domy pod klucz, firma budowlana",
+        "summary": "Zobacz naszą bazę sprawdzonych projektów domów jednorodzinnych. Domy parterowe, z poddaszem użytkowym i piętrowe, gotowe do realizacji w Bielsku-Białej i okolicach.",
+        "keywords": "budowa domów, domy Bielsko-Biała, budowa domu Bielsko-Biała, sprzedaż domów, domy pod klucz, stan surowy, stan deweloperski, remont domów, generalny wykonawca, powiat bielski, powiat cieszyński, powiat żywiecki, powiat czechowicki, Czechowice-Dziedzice, Żywiec, Cieszyn, Wisła, Ustroń, Szczyrk, domy jednorodzinne, budowa domu jednorodzinnego, firma budowlana Bielsko-Biała, ekipa budowlana, domy na sprzedaż, nowe domy, inwestycje mieszkaniowe, działki budowlane, projekty domów, budownictwo mieszkaniowe, usługi budowlane, wykonawca budowlany, firma remontowa, budowa fundamentów, budowa dachu, wykończenia wnętrz, stan zero, budowa murów, izolacje, ocieplenie domu",
+        "geo.region": "PL-24",
+        "geo.placename": "Bielsko-Biała",
+        "geo.position": "49.8224;19.0446",
+        "ICBM": "49.8224, 19.0446",
+        "DC.title": "Projekty Domów Bielsko-Biała | Autorskie Projekty | INVESTDOM",
+        "DC.creator": "INVESTDOM",
+        "DC.subject": "Budowa domów jednorodzinnych",
+        "DC.description": "Zobacz naszą bazę sprawdzonych projektów domów jednorodzinnych. Domy parterowe, z poddaszem użytkowym i piętrowe, gotowe do realizacji w Bielsku-Białej i okolicach.",
+        "DC.publisher": "INVESTDOM",
+        "DC.language": "pl",
+        "DC.coverage": "Bielsko-Biała, Polska",
+        "DC.rights": "Copyright INVESTDOM",
+        "contact": "kontakt@investdom.pl",
+        "reply-to": "kontakt@investdom.pl",
+        "format-detection": "telephone=yes",
+        "mobile-web-app-capable": "yes",
+        "apple-mobile-web-app-capable": "yes",
+        "apple-mobile-web-app-status-bar-style": "default",
+        "apple-mobile-web-app-title": "INVESTDOM",
+        "application-name": "INVESTDOM",
+        "theme-color": "#1e3a5f",
+        "msapplication-TileColor": "#1e3a5f",
+        "og:type": "website",
+        "og:url": "https://investdom.com.pl/projekty-domow/",
+        "og:title": "Projekty Domów Bielsko-Biała | Autorskie Projekty | INVESTDOM",
+        "og:description": "Zobacz naszą bazę sprawdzonych projektów domów jednorodzinnych. Domy parterowe, z poddaszem użytkowym i piętrowe, gotowe do realizacji w Bielsku-Białej i okolicach.",
+        "og:image": "https://investdom.com.pl/og-image.jpg",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "INVESTDOM - Budowa Domów Bielsko-Biała",
+        "og:locale": "pl_PL",
+        "og:site_name": "INVESTDOM",
+        "og:see_also": "https://investdom.com.pl",
+        "business:contact_data:street_address": "ul. Do Lasu 25",
+        "business:contact_data:locality": "Bielsko-Biała",
+        "business:contact_data:postal_code": "43-300",
+        "business:contact_data:country_name": "Polska",
+        "business:contact_data:phone_number": "+48571328993",
+        "twitter:card": "summary_large_image",
+        "twitter:url": "https://investdom.com.pl/projekty-domow/",
+        "twitter:title": "Projekty Domów Bielsko-Biała | Autorskie Projekty | INVESTDOM",
+        "twitter:description": "Zobacz naszą bazę sprawdzonych projektów domów jednorodzinnych. Domy parterowe, z poddaszem użytkowym i piętrowe, gotowe do realizacji w Bielsku-Białej i okolicach.",
+        "twitter:image": "https://investdom.com.pl/og-image.jpg",
+        "twitter:image:alt": "INVESTDOM - Budowa Domów Bielsko-Biała"
+      },
+      "headings": [
+        {
+          "level": "h1",
+          "text": "Autorskie Projekty Domów"
+        },
+        {
+          "level": "h3",
+          "text": "Dom Wolnostojący Pisarzowice (Etap II)"
+        },
+        {
+          "level": "h3",
+          "text": "Kontakt"
+        },
+        {
+          "level": "h3",
+          "text": "Nawigacja"
+        },
+        {
+          "level": "h3",
+          "text": "Gdzie budujemy?"
+        }
+      ],
+      "schemas": [
+        {
+          "@context": "https://schema.org",
+          "@type": [
+            "RealEstateAgent",
+            "HomeAndConstructionBusiness"
+          ],
+          "name": "INVESTDOM",
+          "description": "Firma budowlana specjalizująca się w budowie domów jednorodzinnych w Bielsku-Białej i okolicach. Oferujemy budowę domów w stanie surowym, deweloperskim i pod klucz.",
+          "url": "https://investdom.com.pl",
+          "logo": "https://investdom.com.pl/logo.png",
+          "image": "https://investdom.com.pl/og-image.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "ul. Do Lasu 25",
+            "addressLocality": "Bielsko-Biała",
+            "postalCode": "43-300",
+            "addressRegion": "śląskie",
+            "addressCountry": "PL"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "49.8224",
+            "longitude": "19.0446"
+          },
+          "telephone": "+48571328993",
+          "areaServed": [
+            {
+              "@type": "City",
+              "name": "Bielsko-Biała"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "powiat bielski"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "powiat cieszyński"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "powiat żywiecki"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "powiat czechowicki"
+            },
+            {
+              "@type": "City",
+              "name": "Czechowice-Dziedzice"
+            },
+            {
+              "@type": "City",
+              "name": "Żywiec"
+            },
+            {
+              "@type": "City",
+              "name": "Cieszyn"
+            },
+            {
+              "@type": "City",
+              "name": "Wisła"
+            },
+            {
+              "@type": "City",
+              "name": "Ustroń"
+            },
+            {
+              "@type": "City",
+              "name": "Szczyrk"
+            }
+          ],
+          "serviceType": [
+            "Budowa domów jednorodzinnych",
+            "Budowa domów pod klucz",
+            "Budowa domów w stanie surowym",
+            "Budowa domów w stanie deweloperskim",
+            "Remont domów",
+            "Generalny wykonawca"
+          ],
+          "priceRange": "$$"
+        }
+      ],
+      "images": [
+        {
+          "src": "/logo.svg",
+          "alt": "InvestDom Logo",
+          "loading": null,
+          "fetchpriority": null,
+          "width": null,
+          "height": null,
+          "srcset": null
+        },
+        {
+          "src": "/logo.svg",
+          "alt": "InvestDom Logo",
+          "loading": null,
+          "fetchpriority": null,
+          "width": null,
+          "height": null,
+          "srcset": null
+        },
+        {
+          "src": "/_image?href=%2F_astro%2Fnowoczesny-dom-na-sprzedaz-bielsko.CFyHeYfm.jpg&w=400&h=300&f=webp",
+          "alt": "Dom Wolnostojący Pisarzowice (Etap II)",
+          "loading": "lazy",
+          "fetchpriority": "auto",
+          "width": "400",
+          "height": "300",
+          "srcset": null
+        },
+        {
+          "src": "/logo.svg",
+          "alt": "InvestDom Logo",
+          "loading": null,
+          "fetchpriority": null,
+          "width": null,
+          "height": null,
+          "srcset": null
+        }
+      ],
+      "address_strings": [
+        "ul. Do Lasu 25"
+      ]
+    },
+    {
+      "environment": "production",
+      "requested": "https://www.investdom.com.pl/projekty-domow?utm_source=seo-geo-audit",
+      "final_url": "https://www.investdom.com.pl/projekty-domow?utm_source=seo-geo-audit",
+      "status": 200,
+      "redirects": [],
+      "headers": {
+        "content-type": "text/html"
+      },
+      "title": "Projekty Domów Bielsko-Biała | Autorskie Projekty | INVESTDOM",
+      "canonical": [
+        "https://investdom.com.pl/projekty-domow"
+      ],
+      "phones": [
+        "tel:+48571328983"
+      ],
+      "meta": {
+        "description": "Zobacz naszą bazę sprawdzonych projektów domów jednorodzinnych. Domy parterowe, z poddaszem użytkowym i piętrowe, gotowe do realizacji w Bielsku-Białej i okolicach.",
+        "viewport": "width=device-width",
+        "generator": "Astro v5.16.11",
+        "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        "googlebot": "index, follow",
+        "bingbot": "index, follow",
+        "author": "INVESTDOM",
+        "publisher": "INVESTDOM",
+        "copyright": "INVESTDOM",
+        "revisit-after": "7 days",
+        "rating": "general",
+        "distribution": "global",
+        "coverage": "Poland",
+        "language": "Polish",
+        "category": "Budownictwo, Nieruchomości, Usługi budowlane",
+        "classification": "Business",
+        "subject": "Budowa domów jednorodzinnych Bielsko-Biała",
+        "topic": "Budowa domów, domy pod klucz, firma budowlana",
+        "summary": "Zobacz naszą bazę sprawdzonych projektów domów jednorodzinnych. Domy parterowe, z poddaszem użytkowym i piętrowe, gotowe do realizacji w Bielsku-Białej i okolicach.",
+        "keywords": "budowa domów, domy Bielsko-Biała, budowa domu Bielsko-Biała, sprzedaż domów, domy pod klucz, stan surowy, stan deweloperski, remont domów, generalny wykonawca, powiat bielski, powiat cieszyński, powiat żywiecki, powiat czechowicki, Czechowice-Dziedzice, Żywiec, Cieszyn, Wisła, Ustroń, Szczyrk, domy jednorodzinne, budowa domu jednorodzinnego, firma budowlana Bielsko-Biała, ekipa budowlana, domy na sprzedaż, nowe domy, inwestycje mieszkaniowe, działki budowlane, projekty domów, budownictwo mieszkaniowe, usługi budowlane, wykonawca budowlany, firma remontowa, budowa fundamentów, budowa dachu, wykończenia wnętrz, stan zero, budowa murów, izolacje, ocieplenie domu",
+        "geo.region": "PL-24",
+        "geo.placename": "Bielsko-Biała",
+        "geo.position": "49.8224;19.0446",
+        "ICBM": "49.8224, 19.0446",
+        "DC.title": "Projekty Domów Bielsko-Biała | Autorskie Projekty | INVESTDOM",
+        "DC.creator": "INVESTDOM",
+        "DC.subject": "Budowa domów jednorodzinnych",
+        "DC.description": "Zobacz naszą bazę sprawdzonych projektów domów jednorodzinnych. Domy parterowe, z poddaszem użytkowym i piętrowe, gotowe do realizacji w Bielsku-Białej i okolicach.",
+        "DC.publisher": "INVESTDOM",
+        "DC.language": "pl",
+        "DC.coverage": "Bielsko-Biała, Polska",
+        "DC.rights": "Copyright INVESTDOM",
+        "contact": "kontakt@investdom.pl",
+        "reply-to": "kontakt@investdom.pl",
+        "format-detection": "telephone=yes",
+        "mobile-web-app-capable": "yes",
+        "apple-mobile-web-app-capable": "yes",
+        "apple-mobile-web-app-status-bar-style": "default",
+        "apple-mobile-web-app-title": "INVESTDOM",
+        "application-name": "INVESTDOM",
+        "theme-color": "#1e3a5f",
+        "msapplication-TileColor": "#1e3a5f",
+        "og:type": "website",
+        "og:url": "https://investdom.com.pl/projekty-domow",
+        "og:title": "Projekty Domów Bielsko-Biała | Autorskie Projekty | INVESTDOM",
+        "og:description": "Zobacz naszą bazę sprawdzonych projektów domów jednorodzinnych. Domy parterowe, z poddaszem użytkowym i piętrowe, gotowe do realizacji w Bielsku-Białej i okolicach.",
+        "og:image": "https://investdom.com.pl/og-image.jpg",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "INVESTDOM - Budowa Domów Bielsko-Biała",
+        "og:locale": "pl_PL",
+        "og:site_name": "INVESTDOM",
+        "og:see_also": "https://investdom.com.pl",
+        "business:contact_data:street_address": "ul. Do Lasu 25",
+        "business:contact_data:locality": "Bielsko-Biała",
+        "business:contact_data:postal_code": "43-300",
+        "business:contact_data:country_name": "Polska",
+        "business:contact_data:phone_number": "+48571328993",
+        "twitter:card": "summary_large_image",
+        "twitter:url": "https://investdom.com.pl/projekty-domow",
+        "twitter:title": "Projekty Domów Bielsko-Biała | Autorskie Projekty | INVESTDOM",
+        "twitter:description": "Zobacz naszą bazę sprawdzonych projektów domów jednorodzinnych. Domy parterowe, z poddaszem użytkowym i piętrowe, gotowe do realizacji w Bielsku-Białej i okolicach.",
+        "twitter:image": "https://investdom.com.pl/og-image.jpg",
+        "twitter:image:alt": "INVESTDOM - Budowa Domów Bielsko-Biała"
+      },
+      "headings": [
+        {
+          "level": "h1",
+          "text": "Autorskie Projekty Domów"
+        },
+        {
+          "level": "h3",
+          "text": "Dom Wolnostojący Pisarzowice (Etap II)"
+        },
+        {
+          "level": "h3",
+          "text": "Kontakt"
+        },
+        {
+          "level": "h3",
+          "text": "Nawigacja"
+        },
+        {
+          "level": "h3",
+          "text": "Gdzie budujemy?"
+        }
+      ],
+      "schemas": [
+        {
+          "@context": "https://schema.org",
+          "@type": [
+            "RealEstateAgent",
+            "HomeAndConstructionBusiness"
+          ],
+          "name": "INVESTDOM",
+          "description": "Firma budowlana specjalizująca się w budowie domów jednorodzinnych w Bielsku-Białej i okolicach. Oferujemy budowę domów w stanie surowym, deweloperskim i pod klucz.",
+          "url": "https://investdom.com.pl",
+          "logo": "https://investdom.com.pl/logo.png",
+          "image": "https://investdom.com.pl/og-image.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "ul. Do Lasu 25",
+            "addressLocality": "Bielsko-Biała",
+            "postalCode": "43-300",
+            "addressRegion": "śląskie",
+            "addressCountry": "PL"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "49.8224",
+            "longitude": "19.0446"
+          },
+          "telephone": "+48571328993",
+          "areaServed": [
+            {
+              "@type": "City",
+              "name": "Bielsko-Biała"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "powiat bielski"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "powiat cieszyński"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "powiat żywiecki"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "powiat czechowicki"
+            },
+            {
+              "@type": "City",
+              "name": "Czechowice-Dziedzice"
+            },
+            {
+              "@type": "City",
+              "name": "Żywiec"
+            },
+            {
+              "@type": "City",
+              "name": "Cieszyn"
+            },
+            {
+              "@type": "City",
+              "name": "Wisła"
+            },
+            {
+              "@type": "City",
+              "name": "Ustroń"
+            },
+            {
+              "@type": "City",
+              "name": "Szczyrk"
+            }
+          ],
+          "serviceType": [
+            "Budowa domów jednorodzinnych",
+            "Budowa domów pod klucz",
+            "Budowa domów w stanie surowym",
+            "Budowa domów w stanie deweloperskim",
+            "Remont domów",
+            "Generalny wykonawca"
+          ],
+          "priceRange": "$$"
+        }
+      ],
+      "images": [
+        {
+          "src": "/logo.svg",
+          "alt": "InvestDom Logo",
+          "loading": null,
+          "fetchpriority": null,
+          "width": null,
+          "height": null,
+          "srcset": null
+        },
+        {
+          "src": "/logo.svg",
+          "alt": "InvestDom Logo",
+          "loading": null,
+          "fetchpriority": null,
+          "width": null,
+          "height": null,
+          "srcset": null
+        },
+        {
+          "src": "/_image?href=%2F_astro%2Fnowoczesny-dom-na-sprzedaz-bielsko.CFyHeYfm.jpg&w=400&h=300&f=webp",
+          "alt": "Dom Wolnostojący Pisarzowice (Etap II)",
+          "loading": "lazy",
+          "fetchpriority": "auto",
+          "width": "400",
+          "height": "300",
+          "srcset": null
+        },
+        {
+          "src": "/logo.svg",
+          "alt": "InvestDom Logo",
+          "loading": null,
+          "fetchpriority": null,
+          "width": null,
+          "height": null,
+          "srcset": null
+        }
+      ],
+      "address_strings": [
+        "ul. Do Lasu 25"
+      ]
+    },
+    {
+      "environment": "preview",
+      "requested": "https://investdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app/",
+      "final_url": "https://vercel.com/login?next=%2Fsso-api%3Furl%3Dhttps%253A%252F%252Finvestdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app%252F%26nonce%3Dc1948202970d21a0960265f5db90ea71edc1f7ad299eb5025a7d1bcb12670845",
+      "status": 200,
+      "redirects": [
+        {
+          "status": 302,
+          "location": "https://vercel.com/sso-api?url=https%3A%2F%2Finvestdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app%2F&nonce=c1948202970d21a0960265f5db90ea71edc1f7ad299eb5025a7d1bcb12670845"
+        },
+        {
+          "status": 307,
+          "location": "/login?next=%2Fsso-api%3Furl%3Dhttps%253A%252F%252Finvestdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app%252F%26nonce%3Dc1948202970d21a0960265f5db90ea71edc1f7ad299eb5025a7d1bcb12670845"
+        }
+      ],
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "link": "<https://avatars.githubusercontent.com>; rel=preconnect; crossorigin=\"\", <https://py8fhxnkzwtsqdo9.public.blob.vercel-storage.com>; rel=preconnect; crossorigin=\"\", <https://images.ctfassets.net>; rel=preconnect; crossorigin=\"\", <https://accounts.google.com>; rel=preconnect; crossorigin=\"\", </_next/static/immutable/media/797e433ab948586e.p.1v5bejj26fx9h.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/immutable/media/GeistPixel_Square.p.3ig4wtfmw09gh.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/immutable/media/Geist_Variable-s.p.2v-cf9syxr5ni.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\""
+      },
+      "title": "Login – Vercel",
+      "canonical": [
+        "https://vercel.com/login"
+      ],
+      "phones": []
+    },
+    {
+      "environment": "preview",
+      "requested": "https://investdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app/budowa-domow-pod-klucz",
+      "final_url": "https://vercel.com/login?next=%2Fsso-api%3Furl%3Dhttps%253A%252F%252Finvestdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app%252Fbudowa-domow-pod-klucz%26nonce%3D09b547babb67577c5d13e2f3e4a6f1245f5851d01069e62cbcb3f3e8e0f2fd63",
+      "status": 200,
+      "redirects": [
+        {
+          "status": 302,
+          "location": "https://vercel.com/sso-api?url=https%3A%2F%2Finvestdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app%2Fbudowa-domow-pod-klucz&nonce=09b547babb67577c5d13e2f3e4a6f1245f5851d01069e62cbcb3f3e8e0f2fd63"
+        },
+        {
+          "status": 307,
+          "location": "/login?next=%2Fsso-api%3Furl%3Dhttps%253A%252F%252Finvestdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app%252Fbudowa-domow-pod-klucz%26nonce%3D09b547babb67577c5d13e2f3e4a6f1245f5851d01069e62cbcb3f3e8e0f2fd63"
+        }
+      ],
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "link": "<https://avatars.githubusercontent.com>; rel=preconnect; crossorigin=\"\", <https://py8fhxnkzwtsqdo9.public.blob.vercel-storage.com>; rel=preconnect; crossorigin=\"\", <https://images.ctfassets.net>; rel=preconnect; crossorigin=\"\", <https://accounts.google.com>; rel=preconnect; crossorigin=\"\", </_next/static/immutable/media/797e433ab948586e.p.1v5bejj26fx9h.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/immutable/media/GeistPixel_Square.p.3ig4wtfmw09gh.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/immutable/media/Geist_Variable-s.p.2v-cf9syxr5ni.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\""
+      },
+      "title": "Login – Vercel",
+      "canonical": [
+        "https://vercel.com/login"
+      ],
+      "phones": []
+    },
+    {
+      "environment": "preview",
+      "requested": "https://investdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app/domy-na-sprzedaz-bielsko",
+      "final_url": "https://vercel.com/login?next=%2Fsso-api%3Furl%3Dhttps%253A%252F%252Finvestdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app%252Fdomy-na-sprzedaz-bielsko%26nonce%3D39d9e768add57dc00e2f381d80f90d244caef62381821dc72bee4eed4737eb13",
+      "status": 200,
+      "redirects": [
+        {
+          "status": 302,
+          "location": "https://vercel.com/sso-api?url=https%3A%2F%2Finvestdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app%2Fdomy-na-sprzedaz-bielsko&nonce=39d9e768add57dc00e2f381d80f90d244caef62381821dc72bee4eed4737eb13"
+        },
+        {
+          "status": 307,
+          "location": "/login?next=%2Fsso-api%3Furl%3Dhttps%253A%252F%252Finvestdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app%252Fdomy-na-sprzedaz-bielsko%26nonce%3D39d9e768add57dc00e2f381d80f90d244caef62381821dc72bee4eed4737eb13"
+        }
+      ],
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "link": "<https://avatars.githubusercontent.com>; rel=preconnect; crossorigin=\"\", <https://py8fhxnkzwtsqdo9.public.blob.vercel-storage.com>; rel=preconnect; crossorigin=\"\", <https://images.ctfassets.net>; rel=preconnect; crossorigin=\"\", <https://accounts.google.com>; rel=preconnect; crossorigin=\"\", </_next/static/immutable/media/797e433ab948586e.p.1v5bejj26fx9h.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/immutable/media/GeistPixel_Square.p.3ig4wtfmw09gh.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/immutable/media/Geist_Variable-s.p.2v-cf9syxr5ni.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\""
+      },
+      "title": "Login – Vercel",
+      "canonical": [
+        "https://vercel.com/login"
+      ],
+      "phones": []
+    },
+    {
+      "environment": "preview",
+      "requested": "https://investdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app/projekty-domow",
+      "final_url": "https://vercel.com/login?next=%2Fsso-api%3Furl%3Dhttps%253A%252F%252Finvestdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app%252Fprojekty-domow%26nonce%3D269972e41bcc030b89261d97baaa683d650da07c1ce934eaa56fbe866ee3ad27",
+      "status": 200,
+      "redirects": [
+        {
+          "status": 302,
+          "location": "https://vercel.com/sso-api?url=https%3A%2F%2Finvestdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app%2Fprojekty-domow&nonce=269972e41bcc030b89261d97baaa683d650da07c1ce934eaa56fbe866ee3ad27"
+        },
+        {
+          "status": 307,
+          "location": "/login?next=%2Fsso-api%3Furl%3Dhttps%253A%252F%252Finvestdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app%252Fprojekty-domow%26nonce%3D269972e41bcc030b89261d97baaa683d650da07c1ce934eaa56fbe866ee3ad27"
+        }
+      ],
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "link": "<https://avatars.githubusercontent.com>; rel=preconnect; crossorigin=\"\", <https://py8fhxnkzwtsqdo9.public.blob.vercel-storage.com>; rel=preconnect; crossorigin=\"\", <https://images.ctfassets.net>; rel=preconnect; crossorigin=\"\", <https://accounts.google.com>; rel=preconnect; crossorigin=\"\", </_next/static/immutable/media/797e433ab948586e.p.1v5bejj26fx9h.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/immutable/media/GeistPixel_Square.p.3ig4wtfmw09gh.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/immutable/media/Geist_Variable-s.p.2v-cf9syxr5ni.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\""
+      },
+      "title": "Login – Vercel",
+      "canonical": [
+        "https://vercel.com/login"
+      ],
+      "phones": []
+    },
+    {
+      "environment": "preview",
+      "requested": "https://investdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app/robots.txt",
+      "final_url": "https://vercel.com/login?next=%2Fsso-api%3Furl%3Dhttps%253A%252F%252Finvestdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app%252Frobots.txt%26nonce%3D030381e011082466e8d89eb3dddad024a1e808d9d1eb8cb5a359b0f2533e28c0",
+      "status": 200,
+      "redirects": [
+        {
+          "status": 302,
+          "location": "https://vercel.com/sso-api?url=https%3A%2F%2Finvestdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app%2Frobots.txt&nonce=030381e011082466e8d89eb3dddad024a1e808d9d1eb8cb5a359b0f2533e28c0"
+        },
+        {
+          "status": 307,
+          "location": "/login?next=%2Fsso-api%3Furl%3Dhttps%253A%252F%252Finvestdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app%252Frobots.txt%26nonce%3D030381e011082466e8d89eb3dddad024a1e808d9d1eb8cb5a359b0f2533e28c0"
+        }
+      ],
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "link": "<https://avatars.githubusercontent.com>; rel=preconnect; crossorigin=\"\", <https://py8fhxnkzwtsqdo9.public.blob.vercel-storage.com>; rel=preconnect; crossorigin=\"\", <https://images.ctfassets.net>; rel=preconnect; crossorigin=\"\", <https://accounts.google.com>; rel=preconnect; crossorigin=\"\", </_next/static/immutable/media/797e433ab948586e.p.1v5bejj26fx9h.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/immutable/media/GeistPixel_Square.p.3ig4wtfmw09gh.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/immutable/media/Geist_Variable-s.p.2v-cf9syxr5ni.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\""
+      },
+      "title": "Login – Vercel",
+      "canonical": [
+        "https://vercel.com/login"
+      ],
+      "phones": []
+    },
+    {
+      "environment": "preview",
+      "requested": "https://investdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app/sitemap-index.xml",
+      "final_url": "https://vercel.com/login?next=%2Fsso-api%3Furl%3Dhttps%253A%252F%252Finvestdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app%252Fsitemap-index.xml%26nonce%3Dae38b13032019974cd193a656edeb20509f579c143c40e5a4c4085b08b91b812",
+      "status": 200,
+      "redirects": [
+        {
+          "status": 302,
+          "location": "https://vercel.com/sso-api?url=https%3A%2F%2Finvestdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app%2Fsitemap-index.xml&nonce=ae38b13032019974cd193a656edeb20509f579c143c40e5a4c4085b08b91b812"
+        },
+        {
+          "status": 307,
+          "location": "/login?next=%2Fsso-api%3Furl%3Dhttps%253A%252F%252Finvestdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app%252Fsitemap-index.xml%26nonce%3Dae38b13032019974cd193a656edeb20509f579c143c40e5a4c4085b08b91b812"
+        }
+      ],
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "link": "<https://avatars.githubusercontent.com>; rel=preconnect; crossorigin=\"\", <https://py8fhxnkzwtsqdo9.public.blob.vercel-storage.com>; rel=preconnect; crossorigin=\"\", <https://images.ctfassets.net>; rel=preconnect; crossorigin=\"\", <https://accounts.google.com>; rel=preconnect; crossorigin=\"\", </_next/static/immutable/media/797e433ab948586e.p.1v5bejj26fx9h.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/immutable/media/GeistPixel_Square.p.3ig4wtfmw09gh.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/immutable/media/Geist_Variable-s.p.2v-cf9syxr5ni.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\""
+      },
+      "title": "Login – Vercel",
+      "canonical": [
+        "https://vercel.com/login"
+      ],
+      "phones": []
+    },
+    {
+      "environment": "preview",
+      "requested": "https://investdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app/sitemap-0.xml",
+      "final_url": "https://vercel.com/login?next=%2Fsso-api%3Furl%3Dhttps%253A%252F%252Finvestdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app%252Fsitemap-0.xml%26nonce%3D035dee7b4e1099505fe9d057673f95b995c2b147036da05d3884a45744e4fc70",
+      "status": 200,
+      "redirects": [
+        {
+          "status": 302,
+          "location": "https://vercel.com/sso-api?url=https%3A%2F%2Finvestdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app%2Fsitemap-0.xml&nonce=035dee7b4e1099505fe9d057673f95b995c2b147036da05d3884a45744e4fc70"
+        },
+        {
+          "status": 307,
+          "location": "/login?next=%2Fsso-api%3Furl%3Dhttps%253A%252F%252Finvestdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app%252Fsitemap-0.xml%26nonce%3D035dee7b4e1099505fe9d057673f95b995c2b147036da05d3884a45744e4fc70"
+        }
+      ],
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "link": "<https://avatars.githubusercontent.com>; rel=preconnect; crossorigin=\"\", <https://py8fhxnkzwtsqdo9.public.blob.vercel-storage.com>; rel=preconnect; crossorigin=\"\", <https://images.ctfassets.net>; rel=preconnect; crossorigin=\"\", <https://accounts.google.com>; rel=preconnect; crossorigin=\"\", </_next/static/immutable/media/797e433ab948586e.p.1v5bejj26fx9h.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/immutable/media/GeistPixel_Square.p.3ig4wtfmw09gh.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/immutable/media/Geist_Variable-s.p.2v-cf9syxr5ni.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\""
+      },
+      "title": "Login – Vercel",
+      "canonical": [
+        "https://vercel.com/login"
+      ],
+      "phones": []
+    },
+    {
+      "environment": "preview",
+      "requested": "https://investdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app/llms.txt",
+      "final_url": "https://vercel.com/login?next=%2Fsso-api%3Furl%3Dhttps%253A%252F%252Finvestdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app%252Fllms.txt%26nonce%3Da84f60007f8e9642cc66fe7d0e52d48148bc753ca29dbb5008954d5223b926ba",
+      "status": 200,
+      "redirects": [
+        {
+          "status": 302,
+          "location": "https://vercel.com/sso-api?url=https%3A%2F%2Finvestdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app%2Fllms.txt&nonce=a84f60007f8e9642cc66fe7d0e52d48148bc753ca29dbb5008954d5223b926ba"
+        },
+        {
+          "status": 307,
+          "location": "/login?next=%2Fsso-api%3Furl%3Dhttps%253A%252F%252Finvestdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app%252Fllms.txt%26nonce%3Da84f60007f8e9642cc66fe7d0e52d48148bc753ca29dbb5008954d5223b926ba"
+        }
+      ],
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "link": "<https://avatars.githubusercontent.com>; rel=preconnect; crossorigin=\"\", <https://py8fhxnkzwtsqdo9.public.blob.vercel-storage.com>; rel=preconnect; crossorigin=\"\", <https://images.ctfassets.net>; rel=preconnect; crossorigin=\"\", <https://accounts.google.com>; rel=preconnect; crossorigin=\"\", </_next/static/immutable/media/797e433ab948586e.p.1v5bejj26fx9h.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/immutable/media/GeistPixel_Square.p.3ig4wtfmw09gh.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/immutable/media/Geist_Variable-s.p.2v-cf9syxr5ni.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\""
+      },
+      "title": "Login – Vercel",
+      "canonical": [
+        "https://vercel.com/login"
+      ],
+      "phones": []
+    },
+    {
+      "environment": "preview",
+      "requested": "https://investdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app/seo-geo-audit-nieistniejaca-strona",
+      "final_url": "https://vercel.com/login?next=%2Fsso-api%3Furl%3Dhttps%253A%252F%252Finvestdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app%252Fseo-geo-audit-nieistniejaca-strona%26nonce%3D62a836fa53c3f47989e49f08059b9fc15d9232620a7a2a402a96e83a380d5eba",
+      "status": 200,
+      "redirects": [
+        {
+          "status": 302,
+          "location": "https://vercel.com/sso-api?url=https%3A%2F%2Finvestdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app%2Fseo-geo-audit-nieistniejaca-strona&nonce=62a836fa53c3f47989e49f08059b9fc15d9232620a7a2a402a96e83a380d5eba"
+        },
+        {
+          "status": 307,
+          "location": "/login?next=%2Fsso-api%3Furl%3Dhttps%253A%252F%252Finvestdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app%252Fseo-geo-audit-nieistniejaca-strona%26nonce%3D62a836fa53c3f47989e49f08059b9fc15d9232620a7a2a402a96e83a380d5eba"
+        }
+      ],
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "link": "<https://avatars.githubusercontent.com>; rel=preconnect; crossorigin=\"\", <https://py8fhxnkzwtsqdo9.public.blob.vercel-storage.com>; rel=preconnect; crossorigin=\"\", <https://images.ctfassets.net>; rel=preconnect; crossorigin=\"\", <https://accounts.google.com>; rel=preconnect; crossorigin=\"\", </_next/static/immutable/media/797e433ab948586e.p.1v5bejj26fx9h.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/immutable/media/GeistPixel_Square.p.3ig4wtfmw09gh.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/immutable/media/Geist_Variable-s.p.2v-cf9syxr5ni.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\""
+      },
+      "title": "Login – Vercel",
+      "canonical": [
+        "https://vercel.com/login"
+      ],
+      "phones": []
+    },
+    {
+      "environment": "preview",
+      "requested": "https://investdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app/projekty-domow/",
+      "final_url": "https://vercel.com/login?next=%2Fsso-api%3Furl%3Dhttps%253A%252F%252Finvestdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app%252Fprojekty-domow%252F%26nonce%3Dd37655f9a3fd320f01e80a60a8056469199edfd79b4a38feb3c3d0ac8b6a6dc1",
+      "status": 200,
+      "redirects": [
+        {
+          "status": 302,
+          "location": "https://vercel.com/sso-api?url=https%3A%2F%2Finvestdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app%2Fprojekty-domow%2F&nonce=d37655f9a3fd320f01e80a60a8056469199edfd79b4a38feb3c3d0ac8b6a6dc1"
+        },
+        {
+          "status": 307,
+          "location": "/login?next=%2Fsso-api%3Furl%3Dhttps%253A%252F%252Finvestdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app%252Fprojekty-domow%252F%26nonce%3Dd37655f9a3fd320f01e80a60a8056469199edfd79b4a38feb3c3d0ac8b6a6dc1"
+        }
+      ],
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "link": "<https://avatars.githubusercontent.com>; rel=preconnect; crossorigin=\"\", <https://py8fhxnkzwtsqdo9.public.blob.vercel-storage.com>; rel=preconnect; crossorigin=\"\", <https://images.ctfassets.net>; rel=preconnect; crossorigin=\"\", <https://accounts.google.com>; rel=preconnect; crossorigin=\"\", </_next/static/immutable/media/797e433ab948586e.p.1v5bejj26fx9h.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/immutable/media/GeistPixel_Square.p.3ig4wtfmw09gh.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/immutable/media/Geist_Variable-s.p.2v-cf9syxr5ni.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\""
+      },
+      "title": "Login – Vercel",
+      "canonical": [
+        "https://vercel.com/login"
+      ],
+      "phones": []
+    },
+    {
+      "environment": "preview",
+      "requested": "https://investdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app/projekty-domow?utm_source=seo-geo-audit",
+      "final_url": "https://vercel.com/login?next=%2Fsso-api%3Furl%3Dhttps%253A%252F%252Finvestdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app%252Fprojekty-domow%253Futm_source%253Dseo-geo-audit%26nonce%3D0453459622cdcb744044c65b6d38ffe7c9b89e1582722ab1f23841a61eccf7c2",
+      "status": 200,
+      "redirects": [
+        {
+          "status": 302,
+          "location": "https://vercel.com/sso-api?url=https%3A%2F%2Finvestdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app%2Fprojekty-domow%3Futm_source%3Dseo-geo-audit&nonce=0453459622cdcb744044c65b6d38ffe7c9b89e1582722ab1f23841a61eccf7c2"
+        },
+        {
+          "status": 307,
+          "location": "/login?next=%2Fsso-api%3Furl%3Dhttps%253A%252F%252Finvestdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app%252Fprojekty-domow%253Futm_source%253Dseo-geo-audit%26nonce%3D0453459622cdcb744044c65b6d38ffe7c9b89e1582722ab1f23841a61eccf7c2"
+        }
+      ],
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "link": "<https://avatars.githubusercontent.com>; rel=preconnect; crossorigin=\"\", <https://py8fhxnkzwtsqdo9.public.blob.vercel-storage.com>; rel=preconnect; crossorigin=\"\", <https://images.ctfassets.net>; rel=preconnect; crossorigin=\"\", <https://accounts.google.com>; rel=preconnect; crossorigin=\"\", </_next/static/immutable/media/797e433ab948586e.p.1v5bejj26fx9h.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/immutable/media/GeistPixel_Square.p.3ig4wtfmw09gh.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/immutable/media/Geist_Variable-s.p.2v-cf9syxr5ni.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\""
+      },
+      "title": "Login – Vercel",
+      "canonical": [
+        "https://vercel.com/login"
+      ],
+      "phones": []
+    }
+  ],
+  "production_sitemap_urls": [
+    "https://investdom.com.pl/",
+    "https://investdom.com.pl/budowa-domow-pod-klucz/",
+    "https://investdom.com.pl/domy-na-sprzedaz-bielsko/",
+    "https://investdom.com.pl/projekty-domow/"
+  ],
+  "agentic_http": {
+    "url": "https://www.investdom.com.pl/",
+    "site_root": "https://www.investdom.com.pl",
+    "checked_at": "2026-10-15T20:40:39+00:00",
+    "facts_checked_on": "2026-09-23",
+    "checks": [
+      {
+        "id": "robots-ai-groups",
+        "title": "Deliberate robots.txt groups for AI user agents",
+        "priority": "P0",
+        "status": "info",
+        "standard": "RFC 9309",
+        "evidence": {
+          "named_groups": [],
+          "search_crawlers_blocked_at_root": []
+        },
+        "fix": "Every AI agent falls through to the * group. Add named groups if your policy differs by purpose (training vs search vs user fetches)."
+      },
+      {
+        "id": "server-rendered",
+        "title": "Primary content present without JavaScript",
+        "priority": "P0",
+        "status": "pass",
+        "standard": "practice (all fetchers)",
+        "evidence": {
+          "words_without_js": 522,
+          "js_shell_marker": false
+        },
+        "fix": null
+      },
+      {
+        "id": "robots-reachable",
+        "title": "robots.txt reachable",
+        "priority": "P0",
+        "status": "pass",
+        "standard": "RFC 9309",
+        "evidence": {
+          "status": 200,
+          "groups": 1
+        },
+        "fix": null
+      },
+      {
+        "id": "waf-ua-matrix",
+        "title": "Responses to AI agent user agents (unverified requests)",
+        "priority": "P0",
+        "status": "pass",
+        "standard": "observation only; real agents are verified by IP or Web Bot Auth",
+        "evidence": {
+          "rows": {
+            "browser": {
+              "status": 200,
+              "challenged": false,
+              "bytes": 51305
+            },
+            "GPTBot": {
+              "status": 200,
+              "challenged": false,
+              "bytes": 51305,
+              "error": null
+            },
+            "OAI-SearchBot": {
+              "status": 200,
+              "challenged": false,
+              "bytes": 51305,
+              "error": null
+            },
+            "ChatGPT-User": {
+              "status": 200,
+              "challenged": false,
+              "bytes": 51305,
+              "error": null
+            },
+            "ClaudeBot": {
+              "status": 200,
+              "challenged": false,
+              "bytes": 51305,
+              "error": null
+            },
+            "Claude-SearchBot": {
+              "status": 200,
+              "challenged": false,
+              "bytes": 51305,
+              "error": null
+            },
+            "Claude-User": {
+              "status": 200,
+              "challenged": false,
+              "bytes": 51305,
+              "error": null
+            },
+            "PerplexityBot": {
+              "status": 200,
+              "challenged": false,
+              "bytes": 51305,
+              "error": null
+            },
+            "Perplexity-User": {
+              "status": 200,
+              "challenged": false,
+              "bytes": 51305,
+              "error": null
+            }
+          },
+          "differs_from_browser": []
+        },
+        "fix": null
+      },
+      {
+        "id": "content-signal",
+        "title": "Content-Signal preference declared",
+        "priority": "P1",
+        "status": "info",
+        "standard": "Cloudflare Content Signals Policy (CC0) + IETF draft; a preference, not enforcement; Google says it does not act on it (checked 2026-09-23)",
+        "evidence": {
+          "lines": [],
+          "outside_any_group": [],
+          "issues": [],
+          "named_groups_without_signal": []
+        },
+        "fix": "No Content-Signal line. Optional: add one (for example 'Content-Signal: search=yes, ai-input=yes, ai-train=no') to each group whose policy you want to state."
+      },
+      {
+        "id": "llms-txt",
+        "title": "llms.txt follows the Lighthouse rules",
+        "priority": "P1",
+        "status": "info",
+        "standard": "community spec (llmstxt.org); Lighthouse checks it, Google Search ignores it",
+        "evidence": {
+          "status": 404,
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 7836,
+          "llms_full_status": 404,
+          "lighthouse": "not-applicable",
+          "errors": [],
+          "notes": [
+            "HTTP 404"
+          ]
+        },
+        "fix": "No /llms.txt. Lighthouse drops the audit from the fraction; publishing a valid one adds a counted pass. Include an H1, a '>' summary and Markdown links."
+      },
+      {
+        "id": "markdown-delivery",
+        "title": "Markdown version of the page",
+        "priority": "P1",
+        "status": "info",
+        "standard": "HTTP content negotiation (RFC 9110) + community practice; no consumer agent is confirmed to request it (checked 2026-09-23)",
+        "evidence": {
+          "negotiation": {
+            "status": 200,
+            "content_type": "text/html",
+            "vary_accept": false,
+            "x_markdown_tokens": null,
+            "content_signal_header": null
+          },
+          "alternates": [],
+          "md_sibling": {
+            "url": "https://www.investdom.com.pl/index.md",
+            "status": 404,
+            "content_type": "text/html; charset=utf-8",
+            "ok": false
+          }
+        },
+        "fix": "Optional. Offer a content-equivalent Markdown version via 'Accept: text/markdown' (with 'Vary: Accept'), a rel=\"alternate\" type=\"text/markdown\" link, or a .md URL."
+      },
+      {
+        "id": "robots-user-agents",
+        "title": "User-triggered agents and robots.txt",
+        "priority": "P1",
+        "status": "pass",
+        "standard": "vendor documentation",
+        "evidence": {
+          "blocked_at_root": [],
+          "documented_behaviour": {
+            "ChatGPT-User": "may not apply",
+            "Claude-User": "honours",
+            "Perplexity-User": "generally ignores",
+            "Google-Agent": "generally ignores"
+          }
+        },
+        "fix": null
+      },
+      {
+        "id": "http-404",
+        "title": "Unknown URLs return a real 404",
+        "priority": "P1",
+        "status": "pass",
+        "standard": "HTTP semantics (RFC 9110); Google soft-404 guidance",
+        "evidence": {
+          "probe_url": "https://www.investdom.com.pl/claude-seo-404-probe-b0169a82",
+          "status": 404,
+          "content_type": "text/html; charset=utf-8",
+          "catch_all_200": false
+        },
+        "fix": null
+      },
+      {
+        "id": "webmcp-tools",
+        "title": "WebMCP tools for forms and transactions",
+        "priority": "P2",
+        "status": "info",
+        "standard": "W3C Community Group draft, not a standard; WebKit opposes, Mozilla neutral (checked 2026-09-23)",
+        "evidence": {
+          "registerTool_call_sites": 0,
+          "forms": 1,
+          "forms_annotated": 0,
+          "note": "Static count of registerTool( call sites in inline and same-origin scripts, not the number of tools (a loop registers many). Use lighthouse_agentic.py webmcp-registered-tools for the real list."
+        },
+        "fix": "Optional. If the site has search, booking, checkout or lead forms, register imperative tools bound to the same handlers the UI uses. Static scan only; confirm at runtime with lighthouse_agentic.py (webmcp-registered-tools)."
+      },
+      {
+        "id": "webmcp-entry-point",
+        "title": "WebMCP registered on the current entry point",
+        "priority": "P2",
+        "status": "na",
+        "standard": "W3C Community Group draft",
+        "evidence": {
+          "navigator_modelContext": false,
+          "document_modelContext": false
+        },
+        "fix": null
+      },
+      {
+        "id": "well-known:api-catalog",
+        "title": "API Catalog",
+        "priority": "P2",
+        "status": "na",
+        "standard": "RFC 9727",
+        "evidence": {
+          "status": 404,
+          "content_type": "text/html; charset=utf-8"
+        },
+        "fix": "Only needed if you operate the matching service (API Catalog)."
+      },
+      {
+        "id": "well-known:oauth-protected-resource",
+        "title": "OAuth Protected Resource Metadata",
+        "priority": "P2",
+        "status": "na",
+        "standard": "RFC 9728",
+        "evidence": {
+          "status": 404,
+          "content_type": "text/html; charset=utf-8"
+        },
+        "fix": "Only needed if you operate the matching service (OAuth Protected Resource Metadata)."
+      },
+      {
+        "id": "well-known:oauth-authorization-server",
+        "title": "OAuth Authorization Server Metadata",
+        "priority": "P2",
+        "status": "na",
+        "standard": "RFC 8414",
+        "evidence": {
+          "status": 404,
+          "content_type": "text/html; charset=utf-8"
+        },
+        "fix": "Only needed if you operate the matching service (OAuth Authorization Server Metadata)."
+      },
+      {
+        "id": "webmcp-form-annotations",
+        "title": "Forms annotated for declarative WebMCP (static scan)",
+        "priority": "P3",
+        "status": "info",
+        "standard": "W3C Community Group draft (Chrome only)",
+        "evidence": {
+          "forms": 1,
+          "unannotated": [
+            "contact-form"
+          ]
+        },
+        "fix": "Lighthouse's webmcp-form-coverage audit counts only when every form has toolname or tooldescription. Annotate only forms that are safe for an agent to submit."
+      },
+      {
+        "id": "ard-catalog",
+        "title": "ai-catalog.json (Agentic Resource Discovery)",
+        "priority": "P3",
+        "status": "na",
+        "standard": "Agentic Resource Discovery (ARD) spec 1.0; checked by Lighthouse 13.5 ard-schema (checked 2026-09-23)",
+        "evidence": {
+          "catalog_url": "https://www.investdom.com.pl/.well-known/ai-catalog.json",
+          "signalled": false,
+          "status": 404,
+          "content_type": "text/html; charset=utf-8"
+        },
+        "fix": "Only publish one if you have agent resources to list (MCP server, A2A agent, skills). Lighthouse treats its absence as not applicable."
+      },
+      {
+        "id": "well-known:agent-card.json",
+        "title": "A2A agent card",
+        "priority": "P3",
+        "status": "na",
+        "standard": "A2A protocol",
+        "evidence": {
+          "status": 404,
+          "content_type": "text/html; charset=utf-8"
+        },
+        "fix": "Only needed if you operate the matching service (A2A agent card)."
+      },
+      {
+        "id": "well-known:ucp",
+        "title": "UCP commerce profile",
+        "priority": "P3",
+        "status": "na",
+        "standard": "UCP (Google + Shopify open spec); depth in seo-ecommerce ucp_check.py",
+        "evidence": {
+          "status": 404,
+          "content_type": "text/html; charset=utf-8"
+        },
+        "fix": "Only needed if you operate the matching service (UCP commerce profile)."
+      }
+    ],
+    "data": {
+      "page": {
+        "status": 200,
+        "error": null,
+        "words_without_js": 522,
+        "js_shell_marker": false,
+        "final_url": "https://www.investdom.com.pl/",
+        "headers": {},
+        "webmcp": {
+          "forms": 1,
+          "forms_annotated": 0,
+          "forms_unannotated": [
+            "contact-form"
+          ],
+          "registerTool_call_sites": 0,
+          "document_modelContext": false,
+          "navigator_modelContext": false,
+          "same_origin_scripts_scanned": 0
+        }
+      },
+      "robots": {
+        "status": 200,
+        "error": null,
+        "parsed": {
+          "sitemap": [
+            "https://investdom.com.pl/sitemap-index.xml"
+          ],
+          "agentmap": [],
+          "orphan_content_signal": []
+        },
+        "group_count": 1,
+        "agents": [
+          {
+            "token": "GPTBot",
+            "vendor": "OpenAI",
+            "role": "training",
+            "governs": "model training",
+            "robots_behaviour": "honours",
+            "group": "star",
+            "root_allowed": true,
+            "content_signal": []
+          },
+          {
+            "token": "OAI-SearchBot",
+            "vendor": "OpenAI",
+            "role": "search",
+            "governs": "AI search indexing and citation",
+            "robots_behaviour": "honours",
+            "group": "star",
+            "root_allowed": true,
+            "content_signal": []
+          },
+          {
+            "token": "ChatGPT-User",
+            "vendor": "OpenAI",
+            "role": "user",
+            "governs": "fetches and actions a person asked for",
+            "robots_behaviour": "may not apply",
+            "group": "star",
+            "root_allowed": true,
+            "content_signal": []
+          },
+          {
+            "token": "OAI-AdsBot",
+            "vendor": "OpenAI",
+            "role": "ads",
+            "governs": "ad landing-page checks",
+            "robots_behaviour": "see vendor documentation",
+            "group": "star",
+            "root_allowed": true,
+            "content_signal": []
+          },
+          {
+            "token": "ClaudeBot",
+            "vendor": "Anthropic",
+            "role": "training",
+            "governs": "model training",
+            "robots_behaviour": "honours",
+            "group": "star",
+            "root_allowed": true,
+            "content_signal": []
+          },
+          {
+            "token": "Claude-SearchBot",
+            "vendor": "Anthropic",
+            "role": "search",
+            "governs": "AI search indexing and citation",
+            "robots_behaviour": "honours",
+            "group": "star",
+            "root_allowed": true,
+            "content_signal": []
+          },
+          {
+            "token": "Claude-User",
+            "vendor": "Anthropic",
+            "role": "user",
+            "governs": "fetches and actions a person asked for",
+            "robots_behaviour": "honours",
+            "group": "star",
+            "root_allowed": true,
+            "content_signal": []
+          },
+          {
+            "token": "PerplexityBot",
+            "vendor": "Perplexity",
+            "role": "search",
+            "governs": "AI search indexing and citation",
+            "robots_behaviour": "honours",
+            "group": "star",
+            "root_allowed": true,
+            "content_signal": []
+          },
+          {
+            "token": "Perplexity-User",
+            "vendor": "Perplexity",
+            "role": "user",
+            "governs": "fetches and actions a person asked for",
+            "robots_behaviour": "generally ignores",
+            "group": "star",
+            "root_allowed": true,
+            "content_signal": []
+          },
+          {
+            "token": "Google-Extended",
+            "vendor": "Google",
+            "role": "control",
+            "governs": "a robots.txt control token (no separate crawler)",
+            "robots_behaviour": "honours",
+            "group": "star",
+            "root_allowed": true,
+            "content_signal": []
+          },
+          {
+            "token": "Google-Agent",
+            "vendor": "Google",
+            "role": "user",
+            "governs": "fetches and actions a person asked for",
+            "robots_behaviour": "generally ignores",
+            "group": "star",
+            "root_allowed": true,
+            "content_signal": []
+          },
+          {
+            "token": "Applebot-Extended",
+            "vendor": "Apple",
+            "role": "control",
+            "governs": "a robots.txt control token (no separate crawler)",
+            "robots_behaviour": "honours",
+            "group": "star",
+            "root_allowed": true,
+            "content_signal": []
+          },
+          {
+            "token": "CCBot",
+            "vendor": "Common Crawl",
+            "role": "training",
+            "governs": "model training",
+            "robots_behaviour": "honours",
+            "group": "star",
+            "root_allowed": true,
+            "content_signal": []
+          }
+        ],
+        "agentmap": []
+      },
+      "llms": {
+        "status": 404,
+        "content_type": "text/html; charset=utf-8",
+        "bytes": 7836,
+        "llms_full_status": 404,
+        "lighthouse": "not-applicable",
+        "errors": [],
+        "notes": [
+          "HTTP 404"
+        ]
+      },
+      "markdown": {
+        "negotiation": {
+          "status": 200,
+          "content_type": "text/html",
+          "vary_accept": false,
+          "x_markdown_tokens": null,
+          "content_signal_header": null
+        },
+        "alternates": [],
+        "md_sibling": {
+          "url": "https://www.investdom.com.pl/index.md",
+          "status": 404,
+          "content_type": "text/html; charset=utf-8",
+          "ok": false
+        }
+      },
+      "ard": {
+        "catalog_url": "https://www.investdom.com.pl/.well-known/ai-catalog.json",
+        "signalled": false,
+        "status": 404,
+        "content_type": "text/html; charset=utf-8"
+      },
+      "well_known": {
+        "/.well-known/api-catalog": {
+          "status": 404,
+          "content_type": "text/html; charset=utf-8"
+        },
+        "/.well-known/oauth-protected-resource": {
+          "status": 404,
+          "content_type": "text/html; charset=utf-8"
+        },
+        "/.well-known/oauth-authorization-server": {
+          "status": 404,
+          "content_type": "text/html; charset=utf-8"
+        },
+        "/.well-known/agent-card.json": {
+          "status": 404,
+          "content_type": "text/html; charset=utf-8"
+        },
+        "/.well-known/ucp": {
+          "status": 404,
+          "content_type": "text/html; charset=utf-8"
+        }
+      },
+      "not_found": {
+        "probe_url": "https://www.investdom.com.pl/claude-seo-404-probe-b0169a82",
+        "status": 404,
+        "content_type": "text/html; charset=utf-8",
+        "catch_all_200": false
+      },
+      "ua_matrix": {
+        "browser": {
+          "status": 200,
+          "challenged": false,
+          "bytes": 51305
+        },
+        "GPTBot": {
+          "status": 200,
+          "challenged": false,
+          "bytes": 51305,
+          "error": null
+        },
+        "OAI-SearchBot": {
+          "status": 200,
+          "challenged": false,
+          "bytes": 51305,
+          "error": null
+        },
+        "ChatGPT-User": {
+          "status": 200,
+          "challenged": false,
+          "bytes": 51305,
+          "error": null
+        },
+        "ClaudeBot": {
+          "status": 200,
+          "challenged": false,
+          "bytes": 51305,
+          "error": null
+        },
+        "Claude-SearchBot": {
+          "status": 200,
+          "challenged": false,
+          "bytes": 51305,
+          "error": null
+        },
+        "Claude-User": {
+          "status": 200,
+          "challenged": false,
+          "bytes": 51305,
+          "error": null
+        },
+        "PerplexityBot": {
+          "status": 200,
+          "challenged": false,
+          "bytes": 51305,
+          "error": null
+        },
+        "Perplexity-User": {
+          "status": 200,
+          "challenged": false,
+          "bytes": 51305,
+          "error": null
+        }
+      }
+    },
+    "summary": {
+      "P0": {
+        "info": 1,
+        "pass": 3
+      },
+      "P1": {
+        "info": 3,
+        "pass": 2
+      },
+      "P2": {
+        "info": 1,
+        "na": 4
+      },
+      "P3": {
+        "info": 1,
+        "na": 3
+      }
+    }
+  },
+  "agent_ux": {
+    "url": "https://www.investdom.com.pl/",
+    "status_code": 200,
+    "render_error": null,
+    "html_findings": {
+      "real_buttons": 2,
+      "real_anchors": 26,
+      "div_onclick_widgets": 0,
+      "semantic_landmarks": 11,
+      "inputs_without_aria": 3,
+      "inputs_without_label": 0
+    },
+    "a11y_findings": {
+      "tree_present": true,
+      "total_nodes": 511,
+      "interactive_nodes": 28,
+      "role_button": 1,
+      "role_link": 22,
+      "role_generic": 34,
+      "unnamed_interactive": 1
+    },
+    "score": 97,
+    "score_status": "complete",
+    "partial": false,
+    "partial_reasons": [],
+    "issues": [
+      "1 interactive node(s) without accessible name (-3)"
+    ]
+  },
+  "lighthouse_mobile": {
+    "source": "file",
+    "requested_url": "https://www.investdom.com.pl/",
+    "final_url": "https://www.investdom.com.pl/",
+    "lighthouse_version": "13.5.0",
+    "fetch_time": "2026-10-15T20:41:29.905Z",
+    "form_factor": "mobile",
+    "host_user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "fraction": {
+      "available": true,
+      "passed": 1,
+      "counted": 2,
+      "informative": 0,
+      "display": "1/2",
+      "category_score": 0.5
+    },
+    "error": null,
+    "audits": [
+      {
+        "id": "agent-accessibility-tree",
+        "group": "agent-accessibility",
+        "title": "Accessibility tree is not well-formed",
+        "mode": "binary",
+        "score": 0,
+        "status": "fail",
+        "counted": true,
+        "display_value": null,
+        "explanation": null,
+        "note": "Binary. Fails when any of 33 axe rules fails (names and labels, ARIA validity, tree structure, tabindex, autocomplete). Fix the listed rules.",
+        "failed_rules": [
+          {
+            "rule": "Select element must have an accessible name",
+            "selector": "div#form-container > form#contact-form > div > select#subject-select",
+            "snippet": "<select id=\"subject-select\" name=\"temat_wybrany\" class=\"w-full px-4 py-3 rounded-lg bg-stone-50 border border-stone-200 focus:bord…\">"
+          }
+        ]
+      },
+      {
+        "id": "webmcp-form-coverage",
+        "group": "webmcp",
+        "title": "WebMCP form coverage",
+        "mode": "notApplicable",
+        "score": null,
+        "status": "not-applicable",
+        "counted": false,
+        "display_value": null,
+        "explanation": null,
+        "note": "Informative while any form lacks both toolname and tooldescription; counts as a binary pass once every form has one. N/A with no forms or no WebMCP support in the testing browser.",
+        "forms_missing_annotations": []
+      },
+      {
+        "id": "webmcp-registered-tools",
+        "group": "webmcp",
+        "title": "WebMCP tools registered",
+        "mode": "notApplicable",
+        "score": null,
+        "status": "not-applicable",
+        "counted": false,
+        "display_value": null,
+        "explanation": null,
+        "note": "Always informative. Lists declarative and imperative tools seen during the page load. Never changes the fraction.",
+        "tools": []
+      },
+      {
+        "id": "webmcp-schema-validity",
+        "group": "webmcp",
+        "title": "WebMCP schemas are valid",
+        "mode": "notApplicable",
+        "score": null,
+        "status": "not-applicable",
+        "counted": false,
+        "display_value": null,
+        "explanation": null,
+        "note": "Scores 0 on errors (missing tool name or description, a required parameter without a name) and 0.5 on warnings, so both count as a failure. N/A when no tools and no issues exist.",
+        "issues": []
+      },
+      {
+        "id": "cumulative-layout-shift",
+        "group": null,
+        "title": "Cumulative Layout Shift",
+        "mode": "numeric",
+        "score": 1,
+        "status": "pass",
+        "counted": true,
+        "display_value": "0",
+        "explanation": null,
+        "note": "Numeric lab CLS. Passes at score 0.9 or higher (about CLS 0.1 or less)."
+      },
+      {
+        "id": "llms-txt",
+        "group": "agent-discoverability",
+        "title": "llms.txt follows recommendations",
+        "mode": "notApplicable",
+        "score": null,
+        "status": "not-applicable",
+        "counted": false,
+        "display_value": null,
+        "explanation": null,
+        "note": "Binary. /llms.txt needs an H1, one Markdown link, and 50+ characters. A 4xx makes it N/A; a 5xx or fetch error fails it.",
+        "issues": []
+      },
+      {
+        "id": "ard-schema",
+        "group": "agent-discoverability",
+        "title": "`ai-catalog.json` schema is valid",
+        "mode": "notApplicable",
+        "score": null,
+        "status": "not-applicable",
+        "counted": false,
+        "display_value": null,
+        "explanation": null,
+        "note": "Validates ai-catalog.json (Agentic Resource Discovery). N/A unless a catalog is signalled or /.well-known/ai-catalog.json returns 200.",
+        "issues": []
+      }
+    ],
+    "paths": [
+      {
+        "audit": "agent-accessibility-tree",
+        "change": "fail -> pass",
+        "how": "Binary. Fails when any of 33 axe rules fails (names and labels, ARIA validity, tree structure, tabindex, autocomplete). Fix the listed rules."
+      },
+      {
+        "audit": "ard-schema",
+        "change": "adds one counted audit",
+        "how": "Publish a valid /.well-known/ai-catalog.json only if you have agent resources to list (MCP server, A2A agent, skills). An invalid catalog adds a counted failure instead."
+      },
+      {
+        "audit": "llms-txt",
+        "change": "adds one counted audit",
+        "how": "Serve /llms.txt with an H1, a summary, and Markdown links."
+      }
+    ]
+  },
+  "lighthouse_desktop": {
+    "source": "file",
+    "requested_url": "https://www.investdom.com.pl/",
+    "final_url": "https://www.investdom.com.pl/",
+    "lighthouse_version": "13.5.0",
+    "fetch_time": "2026-10-15T20:42:06.512Z",
+    "form_factor": "desktop",
+    "host_user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "fraction": {
+      "available": true,
+      "passed": 1,
+      "counted": 2,
+      "informative": 0,
+      "display": "1/2",
+      "category_score": 0.5
+    },
+    "error": null,
+    "audits": [
+      {
+        "id": "agent-accessibility-tree",
+        "group": "agent-accessibility",
+        "title": "Accessibility tree is not well-formed",
+        "mode": "binary",
+        "score": 0,
+        "status": "fail",
+        "counted": true,
+        "display_value": null,
+        "explanation": null,
+        "note": "Binary. Fails when any of 33 axe rules fails (names and labels, ARIA validity, tree structure, tabindex, autocomplete). Fix the listed rules.",
+        "failed_rules": [
+          {
+            "rule": "Select element must have an accessible name",
+            "selector": "div#form-container > form#contact-form > div > select#subject-select",
+            "snippet": "<select id=\"subject-select\" name=\"temat_wybrany\" class=\"w-full px-4 py-3 rounded-lg bg-stone-50 border border-stone-200 focus:bord…\">"
+          }
+        ]
+      },
+      {
+        "id": "webmcp-form-coverage",
+        "group": "webmcp",
+        "title": "WebMCP form coverage",
+        "mode": "notApplicable",
+        "score": null,
+        "status": "not-applicable",
+        "counted": false,
+        "display_value": null,
+        "explanation": null,
+        "note": "Informative while any form lacks both toolname and tooldescription; counts as a binary pass once every form has one. N/A with no forms or no WebMCP support in the testing browser.",
+        "forms_missing_annotations": []
+      },
+      {
+        "id": "webmcp-registered-tools",
+        "group": "webmcp",
+        "title": "WebMCP tools registered",
+        "mode": "notApplicable",
+        "score": null,
+        "status": "not-applicable",
+        "counted": false,
+        "display_value": null,
+        "explanation": null,
+        "note": "Always informative. Lists declarative and imperative tools seen during the page load. Never changes the fraction.",
+        "tools": []
+      },
+      {
+        "id": "webmcp-schema-validity",
+        "group": "webmcp",
+        "title": "WebMCP schemas are valid",
+        "mode": "notApplicable",
+        "score": null,
+        "status": "not-applicable",
+        "counted": false,
+        "display_value": null,
+        "explanation": null,
+        "note": "Scores 0 on errors (missing tool name or description, a required parameter without a name) and 0.5 on warnings, so both count as a failure. N/A when no tools and no issues exist.",
+        "issues": []
+      },
+      {
+        "id": "cumulative-layout-shift",
+        "group": null,
+        "title": "Cumulative Layout Shift",
+        "mode": "numeric",
+        "score": 1,
+        "status": "pass",
+        "counted": true,
+        "display_value": "0",
+        "explanation": null,
+        "note": "Numeric lab CLS. Passes at score 0.9 or higher (about CLS 0.1 or less)."
+      },
+      {
+        "id": "llms-txt",
+        "group": "agent-discoverability",
+        "title": "llms.txt follows recommendations",
+        "mode": "notApplicable",
+        "score": null,
+        "status": "not-applicable",
+        "counted": false,
+        "display_value": null,
+        "explanation": null,
+        "note": "Binary. /llms.txt needs an H1, one Markdown link, and 50+ characters. A 4xx makes it N/A; a 5xx or fetch error fails it.",
+        "issues": []
+      },
+      {
+        "id": "ard-schema",
+        "group": "agent-discoverability",
+        "title": "`ai-catalog.json` schema is valid",
+        "mode": "notApplicable",
+        "score": null,
+        "status": "not-applicable",
+        "counted": false,
+        "display_value": null,
+        "explanation": null,
+        "note": "Validates ai-catalog.json (Agentic Resource Discovery). N/A unless a catalog is signalled or /.well-known/ai-catalog.json returns 200.",
+        "issues": []
+      }
+    ],
+    "paths": [
+      {
+        "audit": "agent-accessibility-tree",
+        "change": "fail -> pass",
+        "how": "Binary. Fails when any of 33 axe rules fails (names and labels, ARIA validity, tree structure, tabindex, autocomplete). Fix the listed rules."
+      },
+      {
+        "audit": "ard-schema",
+        "change": "adds one counted audit",
+        "how": "Publish a valid /.well-known/ai-catalog.json only if you have agent resources to list (MCP server, A2A agent, skills). An invalid catalog adds a counted failure instead."
+      },
+      {
+        "audit": "llms-txt",
+        "change": "adds one counted audit",
+        "how": "Serve /llms.txt with an H1, a summary, and Markdown links."
+      }
+    ]
+  },
+  "limits": [
+    "Preview redirects to Vercel login; it is not application content.",
+    "User-Agent tests are not verified provider IP requests.",
+    "Search tool results are not an LLM citation benchmark.",
+    "No GSC, GBP, Bing or WAF account access.",
+    "No current field Core Web Vitals data."
+  ]
+}

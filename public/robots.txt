@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://investdom.com.pl/sitemap-index.xml
+Sitemap: https://www.investdom.com.pl/sitemap-index.xml

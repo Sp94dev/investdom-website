@@ -1,0 +1,891 @@
+{
+  "target": "https://www.investdom.com.pl",
+  "scanned_at": "2026-10-16T07:34:44.918Z",
+  "level": 1,
+  "level_name": "Basic Web Presence",
+  "default_score": {
+    "passed": 3,
+    "counted": 15,
+    "score": 20
+  },
+  "method": "Official public scan API plus published client score calculation; default All Checks. No site changes. Forecasts below are arithmetic only, conditional on real passing results.",
+  "client_source": {
+    "url": "https://isitagentready.com/_assets/index.astro_astro_type_script_index_0_lang.ZltzupEn.js",
+    "sha256": "bf9aab125ec0038b87abdc7b80d7921dbb30dcea1e5cf4c569293a731d0274a4"
+  },
+  "formula": "round(100 * passed / counted), excluding commerce, default opt-in A2A, informational Poppy and neutral results",
+  "checks": [
+    {
+      "category": "discoverability",
+      "id": "robotsTxt",
+      "status": "pass",
+      "message": "robots.txt exists with valid format",
+      "counted_in_default_score": true,
+      "details": null,
+      "requests": [
+        {
+          "url": "https://www.investdom.com.pl/robots.txt",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "category": "discoverability",
+      "id": "sitemap",
+      "status": "pass",
+      "message": "sitemap.xml exists with valid structure",
+      "counted_in_default_score": true,
+      "details": {
+        "url": "https://investdom.com.pl/sitemap-index.xml",
+        "fromRobotsTxt": true,
+        "format": "xml"
+      },
+      "requests": [
+        {
+          "url": "https://investdom.com.pl/sitemap-index.xml",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "category": "discoverability",
+      "id": "linkHeaders",
+      "status": "fail",
+      "message": "No Link headers found on target page",
+      "counted_in_default_score": true,
+      "details": null,
+      "requests": [
+        {
+          "url": "https://www.investdom.com.pl",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "category": "discoverability",
+      "id": "dnsAid",
+      "status": "fail",
+      "message": "DNS for AI Discovery (DNS-AID) well-known entrypoint records not found",
+      "counted_in_default_score": true,
+      "details": {
+        "domainsChecked": [
+          "www.investdom.com.pl",
+          "investdom.com.pl"
+        ],
+        "queriesAttempted": [
+          "SVCB _index._agents.www.investdom.com.pl",
+          "HTTPS _index._agents.www.investdom.com.pl",
+          "SVCB _a2a._agents.www.investdom.com.pl",
+          "HTTPS _a2a._agents.www.investdom.com.pl",
+          "SVCB _mcp._agents.www.investdom.com.pl",
+          "HTTPS _mcp._agents.www.investdom.com.pl",
+          "TXT _index._agents.www.investdom.com.pl",
+          "SVCB _index._agents.investdom.com.pl",
+          "HTTPS _index._agents.investdom.com.pl",
+          "SVCB _a2a._agents.investdom.com.pl",
+          "HTTPS _a2a._agents.investdom.com.pl",
+          "SVCB _mcp._agents.investdom.com.pl",
+          "HTTPS _mcp._agents.investdom.com.pl",
+          "TXT _index._agents.investdom.com.pl"
+        ],
+        "dnssecValidated": false,
+        "serviceRecordCount": 0,
+        "aliasRecordCount": 0,
+        "txtIndexEntryCount": 0,
+        "txtIndexEntries": [],
+        "records": []
+      },
+      "requests": [
+        {
+          "url": "https://cloudflare-dns.com/dns-query?name=_index._agents.www.investdom.com.pl&type=SVCB&do=1",
+          "status": 200
+        },
+        {
+          "url": "https://cloudflare-dns.com/dns-query?name=_index._agents.www.investdom.com.pl&type=HTTPS&do=1",
+          "status": 200
+        },
+        {
+          "url": "https://cloudflare-dns.com/dns-query?name=_a2a._agents.www.investdom.com.pl&type=SVCB&do=1",
+          "status": 200
+        },
+        {
+          "url": "https://cloudflare-dns.com/dns-query?name=_a2a._agents.www.investdom.com.pl&type=HTTPS&do=1",
+          "status": 200
+        },
+        {
+          "url": "https://cloudflare-dns.com/dns-query?name=_mcp._agents.www.investdom.com.pl&type=SVCB&do=1",
+          "status": 200
+        },
+        {
+          "url": "https://cloudflare-dns.com/dns-query?name=_mcp._agents.www.investdom.com.pl&type=HTTPS&do=1",
+          "status": 200
+        },
+        {
+          "url": "https://cloudflare-dns.com/dns-query?name=_index._agents.www.investdom.com.pl&type=TXT&do=1",
+          "status": 200
+        },
+        {
+          "url": "https://cloudflare-dns.com/dns-query?name=_index._agents.investdom.com.pl&type=SVCB&do=1",
+          "status": 200
+        },
+        {
+          "url": "https://cloudflare-dns.com/dns-query?name=_index._agents.investdom.com.pl&type=HTTPS&do=1",
+          "status": 200
+        },
+        {
+          "url": "https://cloudflare-dns.com/dns-query?name=_a2a._agents.investdom.com.pl&type=SVCB&do=1",
+          "status": 200
+        },
+        {
+          "url": "https://cloudflare-dns.com/dns-query?name=_a2a._agents.investdom.com.pl&type=HTTPS&do=1",
+          "status": 200
+        },
+        {
+          "url": "https://cloudflare-dns.com/dns-query?name=_mcp._agents.investdom.com.pl&type=SVCB&do=1",
+          "status": 200
+        },
+        {
+          "url": "https://cloudflare-dns.com/dns-query?name=_mcp._agents.investdom.com.pl&type=HTTPS&do=1",
+          "status": 200
+        },
+        {
+          "url": "https://cloudflare-dns.com/dns-query?name=_index._agents.investdom.com.pl&type=TXT&do=1",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "category": "contentAccessibility",
+      "id": "markdownNegotiation",
+      "status": "fail",
+      "message": "Site does not support Markdown for Agents",
+      "counted_in_default_score": true,
+      "details": {
+        "contentType": "text/html"
+      },
+      "requests": [
+        {
+          "url": "https://www.investdom.com.pl",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "category": "botAccessControl",
+      "id": "robotsTxtAiRules",
+      "status": "pass",
+      "message": "No AI-specific bot rules; wildcard rules apply to all crawlers including AI bots",
+      "counted_in_default_score": true,
+      "details": {
+        "targetPath": "/",
+        "robotsStatus": "ok",
+        "botPolicies": [
+          {
+            "userAgent": "gptbot",
+            "effectiveAccess": "allowed",
+            "ruleSource": "wildcard",
+            "rules": [
+              {
+                "directive": "allow",
+                "pattern": "/"
+              }
+            ],
+            "matchedRule": {
+              "directive": "allow",
+              "pattern": "/"
+            }
+          },
+          {
+            "userAgent": "chatgpt-user",
+            "effectiveAccess": "allowed",
+            "ruleSource": "wildcard",
+            "rules": [
+              {
+                "directive": "allow",
+                "pattern": "/"
+              }
+            ],
+            "matchedRule": {
+              "directive": "allow",
+              "pattern": "/"
+            }
+          },
+          {
+            "userAgent": "oai-searchbot",
+            "effectiveAccess": "allowed",
+            "ruleSource": "wildcard",
+            "rules": [
+              {
+                "directive": "allow",
+                "pattern": "/"
+              }
+            ],
+            "matchedRule": {
+              "directive": "allow",
+              "pattern": "/"
+            }
+          },
+          {
+            "userAgent": "google-extended",
+            "effectiveAccess": "allowed",
+            "ruleSource": "wildcard",
+            "rules": [
+              {
+                "directive": "allow",
+                "pattern": "/"
+              }
+            ],
+            "matchedRule": {
+              "directive": "allow",
+              "pattern": "/"
+            }
+          },
+          {
+            "userAgent": "ccbot",
+            "effectiveAccess": "allowed",
+            "ruleSource": "wildcard",
+            "rules": [
+              {
+                "directive": "allow",
+                "pattern": "/"
+              }
+            ],
+            "matchedRule": {
+              "directive": "allow",
+              "pattern": "/"
+            }
+          },
+          {
+            "userAgent": "anthropic-ai",
+            "effectiveAccess": "allowed",
+            "ruleSource": "wildcard",
+            "rules": [
+              {
+                "directive": "allow",
+                "pattern": "/"
+              }
+            ],
+            "matchedRule": {
+              "directive": "allow",
+              "pattern": "/"
+            }
+          },
+          {
+            "userAgent": "claude-web",
+            "effectiveAccess": "allowed",
+            "ruleSource": "wildcard",
+            "rules": [
+              {
+                "directive": "allow",
+                "pattern": "/"
+              }
+            ],
+            "matchedRule": {
+              "directive": "allow",
+              "pattern": "/"
+            }
+          },
+          {
+            "userAgent": "bytespider",
+            "effectiveAccess": "allowed",
+            "ruleSource": "wildcard",
+            "rules": [
+              {
+                "directive": "allow",
+                "pattern": "/"
+              }
+            ],
+            "matchedRule": {
+              "directive": "allow",
+              "pattern": "/"
+            }
+          },
+          {
+            "userAgent": "perplexitybot",
+            "effectiveAccess": "allowed",
+            "ruleSource": "wildcard",
+            "rules": [
+              {
+                "directive": "allow",
+                "pattern": "/"
+              }
+            ],
+            "matchedRule": {
+              "directive": "allow",
+              "pattern": "/"
+            }
+          },
+          {
+            "userAgent": "cohere-ai",
+            "effectiveAccess": "allowed",
+            "ruleSource": "wildcard",
+            "rules": [
+              {
+                "directive": "allow",
+                "pattern": "/"
+              }
+            ],
+            "matchedRule": {
+              "directive": "allow",
+              "pattern": "/"
+            }
+          },
+          {
+            "userAgent": "applebot-extended",
+            "effectiveAccess": "allowed",
+            "ruleSource": "wildcard",
+            "rules": [
+              {
+                "directive": "allow",
+                "pattern": "/"
+              }
+            ],
+            "matchedRule": {
+              "directive": "allow",
+              "pattern": "/"
+            }
+          },
+          {
+            "userAgent": "amazonbot",
+            "effectiveAccess": "allowed",
+            "ruleSource": "wildcard",
+            "rules": [
+              {
+                "directive": "allow",
+                "pattern": "/"
+              }
+            ],
+            "matchedRule": {
+              "directive": "allow",
+              "pattern": "/"
+            }
+          },
+          {
+            "userAgent": "meta-externalagent",
+            "effectiveAccess": "allowed",
+            "ruleSource": "wildcard",
+            "rules": [
+              {
+                "directive": "allow",
+                "pattern": "/"
+              }
+            ],
+            "matchedRule": {
+              "directive": "allow",
+              "pattern": "/"
+            }
+          },
+          {
+            "userAgent": "facebookbot",
+            "effectiveAccess": "allowed",
+            "ruleSource": "wildcard",
+            "rules": [
+              {
+                "directive": "allow",
+                "pattern": "/"
+              }
+            ],
+            "matchedRule": {
+              "directive": "allow",
+              "pattern": "/"
+            }
+          },
+          {
+            "userAgent": "omgilibot",
+            "effectiveAccess": "allowed",
+            "ruleSource": "wildcard",
+            "rules": [
+              {
+                "directive": "allow",
+                "pattern": "/"
+              }
+            ],
+            "matchedRule": {
+              "directive": "allow",
+              "pattern": "/"
+            }
+          },
+          {
+            "userAgent": "diffbot",
+            "effectiveAccess": "allowed",
+            "ruleSource": "wildcard",
+            "rules": [
+              {
+                "directive": "allow",
+                "pattern": "/"
+              }
+            ],
+            "matchedRule": {
+              "directive": "allow",
+              "pattern": "/"
+            }
+          },
+          {
+            "userAgent": "claudebot",
+            "effectiveAccess": "allowed",
+            "ruleSource": "wildcard",
+            "rules": [
+              {
+                "directive": "allow",
+                "pattern": "/"
+              }
+            ],
+            "matchedRule": {
+              "directive": "allow",
+              "pattern": "/"
+            }
+          },
+          {
+            "userAgent": "claude-searchbot",
+            "effectiveAccess": "allowed",
+            "ruleSource": "wildcard",
+            "rules": [
+              {
+                "directive": "allow",
+                "pattern": "/"
+              }
+            ],
+            "matchedRule": {
+              "directive": "allow",
+              "pattern": "/"
+            }
+          },
+          {
+            "userAgent": "claude-user",
+            "effectiveAccess": "allowed",
+            "ruleSource": "wildcard",
+            "rules": [
+              {
+                "directive": "allow",
+                "pattern": "/"
+              }
+            ],
+            "matchedRule": {
+              "directive": "allow",
+              "pattern": "/"
+            }
+          },
+          {
+            "userAgent": "perplexity-user",
+            "effectiveAccess": "allowed",
+            "ruleSource": "wildcard",
+            "rules": [
+              {
+                "directive": "allow",
+                "pattern": "/"
+              }
+            ],
+            "matchedRule": {
+              "directive": "allow",
+              "pattern": "/"
+            }
+          }
+        ],
+        "checkedBots": [
+          "gptbot",
+          "chatgpt-user",
+          "oai-searchbot",
+          "google-extended",
+          "ccbot",
+          "anthropic-ai",
+          "claude-web",
+          "bytespider",
+          "perplexitybot",
+          "cohere-ai",
+          "applebot-extended",
+          "amazonbot",
+          "meta-externalagent",
+          "facebookbot",
+          "omgilibot",
+          "diffbot",
+          "claudebot",
+          "claude-searchbot",
+          "claude-user",
+          "perplexity-user"
+        ]
+      },
+      "requests": [
+        {
+          "url": "https://www.investdom.com.pl/robots.txt",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "category": "botAccessControl",
+      "id": "contentSignals",
+      "status": "fail",
+      "message": "No Content Signals found in robots.txt",
+      "counted_in_default_score": true,
+      "details": null,
+      "requests": [
+        {
+          "url": "https://www.investdom.com.pl/robots.txt",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "category": "botAccessControl",
+      "id": "webBotAuth",
+      "status": "neutral",
+      "message": "Web Bot Auth directory not found (informational only)",
+      "counted_in_default_score": false,
+      "details": null,
+      "requests": [
+        {
+          "url": "https://www.investdom.com.pl/.well-known/http-message-signatures-directory",
+          "status": 404
+        }
+      ]
+    },
+    {
+      "category": "discovery",
+      "id": "apiCatalog",
+      "status": "fail",
+      "message": "API Catalog not found",
+      "counted_in_default_score": true,
+      "details": null,
+      "requests": [
+        {
+          "url": "https://www.investdom.com.pl/.well-known/api-catalog",
+          "status": 404
+        }
+      ]
+    },
+    {
+      "category": "discovery",
+      "id": "oauthDiscovery",
+      "status": "fail",
+      "message": "No OAuth/OIDC discovery metadata found",
+      "counted_in_default_score": true,
+      "details": null,
+      "requests": [
+        {
+          "url": "https://www.investdom.com.pl/.well-known/oauth-authorization-server",
+          "status": 404
+        },
+        {
+          "url": "https://www.investdom.com.pl/.well-known/openid-configuration",
+          "status": 404
+        }
+      ]
+    },
+    {
+      "category": "discovery",
+      "id": "oauthProtectedResource",
+      "status": "fail",
+      "message": "No OAuth Protected Resource Metadata found",
+      "counted_in_default_score": true,
+      "details": null,
+      "requests": [
+        {
+          "url": "https://www.investdom.com.pl/.well-known/oauth-protected-resource",
+          "status": 404
+        },
+        {
+          "url": "https://www.investdom.com.pl",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "category": "discovery",
+      "id": "authMd",
+      "status": "fail",
+      "message": "auth.md not found",
+      "counted_in_default_score": true,
+      "details": null,
+      "requests": [
+        {
+          "url": "https://www.investdom.com.pl/auth.md",
+          "status": 404
+        }
+      ]
+    },
+    {
+      "category": "discovery",
+      "id": "mcpServerCard",
+      "status": "fail",
+      "message": "MCP Server Card not found",
+      "counted_in_default_score": true,
+      "details": null,
+      "requests": [
+        {
+          "url": "https://www.investdom.com.pl/.well-known/mcp.json",
+          "status": 404
+        },
+        {
+          "url": "https://www.investdom.com.pl/.well-known/mcp/server-card.json",
+          "status": 404
+        },
+        {
+          "url": "https://www.investdom.com.pl/.well-known/mcp/server-cards.json",
+          "status": 404
+        }
+      ]
+    },
+    {
+      "category": "discovery",
+      "id": "a2aAgentCard",
+      "status": "fail",
+      "message": "A2A Agent Card not found",
+      "counted_in_default_score": false,
+      "details": null,
+      "requests": [
+        {
+          "url": "https://www.investdom.com.pl/.well-known/agent-card.json",
+          "status": 404
+        }
+      ]
+    },
+    {
+      "category": "discovery",
+      "id": "agentSkills",
+      "status": "fail",
+      "message": "Agent Skills index not found",
+      "counted_in_default_score": true,
+      "details": null,
+      "requests": [
+        {
+          "url": "https://www.investdom.com.pl/.well-known/agent-skills/index.json",
+          "status": 404
+        },
+        {
+          "url": "https://www.investdom.com.pl/.well-known/skills/index.json",
+          "status": 404
+        }
+      ]
+    },
+    {
+      "category": "discovery",
+      "id": "webMcp",
+      "status": "fail",
+      "message": "No WebMCP tools detected on page load",
+      "counted_in_default_score": true,
+      "details": null,
+      "requests": [
+        {
+          "url": "https://www.investdom.com.pl",
+          "status": null
+        }
+      ]
+    },
+    {
+      "category": "discovery",
+      "id": "ard",
+      "status": "fail",
+      "message": "ARD capability manifest not found",
+      "counted_in_default_score": true,
+      "details": {
+        "discoveryMechanisms": [],
+        "searchEndpoints": []
+      },
+      "requests": [
+        {
+          "url": "https://www.investdom.com.pl/.well-known/ai-catalog.json",
+          "status": 404
+        },
+        {
+          "url": "https://cloudflare-dns.com/dns-query?name=_catalog._agents.www.investdom.com.pl&type=TXT&do=1",
+          "status": 200
+        },
+        {
+          "url": "https://cloudflare-dns.com/dns-query?name=_search._agents.www.investdom.com.pl&type=SRV&do=1",
+          "status": 200
+        },
+        {
+          "url": "https://cloudflare-dns.com/dns-query?name=_catalog._agents.investdom.com.pl&type=TXT&do=1",
+          "status": 200
+        },
+        {
+          "url": "https://cloudflare-dns.com/dns-query?name=_search._agents.investdom.com.pl&type=SRV&do=1",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "category": "discovery",
+      "id": "personalAgentProtocol",
+      "status": "fail",
+      "message": "Personal Agent Protocol manifest not found",
+      "counted_in_default_score": false,
+      "details": {
+        "manifestDetected": false,
+        "issuerValidation": "notChecked"
+      },
+      "requests": [
+        {
+          "url": "https://www.investdom.com.pl/.well-known/poppy.json",
+          "status": 404
+        }
+      ]
+    },
+    {
+      "category": "commerce",
+      "id": "x402",
+      "status": "neutral",
+      "message": "x402 payment protocol not detected (not a commerce site)",
+      "counted_in_default_score": false,
+      "details": null,
+      "requests": [
+        {
+          "url": "https://www.investdom.com.pl/api",
+          "status": 404
+        },
+        {
+          "url": "https://www.investdom.com.pl/api/v1",
+          "status": 404
+        },
+        {
+          "url": "https://www.investdom.com.pl/",
+          "status": 200
+        },
+        {
+          "url": "https://api.cdp.coinbase.com/platform/v2/x402/discovery/resources?limit=500",
+          "status": 200
+        },
+        {
+          "url": "https://api.cdp.coinbase.com/platform/v2/x402/discovery/resources?limit=500",
+          "status": null
+        }
+      ]
+    },
+    {
+      "category": "commerce",
+      "id": "mpp",
+      "status": "neutral",
+      "message": "MPP payment discovery not detected (not a commerce site)",
+      "counted_in_default_score": false,
+      "details": null,
+      "requests": [
+        {
+          "url": "https://www.investdom.com.pl/openapi.json",
+          "status": 404
+        }
+      ]
+    },
+    {
+      "category": "commerce",
+      "id": "ucp",
+      "status": "neutral",
+      "message": "UCP profile not found (not a commerce site)",
+      "counted_in_default_score": false,
+      "details": null,
+      "requests": [
+        {
+          "url": "https://www.investdom.com.pl/.well-known/ucp",
+          "status": 404
+        }
+      ]
+    },
+    {
+      "category": "commerce",
+      "id": "acp",
+      "status": "neutral",
+      "message": "ACP discovery document not found (not a commerce site)",
+      "counted_in_default_score": false,
+      "details": null,
+      "requests": [
+        {
+          "url": "https://www.investdom.com.pl/.well-known/acp.json",
+          "status": 404
+        }
+      ]
+    },
+    {
+      "category": "commerce",
+      "id": "ap2",
+      "status": "neutral",
+      "message": "AP2 not detected (no A2A Agent Card) (not a commerce site)",
+      "counted_in_default_score": false,
+      "details": null,
+      "requests": []
+    }
+  ],
+  "forecasts": [
+    {
+      "stage": "baseline",
+      "new_passes": [],
+      "passed": 3,
+      "counted": 15,
+      "projected_score": 20
+    },
+    {
+      "stage": "content-signals",
+      "new_passes": [
+        "contentSignals"
+      ],
+      "passed": 4,
+      "counted": 15,
+      "projected_score": 27
+    },
+    {
+      "stage": "markdown-and-link",
+      "new_passes": [
+        "contentSignals",
+        "markdownNegotiation",
+        "linkHeaders"
+      ],
+      "passed": 6,
+      "counted": 15,
+      "projected_score": 40
+    },
+    {
+      "stage": "skills-and-catalog",
+      "new_passes": [
+        "contentSignals",
+        "markdownNegotiation",
+        "linkHeaders",
+        "agentSkills",
+        "ard"
+      ],
+      "passed": 8,
+      "counted": 15,
+      "projected_score": 53
+    },
+    {
+      "stage": "public-api-mcp-dns",
+      "new_passes": [
+        "contentSignals",
+        "markdownNegotiation",
+        "linkHeaders",
+        "agentSkills",
+        "ard",
+        "apiCatalog",
+        "webMcp",
+        "mcpServerCard",
+        "dnsAid"
+      ],
+      "passed": 12,
+      "counted": 15,
+      "projected_score": 80
+    },
+    {
+      "stage": "real-authentication",
+      "new_passes": [
+        "contentSignals",
+        "markdownNegotiation",
+        "linkHeaders",
+        "agentSkills",
+        "ard",
+        "apiCatalog",
+        "webMcp",
+        "mcpServerCard",
+        "dnsAid",
+        "oauthDiscovery",
+        "oauthProtectedResource",
+        "authMd"
+      ],
+      "passed": 15,
+      "counted": 15,
+      "projected_score": 100
+    }
+  ],
+  "limits": [
+    "Standards, defaults and score weights can change.",
+    "No LLM citation or conversion measurement.",
+    "No dependency, DNS, hosting, production code or access policy was changed.",
+    "The earlier Vercel preview scan followed a login redirect and measured vercel.com."
+  ]
+}

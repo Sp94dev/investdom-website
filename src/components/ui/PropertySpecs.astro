@@ -1,0 +1,43 @@
+---
+interface Props {
+  size: string;
+  plot: string;
+  status?: string;
+}
+
+const { size, plot, status } = Astro.props;
+---
+
+<div class="@container mb-6">
+<dl
+  class:list={[
+    "grid divide-y divide-stone-200 rounded-xl bg-stone-50 px-4 @min-[28rem]:gap-4 @min-[28rem]:divide-y-0 @min-[28rem]:bg-transparent @min-[28rem]:p-0",
+    status ? "@min-[28rem]:grid-cols-3" : "@min-[28rem]:grid-cols-2",
+  ]}
+>
+  <div class="flex items-center justify-between gap-3 py-3 @min-[28rem]:block @min-[28rem]:rounded-xl @min-[28rem]:bg-stone-50 @min-[28rem]:p-4 @min-[28rem]:text-center">
+    <dt class="text-sm text-slate-500 @min-[28rem]:mb-1 @min-[28rem]:text-xs @min-[28rem]:uppercase @min-[28rem]:tracking-wide">
+      Powierzchnia
+    </dt>
+    <dd class="shrink-0 whitespace-nowrap text-lg font-bold tabular-nums text-navy-900">{size}</dd>
+  </div>
+  <div class="flex items-center justify-between gap-3 py-3 @min-[28rem]:block @min-[28rem]:rounded-xl @min-[28rem]:bg-stone-50 @min-[28rem]:p-4 @min-[28rem]:text-center">
+    <dt class="text-sm text-slate-500 @min-[28rem]:mb-1 @min-[28rem]:text-xs @min-[28rem]:uppercase @min-[28rem]:tracking-wide">
+      Działka
+    </dt>
+    <dd class="shrink-0 whitespace-nowrap text-lg font-bold tabular-nums text-navy-900">{plot}</dd>
+  </div>
+  {
+    status && (
+      <div class="flex items-center justify-between gap-3 py-3 @min-[28rem]:block @min-[28rem]:rounded-xl @min-[28rem]:bg-stone-50 @min-[28rem]:p-4 @min-[28rem]:text-center">
+        <dt class="text-sm text-slate-500 @min-[28rem]:mb-1 @min-[28rem]:text-xs @min-[28rem]:uppercase @min-[28rem]:tracking-wide">
+          Status
+        </dt>
+        <dd class="min-w-0 max-w-[65%] text-right text-sm font-bold leading-snug text-navy-900 @min-[28rem]:max-w-none @min-[28rem]:text-center">
+          {status}
+        </dd>
+      </div>
+    )
+  }
+</dl>
+</div>

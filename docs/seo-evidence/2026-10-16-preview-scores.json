@@ -1,0 +1,4330 @@
+{
+  "checked_on": "2026-10-16",
+  "branch_commit": "616871badd29d70a27f7d6e3e5978277056e48b4",
+  "scope": "Shared Vercel preview. One sequential Lighthouse sample per page/device through managed proxy. Each run includes share authentication redirect. Not field CWV or an AI citation test. Access tokens are redacted.",
+  "summary": [
+    {
+      "name": "home-mobile",
+      "path": "/",
+      "url": "https://investdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app/",
+      "fetch_time": "2026-10-16T07:22:05.879Z",
+      "lighthouse_version": "13.5.0",
+      "form_factor": "mobile",
+      "scores": {
+        "performance": 0.86,
+        "accessibility": 1,
+        "best-practices": 0.81,
+        "seo": 0.69,
+        "agentic-browsing": 1
+      },
+      "metrics": {
+        "first-contentful-paint": 934.884,
+        "largest-contentful-paint": 3959.304,
+        "cumulative-layout-shift": 0,
+        "total-blocking-time": 6.5,
+        "speed-index": 3665.7821678691726
+      },
+      "runtime_error": null,
+      "warnings": [
+        "The page may not be loading as expected because your test URL (https://investdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app/?_vercel_share=[redacted]) was redirected to https://investdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app/. Try testing the second URL directly."
+      ]
+    },
+    {
+      "name": "service-mobile",
+      "path": "/budowa-domow-pod-klucz",
+      "url": "https://investdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app/budowa-domow-pod-klucz",
+      "fetch_time": "2026-10-16T07:22:23.507Z",
+      "lighthouse_version": "13.5.0",
+      "form_factor": "mobile",
+      "scores": {
+        "performance": 1,
+        "accessibility": 1,
+        "best-practices": 0.81,
+        "seo": 0.69,
+        "agentic-browsing": 1
+      },
+      "metrics": {
+        "first-contentful-paint": 937.384,
+        "largest-contentful-paint": 937.384,
+        "cumulative-layout-shift": 0,
+        "total-blocking-time": 16,
+        "speed-index": 987.4600508301321
+      },
+      "runtime_error": null,
+      "warnings": [
+        "The page may not be loading as expected because your test URL (https://investdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app/budowa-domow-pod-klucz?_vercel_share=[redacted]) was redirected to https://investdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app/budowa-domow-pod-klucz. Try testing the second URL directly."
+      ]
+    },
+    {
+      "name": "offers-mobile",
+      "path": "/domy-na-sprzedaz-bielsko",
+      "url": "https://investdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app/domy-na-sprzedaz-bielsko",
+      "fetch_time": "2026-10-16T07:22:38.356Z",
+      "lighthouse_version": "13.5.0",
+      "form_factor": "mobile",
+      "scores": {
+        "performance": 1,
+        "accessibility": 1,
+        "best-practices": 0.81,
+        "seo": 0.69,
+        "agentic-browsing": 1
+      },
+      "metrics": {
+        "first-contentful-paint": 930,
+        "largest-contentful-paint": 1380,
+        "cumulative-layout-shift": 0,
+        "total-blocking-time": 28,
+        "speed-index": 1213.5738800144193
+      },
+      "runtime_error": null,
+      "warnings": [
+        "The page may not be loading as expected because your test URL (https://investdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app/domy-na-sprzedaz-bielsko?_vercel_share=[redacted]) was redirected to https://investdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app/domy-na-sprzedaz-bielsko. Try testing the second URL directly."
+      ]
+    },
+    {
+      "name": "projects-mobile",
+      "path": "/projekty-domow",
+      "url": "https://investdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app/projekty-domow",
+      "fetch_time": "2026-10-16T07:22:53.072Z",
+      "lighthouse_version": "13.5.0",
+      "form_factor": "mobile",
+      "scores": {
+        "performance": 0.99,
+        "accessibility": 1,
+        "best-practices": 0.81,
+        "seo": 0.69,
+        "agentic-browsing": 1
+      },
+      "metrics": {
+        "first-contentful-paint": 900.035,
+        "largest-contentful-paint": 1806.3529999999998,
+        "cumulative-layout-shift": 0,
+        "total-blocking-time": 77.99999999999989,
+        "speed-index": 1439.3421800034043
+      },
+      "runtime_error": null,
+      "warnings": [
+        "The page may not be loading as expected because your test URL (https://investdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app/projekty-domow?_vercel_share=[redacted]) was redirected to https://investdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app/projekty-domow. Try testing the second URL directly."
+      ]
+    },
+    {
+      "name": "home-desktop",
+      "path": "/",
+      "url": "https://investdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app/",
+      "fetch_time": "2026-10-16T07:23:08.103Z",
+      "lighthouse_version": "13.5.0",
+      "form_factor": "desktop",
+      "scores": {
+        "performance": 0.99,
+        "accessibility": 1,
+        "best-practices": 0.81,
+        "seo": 0.69,
+        "agentic-browsing": 1
+      },
+      "metrics": {
+        "first-contentful-paint": 319.91999999999996,
+        "largest-contentful-paint": 907.6959999999999,
+        "cumulative-layout-shift": 0,
+        "total-blocking-time": 79,
+        "speed-index": 927.3912342473
+      },
+      "runtime_error": null,
+      "warnings": [
+        "The page may not be loading as expected because your test URL (https://investdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app/?_vercel_share=[redacted]) was redirected to https://investdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app/. Try testing the second URL directly."
+      ]
+    }
+  ],
+  "http": {
+    "checked_at": "2026-10-16T07:22:37.892567+00:00",
+    "rows": [
+      {
+        "path": "/",
+        "status": 200,
+        "x_robots_tag": "noindex",
+        "login": false,
+        "title": "Budowa Domów Bielsko-Biała | Nowe Domy na Sprzedaż | INVESTDOM",
+        "description": [
+          "Szukasz profesjonalnej firmy budowlanej w Bielsku-Białej? INVESTDOM to kompleksowa budowa domów pod klucz oraz nowoczesne domy na sprzedaż. Zobacz nasze realizacje i projekty domów!"
+        ],
+        "canonical": [
+          "https://www.investdom.com.pl/"
+        ],
+        "headings": [
+          {
+            "level": "h1",
+            "text": "Kompleksowa Budowa Domów w Bielsku-Białej i na Śląsku"
+          },
+          {
+            "level": "h2",
+            "text": "Sprawdzona Firma Budowlana – Dlaczego warto wybrać INVESTDOM?"
+          },
+          {
+            "level": "h3",
+            "text": "Gwarancja Terminowości i Solidności"
+          },
+          {
+            "level": "h3",
+            "text": "Osobisty Nadzór Właściciela"
+          },
+          {
+            "level": "h3",
+            "text": "15+ Lat Doświadczenia"
+          },
+          {
+            "level": "h2",
+            "text": "Nowe Domy na Sprzedaż w Bielsku-Białej i Okolicach"
+          },
+          {
+            "level": "h3",
+            "text": "Dom Wolnostojący Pisarzowice (Etap II)"
+          },
+          {
+            "level": "h2",
+            "text": "Budowa Domów Pod Klucz i w Stanie Deweloperskim od A do Z"
+          },
+          {
+            "level": "h3",
+            "text": "Stan surowy"
+          },
+          {
+            "level": "h3",
+            "text": "Stan deweloperski"
+          },
+          {
+            "level": "h3",
+            "text": "Budowa pod klucz"
+          },
+          {
+            "level": "h3",
+            "text": "Budowa na działce Klienta"
+          },
+          {
+            "level": "h3",
+            "text": "Remonty"
+          },
+          {
+            "level": "h3",
+            "text": "Wykończenia"
+          },
+          {
+            "level": "h2",
+            "text": "Najczęstsze Pytania"
+          },
+          {
+            "level": "h3",
+            "text": "Ile kosztuje budowa domu w Bielsku-Białej?"
+          },
+          {
+            "level": "h3",
+            "text": "Czy budujecie domy na działce klienta?"
+          },
+          {
+            "level": "h3",
+            "text": "Ile trwa budowa domu pod klucz?"
+          },
+          {
+            "level": "h2",
+            "text": "Skontaktuj się z nami"
+          },
+          {
+            "level": "h3",
+            "text": "Wyślij wiadomość"
+          },
+          {
+            "level": "h3",
+            "text": "Kontakt"
+          },
+          {
+            "level": "h3",
+            "text": "Nawigacja"
+          },
+          {
+            "level": "h3",
+            "text": "Gdzie budujemy?"
+          }
+        ],
+        "images": [
+          {
+            "src": "/logo.svg",
+            "alt": "InvestDom Logo",
+            "width": null,
+            "height": null,
+            "srcset": null,
+            "sizes": null,
+            "loading": null,
+            "fetchpriority": null
+          },
+          {
+            "src": "/logo.svg",
+            "alt": "InvestDom Logo",
+            "width": null,
+            "height": null,
+            "srcset": null,
+            "sizes": null,
+            "loading": null,
+            "fetchpriority": null
+          },
+          {
+            "src": "/_image?href=%2F_astro%2Fbudowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv.jpg&w=1920&h=1080&q=75&f=webp",
+            "alt": "Realizacja budowy domu jednorodzinnego w Bielsku-Białej przez firmę INVESTDOM",
+            "width": "1920",
+            "height": "1080",
+            "srcset": null,
+            "sizes": null,
+            "loading": "eager",
+            "fetchpriority": "high"
+          },
+          {
+            "src": "/_image?href=%2F_astro%2Fbudowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv.jpg&w=800&h=600&q=80&f=webp",
+            "alt": "Realizacja budowy domu jednorodzinnego w Bielsku-Białej przez firmę INVESTDOM",
+            "width": "800",
+            "height": "600",
+            "srcset": null,
+            "sizes": null,
+            "loading": "lazy",
+            "fetchpriority": "auto"
+          },
+          {
+            "src": "/_image?href=%2F_astro%2Fnowoczesny-dom-na-sprzedaz-bielsko.CFyHeYfm.jpg&w=800&h=600&q=80&f=webp",
+            "alt": "Realizacja budowy domu jednorodzinnego w Bielsku-Białej przez firmę INVESTDOM - Dom Wolnostojący Pisarzowice (Etap II)",
+            "width": "800",
+            "height": "600",
+            "srcset": null,
+            "sizes": null,
+            "loading": "lazy",
+            "fetchpriority": "auto"
+          },
+          {
+            "src": "/logo.svg",
+            "alt": "InvestDom Logo",
+            "width": null,
+            "height": null,
+            "srcset": null,
+            "sizes": null,
+            "loading": null,
+            "fetchpriority": null
+          }
+        ],
+        "phones": [
+          "tel:+48571328993",
+          "tel:+48571328993"
+        ],
+        "schemas": [
+          {
+            "@context": "https://schema.org",
+            "@type": "HomeAndConstructionBusiness",
+            "@id": "https://www.investdom.com.pl/#organization",
+            "name": "INVESTDOM",
+            "url": "https://www.investdom.com.pl/",
+            "logo": "https://www.investdom.com.pl/logo.png",
+            "image": "https://www.investdom.com.pl/og-image.jpg",
+            "telephone": "+48571328993",
+            "email": "kontakt@investdom.pl",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "ul. Do lasu 25",
+              "addressLocality": "Bielsko-Biała",
+              "postalCode": "43-300",
+              "addressRegion": "śląskie",
+              "addressCountry": "PL"
+            },
+            "areaServed": [
+              {
+                "@type": "City",
+                "name": "Bielsko-Biała"
+              },
+              {
+                "@type": "City",
+                "name": "Czechowice-Dziedzice"
+              },
+              {
+                "@type": "City",
+                "name": "Żywiec"
+              },
+              {
+                "@type": "City",
+                "name": "Cieszyn"
+              },
+              {
+                "@type": "City",
+                "name": "Szczyrk"
+              }
+            ]
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Ile kosztuje budowa domu w Bielsku-Białej?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Ceny budowy domów w regionie śląskim zaczynają się od około 3000-3500 zł netto za metr kwadratowy w stanie surowym. Ostateczny koszt zależy od wybranego projektu, technologii oraz standardu wykończenia. Oferujemy bezpłatną, indywidualną wycenę dla każdego projektu."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Czy budujecie domy na działce klienta?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Tak, realizujemy budowę domów jednorodzinnych na działkach powierzonych przez Klienta. Głównie działamy na terenie Bielska-Białej oraz w okolicznych miejscowościach (m.in. Czechowice-Dziedzice, Żywiec, Szczyrk, Cieszyn). Pomagamy też w ocenie działki pod kątem budowlanym przed rozpoczęciem prac."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Ile trwa budowa domu pod klucz?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Czas budowy domu jednorodzinnego pod klucz wynosi zazwyczaj od 9 do 14 miesięcy, w zależności od warunków atmosferycznych, wielkości budynku i wybranej technologii. Stan surowy zamknięty jesteśmy w stanie osiągnąć często już po 3-4 miesiącach."
+                }
+              }
+            ]
+          }
+        ],
+        "subject_label": true,
+        "menu_inert": true,
+        "service_link_classes": [
+          [
+            "inline-flex",
+            "min-h-6",
+            "items-center",
+            "py-1",
+            "text-white",
+            "font-medium",
+            "hover:underline",
+            "decoration-white/50",
+            "underline-offset-4"
+          ]
+        ],
+        "og_image_dimensions": [
+          "1200",
+          "630"
+        ]
+      },
+      {
+        "path": "/budowa-domow-pod-klucz",
+        "status": 200,
+        "x_robots_tag": "noindex",
+        "login": false,
+        "title": "Budowa domów pod klucz Bielsko-Biała | Etapy i standardy | INVESTDOM",
+        "description": [
+          "Dowiedz się, jak wygląda proces budowy domu pod klucz z INVESTDOM. Sprawdź nasze standardy materiałowe i etapy realizacji od fundamentów po wykończenie."
+        ],
+        "canonical": [
+          "https://www.investdom.com.pl/budowa-domow-pod-klucz"
+        ],
+        "headings": [
+          {
+            "level": "h1",
+            "text": "Budowa domów pod klucz – krok po kroku"
+          },
+          {
+            "level": "h2",
+            "text": "Etap 1: Prace ziemne i fundamenty"
+          },
+          {
+            "level": "h2",
+            "text": "Etap 2: Stan surowy (ściany, strop, dach)"
+          },
+          {
+            "level": "h2",
+            "text": "Etap 3: Stan deweloperski"
+          },
+          {
+            "level": "h2",
+            "text": "Etap 4: Prace wykończeniowe (Pod Klucz)"
+          },
+          {
+            "level": "h3",
+            "text": "Nasze standardy materiałowe"
+          },
+          {
+            "level": "h3",
+            "text": "Kontakt"
+          },
+          {
+            "level": "h3",
+            "text": "Nawigacja"
+          },
+          {
+            "level": "h3",
+            "text": "Gdzie budujemy?"
+          }
+        ],
+        "images": [
+          {
+            "src": "/logo.svg",
+            "alt": "InvestDom Logo",
+            "width": null,
+            "height": null,
+            "srcset": null,
+            "sizes": null,
+            "loading": null,
+            "fetchpriority": null
+          },
+          {
+            "src": "/logo.svg",
+            "alt": "InvestDom Logo",
+            "width": null,
+            "height": null,
+            "srcset": null,
+            "sizes": null,
+            "loading": null,
+            "fetchpriority": null
+          },
+          {
+            "src": "/logo.svg",
+            "alt": "InvestDom Logo",
+            "width": null,
+            "height": null,
+            "srcset": null,
+            "sizes": null,
+            "loading": null,
+            "fetchpriority": null
+          }
+        ],
+        "phones": [
+          "tel:+48571328993"
+        ],
+        "schemas": [
+          {
+            "@context": "https://schema.org",
+            "@type": "HomeAndConstructionBusiness",
+            "@id": "https://www.investdom.com.pl/#organization",
+            "name": "INVESTDOM",
+            "url": "https://www.investdom.com.pl/",
+            "logo": "https://www.investdom.com.pl/logo.png",
+            "image": "https://www.investdom.com.pl/og-image.jpg",
+            "telephone": "+48571328993",
+            "email": "kontakt@investdom.pl",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "ul. Do lasu 25",
+              "addressLocality": "Bielsko-Biała",
+              "postalCode": "43-300",
+              "addressRegion": "śląskie",
+              "addressCountry": "PL"
+            },
+            "areaServed": [
+              {
+                "@type": "City",
+                "name": "Bielsko-Biała"
+              },
+              {
+                "@type": "City",
+                "name": "Czechowice-Dziedzice"
+              },
+              {
+                "@type": "City",
+                "name": "Żywiec"
+              },
+              {
+                "@type": "City",
+                "name": "Cieszyn"
+              },
+              {
+                "@type": "City",
+                "name": "Szczyrk"
+              }
+            ]
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "@id": "https://www.investdom.com.pl/budowa-domow-pod-klucz#service",
+            "name": "Budowa domów pod klucz",
+            "serviceType": "Budowa domów pod klucz",
+            "description": "Budowa domów jednorodzinnych w Bielsku-Białej i okolicach: od fundamentów przez stan surowy i deweloperski po wykończenie pod klucz.",
+            "url": "https://www.investdom.com.pl/budowa-domow-pod-klucz",
+            "provider": {
+              "@id": "https://www.investdom.com.pl/#organization"
+            },
+            "areaServed": [
+              {
+                "@type": "City",
+                "name": "Bielsko-Biała"
+              },
+              {
+                "@type": "City",
+                "name": "Czechowice-Dziedzice"
+              },
+              {
+                "@type": "City",
+                "name": "Żywiec"
+              },
+              {
+                "@type": "City",
+                "name": "Cieszyn"
+              },
+              {
+                "@type": "City",
+                "name": "Szczyrk"
+              }
+            ]
+          }
+        ],
+        "subject_label": false,
+        "menu_inert": true,
+        "service_link_classes": [],
+        "og_image_dimensions": [
+          "1200",
+          "630"
+        ]
+      },
+      {
+        "path": "/domy-na-sprzedaz-bielsko",
+        "status": 200,
+        "x_robots_tag": "noindex",
+        "login": false,
+        "title": "Nowe domy na sprzedaż Bielsko-Biała | Inwestycje | INVESTDOM",
+        "description": [
+          "Poznaj nasze aktualne inwestycje deweloperskie w Bielsku-Białej i okolicach. Gotowe domy na sprzedaż w stanie deweloperskim m.in w atrakcyjnych dzielnicach, takich jak Pisarzowice."
+        ],
+        "canonical": [
+          "https://www.investdom.com.pl/domy-na-sprzedaz-bielsko"
+        ],
+        "headings": [
+          {
+            "level": "h1",
+            "text": "Nowe domy na sprzedaż w Bielsku-Białej"
+          },
+          {
+            "level": "h2",
+            "text": "Inwestycje: Pisarzowice"
+          },
+          {
+            "level": "h3",
+            "text": "Dom Wolnostojący Pisarzowice (Etap II)"
+          },
+          {
+            "level": "h3",
+            "text": "Kontakt"
+          },
+          {
+            "level": "h3",
+            "text": "Nawigacja"
+          },
+          {
+            "level": "h3",
+            "text": "Gdzie budujemy?"
+          }
+        ],
+        "images": [
+          {
+            "src": "/logo.svg",
+            "alt": "InvestDom Logo",
+            "width": null,
+            "height": null,
+            "srcset": null,
+            "sizes": null,
+            "loading": null,
+            "fetchpriority": null
+          },
+          {
+            "src": "/logo.svg",
+            "alt": "InvestDom Logo",
+            "width": null,
+            "height": null,
+            "srcset": null,
+            "sizes": null,
+            "loading": null,
+            "fetchpriority": null
+          },
+          {
+            "src": "/_image?href=%2F_astro%2Fnowoczesny-dom-na-sprzedaz-bielsko.CFyHeYfm.jpg&w=800&h=600&q=80&f=webp",
+            "alt": "Dom Wolnostojący Pisarzowice (Etap II)",
+            "width": "800",
+            "height": "600",
+            "srcset": null,
+            "sizes": null,
+            "loading": "lazy",
+            "fetchpriority": "auto"
+          },
+          {
+            "src": "/logo.svg",
+            "alt": "InvestDom Logo",
+            "width": null,
+            "height": null,
+            "srcset": null,
+            "sizes": null,
+            "loading": null,
+            "fetchpriority": null
+          }
+        ],
+        "phones": [
+          "tel:+48571328993"
+        ],
+        "schemas": [
+          {
+            "@context": "https://schema.org",
+            "@type": "HomeAndConstructionBusiness",
+            "@id": "https://www.investdom.com.pl/#organization",
+            "name": "INVESTDOM",
+            "url": "https://www.investdom.com.pl/",
+            "logo": "https://www.investdom.com.pl/logo.png",
+            "image": "https://www.investdom.com.pl/og-image.jpg",
+            "telephone": "+48571328993",
+            "email": "kontakt@investdom.pl",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "ul. Do lasu 25",
+              "addressLocality": "Bielsko-Biała",
+              "postalCode": "43-300",
+              "addressRegion": "śląskie",
+              "addressCountry": "PL"
+            },
+            "areaServed": [
+              {
+                "@type": "City",
+                "name": "Bielsko-Biała"
+              },
+              {
+                "@type": "City",
+                "name": "Czechowice-Dziedzice"
+              },
+              {
+                "@type": "City",
+                "name": "Żywiec"
+              },
+              {
+                "@type": "City",
+                "name": "Cieszyn"
+              },
+              {
+                "@type": "City",
+                "name": "Szczyrk"
+              }
+            ]
+          }
+        ],
+        "subject_label": false,
+        "menu_inert": true,
+        "service_link_classes": [],
+        "og_image_dimensions": [
+          "1200",
+          "630"
+        ]
+      },
+      {
+        "path": "/projekty-domow",
+        "status": 200,
+        "x_robots_tag": "noindex",
+        "login": false,
+        "title": "Projekty Domów Bielsko-Biała | Autorskie Projekty | INVESTDOM",
+        "description": [
+          "Zobacz naszą bazę sprawdzonych projektów domów jednorodzinnych. Domy parterowe, z poddaszem użytkowym i piętrowe, gotowe do realizacji w Bielsku-Białej i okolicach."
+        ],
+        "canonical": [
+          "https://www.investdom.com.pl/projekty-domow"
+        ],
+        "headings": [
+          {
+            "level": "h1",
+            "text": "Autorskie Projekty Domów"
+          },
+          {
+            "level": "h2",
+            "text": "Dom Wolnostojący Pisarzowice (Etap II)"
+          },
+          {
+            "level": "h3",
+            "text": "Kontakt"
+          },
+          {
+            "level": "h3",
+            "text": "Nawigacja"
+          },
+          {
+            "level": "h3",
+            "text": "Gdzie budujemy?"
+          }
+        ],
+        "images": [
+          {
+            "src": "/logo.svg",
+            "alt": "InvestDom Logo",
+            "width": null,
+            "height": null,
+            "srcset": null,
+            "sizes": null,
+            "loading": null,
+            "fetchpriority": null
+          },
+          {
+            "src": "/logo.svg",
+            "alt": "InvestDom Logo",
+            "width": null,
+            "height": null,
+            "srcset": null,
+            "sizes": null,
+            "loading": null,
+            "fetchpriority": null
+          },
+          {
+            "src": "/_image?href=%2F_astro%2Fnowoczesny-dom-na-sprzedaz-bielsko.CFyHeYfm.jpg&w=400&h=300&f=webp",
+            "alt": "Dom Wolnostojący Pisarzowice (Etap II)",
+            "width": "400",
+            "height": "300",
+            "srcset": null,
+            "sizes": null,
+            "loading": "lazy",
+            "fetchpriority": "auto"
+          },
+          {
+            "src": "/logo.svg",
+            "alt": "InvestDom Logo",
+            "width": null,
+            "height": null,
+            "srcset": null,
+            "sizes": null,
+            "loading": null,
+            "fetchpriority": null
+          }
+        ],
+        "phones": [
+          "tel:+48571328993"
+        ],
+        "schemas": [
+          {
+            "@context": "https://schema.org",
+            "@type": "HomeAndConstructionBusiness",
+            "@id": "https://www.investdom.com.pl/#organization",
+            "name": "INVESTDOM",
+            "url": "https://www.investdom.com.pl/",
+            "logo": "https://www.investdom.com.pl/logo.png",
+            "image": "https://www.investdom.com.pl/og-image.jpg",
+            "telephone": "+48571328993",
+            "email": "kontakt@investdom.pl",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "ul. Do lasu 25",
+              "addressLocality": "Bielsko-Biała",
+              "postalCode": "43-300",
+              "addressRegion": "śląskie",
+              "addressCountry": "PL"
+            },
+            "areaServed": [
+              {
+                "@type": "City",
+                "name": "Bielsko-Biała"
+              },
+              {
+                "@type": "City",
+                "name": "Czechowice-Dziedzice"
+              },
+              {
+                "@type": "City",
+                "name": "Żywiec"
+              },
+              {
+                "@type": "City",
+                "name": "Cieszyn"
+              },
+              {
+                "@type": "City",
+                "name": "Szczyrk"
+              }
+            ]
+          }
+        ],
+        "subject_label": false,
+        "menu_inert": true,
+        "service_link_classes": [],
+        "og_image_dimensions": [
+          "1200",
+          "630"
+        ]
+      }
+    ]
+  },
+  "details": [
+    {
+      "name": "home-mobile",
+      "audits": {
+        "is-crawlable": {
+          "id": "is-crawlable",
+          "title": "Page is blocked from indexing",
+          "description": "Search engines are unable to include your pages in search results if they don't have permission to crawl them. [Learn more about crawler directives](https://developer.chrome.com/docs/lighthouse/seo/is-crawlable/).",
+          "score": 0,
+          "scoreDisplayMode": "binary",
+          "warnings": [],
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "source",
+                "valueType": "code",
+                "label": "Blocking Directive Source"
+              }
+            ],
+            "items": [
+              {
+                "source": "x-robots-tag: noindex"
+              }
+            ]
+          }
+        },
+        "deprecations": {
+          "id": "deprecations",
+          "title": "Uses deprecated APIs",
+          "description": "Deprecated APIs will eventually be removed from the browser. [Learn more about deprecated APIs](https://developer.chrome.com/docs/lighthouse/best-practices/deprecations/).",
+          "score": 0,
+          "scoreDisplayMode": "binary",
+          "displayValue": "1 warning found",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "value",
+                "valueType": "text",
+                "label": "Deprecation / Warning"
+              },
+              {
+                "key": "source",
+                "valueType": "source-location",
+                "label": "Source"
+              }
+            ],
+            "items": [
+              {
+                "value": "FencedFrame",
+                "source": {
+                  "type": "source-location",
+                  "url": "https://investdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app/~partytown/partytown-sandbox-sw.html?1792135327516",
+                  "urlProvider": "network",
+                  "line": 1,
+                  "column": 11622
+                }
+              }
+            ]
+          }
+        },
+        "image-delivery-insight": {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "description": "Reducing the download time of images can improve the perceived load time of the page and LCP. [Learn more about optimizing image size](https://developer.chrome.com/docs/performance/insights/image-delivery)",
+          "score": 0,
+          "scoreDisplayMode": "metricSavings",
+          "displayValue": "Est savings of 409 KiB",
+          "metricSavings": {
+            "FCP": 0,
+            "LCP": 1400
+          },
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": ""
+              },
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL",
+                "subItemsHeading": {
+                  "key": "reason",
+                  "valueType": "text"
+                }
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Resource Size"
+              },
+              {
+                "key": "wastedBytes",
+                "valueType": "bytes",
+                "label": "Est Savings",
+                "subItemsHeading": {
+                  "key": "wastedBytes",
+                  "valueType": "bytes"
+                }
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-IMG",
+                  "path": "1,HTML,1,BODY,2,MAIN,0,SECTION,1,DIV,1,IMG",
+                  "selector": "main > section.relative > div.absolute > img.w-full",
+                  "boundingRect": {
+                    "top": 0,
+                    "bottom": 741,
+                    "left": 0,
+                    "right": 412,
+                    "width": 412,
+                    "height": 741
+                  },
+                  "snippet": "<img src=\"/_image?href=%2F_astro%2Fbudowa-domu-jednorodzinnego-bielsko-biala.purg6Ds…\" alt=\"Realizacja budowy domu jednorodzinnego w Bielsku-Białej przez firmę INVEST…\" loading=\"eager\" decoding=\"async\" fetchpriority=\"high\" data-astro-cid-anhloy43=\"true\" width=\"1920\" height=\"1080\" class=\"w-full h-full object-cover\">",
+                  "nodeLabel": "Realizacja budowy domu jednorodzinnego w Bielsku-Białej przez firmę INVESTDOM"
+                },
+                "url": "https://investdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app/_image?href=%2F_astro%2Fbudowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv.jpg&w=1920&h=1080&q=75&f=webp",
+                "totalBytes": 429016,
+                "wastedBytes": 307102,
+                "subItems": {
+                  "type": "subitems",
+                  "items": [
+                    {
+                      "reason": "Increasing the image compression factor could improve this image's download size.",
+                      "wastedBytes": 236861
+                    },
+                    {
+                      "reason": "This image file is larger than it needs to be (801x1440) for its displayed dimensions (988x741). Use responsive images to reduce the image download size.",
+                      "wastedBytes": 156824
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-1-IMG",
+                  "path": "1,HTML,1,BODY,2,MAIN,2,SECTION,0,DIV,1,DIV,0,DIV,0,DIV,1,DIV,0,IMG",
+                  "selector": "div.bg-white > div.grid > div.relative > img.absolute",
+                  "boundingRect": {
+                    "top": 3398,
+                    "bottom": 3698,
+                    "left": 17,
+                    "right": 395,
+                    "width": 378,
+                    "height": 300
+                  },
+                  "snippet": "<img src=\"/_image?href=%2F_astro%2Fnowoczesny-dom-na-sprzedaz-bielsko.CFyHeYfm.jpg&amp;w…\" alt=\"Realizacja budowy domu jednorodzinnego w Bielsku-Białej przez firmę INVEST…\" loading=\"lazy\" decoding=\"async\" fetchpriority=\"auto\" width=\"800\" height=\"600\" class=\"absolute inset-0 w-full h-full object-cover\">",
+                  "nodeLabel": "Realizacja budowy domu jednorodzinnego w Bielsku-Białej przez firmę INVESTDOM -…"
+                },
+                "url": "https://investdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app/_image?href=%2F_astro%2Fnowoczesny-dom-na-sprzedaz-bielsko.CFyHeYfm.jpg&w=800&h=600&q=80&f=webp",
+                "totalBytes": 79678,
+                "wastedBytes": 59678,
+                "subItems": {
+                  "type": "subitems",
+                  "items": [
+                    {
+                      "reason": "This image file is larger than it needs to be (756x600) for its displayed dimensions (400x300). Use responsive images to reduce the image download size.",
+                      "wastedBytes": 58599
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-2-IMG",
+                  "path": "1,HTML,1,BODY,2,MAIN,1,SECTION,0,DIV,1,DIV,1,DIV,0,IMG",
+                  "selector": "div.max-w-7xl > div.grid > div.relative > img.w-full",
+                  "boundingRect": {
+                    "top": 1097,
+                    "bottom": 1497,
+                    "left": 16,
+                    "right": 396,
+                    "width": 380,
+                    "height": 400
+                  },
+                  "snippet": "<img src=\"/_image?href=%2F_astro%2Fbudowa-domu-jednorodzinnego-bielsko-biala.purg6Ds…\" alt=\"Realizacja budowy domu jednorodzinnego w Bielsku-Białej przez firmę INVEST…\" loading=\"lazy\" decoding=\"async\" fetchpriority=\"auto\" width=\"800\" height=\"600\" class=\"w-full h-[400px] object-cover\">",
+                  "nodeLabel": "Realizacja budowy domu jednorodzinnego w Bielsku-Białej przez firmę INVESTDOM"
+                },
+                "url": "https://investdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app/_image?href=%2F_astro%2Fbudowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv.jpg&w=800&h=600&q=80&f=webp",
+                "totalBytes": 87632,
+                "wastedBytes": 52077,
+                "subItems": {
+                  "type": "subitems",
+                  "items": [
+                    {
+                      "reason": "Increasing the image compression factor could improve this image's download size.",
+                      "wastedBytes": 30703
+                    },
+                    {
+                      "reason": "This image file is larger than it needs to be (569x600) for its displayed dimensions (533x400). Use responsive images to reduce the image download size.",
+                      "wastedBytes": 32901
+                    }
+                  ]
+                }
+              }
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "wastedBytes": 418857
+            }
+          },
+          "guidanceLevel": 3
+        },
+        "lcp-discovery-insight": {
+          "id": "lcp-discovery-insight",
+          "title": "LCP request discovery",
+          "description": "[Optimize LCP](https://developer.chrome.com/docs/performance/insights/lcp-discovery) by making the LCP image discoverable from the HTML immediately, and avoiding lazy-loading",
+          "score": 1,
+          "scoreDisplayMode": "numeric",
+          "metricSavings": {
+            "LCP": 0
+          },
+          "details": {
+            "type": "list",
+            "items": [
+              {
+                "type": "checklist",
+                "items": {
+                  "priorityHinted": {
+                    "label": "fetchpriority=high applied",
+                    "value": true
+                  },
+                  "requestDiscoverable": {
+                    "label": "Request is discoverable in initial document",
+                    "value": true
+                  },
+                  "eagerlyLoaded": {
+                    "label": "LCP resources should not use loading=lazy",
+                    "value": true
+                  }
+                }
+              },
+              {
+                "type": "node",
+                "lhId": "page-0-IMG",
+                "path": "1,HTML,1,BODY,2,MAIN,0,SECTION,1,DIV,1,IMG",
+                "selector": "main > section.relative > div.absolute > img.w-full",
+                "boundingRect": {
+                  "top": 0,
+                  "bottom": 741,
+                  "left": 0,
+                  "right": 412,
+                  "width": 412,
+                  "height": 741
+                },
+                "snippet": "<img src=\"/_image?href=%2F_astro%2Fbudowa-domu-jednorodzinnego-bielsko-biala.purg6Ds…\" alt=\"Realizacja budowy domu jednorodzinnego w Bielsku-Białej przez firmę INVEST…\" loading=\"eager\" decoding=\"async\" fetchpriority=\"high\" data-astro-cid-anhloy43=\"true\" width=\"1920\" height=\"1080\" class=\"w-full h-full object-cover\">",
+                "nodeLabel": "Realizacja budowy domu jednorodzinnego w Bielsku-Białej przez firmę INVESTDOM"
+              }
+            ]
+          },
+          "guidanceLevel": 3
+        },
+        "lcp-breakdown-insight": {
+          "id": "lcp-breakdown-insight",
+          "title": "LCP breakdown",
+          "description": "Each [subpart has specific improvement strategies](https://developer.chrome.com/docs/performance/insights/lcp-breakdown). Ideally, most of the LCP time should be spent on loading the resources, not within delays.",
+          "score": 0,
+          "scoreDisplayMode": "numeric",
+          "metricSavings": {
+            "LCP": 0
+          },
+          "details": {
+            "type": "list",
+            "items": [
+              {
+                "type": "table",
+                "headings": [
+                  {
+                    "key": "label",
+                    "valueType": "text",
+                    "label": "Subpart"
+                  },
+                  {
+                    "key": "duration",
+                    "valueType": "ms",
+                    "label": "Duration"
+                  }
+                ],
+                "items": [
+                  {
+                    "subpart": "timeToFirstByte",
+                    "label": "Time to first byte",
+                    "duration": 715.774
+                  },
+                  {
+                    "subpart": "resourceLoadDelay",
+                    "label": "Resource load delay",
+                    "duration": 24.896
+                  },
+                  {
+                    "subpart": "resourceLoadDuration",
+                    "label": "Resource load duration",
+                    "duration": 1943.924
+                  },
+                  {
+                    "subpart": "elementRenderDelay",
+                    "label": "Element render delay",
+                    "duration": 124.051
+                  }
+                ]
+              },
+              {
+                "type": "node",
+                "lhId": "page-0-IMG",
+                "path": "1,HTML,1,BODY,2,MAIN,0,SECTION,1,DIV,1,IMG",
+                "selector": "main > section.relative > div.absolute > img.w-full",
+                "boundingRect": {
+                  "top": 0,
+                  "bottom": 741,
+                  "left": 0,
+                  "right": 412,
+                  "width": 412,
+                  "height": 741
+                },
+                "snippet": "<img src=\"/_image?href=%2F_astro%2Fbudowa-domu-jednorodzinnego-bielsko-biala.purg6Ds…\" alt=\"Realizacja budowy domu jednorodzinnego w Bielsku-Białej przez firmę INVEST…\" loading=\"eager\" decoding=\"async\" fetchpriority=\"high\" data-astro-cid-anhloy43=\"true\" width=\"1920\" height=\"1080\" class=\"w-full h-full object-cover\">",
+                "nodeLabel": "Realizacja budowy domu jednorodzinnego w Bielsku-Białej przez firmę INVESTDOM"
+              }
+            ]
+          },
+          "guidanceLevel": 3
+        },
+        "unsized-images": {
+          "id": "unsized-images",
+          "title": "Image elements do not have explicit `width` and `height`",
+          "description": "Set an explicit width and height on image elements to reduce layout shifts and improve CLS. [Learn how to set image dimensions](https://web.dev/articles/optimize-cls#images_without_dimensions)",
+          "score": 0.5,
+          "scoreDisplayMode": "metricSavings",
+          "metricSavings": {
+            "CLS": 0
+          },
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": ""
+              },
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              }
+            ],
+            "items": [
+              {
+                "url": "https://investdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app/logo.svg",
+                "node": {
+                  "type": "node",
+                  "lhId": "1-40-IMG",
+                  "path": "1,HTML,1,BODY,0,HEADER,0,DIV,0,DIV,1,A,3,DIV,0,IMG",
+                  "selector": "div.flex > a.group > div.md:hidden > img.h-10",
+                  "boundingRect": {
+                    "top": 20,
+                    "bottom": 60,
+                    "left": 16,
+                    "right": 200,
+                    "width": 184,
+                    "height": 40
+                  },
+                  "snippet": "<img src=\"/logo.svg\" alt=\"InvestDom Logo\" class=\"h-10 w-auto\">",
+                  "nodeLabel": "InvestDom Logo"
+                }
+              },
+              {
+                "url": "https://investdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app/logo.svg",
+                "node": {
+                  "type": "node",
+                  "lhId": "1-44-IMG",
+                  "path": "1,HTML,1,BODY,3,FOOTER,0,DIV,0,DIV,0,DIV,0,DIV,0,IMG",
+                  "selector": "div.grid > div.col-span-1 > div.mb-4 > img.h-10",
+                  "boundingRect": {
+                    "top": 9400,
+                    "bottom": 9440,
+                    "left": 24,
+                    "right": 208,
+                    "width": 184,
+                    "height": 40
+                  },
+                  "snippet": "<img src=\"/logo.svg\" alt=\"InvestDom Logo\" class=\"h-10 w-auto\">",
+                  "nodeLabel": "InvestDom Logo"
+                }
+              }
+            ]
+          },
+          "guidanceLevel": 4
+        },
+        "target-size": {
+          "id": "target-size",
+          "title": "Touch targets have sufficient size and spacing.",
+          "description": "Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.13/target-size).",
+          "score": 1,
+          "scoreDisplayMode": "binary",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "subItemsHeading": {
+                  "key": "relatedNode",
+                  "valueType": "node"
+                },
+                "label": "Failing Elements"
+              }
+            ],
+            "items": []
+          }
+        },
+        "select-name": {
+          "id": "select-name",
+          "title": "Select elements have associated label elements.",
+          "description": "Form elements without effective labels can create frustrating experiences for screen reader users. [Learn more about the `select` element](https://dequeuniversity.com/rules/axe/4.13/select-name).",
+          "score": 1,
+          "scoreDisplayMode": "binary",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "subItemsHeading": {
+                  "key": "relatedNode",
+                  "valueType": "node"
+                },
+                "label": "Failing Elements"
+              }
+            ],
+            "items": []
+          }
+        },
+        "aria-hidden-focus": {
+          "id": "aria-hidden-focus",
+          "title": "`[aria-hidden=\"true\"]` elements do not contain focusable descendents",
+          "description": "Focusable descendents within an `[aria-hidden=\"true\"]` element prevent those interactive elements from being available to users of assistive technologies like screen readers. [Learn how `aria-hidden` affects focusable elements](https://dequeuniversity.com/rules/axe/4.13/aria-hidden-focus).",
+          "score": 1,
+          "scoreDisplayMode": "binary",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "subItemsHeading": {
+                  "key": "relatedNode",
+                  "valueType": "node"
+                },
+                "label": "Failing Elements"
+              }
+            ],
+            "items": []
+          }
+        },
+        "color-contrast": {
+          "id": "color-contrast",
+          "title": "Background and foreground colors have a sufficient contrast ratio",
+          "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.13/color-contrast).",
+          "score": 1,
+          "scoreDisplayMode": "binary",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "subItemsHeading": {
+                  "key": "relatedNode",
+                  "valueType": "node"
+                },
+                "label": "Failing Elements"
+              }
+            ],
+            "items": []
+          }
+        },
+        "heading-order": {
+          "id": "heading-order",
+          "title": "Heading elements appear in a sequentially-descending order",
+          "description": "Properly ordered headings that do not skip levels convey the semantic structure of the page, making it easier to navigate and understand when using assistive technologies. [Learn more about heading order](https://dequeuniversity.com/rules/axe/4.13/heading-order).",
+          "score": 1,
+          "scoreDisplayMode": "binary",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "subItemsHeading": {
+                  "key": "relatedNode",
+                  "valueType": "node"
+                },
+                "label": "Failing Elements"
+              }
+            ],
+            "items": []
+          }
+        },
+        "render-blocking-insight": {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "description": "Requests are blocking the page's initial render, which may delay LCP. [Deferring or inlining](https://developer.chrome.com/docs/performance/insights/render-blocking) can move these network requests out of the critical path.",
+          "score": 0,
+          "scoreDisplayMode": "metricSavings",
+          "displayValue": "Est savings of 110 ms",
+          "metricSavings": {
+            "FCP": 100,
+            "LCP": 0
+          },
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Transfer Size"
+              },
+              {
+                "key": "wastedMs",
+                "valueType": "timespanMs",
+                "label": "Duration"
+              }
+            ],
+            "items": [
+              {
+                "url": "https://investdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app/_astro/budowa-domow-pod-klucz.DWdbl6pU.css",
+                "totalBytes": 8365,
+                "wastedMs": 158
+              }
+            ]
+          },
+          "guidanceLevel": 3
+        },
+        "forced-reflow-insight": {
+          "id": "forced-reflow-insight",
+          "title": "Forced reflow",
+          "description": "A forced reflow occurs when JavaScript queries geometric properties (such as offsetWidth) after styles have been invalidated by a change to the DOM state. This can result in poor performance. Learn more about [forced reflows](https://developer.chrome.com/docs/performance/insights/forced-reflow) and possible mitigations.",
+          "score": 0,
+          "scoreDisplayMode": "numeric",
+          "details": {
+            "type": "list",
+            "items": [
+              {
+                "type": "table",
+                "headings": [
+                  {
+                    "key": "source",
+                    "valueType": "source-location",
+                    "label": "Source"
+                  },
+                  {
+                    "key": "reflowTime",
+                    "valueType": "ms",
+                    "granularity": 1,
+                    "label": "Total reflow time"
+                  }
+                ],
+                "items": [
+                  {
+                    "source": {
+                      "type": "source-location",
+                      "url": "https://investdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app/",
+                      "urlProvider": "network",
+                      "line": 71,
+                      "column": 44
+                    },
+                    "reflowTime": 43.8
+                  }
+                ]
+              }
+            ]
+          },
+          "guidanceLevel": 3
+        },
+        "errors-in-console": {
+          "id": "errors-in-console",
+          "title": "No browser errors logged to the console",
+          "description": "Errors logged to the console indicate unresolved problems. They can come from network request failures and other browser concerns. [Learn more about this errors in console diagnostic audit](https://developer.chrome.com/docs/lighthouse/best-practices/errors-in-console/)",
+          "score": 1,
+          "scoreDisplayMode": "binary",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "sourceLocation",
+                "valueType": "source-location",
+                "label": "Source"
+              },
+              {
+                "key": "description",
+                "valueType": "code",
+                "label": "Description"
+              }
+            ],
+            "items": []
+          }
+        },
+        "third-party-cookies": {
+          "id": "third-party-cookies",
+          "title": "Avoids third-party cookies",
+          "description": "Third-party cookies may be blocked in some contexts. [Learn more about preparing for third-party cookie restrictions](https://privacysandbox.google.com/cookies/prepare/overview).",
+          "score": 1,
+          "scoreDisplayMode": "binary",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "name",
+                "valueType": "text",
+                "label": "Name"
+              },
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              }
+            ],
+            "items": []
+          }
+        }
+      },
+      "agentic": {
+        "source": "file",
+        "requested_url": "https://investdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app/?_vercel_share=[redacted]",
+        "final_url": "https://investdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app/",
+        "lighthouse_version": "13.5.0",
+        "fetch_time": "2026-10-16T07:22:05.879Z",
+        "form_factor": "mobile",
+        "host_user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "fraction": {
+          "available": true,
+          "passed": 2,
+          "counted": 2,
+          "informative": 0,
+          "display": "2/2",
+          "category_score": 1
+        },
+        "error": null,
+        "audits": [
+          {
+            "id": "agent-accessibility-tree",
+            "group": "agent-accessibility",
+            "title": "Accessibility tree is well-formed",
+            "mode": "binary",
+            "score": 1,
+            "status": "pass",
+            "counted": true,
+            "display_value": "All audits passed",
+            "explanation": null,
+            "note": "Binary. Fails when any of 33 axe rules fails (names and labels, ARIA validity, tree structure, tabindex, autocomplete). Fix the listed rules.",
+            "failed_rules": []
+          },
+          {
+            "id": "webmcp-form-coverage",
+            "group": "webmcp",
+            "title": "WebMCP form coverage",
+            "mode": "notApplicable",
+            "score": null,
+            "status": "not-applicable",
+            "counted": false,
+            "display_value": null,
+            "explanation": null,
+            "note": "Informative while any form lacks both toolname and tooldescription; counts as a binary pass once every form has one. N/A with no forms or no WebMCP support in the testing browser.",
+            "forms_missing_annotations": []
+          },
+          {
+            "id": "webmcp-registered-tools",
+            "group": "webmcp",
+            "title": "WebMCP tools registered",
+            "mode": "notApplicable",
+            "score": null,
+            "status": "not-applicable",
+            "counted": false,
+            "display_value": null,
+            "explanation": null,
+            "note": "Always informative. Lists declarative and imperative tools seen during the page load. Never changes the fraction.",
+            "tools": []
+          },
+          {
+            "id": "webmcp-schema-validity",
+            "group": "webmcp",
+            "title": "WebMCP schemas are valid",
+            "mode": "notApplicable",
+            "score": null,
+            "status": "not-applicable",
+            "counted": false,
+            "display_value": null,
+            "explanation": null,
+            "note": "Scores 0 on errors (missing tool name or description, a required parameter without a name) and 0.5 on warnings, so both count as a failure. N/A when no tools and no issues exist.",
+            "issues": []
+          },
+          {
+            "id": "cumulative-layout-shift",
+            "group": null,
+            "title": "Cumulative Layout Shift",
+            "mode": "numeric",
+            "score": 1,
+            "status": "pass",
+            "counted": true,
+            "display_value": "0",
+            "explanation": null,
+            "note": "Numeric lab CLS. Passes at score 0.9 or higher (about CLS 0.1 or less)."
+          },
+          {
+            "id": "llms-txt",
+            "group": "agent-discoverability",
+            "title": "llms.txt follows recommendations",
+            "mode": "notApplicable",
+            "score": null,
+            "status": "not-applicable",
+            "counted": false,
+            "display_value": null,
+            "explanation": null,
+            "note": "Binary. /llms.txt needs an H1, one Markdown link, and 50+ characters. A 4xx makes it N/A; a 5xx or fetch error fails it.",
+            "issues": []
+          },
+          {
+            "id": "ard-schema",
+            "group": "agent-discoverability",
+            "title": "`ai-catalog.json` schema is valid",
+            "mode": "notApplicable",
+            "score": null,
+            "status": "not-applicable",
+            "counted": false,
+            "display_value": null,
+            "explanation": null,
+            "note": "Validates ai-catalog.json (Agentic Resource Discovery). N/A unless a catalog is signalled or /.well-known/ai-catalog.json returns 200.",
+            "issues": []
+          }
+        ],
+        "paths": [
+          {
+            "audit": "ard-schema",
+            "change": "adds one counted audit",
+            "how": "Publish a valid /.well-known/ai-catalog.json only if you have agent resources to list (MCP server, A2A agent, skills). An invalid catalog adds a counted failure instead."
+          },
+          {
+            "audit": "llms-txt",
+            "change": "adds one counted audit",
+            "how": "Serve /llms.txt with an H1, a summary, and Markdown links."
+          }
+        ]
+      },
+      "failed_scored_audits": {
+        "accessibility": [],
+        "best-practices": [
+          "deprecations"
+        ],
+        "seo": [
+          "is-crawlable"
+        ]
+      }
+    },
+    {
+      "name": "service-mobile",
+      "audits": {
+        "is-crawlable": {
+          "id": "is-crawlable",
+          "title": "Page is blocked from indexing",
+          "description": "Search engines are unable to include your pages in search results if they don't have permission to crawl them. [Learn more about crawler directives](https://developer.chrome.com/docs/lighthouse/seo/is-crawlable/).",
+          "score": 0,
+          "scoreDisplayMode": "binary",
+          "warnings": [],
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "source",
+                "valueType": "code",
+                "label": "Blocking Directive Source"
+              }
+            ],
+            "items": [
+              {
+                "source": "x-robots-tag: noindex"
+              }
+            ]
+          }
+        },
+        "deprecations": {
+          "id": "deprecations",
+          "title": "Uses deprecated APIs",
+          "description": "Deprecated APIs will eventually be removed from the browser. [Learn more about deprecated APIs](https://developer.chrome.com/docs/lighthouse/best-practices/deprecations/).",
+          "score": 0,
+          "scoreDisplayMode": "binary",
+          "displayValue": "1 warning found",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "value",
+                "valueType": "text",
+                "label": "Deprecation / Warning"
+              },
+              {
+                "key": "source",
+                "valueType": "source-location",
+                "label": "Source"
+              }
+            ],
+            "items": [
+              {
+                "value": "FencedFrame",
+                "source": {
+                  "type": "source-location",
+                  "url": "https://investdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app/~partytown/partytown-sandbox-sw.html?1792135344040",
+                  "urlProvider": "network",
+                  "line": 1,
+                  "column": 11622
+                }
+              }
+            ]
+          }
+        },
+        "image-delivery-insight": {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "description": "Reducing the download time of images can improve the perceived load time of the page and LCP. [Learn more about optimizing image size](https://developer.chrome.com/docs/performance/insights/image-delivery)",
+          "score": 1,
+          "scoreDisplayMode": "metricSavings",
+          "metricSavings": {
+            "FCP": 0,
+            "LCP": 0
+          },
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": ""
+              },
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL",
+                "subItemsHeading": {
+                  "key": "reason",
+                  "valueType": "text"
+                }
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Resource Size"
+              },
+              {
+                "key": "wastedBytes",
+                "valueType": "bytes",
+                "label": "Est Savings",
+                "subItemsHeading": {
+                  "key": "wastedBytes",
+                  "valueType": "bytes"
+                }
+              }
+            ],
+            "items": [],
+            "debugData": {
+              "type": "debugdata",
+              "wastedBytes": 0
+            }
+          },
+          "guidanceLevel": 3
+        },
+        "lcp-discovery-insight": {
+          "id": "lcp-discovery-insight",
+          "title": "LCP request discovery",
+          "description": "[Optimize LCP](https://developer.chrome.com/docs/performance/insights/lcp-discovery) by making the LCP image discoverable from the HTML immediately, and avoiding lazy-loading",
+          "score": null,
+          "scoreDisplayMode": "notApplicable",
+          "guidanceLevel": 3
+        },
+        "lcp-breakdown-insight": {
+          "id": "lcp-breakdown-insight",
+          "title": "LCP breakdown",
+          "description": "Each [subpart has specific improvement strategies](https://developer.chrome.com/docs/performance/insights/lcp-breakdown). Ideally, most of the LCP time should be spent on loading the resources, not within delays.",
+          "score": 1,
+          "scoreDisplayMode": "informative",
+          "metricSavings": {
+            "LCP": 0
+          },
+          "details": {
+            "type": "list",
+            "items": [
+              {
+                "type": "table",
+                "headings": [
+                  {
+                    "key": "label",
+                    "valueType": "text",
+                    "label": "Subpart"
+                  },
+                  {
+                    "key": "duration",
+                    "valueType": "ms",
+                    "label": "Duration"
+                  }
+                ],
+                "items": [
+                  {
+                    "subpart": "timeToFirstByte",
+                    "label": "Time to first byte",
+                    "duration": 250.277
+                  },
+                  {
+                    "subpart": "elementRenderDelay",
+                    "label": "Element render delay",
+                    "duration": 181.838
+                  }
+                ]
+              },
+              {
+                "type": "node",
+                "lhId": "page-0-P",
+                "path": "1,HTML,1,BODY,2,MAIN,0,DIV,0,DIV,2,DIV,0,P",
+                "selector": "div.max-w-7xl > div.max-w-4xl > div.prose > p.text-xl",
+                "boundingRect": {
+                  "top": 388,
+                  "bottom": 584,
+                  "left": 49,
+                  "right": 363,
+                  "width": 314,
+                  "height": 196
+                },
+                "snippet": "<p class=\"text-xl font-medium text-navy-900\">",
+                "nodeLabel": "Powierzając nam budowę swojego wymarzonego domu, zyskujesz pewność, że proces i…"
+              }
+            ]
+          },
+          "guidanceLevel": 3
+        },
+        "unsized-images": {
+          "id": "unsized-images",
+          "title": "Image elements do not have explicit `width` and `height`",
+          "description": "Set an explicit width and height on image elements to reduce layout shifts and improve CLS. [Learn how to set image dimensions](https://web.dev/articles/optimize-cls#images_without_dimensions)",
+          "score": 0.5,
+          "scoreDisplayMode": "metricSavings",
+          "metricSavings": {
+            "CLS": 0
+          },
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": ""
+              },
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              }
+            ],
+            "items": [
+              {
+                "url": "https://investdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app/logo.svg",
+                "node": {
+                  "type": "node",
+                  "lhId": "1-16-IMG",
+                  "path": "1,HTML,1,BODY,0,HEADER,0,DIV,0,DIV,1,A,3,DIV,0,IMG",
+                  "selector": "div.flex > a.group > div.md:hidden > img.h-10",
+                  "boundingRect": {
+                    "top": 20,
+                    "bottom": 60,
+                    "left": 16,
+                    "right": 200,
+                    "width": 184,
+                    "height": 40
+                  },
+                  "snippet": "<img src=\"/logo.svg\" alt=\"InvestDom Logo\" class=\"h-10 w-auto\">",
+                  "nodeLabel": "InvestDom Logo"
+                }
+              },
+              {
+                "url": "https://investdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app/logo.svg",
+                "node": {
+                  "type": "node",
+                  "lhId": "1-17-IMG",
+                  "path": "1,HTML,1,BODY,3,FOOTER,0,DIV,0,DIV,0,DIV,0,DIV,0,IMG",
+                  "selector": "div.grid > div.col-span-1 > div.mb-4 > img.h-10",
+                  "boundingRect": {
+                    "top": 2540,
+                    "bottom": 2580,
+                    "left": 24,
+                    "right": 208,
+                    "width": 184,
+                    "height": 40
+                  },
+                  "snippet": "<img src=\"/logo.svg\" alt=\"InvestDom Logo\" class=\"h-10 w-auto\">",
+                  "nodeLabel": "InvestDom Logo"
+                }
+              }
+            ]
+          },
+          "guidanceLevel": 4
+        },
+        "target-size": {
+          "id": "target-size",
+          "title": "Touch targets have sufficient size and spacing.",
+          "description": "Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.13/target-size).",
+          "score": 1,
+          "scoreDisplayMode": "binary",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "subItemsHeading": {
+                  "key": "relatedNode",
+                  "valueType": "node"
+                },
+                "label": "Failing Elements"
+              }
+            ],
+            "items": []
+          }
+        },
+        "select-name": {
+          "id": "select-name",
+          "title": "Select elements have associated label elements.",
+          "description": "Form elements without effective labels can create frustrating experiences for screen reader users. [Learn more about the `select` element](https://dequeuniversity.com/rules/axe/4.13/select-name).",
+          "score": null,
+          "scoreDisplayMode": "notApplicable"
+        },
+        "aria-hidden-focus": {
+          "id": "aria-hidden-focus",
+          "title": "`[aria-hidden=\"true\"]` elements do not contain focusable descendents",
+          "description": "Focusable descendents within an `[aria-hidden=\"true\"]` element prevent those interactive elements from being available to users of assistive technologies like screen readers. [Learn how `aria-hidden` affects focusable elements](https://dequeuniversity.com/rules/axe/4.13/aria-hidden-focus).",
+          "score": 1,
+          "scoreDisplayMode": "binary",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "subItemsHeading": {
+                  "key": "relatedNode",
+                  "valueType": "node"
+                },
+                "label": "Failing Elements"
+              }
+            ],
+            "items": []
+          }
+        },
+        "color-contrast": {
+          "id": "color-contrast",
+          "title": "Background and foreground colors have a sufficient contrast ratio",
+          "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.13/color-contrast).",
+          "score": 1,
+          "scoreDisplayMode": "binary",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "subItemsHeading": {
+                  "key": "relatedNode",
+                  "valueType": "node"
+                },
+                "label": "Failing Elements"
+              }
+            ],
+            "items": []
+          }
+        },
+        "heading-order": {
+          "id": "heading-order",
+          "title": "Heading elements appear in a sequentially-descending order",
+          "description": "Properly ordered headings that do not skip levels convey the semantic structure of the page, making it easier to navigate and understand when using assistive technologies. [Learn more about heading order](https://dequeuniversity.com/rules/axe/4.13/heading-order).",
+          "score": 1,
+          "scoreDisplayMode": "binary",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "subItemsHeading": {
+                  "key": "relatedNode",
+                  "valueType": "node"
+                },
+                "label": "Failing Elements"
+              }
+            ],
+            "items": []
+          }
+        },
+        "render-blocking-insight": {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "description": "Requests are blocking the page's initial render, which may delay LCP. [Deferring or inlining](https://developer.chrome.com/docs/performance/insights/render-blocking) can move these network requests out of the critical path.",
+          "score": 0,
+          "scoreDisplayMode": "metricSavings",
+          "displayValue": "Est savings of 60 ms",
+          "metricSavings": {
+            "FCP": 50,
+            "LCP": 50
+          },
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Transfer Size"
+              },
+              {
+                "key": "wastedMs",
+                "valueType": "timespanMs",
+                "label": "Duration"
+              }
+            ],
+            "items": [
+              {
+                "url": "https://investdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app/_astro/budowa-domow-pod-klucz.DWdbl6pU.css",
+                "totalBytes": 8341,
+                "wastedMs": 150
+              }
+            ]
+          },
+          "guidanceLevel": 3
+        },
+        "forced-reflow-insight": {
+          "id": "forced-reflow-insight",
+          "title": "Forced reflow",
+          "description": "A forced reflow occurs when JavaScript queries geometric properties (such as offsetWidth) after styles have been invalidated by a change to the DOM state. This can result in poor performance. Learn more about [forced reflows](https://developer.chrome.com/docs/performance/insights/forced-reflow) and possible mitigations.",
+          "score": 1,
+          "scoreDisplayMode": "numeric",
+          "details": {
+            "type": "list",
+            "items": [
+              {
+                "type": "table",
+                "headings": [
+                  {
+                    "key": "source",
+                    "valueType": "source-location",
+                    "label": "Source"
+                  },
+                  {
+                    "key": "reflowTime",
+                    "valueType": "ms",
+                    "granularity": 1,
+                    "label": "Total reflow time"
+                  }
+                ],
+                "items": []
+              }
+            ]
+          },
+          "guidanceLevel": 3
+        },
+        "errors-in-console": {
+          "id": "errors-in-console",
+          "title": "No browser errors logged to the console",
+          "description": "Errors logged to the console indicate unresolved problems. They can come from network request failures and other browser concerns. [Learn more about this errors in console diagnostic audit](https://developer.chrome.com/docs/lighthouse/best-practices/errors-in-console/)",
+          "score": 1,
+          "scoreDisplayMode": "binary",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "sourceLocation",
+                "valueType": "source-location",
+                "label": "Source"
+              },
+              {
+                "key": "description",
+                "valueType": "code",
+                "label": "Description"
+              }
+            ],
+            "items": []
+          }
+        },
+        "third-party-cookies": {
+          "id": "third-party-cookies",
+          "title": "Avoids third-party cookies",
+          "description": "Third-party cookies may be blocked in some contexts. [Learn more about preparing for third-party cookie restrictions](https://privacysandbox.google.com/cookies/prepare/overview).",
+          "score": 1,
+          "scoreDisplayMode": "binary",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "name",
+                "valueType": "text",
+                "label": "Name"
+              },
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              }
+            ],
+            "items": []
+          }
+        }
+      },
+      "agentic": {
+        "source": "file",
+        "requested_url": "https://investdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app/budowa-domow-pod-klucz?_vercel_share=[redacted]",
+        "final_url": "https://investdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app/budowa-domow-pod-klucz",
+        "lighthouse_version": "13.5.0",
+        "fetch_time": "2026-10-16T07:22:23.507Z",
+        "form_factor": "mobile",
+        "host_user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "fraction": {
+          "available": true,
+          "passed": 2,
+          "counted": 2,
+          "informative": 0,
+          "display": "2/2",
+          "category_score": 1
+        },
+        "error": null,
+        "audits": [
+          {
+            "id": "agent-accessibility-tree",
+            "group": "agent-accessibility",
+            "title": "Accessibility tree is well-formed",
+            "mode": "binary",
+            "score": 1,
+            "status": "pass",
+            "counted": true,
+            "display_value": "All audits passed",
+            "explanation": null,
+            "note": "Binary. Fails when any of 33 axe rules fails (names and labels, ARIA validity, tree structure, tabindex, autocomplete). Fix the listed rules.",
+            "failed_rules": []
+          },
+          {
+            "id": "webmcp-form-coverage",
+            "group": "webmcp",
+            "title": "WebMCP form coverage",
+            "mode": "notApplicable",
+            "score": null,
+            "status": "not-applicable",
+            "counted": false,
+            "display_value": null,
+            "explanation": null,
+            "note": "Informative while any form lacks both toolname and tooldescription; counts as a binary pass once every form has one. N/A with no forms or no WebMCP support in the testing browser.",
+            "forms_missing_annotations": []
+          },
+          {
+            "id": "webmcp-registered-tools",
+            "group": "webmcp",
+            "title": "WebMCP tools registered",
+            "mode": "notApplicable",
+            "score": null,
+            "status": "not-applicable",
+            "counted": false,
+            "display_value": null,
+            "explanation": null,
+            "note": "Always informative. Lists declarative and imperative tools seen during the page load. Never changes the fraction.",
+            "tools": []
+          },
+          {
+            "id": "webmcp-schema-validity",
+            "group": "webmcp",
+            "title": "WebMCP schemas are valid",
+            "mode": "notApplicable",
+            "score": null,
+            "status": "not-applicable",
+            "counted": false,
+            "display_value": null,
+            "explanation": null,
+            "note": "Scores 0 on errors (missing tool name or description, a required parameter without a name) and 0.5 on warnings, so both count as a failure. N/A when no tools and no issues exist.",
+            "issues": []
+          },
+          {
+            "id": "cumulative-layout-shift",
+            "group": null,
+            "title": "Cumulative Layout Shift",
+            "mode": "numeric",
+            "score": 1,
+            "status": "pass",
+            "counted": true,
+            "display_value": "0",
+            "explanation": null,
+            "note": "Numeric lab CLS. Passes at score 0.9 or higher (about CLS 0.1 or less)."
+          },
+          {
+            "id": "llms-txt",
+            "group": "agent-discoverability",
+            "title": "llms.txt follows recommendations",
+            "mode": "notApplicable",
+            "score": null,
+            "status": "not-applicable",
+            "counted": false,
+            "display_value": null,
+            "explanation": null,
+            "note": "Binary. /llms.txt needs an H1, one Markdown link, and 50+ characters. A 4xx makes it N/A; a 5xx or fetch error fails it.",
+            "issues": []
+          },
+          {
+            "id": "ard-schema",
+            "group": "agent-discoverability",
+            "title": "`ai-catalog.json` schema is valid",
+            "mode": "notApplicable",
+            "score": null,
+            "status": "not-applicable",
+            "counted": false,
+            "display_value": null,
+            "explanation": null,
+            "note": "Validates ai-catalog.json (Agentic Resource Discovery). N/A unless a catalog is signalled or /.well-known/ai-catalog.json returns 200.",
+            "issues": []
+          }
+        ],
+        "paths": [
+          {
+            "audit": "ard-schema",
+            "change": "adds one counted audit",
+            "how": "Publish a valid /.well-known/ai-catalog.json only if you have agent resources to list (MCP server, A2A agent, skills). An invalid catalog adds a counted failure instead."
+          },
+          {
+            "audit": "llms-txt",
+            "change": "adds one counted audit",
+            "how": "Serve /llms.txt with an H1, a summary, and Markdown links."
+          }
+        ]
+      },
+      "failed_scored_audits": {
+        "accessibility": [],
+        "best-practices": [
+          "deprecations"
+        ],
+        "seo": [
+          "is-crawlable"
+        ]
+      }
+    },
+    {
+      "name": "offers-mobile",
+      "audits": {
+        "is-crawlable": {
+          "id": "is-crawlable",
+          "title": "Page is blocked from indexing",
+          "description": "Search engines are unable to include your pages in search results if they don't have permission to crawl them. [Learn more about crawler directives](https://developer.chrome.com/docs/lighthouse/seo/is-crawlable/).",
+          "score": 0,
+          "scoreDisplayMode": "binary",
+          "warnings": [],
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "source",
+                "valueType": "code",
+                "label": "Blocking Directive Source"
+              }
+            ],
+            "items": [
+              {
+                "source": "x-robots-tag: noindex"
+              }
+            ]
+          }
+        },
+        "deprecations": {
+          "id": "deprecations",
+          "title": "Uses deprecated APIs",
+          "description": "Deprecated APIs will eventually be removed from the browser. [Learn more about deprecated APIs](https://developer.chrome.com/docs/lighthouse/best-practices/deprecations/).",
+          "score": 0,
+          "scoreDisplayMode": "binary",
+          "displayValue": "1 warning found",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "value",
+                "valueType": "text",
+                "label": "Deprecation / Warning"
+              },
+              {
+                "key": "source",
+                "valueType": "source-location",
+                "label": "Source"
+              }
+            ],
+            "items": [
+              {
+                "value": "FencedFrame",
+                "source": {
+                  "type": "source-location",
+                  "url": "https://investdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app/~partytown/partytown-sandbox-sw.html?1792135359141",
+                  "urlProvider": "network",
+                  "line": 1,
+                  "column": 11622
+                }
+              }
+            ]
+          }
+        },
+        "image-delivery-insight": {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "description": "Reducing the download time of images can improve the perceived load time of the page and LCP. [Learn more about optimizing image size](https://developer.chrome.com/docs/performance/insights/image-delivery)",
+          "score": 0,
+          "scoreDisplayMode": "metricSavings",
+          "displayValue": "Est savings of 60 KiB",
+          "metricSavings": {
+            "FCP": 0,
+            "LCP": 300
+          },
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": ""
+              },
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL",
+                "subItemsHeading": {
+                  "key": "reason",
+                  "valueType": "text"
+                }
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Resource Size"
+              },
+              {
+                "key": "wastedBytes",
+                "valueType": "bytes",
+                "label": "Est Savings",
+                "subItemsHeading": {
+                  "key": "wastedBytes",
+                  "valueType": "bytes"
+                }
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-IMG",
+                  "path": "1,HTML,1,BODY,2,MAIN,0,DIV,1,DIV,0,DIV,1,DIV,0,DIV,0,DIV,0,IMG",
+                  "selector": "div.grid > div.bg-white > div.relative > img.absolute",
+                  "boundingRect": {
+                    "top": 586,
+                    "bottom": 842,
+                    "left": 17,
+                    "right": 395,
+                    "width": 378,
+                    "height": 256
+                  },
+                  "snippet": "<img src=\"/_image?href=%2F_astro%2Fnowoczesny-dom-na-sprzedaz-bielsko.CFyHeYfm.jpg&amp;w…\" alt=\"Dom Wolnostojący Pisarzowice (Etap II)\" loading=\"lazy\" decoding=\"async\" fetchpriority=\"auto\" width=\"800\" height=\"600\" class=\"absolute inset-0 w-full h-full object-cover\">",
+                  "nodeLabel": "Dom Wolnostojący Pisarzowice (Etap II)"
+                },
+                "url": "https://investdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app/_image?href=%2F_astro%2Fnowoczesny-dom-na-sprzedaz-bielsko.CFyHeYfm.jpg&w=800&h=600&q=80&f=webp",
+                "totalBytes": 79678,
+                "wastedBytes": 61817,
+                "subItems": {
+                  "type": "subitems",
+                  "items": [
+                    {
+                      "reason": "Increasing the image compression factor could improve this image's download size.",
+                      "wastedBytes": 7565
+                    },
+                    {
+                      "reason": "This image file is larger than it needs to be (800x541) for its displayed dimensions (378x284). Use responsive images to reduce the image download size.",
+                      "wastedBytes": 59944
+                    }
+                  ]
+                }
+              }
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "wastedBytes": 61817
+            }
+          },
+          "guidanceLevel": 3
+        },
+        "lcp-discovery-insight": {
+          "id": "lcp-discovery-insight",
+          "title": "LCP request discovery",
+          "description": "[Optimize LCP](https://developer.chrome.com/docs/performance/insights/lcp-discovery) by making the LCP image discoverable from the HTML immediately, and avoiding lazy-loading",
+          "score": 0,
+          "scoreDisplayMode": "numeric",
+          "metricSavings": {
+            "LCP": 0
+          },
+          "details": {
+            "type": "list",
+            "items": [
+              {
+                "type": "checklist",
+                "items": {
+                  "priorityHinted": {
+                    "label": "fetchpriority=high should be applied",
+                    "value": false
+                  },
+                  "requestDiscoverable": {
+                    "label": "Request is discoverable in initial document",
+                    "value": true
+                  },
+                  "eagerlyLoaded": {
+                    "label": "LCP resources should not use loading=lazy",
+                    "value": false
+                  }
+                }
+              },
+              {
+                "type": "node",
+                "lhId": "page-0-IMG",
+                "path": "1,HTML,1,BODY,2,MAIN,0,DIV,1,DIV,0,DIV,1,DIV,0,DIV,0,DIV,0,IMG",
+                "selector": "div.grid > div.bg-white > div.relative > img.absolute",
+                "boundingRect": {
+                  "top": 586,
+                  "bottom": 842,
+                  "left": 17,
+                  "right": 395,
+                  "width": 378,
+                  "height": 256
+                },
+                "snippet": "<img src=\"/_image?href=%2F_astro%2Fnowoczesny-dom-na-sprzedaz-bielsko.CFyHeYfm.jpg&amp;w…\" alt=\"Dom Wolnostojący Pisarzowice (Etap II)\" loading=\"lazy\" decoding=\"async\" fetchpriority=\"auto\" width=\"800\" height=\"600\" class=\"absolute inset-0 w-full h-full object-cover\">",
+                "nodeLabel": "Dom Wolnostojący Pisarzowice (Etap II)"
+              }
+            ]
+          },
+          "guidanceLevel": 3
+        },
+        "lcp-breakdown-insight": {
+          "id": "lcp-breakdown-insight",
+          "title": "LCP breakdown",
+          "description": "Each [subpart has specific improvement strategies](https://developer.chrome.com/docs/performance/insights/lcp-breakdown). Ideally, most of the LCP time should be spent on loading the resources, not within delays.",
+          "score": 1,
+          "scoreDisplayMode": "informative",
+          "metricSavings": {
+            "LCP": 0
+          },
+          "details": {
+            "type": "list",
+            "items": [
+              {
+                "type": "table",
+                "headings": [
+                  {
+                    "key": "label",
+                    "valueType": "text",
+                    "label": "Subpart"
+                  },
+                  {
+                    "key": "duration",
+                    "valueType": "ms",
+                    "label": "Duration"
+                  }
+                ],
+                "items": [
+                  {
+                    "subpart": "timeToFirstByte",
+                    "label": "Time to first byte",
+                    "duration": 403.49500001525877
+                  },
+                  {
+                    "subpart": "resourceLoadDelay",
+                    "label": "Resource load delay",
+                    "duration": 142.3929999847412
+                  },
+                  {
+                    "subpart": "resourceLoadDuration",
+                    "label": "Resource load duration",
+                    "duration": 74.899
+                  },
+                  {
+                    "subpart": "elementRenderDelay",
+                    "label": "Element render delay",
+                    "duration": 52.665
+                  }
+                ]
+              },
+              {
+                "type": "node",
+                "lhId": "page-0-IMG",
+                "path": "1,HTML,1,BODY,2,MAIN,0,DIV,1,DIV,0,DIV,1,DIV,0,DIV,0,DIV,0,IMG",
+                "selector": "div.grid > div.bg-white > div.relative > img.absolute",
+                "boundingRect": {
+                  "top": 586,
+                  "bottom": 842,
+                  "left": 17,
+                  "right": 395,
+                  "width": 378,
+                  "height": 256
+                },
+                "snippet": "<img src=\"/_image?href=%2F_astro%2Fnowoczesny-dom-na-sprzedaz-bielsko.CFyHeYfm.jpg&amp;w…\" alt=\"Dom Wolnostojący Pisarzowice (Etap II)\" loading=\"lazy\" decoding=\"async\" fetchpriority=\"auto\" width=\"800\" height=\"600\" class=\"absolute inset-0 w-full h-full object-cover\">",
+                "nodeLabel": "Dom Wolnostojący Pisarzowice (Etap II)"
+              }
+            ]
+          },
+          "guidanceLevel": 3
+        },
+        "unsized-images": {
+          "id": "unsized-images",
+          "title": "Image elements do not have explicit `width` and `height`",
+          "description": "Set an explicit width and height on image elements to reduce layout shifts and improve CLS. [Learn how to set image dimensions](https://web.dev/articles/optimize-cls#images_without_dimensions)",
+          "score": 0.5,
+          "scoreDisplayMode": "metricSavings",
+          "metricSavings": {
+            "CLS": 0
+          },
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": ""
+              },
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              }
+            ],
+            "items": [
+              {
+                "url": "https://investdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app/logo.svg",
+                "node": {
+                  "type": "node",
+                  "lhId": "1-17-IMG",
+                  "path": "1,HTML,1,BODY,0,HEADER,0,DIV,0,DIV,1,A,3,DIV,0,IMG",
+                  "selector": "div.flex > a.group > div.md:hidden > img.h-10",
+                  "boundingRect": {
+                    "top": 20,
+                    "bottom": 60,
+                    "left": 16,
+                    "right": 200,
+                    "width": 184,
+                    "height": 40
+                  },
+                  "snippet": "<img src=\"/logo.svg\" alt=\"InvestDom Logo\" class=\"h-10 w-auto\">",
+                  "nodeLabel": "InvestDom Logo"
+                }
+              },
+              {
+                "url": "https://investdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app/logo.svg",
+                "node": {
+                  "type": "node",
+                  "lhId": "1-19-IMG",
+                  "path": "1,HTML,1,BODY,3,FOOTER,0,DIV,0,DIV,0,DIV,0,DIV,0,IMG",
+                  "selector": "div.grid > div.col-span-1 > div.mb-4 > img.h-10",
+                  "boundingRect": {
+                    "top": 1943,
+                    "bottom": 1983,
+                    "left": 24,
+                    "right": 208,
+                    "width": 184,
+                    "height": 40
+                  },
+                  "snippet": "<img src=\"/logo.svg\" alt=\"InvestDom Logo\" class=\"h-10 w-auto\">",
+                  "nodeLabel": "InvestDom Logo"
+                }
+              }
+            ]
+          },
+          "guidanceLevel": 4
+        },
+        "target-size": {
+          "id": "target-size",
+          "title": "Touch targets have sufficient size and spacing.",
+          "description": "Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.13/target-size).",
+          "score": 1,
+          "scoreDisplayMode": "binary",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "subItemsHeading": {
+                  "key": "relatedNode",
+                  "valueType": "node"
+                },
+                "label": "Failing Elements"
+              }
+            ],
+            "items": []
+          }
+        },
+        "select-name": {
+          "id": "select-name",
+          "title": "Select elements have associated label elements.",
+          "description": "Form elements without effective labels can create frustrating experiences for screen reader users. [Learn more about the `select` element](https://dequeuniversity.com/rules/axe/4.13/select-name).",
+          "score": null,
+          "scoreDisplayMode": "notApplicable"
+        },
+        "aria-hidden-focus": {
+          "id": "aria-hidden-focus",
+          "title": "`[aria-hidden=\"true\"]` elements do not contain focusable descendents",
+          "description": "Focusable descendents within an `[aria-hidden=\"true\"]` element prevent those interactive elements from being available to users of assistive technologies like screen readers. [Learn how `aria-hidden` affects focusable elements](https://dequeuniversity.com/rules/axe/4.13/aria-hidden-focus).",
+          "score": 1,
+          "scoreDisplayMode": "binary",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "subItemsHeading": {
+                  "key": "relatedNode",
+                  "valueType": "node"
+                },
+                "label": "Failing Elements"
+              }
+            ],
+            "items": []
+          }
+        },
+        "color-contrast": {
+          "id": "color-contrast",
+          "title": "Background and foreground colors have a sufficient contrast ratio",
+          "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.13/color-contrast).",
+          "score": 1,
+          "scoreDisplayMode": "binary",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "subItemsHeading": {
+                  "key": "relatedNode",
+                  "valueType": "node"
+                },
+                "label": "Failing Elements"
+              }
+            ],
+            "items": []
+          }
+        },
+        "heading-order": {
+          "id": "heading-order",
+          "title": "Heading elements appear in a sequentially-descending order",
+          "description": "Properly ordered headings that do not skip levels convey the semantic structure of the page, making it easier to navigate and understand when using assistive technologies. [Learn more about heading order](https://dequeuniversity.com/rules/axe/4.13/heading-order).",
+          "score": 1,
+          "scoreDisplayMode": "binary",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "subItemsHeading": {
+                  "key": "relatedNode",
+                  "valueType": "node"
+                },
+                "label": "Failing Elements"
+              }
+            ],
+            "items": []
+          }
+        },
+        "render-blocking-insight": {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "description": "Requests are blocking the page's initial render, which may delay LCP. [Deferring or inlining](https://developer.chrome.com/docs/performance/insights/render-blocking) can move these network requests out of the critical path.",
+          "score": 0,
+          "scoreDisplayMode": "metricSavings",
+          "displayValue": "Est savings of 90 ms",
+          "metricSavings": {
+            "FCP": 100,
+            "LCP": 0
+          },
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Transfer Size"
+              },
+              {
+                "key": "wastedMs",
+                "valueType": "timespanMs",
+                "label": "Duration"
+              }
+            ],
+            "items": [
+              {
+                "url": "https://investdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app/_astro/budowa-domow-pod-klucz.DWdbl6pU.css",
+                "totalBytes": 8351,
+                "wastedMs": 153
+              }
+            ]
+          },
+          "guidanceLevel": 3
+        },
+        "forced-reflow-insight": {
+          "id": "forced-reflow-insight",
+          "title": "Forced reflow",
+          "description": "A forced reflow occurs when JavaScript queries geometric properties (such as offsetWidth) after styles have been invalidated by a change to the DOM state. This can result in poor performance. Learn more about [forced reflows](https://developer.chrome.com/docs/performance/insights/forced-reflow) and possible mitigations.",
+          "score": 1,
+          "scoreDisplayMode": "numeric",
+          "details": {
+            "type": "list",
+            "items": [
+              {
+                "type": "table",
+                "headings": [
+                  {
+                    "key": "source",
+                    "valueType": "source-location",
+                    "label": "Source"
+                  },
+                  {
+                    "key": "reflowTime",
+                    "valueType": "ms",
+                    "granularity": 1,
+                    "label": "Total reflow time"
+                  }
+                ],
+                "items": []
+              }
+            ]
+          },
+          "guidanceLevel": 3
+        },
+        "errors-in-console": {
+          "id": "errors-in-console",
+          "title": "No browser errors logged to the console",
+          "description": "Errors logged to the console indicate unresolved problems. They can come from network request failures and other browser concerns. [Learn more about this errors in console diagnostic audit](https://developer.chrome.com/docs/lighthouse/best-practices/errors-in-console/)",
+          "score": 1,
+          "scoreDisplayMode": "binary",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "sourceLocation",
+                "valueType": "source-location",
+                "label": "Source"
+              },
+              {
+                "key": "description",
+                "valueType": "code",
+                "label": "Description"
+              }
+            ],
+            "items": []
+          }
+        },
+        "third-party-cookies": {
+          "id": "third-party-cookies",
+          "title": "Avoids third-party cookies",
+          "description": "Third-party cookies may be blocked in some contexts. [Learn more about preparing for third-party cookie restrictions](https://privacysandbox.google.com/cookies/prepare/overview).",
+          "score": 1,
+          "scoreDisplayMode": "binary",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "name",
+                "valueType": "text",
+                "label": "Name"
+              },
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              }
+            ],
+            "items": []
+          }
+        }
+      },
+      "agentic": {
+        "source": "file",
+        "requested_url": "https://investdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app/domy-na-sprzedaz-bielsko?_vercel_share=[redacted]",
+        "final_url": "https://investdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app/domy-na-sprzedaz-bielsko",
+        "lighthouse_version": "13.5.0",
+        "fetch_time": "2026-10-16T07:22:38.356Z",
+        "form_factor": "mobile",
+        "host_user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "fraction": {
+          "available": true,
+          "passed": 2,
+          "counted": 2,
+          "informative": 0,
+          "display": "2/2",
+          "category_score": 1
+        },
+        "error": null,
+        "audits": [
+          {
+            "id": "agent-accessibility-tree",
+            "group": "agent-accessibility",
+            "title": "Accessibility tree is well-formed",
+            "mode": "binary",
+            "score": 1,
+            "status": "pass",
+            "counted": true,
+            "display_value": "All audits passed",
+            "explanation": null,
+            "note": "Binary. Fails when any of 33 axe rules fails (names and labels, ARIA validity, tree structure, tabindex, autocomplete). Fix the listed rules.",
+            "failed_rules": []
+          },
+          {
+            "id": "webmcp-form-coverage",
+            "group": "webmcp",
+            "title": "WebMCP form coverage",
+            "mode": "notApplicable",
+            "score": null,
+            "status": "not-applicable",
+            "counted": false,
+            "display_value": null,
+            "explanation": null,
+            "note": "Informative while any form lacks both toolname and tooldescription; counts as a binary pass once every form has one. N/A with no forms or no WebMCP support in the testing browser.",
+            "forms_missing_annotations": []
+          },
+          {
+            "id": "webmcp-registered-tools",
+            "group": "webmcp",
+            "title": "WebMCP tools registered",
+            "mode": "notApplicable",
+            "score": null,
+            "status": "not-applicable",
+            "counted": false,
+            "display_value": null,
+            "explanation": null,
+            "note": "Always informative. Lists declarative and imperative tools seen during the page load. Never changes the fraction.",
+            "tools": []
+          },
+          {
+            "id": "webmcp-schema-validity",
+            "group": "webmcp",
+            "title": "WebMCP schemas are valid",
+            "mode": "notApplicable",
+            "score": null,
+            "status": "not-applicable",
+            "counted": false,
+            "display_value": null,
+            "explanation": null,
+            "note": "Scores 0 on errors (missing tool name or description, a required parameter without a name) and 0.5 on warnings, so both count as a failure. N/A when no tools and no issues exist.",
+            "issues": []
+          },
+          {
+            "id": "cumulative-layout-shift",
+            "group": null,
+            "title": "Cumulative Layout Shift",
+            "mode": "numeric",
+            "score": 1,
+            "status": "pass",
+            "counted": true,
+            "display_value": "0",
+            "explanation": null,
+            "note": "Numeric lab CLS. Passes at score 0.9 or higher (about CLS 0.1 or less)."
+          },
+          {
+            "id": "llms-txt",
+            "group": "agent-discoverability",
+            "title": "llms.txt follows recommendations",
+            "mode": "notApplicable",
+            "score": null,
+            "status": "not-applicable",
+            "counted": false,
+            "display_value": null,
+            "explanation": null,
+            "note": "Binary. /llms.txt needs an H1, one Markdown link, and 50+ characters. A 4xx makes it N/A; a 5xx or fetch error fails it.",
+            "issues": []
+          },
+          {
+            "id": "ard-schema",
+            "group": "agent-discoverability",
+            "title": "`ai-catalog.json` schema is valid",
+            "mode": "notApplicable",
+            "score": null,
+            "status": "not-applicable",
+            "counted": false,
+            "display_value": null,
+            "explanation": null,
+            "note": "Validates ai-catalog.json (Agentic Resource Discovery). N/A unless a catalog is signalled or /.well-known/ai-catalog.json returns 200.",
+            "issues": []
+          }
+        ],
+        "paths": [
+          {
+            "audit": "ard-schema",
+            "change": "adds one counted audit",
+            "how": "Publish a valid /.well-known/ai-catalog.json only if you have agent resources to list (MCP server, A2A agent, skills). An invalid catalog adds a counted failure instead."
+          },
+          {
+            "audit": "llms-txt",
+            "change": "adds one counted audit",
+            "how": "Serve /llms.txt with an H1, a summary, and Markdown links."
+          }
+        ]
+      },
+      "failed_scored_audits": {
+        "accessibility": [],
+        "best-practices": [
+          "deprecations"
+        ],
+        "seo": [
+          "is-crawlable"
+        ]
+      }
+    },
+    {
+      "name": "projects-mobile",
+      "audits": {
+        "is-crawlable": {
+          "id": "is-crawlable",
+          "title": "Page is blocked from indexing",
+          "description": "Search engines are unable to include your pages in search results if they don't have permission to crawl them. [Learn more about crawler directives](https://developer.chrome.com/docs/lighthouse/seo/is-crawlable/).",
+          "score": 0,
+          "scoreDisplayMode": "binary",
+          "warnings": [],
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "source",
+                "valueType": "code",
+                "label": "Blocking Directive Source"
+              }
+            ],
+            "items": [
+              {
+                "source": "x-robots-tag: noindex"
+              }
+            ]
+          }
+        },
+        "deprecations": {
+          "id": "deprecations",
+          "title": "Uses deprecated APIs",
+          "description": "Deprecated APIs will eventually be removed from the browser. [Learn more about deprecated APIs](https://developer.chrome.com/docs/lighthouse/best-practices/deprecations/).",
+          "score": 0,
+          "scoreDisplayMode": "binary",
+          "displayValue": "1 warning found",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "value",
+                "valueType": "text",
+                "label": "Deprecation / Warning"
+              },
+              {
+                "key": "source",
+                "valueType": "source-location",
+                "label": "Source"
+              }
+            ],
+            "items": [
+              {
+                "value": "FencedFrame",
+                "source": {
+                  "type": "source-location",
+                  "url": "https://investdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app/~partytown/partytown-sandbox-sw.html?1792135373933",
+                  "urlProvider": "network",
+                  "line": 1,
+                  "column": 11622
+                }
+              }
+            ]
+          }
+        },
+        "image-delivery-insight": {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "description": "Reducing the download time of images can improve the perceived load time of the page and LCP. [Learn more about optimizing image size](https://developer.chrome.com/docs/performance/insights/image-delivery)",
+          "score": 0.5,
+          "scoreDisplayMode": "metricSavings",
+          "displayValue": "Est savings of 8 KiB",
+          "metricSavings": {
+            "FCP": 0,
+            "LCP": 0
+          },
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": ""
+              },
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL",
+                "subItemsHeading": {
+                  "key": "reason",
+                  "valueType": "text"
+                }
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Resource Size"
+              },
+              {
+                "key": "wastedBytes",
+                "valueType": "bytes",
+                "label": "Est Savings",
+                "subItemsHeading": {
+                  "key": "wastedBytes",
+                  "valueType": "bytes"
+                }
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-IMG",
+                  "path": "1,HTML,1,BODY,2,MAIN,0,DIV,1,DIV,0,DIV,0,DIV,0,IMG",
+                  "selector": "div.grid > div.bg-stone-50 > div.relative > img.w-full",
+                  "boundingRect": {
+                    "top": 505,
+                    "bottom": 665,
+                    "left": 33,
+                    "right": 379,
+                    "width": 346,
+                    "height": 160
+                  },
+                  "snippet": "<img src=\"/_image?href=%2F_astro%2Fnowoczesny-dom-na-sprzedaz-bielsko.CFyHeYfm.jpg&amp;w…\" alt=\"Dom Wolnostojący Pisarzowice (Etap II)\" loading=\"lazy\" decoding=\"async\" fetchpriority=\"auto\" width=\"400\" height=\"300\" class=\"w-full h-full object-cover rounded-xl group-hover:scale-105 transition-tra…\">",
+                  "nodeLabel": "Dom Wolnostojący Pisarzowice (Etap II)"
+                },
+                "url": "https://investdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app/_image?href=%2F_astro%2Fnowoczesny-dom-na-sprzedaz-bielsko.CFyHeYfm.jpg&w=400&h=300&f=webp",
+                "totalBytes": 20520,
+                "wastedBytes": 8212,
+                "subItems": {
+                  "type": "subitems",
+                  "items": [
+                    {
+                      "reason": "Increasing the image compression factor could improve this image's download size.",
+                      "wastedBytes": 8212
+                    }
+                  ]
+                }
+              }
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "wastedBytes": 8212
+            }
+          },
+          "guidanceLevel": 3
+        },
+        "lcp-discovery-insight": {
+          "id": "lcp-discovery-insight",
+          "title": "LCP request discovery",
+          "description": "[Optimize LCP](https://developer.chrome.com/docs/performance/insights/lcp-discovery) by making the LCP image discoverable from the HTML immediately, and avoiding lazy-loading",
+          "score": 0,
+          "scoreDisplayMode": "numeric",
+          "metricSavings": {
+            "LCP": 0
+          },
+          "details": {
+            "type": "list",
+            "items": [
+              {
+                "type": "checklist",
+                "items": {
+                  "priorityHinted": {
+                    "label": "fetchpriority=high should be applied",
+                    "value": false
+                  },
+                  "requestDiscoverable": {
+                    "label": "Request is discoverable in initial document",
+                    "value": true
+                  },
+                  "eagerlyLoaded": {
+                    "label": "LCP resources should not use loading=lazy",
+                    "value": false
+                  }
+                }
+              },
+              {
+                "type": "node",
+                "lhId": "page-0-IMG",
+                "path": "1,HTML,1,BODY,2,MAIN,0,DIV,1,DIV,0,DIV,0,DIV,0,IMG",
+                "selector": "div.grid > div.bg-stone-50 > div.relative > img.w-full",
+                "boundingRect": {
+                  "top": 505,
+                  "bottom": 665,
+                  "left": 33,
+                  "right": 379,
+                  "width": 346,
+                  "height": 160
+                },
+                "snippet": "<img src=\"/_image?href=%2F_astro%2Fnowoczesny-dom-na-sprzedaz-bielsko.CFyHeYfm.jpg&amp;w…\" alt=\"Dom Wolnostojący Pisarzowice (Etap II)\" loading=\"lazy\" decoding=\"async\" fetchpriority=\"auto\" width=\"400\" height=\"300\" class=\"w-full h-full object-cover rounded-xl group-hover:scale-105 transition-tra…\">",
+                "nodeLabel": "Dom Wolnostojący Pisarzowice (Etap II)"
+              }
+            ]
+          },
+          "guidanceLevel": 3
+        },
+        "lcp-breakdown-insight": {
+          "id": "lcp-breakdown-insight",
+          "title": "LCP breakdown",
+          "description": "Each [subpart has specific improvement strategies](https://developer.chrome.com/docs/performance/insights/lcp-breakdown). Ideally, most of the LCP time should be spent on loading the resources, not within delays.",
+          "score": 1,
+          "scoreDisplayMode": "informative",
+          "metricSavings": {
+            "LCP": 0
+          },
+          "details": {
+            "type": "list",
+            "items": [
+              {
+                "type": "table",
+                "headings": [
+                  {
+                    "key": "label",
+                    "valueType": "text",
+                    "label": "Subpart"
+                  },
+                  {
+                    "key": "duration",
+                    "valueType": "ms",
+                    "label": "Duration"
+                  }
+                ],
+                "items": [
+                  {
+                    "subpart": "timeToFirstByte",
+                    "label": "Time to first byte",
+                    "duration": 357.471
+                  },
+                  {
+                    "subpart": "resourceLoadDelay",
+                    "label": "Resource load delay",
+                    "duration": 200.184
+                  },
+                  {
+                    "subpart": "resourceLoadDuration",
+                    "label": "Resource load duration",
+                    "duration": 478.178
+                  },
+                  {
+                    "subpart": "elementRenderDelay",
+                    "label": "Element render delay",
+                    "duration": 26.318
+                  }
+                ]
+              },
+              {
+                "type": "node",
+                "lhId": "page-0-IMG",
+                "path": "1,HTML,1,BODY,2,MAIN,0,DIV,1,DIV,0,DIV,0,DIV,0,IMG",
+                "selector": "div.grid > div.bg-stone-50 > div.relative > img.w-full",
+                "boundingRect": {
+                  "top": 505,
+                  "bottom": 665,
+                  "left": 33,
+                  "right": 379,
+                  "width": 346,
+                  "height": 160
+                },
+                "snippet": "<img src=\"/_image?href=%2F_astro%2Fnowoczesny-dom-na-sprzedaz-bielsko.CFyHeYfm.jpg&amp;w…\" alt=\"Dom Wolnostojący Pisarzowice (Etap II)\" loading=\"lazy\" decoding=\"async\" fetchpriority=\"auto\" width=\"400\" height=\"300\" class=\"w-full h-full object-cover rounded-xl group-hover:scale-105 transition-tra…\">",
+                "nodeLabel": "Dom Wolnostojący Pisarzowice (Etap II)"
+              }
+            ]
+          },
+          "guidanceLevel": 3
+        },
+        "unsized-images": {
+          "id": "unsized-images",
+          "title": "Image elements do not have explicit `width` and `height`",
+          "description": "Set an explicit width and height on image elements to reduce layout shifts and improve CLS. [Learn how to set image dimensions](https://web.dev/articles/optimize-cls#images_without_dimensions)",
+          "score": 0.5,
+          "scoreDisplayMode": "metricSavings",
+          "metricSavings": {
+            "CLS": 0
+          },
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": ""
+              },
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              }
+            ],
+            "items": [
+              {
+                "url": "https://investdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app/logo.svg",
+                "node": {
+                  "type": "node",
+                  "lhId": "1-17-IMG",
+                  "path": "1,HTML,1,BODY,0,HEADER,0,DIV,0,DIV,1,A,3,DIV,0,IMG",
+                  "selector": "div.flex > a.group > div.md:hidden > img.h-10",
+                  "boundingRect": {
+                    "top": 20,
+                    "bottom": 60,
+                    "left": 16,
+                    "right": 200,
+                    "width": 184,
+                    "height": 40
+                  },
+                  "snippet": "<img src=\"/logo.svg\" alt=\"InvestDom Logo\" class=\"h-10 w-auto\">",
+                  "nodeLabel": "InvestDom Logo"
+                }
+              },
+              {
+                "url": "https://investdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app/logo.svg",
+                "node": {
+                  "type": "node",
+                  "lhId": "1-19-IMG",
+                  "path": "1,HTML,1,BODY,3,FOOTER,0,DIV,0,DIV,0,DIV,0,DIV,0,IMG",
+                  "selector": "div.grid > div.col-span-1 > div.mb-4 > img.h-10",
+                  "boundingRect": {
+                    "top": 1064,
+                    "bottom": 1104,
+                    "left": 24,
+                    "right": 208,
+                    "width": 184,
+                    "height": 40
+                  },
+                  "snippet": "<img src=\"/logo.svg\" alt=\"InvestDom Logo\" class=\"h-10 w-auto\">",
+                  "nodeLabel": "InvestDom Logo"
+                }
+              }
+            ]
+          },
+          "guidanceLevel": 4
+        },
+        "target-size": {
+          "id": "target-size",
+          "title": "Touch targets have sufficient size and spacing.",
+          "description": "Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.13/target-size).",
+          "score": 1,
+          "scoreDisplayMode": "binary",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "subItemsHeading": {
+                  "key": "relatedNode",
+                  "valueType": "node"
+                },
+                "label": "Failing Elements"
+              }
+            ],
+            "items": []
+          }
+        },
+        "select-name": {
+          "id": "select-name",
+          "title": "Select elements have associated label elements.",
+          "description": "Form elements without effective labels can create frustrating experiences for screen reader users. [Learn more about the `select` element](https://dequeuniversity.com/rules/axe/4.13/select-name).",
+          "score": null,
+          "scoreDisplayMode": "notApplicable"
+        },
+        "aria-hidden-focus": {
+          "id": "aria-hidden-focus",
+          "title": "`[aria-hidden=\"true\"]` elements do not contain focusable descendents",
+          "description": "Focusable descendents within an `[aria-hidden=\"true\"]` element prevent those interactive elements from being available to users of assistive technologies like screen readers. [Learn how `aria-hidden` affects focusable elements](https://dequeuniversity.com/rules/axe/4.13/aria-hidden-focus).",
+          "score": 1,
+          "scoreDisplayMode": "binary",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "subItemsHeading": {
+                  "key": "relatedNode",
+                  "valueType": "node"
+                },
+                "label": "Failing Elements"
+              }
+            ],
+            "items": []
+          }
+        },
+        "color-contrast": {
+          "id": "color-contrast",
+          "title": "Background and foreground colors have a sufficient contrast ratio",
+          "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.13/color-contrast).",
+          "score": 1,
+          "scoreDisplayMode": "binary",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "subItemsHeading": {
+                  "key": "relatedNode",
+                  "valueType": "node"
+                },
+                "label": "Failing Elements"
+              }
+            ],
+            "items": []
+          }
+        },
+        "heading-order": {
+          "id": "heading-order",
+          "title": "Heading elements appear in a sequentially-descending order",
+          "description": "Properly ordered headings that do not skip levels convey the semantic structure of the page, making it easier to navigate and understand when using assistive technologies. [Learn more about heading order](https://dequeuniversity.com/rules/axe/4.13/heading-order).",
+          "score": 1,
+          "scoreDisplayMode": "binary",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "subItemsHeading": {
+                  "key": "relatedNode",
+                  "valueType": "node"
+                },
+                "label": "Failing Elements"
+              }
+            ],
+            "items": []
+          }
+        },
+        "render-blocking-insight": {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "description": "Requests are blocking the page's initial render, which may delay LCP. [Deferring or inlining](https://developer.chrome.com/docs/performance/insights/render-blocking) can move these network requests out of the critical path.",
+          "score": 0,
+          "scoreDisplayMode": "metricSavings",
+          "displayValue": "Est savings of 110 ms",
+          "metricSavings": {
+            "FCP": 100,
+            "LCP": 0
+          },
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Transfer Size"
+              },
+              {
+                "key": "wastedMs",
+                "valueType": "timespanMs",
+                "label": "Duration"
+              }
+            ],
+            "items": [
+              {
+                "url": "https://investdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app/_astro/budowa-domow-pod-klucz.DWdbl6pU.css",
+                "totalBytes": 8350,
+                "wastedMs": 150
+              }
+            ]
+          },
+          "guidanceLevel": 3
+        },
+        "forced-reflow-insight": {
+          "id": "forced-reflow-insight",
+          "title": "Forced reflow",
+          "description": "A forced reflow occurs when JavaScript queries geometric properties (such as offsetWidth) after styles have been invalidated by a change to the DOM state. This can result in poor performance. Learn more about [forced reflows](https://developer.chrome.com/docs/performance/insights/forced-reflow) and possible mitigations.",
+          "score": 1,
+          "scoreDisplayMode": "numeric",
+          "details": {
+            "type": "list",
+            "items": [
+              {
+                "type": "table",
+                "headings": [
+                  {
+                    "key": "source",
+                    "valueType": "source-location",
+                    "label": "Source"
+                  },
+                  {
+                    "key": "reflowTime",
+                    "valueType": "ms",
+                    "granularity": 1,
+                    "label": "Total reflow time"
+                  }
+                ],
+                "items": []
+              }
+            ]
+          },
+          "guidanceLevel": 3
+        },
+        "errors-in-console": {
+          "id": "errors-in-console",
+          "title": "No browser errors logged to the console",
+          "description": "Errors logged to the console indicate unresolved problems. They can come from network request failures and other browser concerns. [Learn more about this errors in console diagnostic audit](https://developer.chrome.com/docs/lighthouse/best-practices/errors-in-console/)",
+          "score": 1,
+          "scoreDisplayMode": "binary",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "sourceLocation",
+                "valueType": "source-location",
+                "label": "Source"
+              },
+              {
+                "key": "description",
+                "valueType": "code",
+                "label": "Description"
+              }
+            ],
+            "items": []
+          }
+        },
+        "third-party-cookies": {
+          "id": "third-party-cookies",
+          "title": "Avoids third-party cookies",
+          "description": "Third-party cookies may be blocked in some contexts. [Learn more about preparing for third-party cookie restrictions](https://privacysandbox.google.com/cookies/prepare/overview).",
+          "score": 1,
+          "scoreDisplayMode": "binary",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "name",
+                "valueType": "text",
+                "label": "Name"
+              },
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              }
+            ],
+            "items": []
+          }
+        }
+      },
+      "agentic": {
+        "source": "file",
+        "requested_url": "https://investdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app/projekty-domow?_vercel_share=[redacted]",
+        "final_url": "https://investdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app/projekty-domow",
+        "lighthouse_version": "13.5.0",
+        "fetch_time": "2026-10-16T07:22:53.072Z",
+        "form_factor": "mobile",
+        "host_user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "fraction": {
+          "available": true,
+          "passed": 2,
+          "counted": 2,
+          "informative": 0,
+          "display": "2/2",
+          "category_score": 1
+        },
+        "error": null,
+        "audits": [
+          {
+            "id": "agent-accessibility-tree",
+            "group": "agent-accessibility",
+            "title": "Accessibility tree is well-formed",
+            "mode": "binary",
+            "score": 1,
+            "status": "pass",
+            "counted": true,
+            "display_value": "All audits passed",
+            "explanation": null,
+            "note": "Binary. Fails when any of 33 axe rules fails (names and labels, ARIA validity, tree structure, tabindex, autocomplete). Fix the listed rules.",
+            "failed_rules": []
+          },
+          {
+            "id": "webmcp-form-coverage",
+            "group": "webmcp",
+            "title": "WebMCP form coverage",
+            "mode": "notApplicable",
+            "score": null,
+            "status": "not-applicable",
+            "counted": false,
+            "display_value": null,
+            "explanation": null,
+            "note": "Informative while any form lacks both toolname and tooldescription; counts as a binary pass once every form has one. N/A with no forms or no WebMCP support in the testing browser.",
+            "forms_missing_annotations": []
+          },
+          {
+            "id": "webmcp-registered-tools",
+            "group": "webmcp",
+            "title": "WebMCP tools registered",
+            "mode": "notApplicable",
+            "score": null,
+            "status": "not-applicable",
+            "counted": false,
+            "display_value": null,
+            "explanation": null,
+            "note": "Always informative. Lists declarative and imperative tools seen during the page load. Never changes the fraction.",
+            "tools": []
+          },
+          {
+            "id": "webmcp-schema-validity",
+            "group": "webmcp",
+            "title": "WebMCP schemas are valid",
+            "mode": "notApplicable",
+            "score": null,
+            "status": "not-applicable",
+            "counted": false,
+            "display_value": null,
+            "explanation": null,
+            "note": "Scores 0 on errors (missing tool name or description, a required parameter without a name) and 0.5 on warnings, so both count as a failure. N/A when no tools and no issues exist.",
+            "issues": []
+          },
+          {
+            "id": "cumulative-layout-shift",
+            "group": null,
+            "title": "Cumulative Layout Shift",
+            "mode": "numeric",
+            "score": 1,
+            "status": "pass",
+            "counted": true,
+            "display_value": "0",
+            "explanation": null,
+            "note": "Numeric lab CLS. Passes at score 0.9 or higher (about CLS 0.1 or less)."
+          },
+          {
+            "id": "llms-txt",
+            "group": "agent-discoverability",
+            "title": "llms.txt follows recommendations",
+            "mode": "notApplicable",
+            "score": null,
+            "status": "not-applicable",
+            "counted": false,
+            "display_value": null,
+            "explanation": null,
+            "note": "Binary. /llms.txt needs an H1, one Markdown link, and 50+ characters. A 4xx makes it N/A; a 5xx or fetch error fails it.",
+            "issues": []
+          },
+          {
+            "id": "ard-schema",
+            "group": "agent-discoverability",
+            "title": "`ai-catalog.json` schema is valid",
+            "mode": "notApplicable",
+            "score": null,
+            "status": "not-applicable",
+            "counted": false,
+            "display_value": null,
+            "explanation": null,
+            "note": "Validates ai-catalog.json (Agentic Resource Discovery). N/A unless a catalog is signalled or /.well-known/ai-catalog.json returns 200.",
+            "issues": []
+          }
+        ],
+        "paths": [
+          {
+            "audit": "ard-schema",
+            "change": "adds one counted audit",
+            "how": "Publish a valid /.well-known/ai-catalog.json only if you have agent resources to list (MCP server, A2A agent, skills). An invalid catalog adds a counted failure instead."
+          },
+          {
+            "audit": "llms-txt",
+            "change": "adds one counted audit",
+            "how": "Serve /llms.txt with an H1, a summary, and Markdown links."
+          }
+        ]
+      },
+      "failed_scored_audits": {
+        "accessibility": [],
+        "best-practices": [
+          "deprecations"
+        ],
+        "seo": [
+          "is-crawlable"
+        ]
+      }
+    },
+    {
+      "name": "home-desktop",
+      "audits": {
+        "is-crawlable": {
+          "id": "is-crawlable",
+          "title": "Page is blocked from indexing",
+          "description": "Search engines are unable to include your pages in search results if they don't have permission to crawl them. [Learn more about crawler directives](https://developer.chrome.com/docs/lighthouse/seo/is-crawlable/).",
+          "score": 0,
+          "scoreDisplayMode": "binary",
+          "warnings": [],
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "source",
+                "valueType": "code",
+                "label": "Blocking Directive Source"
+              }
+            ],
+            "items": [
+              {
+                "source": "x-robots-tag: noindex"
+              }
+            ]
+          }
+        },
+        "deprecations": {
+          "id": "deprecations",
+          "title": "Uses deprecated APIs",
+          "description": "Deprecated APIs will eventually be removed from the browser. [Learn more about deprecated APIs](https://developer.chrome.com/docs/lighthouse/best-practices/deprecations/).",
+          "score": 0,
+          "scoreDisplayMode": "binary",
+          "displayValue": "1 warning found",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "value",
+                "valueType": "text",
+                "label": "Deprecation / Warning"
+              },
+              {
+                "key": "source",
+                "valueType": "source-location",
+                "label": "Source"
+              }
+            ],
+            "items": [
+              {
+                "value": "FencedFrame",
+                "source": {
+                  "type": "source-location",
+                  "url": "https://investdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app/~partytown/partytown-sandbox-sw.html?1792135389172",
+                  "urlProvider": "network",
+                  "line": 1,
+                  "column": 11622
+                }
+              }
+            ]
+          }
+        },
+        "image-delivery-insight": {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "description": "Reducing the download time of images can improve the perceived load time of the page and LCP. [Learn more about optimizing image size](https://developer.chrome.com/docs/performance/insights/image-delivery)",
+          "score": 0,
+          "scoreDisplayMode": "metricSavings",
+          "displayValue": "Est savings of 262 KiB",
+          "metricSavings": {
+            "FCP": 0,
+            "LCP": 100
+          },
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": ""
+              },
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL",
+                "subItemsHeading": {
+                  "key": "reason",
+                  "valueType": "text"
+                }
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Resource Size"
+              },
+              {
+                "key": "wastedBytes",
+                "valueType": "bytes",
+                "label": "Est Savings",
+                "subItemsHeading": {
+                  "key": "wastedBytes",
+                  "valueType": "bytes"
+                }
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-IMG",
+                  "path": "1,HTML,1,BODY,2,MAIN,0,SECTION,1,DIV,1,IMG",
+                  "selector": "main > section.relative > div.absolute > img.w-full",
+                  "boundingRect": {
+                    "top": 0,
+                    "bottom": 846,
+                    "left": 0,
+                    "right": 1335,
+                    "width": 1335,
+                    "height": 846
+                  },
+                  "snippet": "<img src=\"/_image?href=%2F_astro%2Fbudowa-domu-jednorodzinnego-bielsko-biala.purg6Ds…\" alt=\"Realizacja budowy domu jednorodzinnego w Bielsku-Białej przez firmę INVEST…\" loading=\"eager\" decoding=\"async\" fetchpriority=\"high\" data-astro-cid-anhloy43=\"true\" width=\"1920\" height=\"1080\" class=\"w-full h-full object-cover\">",
+                  "nodeLabel": "Realizacja budowy domu jednorodzinnego w Bielsku-Białej przez firmę INVESTDOM"
+                },
+                "url": "https://investdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app/_image?href=%2F_astro%2Fbudowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv.jpg&w=1920&h=1080&q=75&f=webp",
+                "totalBytes": 429016,
+                "wastedBytes": 206238,
+                "subItems": {
+                  "type": "subitems",
+                  "items": [
+                    {
+                      "reason": "Increasing the image compression factor could improve this image's download size.",
+                      "wastedBytes": 39957
+                    },
+                    {
+                      "reason": "This image file is larger than it needs to be (1920x1216) for its displayed dimensions (1335x1001). Use responsive images to reduce the image download size.",
+                      "wastedBytes": 183358
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-1-IMG",
+                  "path": "1,HTML,1,BODY,2,MAIN,1,SECTION,0,DIV,1,DIV,1,DIV,0,IMG",
+                  "selector": "div.max-w-7xl > div.grid > div.relative > img.w-full",
+                  "boundingRect": {
+                    "top": 1138,
+                    "bottom": 1538,
+                    "left": 60,
+                    "right": 644,
+                    "width": 584,
+                    "height": 400
+                  },
+                  "snippet": "<img src=\"/_image?href=%2F_astro%2Fbudowa-domu-jednorodzinnego-bielsko-biala.purg6Ds…\" alt=\"Realizacja budowy domu jednorodzinnego w Bielsku-Białej przez firmę INVEST…\" loading=\"lazy\" decoding=\"async\" fetchpriority=\"auto\" width=\"800\" height=\"600\" class=\"w-full h-[400px] object-cover\">",
+                  "nodeLabel": "Realizacja budowy domu jednorodzinnego w Bielsku-Białej przez firmę INVESTDOM"
+                },
+                "url": "https://investdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app/_image?href=%2F_astro%2Fbudowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv.jpg&w=800&h=600&q=80&f=webp",
+                "totalBytes": 87632,
+                "wastedBytes": 45000,
+                "subItems": {
+                  "type": "subitems",
+                  "items": [
+                    {
+                      "reason": "Increasing the image compression factor could improve this image's download size.",
+                      "wastedBytes": 14573
+                    },
+                    {
+                      "reason": "This image file is larger than it needs to be (800x548) for its displayed dimensions (584x438). Use responsive images to reduce the image download size.",
+                      "wastedBytes": 36496
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-2-IMG",
+                  "path": "1,HTML,1,BODY,2,MAIN,2,SECTION,0,DIV,1,DIV,0,DIV,0,DIV,1,DIV,0,IMG",
+                  "selector": "div.bg-white > div.grid > div.relative > img.absolute",
+                  "boundingRect": {
+                    "top": 2383,
+                    "bottom": 2916,
+                    "left": 61,
+                    "right": 668,
+                    "width": 607,
+                    "height": 533
+                  },
+                  "snippet": "<img src=\"/_image?href=%2F_astro%2Fnowoczesny-dom-na-sprzedaz-bielsko.CFyHeYfm.jpg&amp;w…\" alt=\"Realizacja budowy domu jednorodzinnego w Bielsku-Białej przez firmę INVEST…\" loading=\"lazy\" decoding=\"async\" fetchpriority=\"auto\" width=\"800\" height=\"600\" class=\"absolute inset-0 w-full h-full object-cover\">",
+                  "nodeLabel": "Realizacja budowy domu jednorodzinnego w Bielsku-Białej przez firmę INVESTDOM -…"
+                },
+                "url": "https://investdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app/_image?href=%2F_astro%2Fnowoczesny-dom-na-sprzedaz-bielsko.CFyHeYfm.jpg&w=800&h=600&q=80&f=webp",
+                "totalBytes": 79678,
+                "wastedBytes": 16548,
+                "subItems": {
+                  "type": "subitems",
+                  "items": [
+                    {
+                      "reason": "Increasing the image compression factor could improve this image's download size.",
+                      "wastedBytes": 11284
+                    },
+                    {
+                      "reason": "This image file is larger than it needs to be (684x600) for its displayed dimensions (711x533). Use responsive images to reduce the image download size.",
+                      "wastedBytes": 6133
+                    }
+                  ]
+                }
+              }
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "wastedBytes": 267786
+            }
+          },
+          "guidanceLevel": 3
+        },
+        "lcp-discovery-insight": {
+          "id": "lcp-discovery-insight",
+          "title": "LCP request discovery",
+          "description": "[Optimize LCP](https://developer.chrome.com/docs/performance/insights/lcp-discovery) by making the LCP image discoverable from the HTML immediately, and avoiding lazy-loading",
+          "score": 1,
+          "scoreDisplayMode": "numeric",
+          "metricSavings": {
+            "LCP": 0
+          },
+          "details": {
+            "type": "list",
+            "items": [
+              {
+                "type": "checklist",
+                "items": {
+                  "priorityHinted": {
+                    "label": "fetchpriority=high applied",
+                    "value": true
+                  },
+                  "requestDiscoverable": {
+                    "label": "Request is discoverable in initial document",
+                    "value": true
+                  },
+                  "eagerlyLoaded": {
+                    "label": "LCP resources should not use loading=lazy",
+                    "value": true
+                  }
+                }
+              },
+              {
+                "type": "node",
+                "lhId": "page-0-IMG",
+                "path": "1,HTML,1,BODY,2,MAIN,0,SECTION,1,DIV,1,IMG",
+                "selector": "main > section.relative > div.absolute > img.w-full",
+                "boundingRect": {
+                  "top": 0,
+                  "bottom": 846,
+                  "left": 0,
+                  "right": 1335,
+                  "width": 1335,
+                  "height": 846
+                },
+                "snippet": "<img src=\"/_image?href=%2F_astro%2Fbudowa-domu-jednorodzinnego-bielsko-biala.purg6Ds…\" alt=\"Realizacja budowy domu jednorodzinnego w Bielsku-Białej przez firmę INVEST…\" loading=\"eager\" decoding=\"async\" fetchpriority=\"high\" data-astro-cid-anhloy43=\"true\" width=\"1920\" height=\"1080\" class=\"w-full h-full object-cover\">",
+                "nodeLabel": "Realizacja budowy domu jednorodzinnego w Bielsku-Białej przez firmę INVESTDOM"
+              }
+            ]
+          },
+          "guidanceLevel": 3
+        },
+        "lcp-breakdown-insight": {
+          "id": "lcp-breakdown-insight",
+          "title": "LCP breakdown",
+          "description": "Each [subpart has specific improvement strategies](https://developer.chrome.com/docs/performance/insights/lcp-breakdown). Ideally, most of the LCP time should be spent on loading the resources, not within delays.",
+          "score": 1,
+          "scoreDisplayMode": "informative",
+          "metricSavings": {
+            "LCP": 0
+          },
+          "details": {
+            "type": "list",
+            "items": [
+              {
+                "type": "table",
+                "headings": [
+                  {
+                    "key": "label",
+                    "valueType": "text",
+                    "label": "Subpart"
+                  },
+                  {
+                    "key": "duration",
+                    "valueType": "ms",
+                    "label": "Duration"
+                  }
+                ],
+                "items": [
+                  {
+                    "subpart": "timeToFirstByte",
+                    "label": "Time to first byte",
+                    "duration": 460.02
+                  },
+                  {
+                    "subpart": "resourceLoadDelay",
+                    "label": "Resource load delay",
+                    "duration": 23.415
+                  },
+                  {
+                    "subpart": "resourceLoadDuration",
+                    "label": "Resource load duration",
+                    "duration": 318.199
+                  },
+                  {
+                    "subpart": "elementRenderDelay",
+                    "label": "Element render delay",
+                    "duration": 600.259
+                  }
+                ]
+              },
+              {
+                "type": "node",
+                "lhId": "page-0-IMG",
+                "path": "1,HTML,1,BODY,2,MAIN,0,SECTION,1,DIV,1,IMG",
+                "selector": "main > section.relative > div.absolute > img.w-full",
+                "boundingRect": {
+                  "top": 0,
+                  "bottom": 846,
+                  "left": 0,
+                  "right": 1335,
+                  "width": 1335,
+                  "height": 846
+                },
+                "snippet": "<img src=\"/_image?href=%2F_astro%2Fbudowa-domu-jednorodzinnego-bielsko-biala.purg6Ds…\" alt=\"Realizacja budowy domu jednorodzinnego w Bielsku-Białej przez firmę INVEST…\" loading=\"eager\" decoding=\"async\" fetchpriority=\"high\" data-astro-cid-anhloy43=\"true\" width=\"1920\" height=\"1080\" class=\"w-full h-full object-cover\">",
+                "nodeLabel": "Realizacja budowy domu jednorodzinnego w Bielsku-Białej przez firmę INVESTDOM"
+              }
+            ]
+          },
+          "guidanceLevel": 3
+        },
+        "unsized-images": {
+          "id": "unsized-images",
+          "title": "Image elements do not have explicit `width` and `height`",
+          "description": "Set an explicit width and height on image elements to reduce layout shifts and improve CLS. [Learn how to set image dimensions](https://web.dev/articles/optimize-cls#images_without_dimensions)",
+          "score": 0.5,
+          "scoreDisplayMode": "metricSavings",
+          "metricSavings": {
+            "CLS": 0
+          },
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": ""
+              },
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              }
+            ],
+            "items": [
+              {
+                "url": "https://investdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app/logo.svg",
+                "node": {
+                  "type": "node",
+                  "lhId": "1-39-IMG",
+                  "path": "1,HTML,1,BODY,0,HEADER,0,DIV,0,DIV,1,A,1,DIV,0,IMG",
+                  "selector": "div.flex > a.group > div.hidden > img.h-10",
+                  "boundingRect": {
+                    "top": 20,
+                    "bottom": 60,
+                    "left": 60,
+                    "right": 244,
+                    "width": 184,
+                    "height": 40
+                  },
+                  "snippet": "<img src=\"/logo.svg\" alt=\"InvestDom Logo\" class=\"h-10 w-auto\">",
+                  "nodeLabel": "InvestDom Logo"
+                }
+              },
+              {
+                "url": "https://investdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app/logo.svg",
+                "node": {
+                  "type": "node",
+                  "lhId": "1-44-IMG",
+                  "path": "1,HTML,1,BODY,3,FOOTER,0,DIV,0,DIV,0,DIV,0,DIV,0,IMG",
+                  "selector": "div.grid > div.col-span-1 > div.mb-4 > img.h-10",
+                  "boundingRect": {
+                    "top": 5999,
+                    "bottom": 6039,
+                    "left": 68,
+                    "right": 252,
+                    "width": 184,
+                    "height": 40
+                  },
+                  "snippet": "<img src=\"/logo.svg\" alt=\"InvestDom Logo\" class=\"h-10 w-auto\">",
+                  "nodeLabel": "InvestDom Logo"
+                }
+              }
+            ]
+          },
+          "guidanceLevel": 4
+        },
+        "target-size": {
+          "id": "target-size",
+          "title": "Touch targets have sufficient size and spacing.",
+          "description": "Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.13/target-size).",
+          "score": 1,
+          "scoreDisplayMode": "binary",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "subItemsHeading": {
+                  "key": "relatedNode",
+                  "valueType": "node"
+                },
+                "label": "Failing Elements"
+              }
+            ],
+            "items": []
+          }
+        },
+        "select-name": {
+          "id": "select-name",
+          "title": "Select elements have associated label elements.",
+          "description": "Form elements without effective labels can create frustrating experiences for screen reader users. [Learn more about the `select` element](https://dequeuniversity.com/rules/axe/4.13/select-name).",
+          "score": 1,
+          "scoreDisplayMode": "binary",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "subItemsHeading": {
+                  "key": "relatedNode",
+                  "valueType": "node"
+                },
+                "label": "Failing Elements"
+              }
+            ],
+            "items": []
+          }
+        },
+        "aria-hidden-focus": {
+          "id": "aria-hidden-focus",
+          "title": "`[aria-hidden=\"true\"]` elements do not contain focusable descendents",
+          "description": "Focusable descendents within an `[aria-hidden=\"true\"]` element prevent those interactive elements from being available to users of assistive technologies like screen readers. [Learn how `aria-hidden` affects focusable elements](https://dequeuniversity.com/rules/axe/4.13/aria-hidden-focus).",
+          "score": 1,
+          "scoreDisplayMode": "binary",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "subItemsHeading": {
+                  "key": "relatedNode",
+                  "valueType": "node"
+                },
+                "label": "Failing Elements"
+              }
+            ],
+            "items": []
+          }
+        },
+        "color-contrast": {
+          "id": "color-contrast",
+          "title": "Background and foreground colors have a sufficient contrast ratio",
+          "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.13/color-contrast).",
+          "score": 1,
+          "scoreDisplayMode": "binary",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "subItemsHeading": {
+                  "key": "relatedNode",
+                  "valueType": "node"
+                },
+                "label": "Failing Elements"
+              }
+            ],
+            "items": []
+          }
+        },
+        "heading-order": {
+          "id": "heading-order",
+          "title": "Heading elements appear in a sequentially-descending order",
+          "description": "Properly ordered headings that do not skip levels convey the semantic structure of the page, making it easier to navigate and understand when using assistive technologies. [Learn more about heading order](https://dequeuniversity.com/rules/axe/4.13/heading-order).",
+          "score": 1,
+          "scoreDisplayMode": "binary",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "subItemsHeading": {
+                  "key": "relatedNode",
+                  "valueType": "node"
+                },
+                "label": "Failing Elements"
+              }
+            ],
+            "items": []
+          }
+        },
+        "render-blocking-insight": {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "description": "Requests are blocking the page's initial render, which may delay LCP. [Deferring or inlining](https://developer.chrome.com/docs/performance/insights/render-blocking) can move these network requests out of the critical path.",
+          "score": 0.5,
+          "scoreDisplayMode": "metricSavings",
+          "metricSavings": {
+            "FCP": 0,
+            "LCP": 0
+          },
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Transfer Size"
+              },
+              {
+                "key": "wastedMs",
+                "valueType": "timespanMs",
+                "label": "Duration"
+              }
+            ],
+            "items": [
+              {
+                "url": "https://investdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app/_astro/budowa-domow-pod-klucz.DWdbl6pU.css",
+                "totalBytes": 8351
+              }
+            ]
+          },
+          "guidanceLevel": 3
+        },
+        "forced-reflow-insight": {
+          "id": "forced-reflow-insight",
+          "title": "Forced reflow",
+          "description": "A forced reflow occurs when JavaScript queries geometric properties (such as offsetWidth) after styles have been invalidated by a change to the DOM state. This can result in poor performance. Learn more about [forced reflows](https://developer.chrome.com/docs/performance/insights/forced-reflow) and possible mitigations.",
+          "score": 0,
+          "scoreDisplayMode": "numeric",
+          "details": {
+            "type": "list",
+            "items": [
+              {
+                "type": "table",
+                "headings": [
+                  {
+                    "key": "source",
+                    "valueType": "source-location",
+                    "label": "Source"
+                  },
+                  {
+                    "key": "reflowTime",
+                    "valueType": "ms",
+                    "granularity": 1,
+                    "label": "Total reflow time"
+                  }
+                ],
+                "items": [
+                  {
+                    "source": {
+                      "type": "source-location",
+                      "url": "https://investdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app/",
+                      "urlProvider": "network",
+                      "line": 71,
+                      "column": 44
+                    },
+                    "reflowTime": 51.104
+                  }
+                ]
+              }
+            ]
+          },
+          "guidanceLevel": 3
+        },
+        "errors-in-console": {
+          "id": "errors-in-console",
+          "title": "No browser errors logged to the console",
+          "description": "Errors logged to the console indicate unresolved problems. They can come from network request failures and other browser concerns. [Learn more about this errors in console diagnostic audit](https://developer.chrome.com/docs/lighthouse/best-practices/errors-in-console/)",
+          "score": 1,
+          "scoreDisplayMode": "binary",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "sourceLocation",
+                "valueType": "source-location",
+                "label": "Source"
+              },
+              {
+                "key": "description",
+                "valueType": "code",
+                "label": "Description"
+              }
+            ],
+            "items": []
+          }
+        },
+        "third-party-cookies": {
+          "id": "third-party-cookies",
+          "title": "Avoids third-party cookies",
+          "description": "Third-party cookies may be blocked in some contexts. [Learn more about preparing for third-party cookie restrictions](https://privacysandbox.google.com/cookies/prepare/overview).",
+          "score": 1,
+          "scoreDisplayMode": "binary",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "name",
+                "valueType": "text",
+                "label": "Name"
+              },
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              }
+            ],
+            "items": []
+          }
+        }
+      },
+      "agentic": {
+        "source": "file",
+        "requested_url": "https://investdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app/?_vercel_share=[redacted]",
+        "final_url": "https://investdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app/",
+        "lighthouse_version": "13.5.0",
+        "fetch_time": "2026-10-16T07:23:08.103Z",
+        "form_factor": "desktop",
+        "host_user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "fraction": {
+          "available": true,
+          "passed": 2,
+          "counted": 2,
+          "informative": 0,
+          "display": "2/2",
+          "category_score": 1
+        },
+        "error": null,
+        "audits": [
+          {
+            "id": "agent-accessibility-tree",
+            "group": "agent-accessibility",
+            "title": "Accessibility tree is well-formed",
+            "mode": "binary",
+            "score": 1,
+            "status": "pass",
+            "counted": true,
+            "display_value": "All audits passed",
+            "explanation": null,
+            "note": "Binary. Fails when any of 33 axe rules fails (names and labels, ARIA validity, tree structure, tabindex, autocomplete). Fix the listed rules.",
+            "failed_rules": []
+          },
+          {
+            "id": "webmcp-form-coverage",
+            "group": "webmcp",
+            "title": "WebMCP form coverage",
+            "mode": "notApplicable",
+            "score": null,
+            "status": "not-applicable",
+            "counted": false,
+            "display_value": null,
+            "explanation": null,
+            "note": "Informative while any form lacks both toolname and tooldescription; counts as a binary pass once every form has one. N/A with no forms or no WebMCP support in the testing browser.",
+            "forms_missing_annotations": []
+          },
+          {
+            "id": "webmcp-registered-tools",
+            "group": "webmcp",
+            "title": "WebMCP tools registered",
+            "mode": "notApplicable",
+            "score": null,
+            "status": "not-applicable",
+            "counted": false,
+            "display_value": null,
+            "explanation": null,
+            "note": "Always informative. Lists declarative and imperative tools seen during the page load. Never changes the fraction.",
+            "tools": []
+          },
+          {
+            "id": "webmcp-schema-validity",
+            "group": "webmcp",
+            "title": "WebMCP schemas are valid",
+            "mode": "notApplicable",
+            "score": null,
+            "status": "not-applicable",
+            "counted": false,
+            "display_value": null,
+            "explanation": null,
+            "note": "Scores 0 on errors (missing tool name or description, a required parameter without a name) and 0.5 on warnings, so both count as a failure. N/A when no tools and no issues exist.",
+            "issues": []
+          },
+          {
+            "id": "cumulative-layout-shift",
+            "group": null,
+            "title": "Cumulative Layout Shift",
+            "mode": "numeric",
+            "score": 1,
+            "status": "pass",
+            "counted": true,
+            "display_value": "0",
+            "explanation": null,
+            "note": "Numeric lab CLS. Passes at score 0.9 or higher (about CLS 0.1 or less)."
+          },
+          {
+            "id": "llms-txt",
+            "group": "agent-discoverability",
+            "title": "llms.txt follows recommendations",
+            "mode": "notApplicable",
+            "score": null,
+            "status": "not-applicable",
+            "counted": false,
+            "display_value": null,
+            "explanation": null,
+            "note": "Binary. /llms.txt needs an H1, one Markdown link, and 50+ characters. A 4xx makes it N/A; a 5xx or fetch error fails it.",
+            "issues": []
+          },
+          {
+            "id": "ard-schema",
+            "group": "agent-discoverability",
+            "title": "`ai-catalog.json` schema is valid",
+            "mode": "notApplicable",
+            "score": null,
+            "status": "not-applicable",
+            "counted": false,
+            "display_value": null,
+            "explanation": null,
+            "note": "Validates ai-catalog.json (Agentic Resource Discovery). N/A unless a catalog is signalled or /.well-known/ai-catalog.json returns 200.",
+            "issues": []
+          }
+        ],
+        "paths": [
+          {
+            "audit": "ard-schema",
+            "change": "adds one counted audit",
+            "how": "Publish a valid /.well-known/ai-catalog.json only if you have agent resources to list (MCP server, A2A agent, skills). An invalid catalog adds a counted failure instead."
+          },
+          {
+            "audit": "llms-txt",
+            "change": "adds one counted audit",
+            "how": "Serve /llms.txt with an H1, a summary, and Markdown links."
+          }
+        ]
+      },
+      "failed_scored_audits": {
+        "accessibility": [],
+        "best-practices": [
+          "deprecations"
+        ],
+        "seo": [
+          "is-crawlable"
+        ]
+      }
+    }
+  ],
+  "delivered_hero_probe": {
+    "status": 200,
+    "content_type": "image/webp",
+    "bytes": 429016,
+    "width": 1920,
+    "height": 1440,
+    "declared_html_width": 1920,
+    "declared_html_height": 1080,
+    "source_width": 4032,
+    "source_height": 3024,
+    "source_exif_orientation": 1
+  },
+  "partytown_registry_check": {
+    "checked_on": "2026-10-16",
+    "installed_integration": "2.1.4",
+    "installed_runtime": "0.11.2",
+    "latest_integration": "2.1.8",
+    "latest_integration_runtime_dependency": "^0.14.4",
+    "latest_runtime": "1.0.1",
+    "method": "npm view with configured proxy; no package installed"
+  }
+}

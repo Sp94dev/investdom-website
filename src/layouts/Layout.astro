@@ -3,21 +3,27 @@ import "@fontsource/montserrat/700.css";
 import "@fontsource/inter/400.css";
 import "@fontsource/inter/500.css";
 import "../styles/global.css";
+import { getCanonicalUrl, getBusinessSchema, serializeJsonLd } from "../lib/seo.mjs";
+import { company } from "../data/company.mjs";
 
 interface Props {
   title: string;
   description?: string;
   ogImage?: string;
+  structuredData?: Record<string, unknown>[];
 }
 
-const siteUrl = "https://investdom.com.pl";
+const site = Astro.site;
+if (!site) throw new Error("The canonical site URL must be configured in Astro.");
+const siteUrl = site.origin;
 const {
   title = "INVESTDOM - Budowa Domów Bielsko-Biała",
   description = "Budujemy domy w Bielsku-Białej. Solidność, osobisty nadzór właściciela. Stan surowy, deweloperski, pod klucz.",
   ogImage = "/og-image.jpg",
+  structuredData = [],
 } = Astro.props;
 
-const canonicalUrl = new URL(Astro.url.pathname, siteUrl).href;
+const canonicalUrl = getCanonicalUrl(Astro.url.pathname, site);
 ---
 
 <!doctype html>
@@ -58,14 +64,12 @@ const canonicalUrl = new URL(Astro.url.pathname, siteUrl).href;
     <meta name="summary" content={description} />
     <meta
       name="keywords"
-      content="budowa domów, domy Bielsko-Biała, budowa domu Bielsko-Biała, sprzedaż domów, domy pod klucz, stan surowy, stan deweloperski, remont domów, generalny wykonawca, powiat bielski, powiat cieszyński, powiat żywiecki, powiat czechowicki, Czechowice-Dziedzice, Żywiec, Cieszyn, Wisła, Ustroń, Szczyrk, domy jednorodzinne, budowa domu jednorodzinnego, firma budowlana Bielsko-Biała, ekipa budowlana, domy na sprzedaż, nowe domy, inwestycje mieszkaniowe, działki budowlane, projekty domów, budownictwo mieszkaniowe, usługi budowlane, wykonawca budowlany, firma remontowa, budowa fundamentów, budowa dachu, wykończenia wnętrz, stan zero, budowa murów, izolacje, ocieplenie domu"
+      content="budowa domów, domy Bielsko-Biała, budowa domu Bielsko-Biała, sprzedaż domów, domy pod klucz, stan surowy, stan deweloperski, remont domów, generalny wykonawca, powiat bielski, powiat cieszyński, powiat żywiecki, Czechowice-Dziedzice, Żywiec, Cieszyn, Wisła, Ustroń, Szczyrk, domy jednorodzinne, budowa domu jednorodzinnego, firma budowlana Bielsko-Biała, ekipa budowlana, domy na sprzedaż, nowe domy, inwestycje mieszkaniowe, działki budowlane, projekty domów, budownictwo mieszkaniowe, usługi budowlane, wykonawca budowlany, firma remontowa, budowa fundamentów, budowa dachu, wykończenia wnętrz, stan zero, budowa murów, izolacje, ocieplenie domu"
     />
 
     <!-- Geo Meta Tags -->
     <meta name="geo.region" content="PL-24" />
     <meta name="geo.placename" content="Bielsko-Biała" />
-    <meta name="geo.position" content="49.8224;19.0446" />
-    <meta name="ICBM" content="49.8224, 19.0446" />
 
     <!-- Dublin Core Meta Tags -->
     <meta name="DC.title" content={title} />
@@ -78,8 +82,8 @@ const canonicalUrl = new URL(Astro.url.pathname, siteUrl).href;
     <meta name="DC.rights" content="Copyright INVESTDOM" />
 
     <!-- Contact Meta Tags -->
-    <meta name="contact" content="kontakt@investdom.pl" />
-    <meta name="reply-to" content="kontakt@investdom.pl" />
+    <meta name="contact" content={company.email} />
+    <meta name="reply-to" content={company.email} />
 
     <!-- Verification & Other -->
     <meta name="format-detection" content="telephone=yes" />
@@ -112,14 +116,14 @@ const canonicalUrl = new URL(Astro.url.pathname, siteUrl).href;
     <!-- Business Open Graph -->
     <meta
       property="business:contact_data:street_address"
-      content="ul. Do Lasu 25"
+      content={company.address.streetAddress}
     />
-    <meta property="business:contact_data:locality" content="Bielsko-Biała" />
-    <meta property="business:contact_data:postal_code" content="43-300" />
+    <meta property="business:contact_data:locality" content={company.address.addressLocality} />
+    <meta property="business:contact_data:postal_code" content={company.address.postalCode} />
     <meta property="business:contact_data:country_name" content="Polska" />
     <meta
       property="business:contact_data:phone_number"
-      content="+48571328993"
+      content={company.telephone}
     />
 
     <!-- Twitter -->
@@ -133,54 +137,10 @@ const canonicalUrl = new URL(Astro.url.pathname, siteUrl).href;
       content="INVESTDOM - Budowa Domów Bielsko-Biała"
     />
 
-    <!-- Schema.org -->
-    <script type="application/ld+json" is:inline>
-      {
-        "@context": "https://schema.org",
-        "@type": ["RealEstateAgent", "HomeAndConstructionBusiness"],
-        "name": "INVESTDOM",
-        "description": "Firma budowlana specjalizująca się w budowie domów jednorodzinnych w Bielsku-Białej i okolicach. Oferujemy budowę domów w stanie surowym, deweloperskim i pod klucz.",
-        "url": "https://investdom.com.pl",
-        "logo": "https://investdom.com.pl/logo.png",
-        "image": "https://investdom.com.pl/og-image.jpg",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "ul. Do Lasu 25",
-          "addressLocality": "Bielsko-Biała",
-          "postalCode": "43-300",
-          "addressRegion": "śląskie",
-          "addressCountry": "PL"
-        },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": "49.8224",
-          "longitude": "19.0446"
-        },
-        "telephone": "+48571328993",
-        "areaServed": [
-          { "@type": "City", "name": "Bielsko-Biała" },
-          { "@type": "AdministrativeArea", "name": "powiat bielski" },
-          { "@type": "AdministrativeArea", "name": "powiat cieszyński" },
-          { "@type": "AdministrativeArea", "name": "powiat żywiecki" },
-          { "@type": "AdministrativeArea", "name": "powiat czechowicki" },
-          { "@type": "City", "name": "Czechowice-Dziedzice" },
-          { "@type": "City", "name": "Żywiec" },
-          { "@type": "City", "name": "Cieszyn" },
-          { "@type": "City", "name": "Wisła" },
-          { "@type": "City", "name": "Ustroń" },
-          { "@type": "City", "name": "Szczyrk" }
-        ],
-        "serviceType": [
-          "Budowa domów jednorodzinnych",
-          "Budowa domów pod klucz",
-          "Budowa domów w stanie surowym",
-          "Budowa domów w stanie deweloperskim",
-          "Remont domów",
-          "Generalny wykonawca"
-        ],
-        "priceRange": "$$"
-      }
-    </script>
+    <!-- Schema.org: rendered with the page, using only verified site data. -->
+    {[getBusinessSchema(site), ...structuredData].map((schema) => (
+      <script type="application/ld+json" is:inline set:html={serializeJsonLd(schema)} />
+    ))}
 
     <!-- Google Analytics (via Partytown) -->
     <script

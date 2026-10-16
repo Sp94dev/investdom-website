@@ -1,0 +1,386 @@
+{
+  "checked_at": "2026-10-16T06:46:07.667514+00:00",
+  "base": "https://investdom-git-seo-technical-foundation-admins-projects-2bc10d0e.vercel.app",
+  "method": "Authenticated share access supplied by owner; raw HTTP requests. Share token and cookies omitted. No JavaScript execution.",
+  "pages": [
+    {
+      "path": "/",
+      "status": 200,
+      "redirected_to_login": false,
+      "x_robots_tag": "noindex",
+      "canonical": [
+        "https://www.investdom.com.pl/"
+      ],
+      "title": "Budowa Domów Bielsko-Biała | Nowe Domy na Sprzedaż | INVESTDOM",
+      "description": [
+        "Szukasz profesjonalnej firmy budowlanej w Bielsku-Białej? INVESTDOM to kompleksowa budowa domów pod klucz oraz nowoczesne domy na sprzedaż. Zobacz nasze realizacje i projekty domów!"
+      ],
+      "h1": [
+        "Kompleksowa Budowa Domów w Bielsku-Białej i na Śląsku"
+      ],
+      "phone_links": [
+        "tel:+48571328993",
+        "tel:+48571328993"
+      ],
+      "schemas": [
+        {
+          "@context": "https://schema.org",
+          "@type": "HomeAndConstructionBusiness",
+          "@id": "https://www.investdom.com.pl/#organization",
+          "name": "INVESTDOM",
+          "url": "https://www.investdom.com.pl/",
+          "logo": "https://www.investdom.com.pl/logo.png",
+          "image": "https://www.investdom.com.pl/og-image.jpg",
+          "telephone": "+48571328993",
+          "email": "kontakt@investdom.pl",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "ul. Do lasu 25",
+            "addressLocality": "Bielsko-Biała",
+            "postalCode": "43-300",
+            "addressRegion": "śląskie",
+            "addressCountry": "PL"
+          },
+          "areaServed": [
+            {
+              "@type": "City",
+              "name": "Bielsko-Biała"
+            },
+            {
+              "@type": "City",
+              "name": "Czechowice-Dziedzice"
+            },
+            {
+              "@type": "City",
+              "name": "Żywiec"
+            },
+            {
+              "@type": "City",
+              "name": "Cieszyn"
+            },
+            {
+              "@type": "City",
+              "name": "Szczyrk"
+            }
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Ile kosztuje budowa domu w Bielsku-Białej?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ceny budowy domów w regionie śląskim zaczynają się od około 3000-3500 zł netto za metr kwadratowy w stanie surowym. Ostateczny koszt zależy od wybranego projektu, technologii oraz standardu wykończenia. Oferujemy bezpłatną, indywidualną wycenę dla każdego projektu."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Czy budujecie domy na działce klienta?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Tak, realizujemy budowę domów jednorodzinnych na działkach powierzonych przez Klienta. Głównie działamy na terenie Bielska-Białej oraz w okolicznych miejscowościach (m.in. Czechowice-Dziedzice, Żywiec, Szczyrk, Cieszyn). Pomagamy też w ocenie działki pod kątem budowlanym przed rozpoczęciem prac."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Ile trwa budowa domu pod klucz?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Czas budowy domu jednorodzinnego pod klucz wynosi zazwyczaj od 9 do 14 miesięcy, w zależności od warunków atmosferycznych, wielkości budynku i wybranej technologii. Stan surowy zamknięty jesteśmy w stanie osiągnąć często już po 3-4 miesiącach."
+              }
+            }
+          ]
+        }
+      ],
+      "label_subject": true,
+      "menu_inert": true,
+      "old_green_badge": false,
+      "main_text": "Kompleksowa Budowa Domów w Bielsku-Białej i na Śląsku Solidność potwierdzona przez lata. Tworzymy miejsca, które nazwiesz domem. Chcę kupić dom Umów się na bezpłatną wycenę budowy O firmie Sprawdzona Firma Budowlana – Dlaczego warto wybrać INVESTDOM? Jesteśmy firmą rodzinną z Bielska-Białej. Od lat realizujemy marzenia\n          o własnym domu, stawiając na jakość, uczciwość i transparentność. Każdy projekt traktujemy jak własny. Dzięki temu nasze domy wyróżniają\n          się solidnością wykonania i dbałością o najdrobniejsze detale. 15+ Lat doświadczenia 100% Zadowolonych klientów Gwarancja Terminowości i Solidności Budujemy jak dla siebie. Używamy sprawdzonych materiałów i technologii. Osobisty Nadzór Właściciela Właściciel firmy osobiście dogląda każdego etapu budowy. 15+ Lat Doświadczenia Od ponad 15 lat działamy na rynku budowlanym w Bielsku-Białej i okolicach. Umów się na bezpłatną wycenę budowy Domy na sprzedaż Nowe Domy na Sprzedaż w Bielsku-Białej i Okolicach Sprawdź nasze aktualne inwestycje Na sprzedaż Dom Wolnostojący Pisarzowice (Etap II) Pisarzowice Powierzchnia 135 m² Działka 700 m² Status Stan deweloperski Cena 895 000 zł Ogrzewanie gazowe Garaż 2 łazienki 3 sypialnie Więcej domów na sprzedaż Usługi budowlane Budowa Domów Pod Klucz i w Stanie Deweloperskim od A do Z Kompleksowa obsługa inwestycji - od projektu po wykończenie. Stan surowy Fundamenty, ściany, dach Stan deweloperski Instalacje, tynki, okna Budowa pod klucz Gotowy do zamieszkania Budowa na działce Klienta Realizacja Twojego projektu Remonty Modernizacja i naprawy Wykończenia Podłogi, ściany, łazienki Szukasz gotowych wariantów? Sprawdź nasze projekty domów , poznaj szczegóły oferty budowy domów pod klucz lub zobacz nasze nowe domy na sprzedaż . Umów się na bezpłatną wycenę budowy FAQ Najczęstsze Pytania Poznaj odpowiedzi na pytania, które najczęściej zadają nam inwestorzy\n          przed rozpoczęciem budowy. Ile kosztuje budowa domu w Bielsku-Białej? Ceny budowy domów w regionie śląskim zaczynają się od około 3000-3500 zł netto za metr kwadratowy w stanie surowym. Ostateczny koszt zależy od wybranego projektu, technologii oraz standardu wykończenia. Oferujemy bezpłatną, indywidualną wycenę dla każdego projektu. Czy budujecie domy na działce klienta? Tak, realizujemy budowę domów jednorodzinnych na działkach powierzonych przez Klienta. Głównie działamy na terenie Bielska-Białej oraz w okolicznych miejscowościach (m.in. Czechowice-Dziedzice, Żywiec, Szczyrk, Cieszyn). Pomagamy też w ocenie działki pod kątem budowlanym przed rozpoczęciem prac. Ile trwa budowa domu pod klucz? Czas budowy domu jednorodzinnego pod klucz wynosi zazwyczaj od 9 do 14 miesięcy, w zależności od warunków atmosferycznych, wielkości budynku i wybranej technologii. Stan surowy zamknięty jesteśmy w stanie osiągnąć często już po 3-4 miesiącach. Skontaktuj się z nami Chcesz kupić dom lub zlecić budowę? Zadzwoń do nas lub napisz.\n            Umówimy się na spotkanie i obejrzenie inwestycji. Zadzwoń do nas +48 571 328 993 Napisz e-mail kontakt@investdom.pl Odpowiadamy w 24h Biuro ul. Do lasu 25 43-300 Bielsko-Biała Wyślij wiadomość Imię i nazwisko Telefon Email Temat Chcę kupić dom Zlecenie budowy domu Remont / Wykończenie Inne zapytanie Wiadomość Wyślij wiadomość"
+    },
+    {
+      "path": "/budowa-domow-pod-klucz",
+      "status": 200,
+      "redirected_to_login": false,
+      "x_robots_tag": "noindex",
+      "canonical": [
+        "https://www.investdom.com.pl/budowa-domow-pod-klucz"
+      ],
+      "title": "Budowa domów pod klucz Bielsko-Biała | Etapy i standardy | INVESTDOM",
+      "description": [
+        "Dowiedz się, jak wygląda proces budowy domu pod klucz z INVESTDOM. Sprawdź nasze standardy materiałowe i etapy realizacji od fundamentów po wykończenie."
+      ],
+      "h1": [
+        "Budowa domów pod klucz – krok po kroku"
+      ],
+      "phone_links": [
+        "tel:+48571328993"
+      ],
+      "schemas": [
+        {
+          "@context": "https://schema.org",
+          "@type": "HomeAndConstructionBusiness",
+          "@id": "https://www.investdom.com.pl/#organization",
+          "name": "INVESTDOM",
+          "url": "https://www.investdom.com.pl/",
+          "logo": "https://www.investdom.com.pl/logo.png",
+          "image": "https://www.investdom.com.pl/og-image.jpg",
+          "telephone": "+48571328993",
+          "email": "kontakt@investdom.pl",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "ul. Do lasu 25",
+            "addressLocality": "Bielsko-Biała",
+            "postalCode": "43-300",
+            "addressRegion": "śląskie",
+            "addressCountry": "PL"
+          },
+          "areaServed": [
+            {
+              "@type": "City",
+              "name": "Bielsko-Biała"
+            },
+            {
+              "@type": "City",
+              "name": "Czechowice-Dziedzice"
+            },
+            {
+              "@type": "City",
+              "name": "Żywiec"
+            },
+            {
+              "@type": "City",
+              "name": "Cieszyn"
+            },
+            {
+              "@type": "City",
+              "name": "Szczyrk"
+            }
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "@id": "https://www.investdom.com.pl/budowa-domow-pod-klucz#service",
+          "name": "Budowa domów pod klucz",
+          "serviceType": "Budowa domów pod klucz",
+          "description": "Budowa domów jednorodzinnych w Bielsku-Białej i okolicach: od fundamentów przez stan surowy i deweloperski po wykończenie pod klucz.",
+          "url": "https://www.investdom.com.pl/budowa-domow-pod-klucz",
+          "provider": {
+            "@id": "https://www.investdom.com.pl/#organization"
+          },
+          "areaServed": [
+            {
+              "@type": "City",
+              "name": "Bielsko-Biała"
+            },
+            {
+              "@type": "City",
+              "name": "Czechowice-Dziedzice"
+            },
+            {
+              "@type": "City",
+              "name": "Żywiec"
+            },
+            {
+              "@type": "City",
+              "name": "Cieszyn"
+            },
+            {
+              "@type": "City",
+              "name": "Szczyrk"
+            }
+          ]
+        }
+      ],
+      "label_subject": false,
+      "menu_inert": true,
+      "old_green_badge": false,
+      "main_text": "Proces inwestycyjny Budowa domów pod klucz – krok po kroku Powierzając nam budowę swojego wymarzonego domu, zyskujesz pewność,\n            że proces inwestycyjny przebiegnie sprawnie i bezstresowo. Poznaj\n            etapy kompleksowej budowy domu z INVESTDOM. Etap 1: Prace ziemne i fundamenty Rozpoczynamy od dokładnego przygotowania terenu. Wykonujemy wykopy,\n            zbroimy i wylewamy fundamenty. Stosujemy wysokiej jakości materiały\n            termoizolacyjne i przeciwwilgociowe (np. dysperbit, styrodur XPS),\n            aby zapewnić maksymalną trwałość budynku w rejonie Bielska-Białej. Etap 2: Stan surowy (ściany, strop, dach) Wznosimy ściany nośne i działowe (najczęściej beton komórkowy lub\n            ceramika). Wylewamy stropy i montujemy konstrukcję więźby dachowej,\n            którą następnie pokrywamy wybranym przez Klienta materiałem –\n            dachówką ceramiczną, betonową lub blachodachówką najwyższej klasy. Etap 3: Stan deweloperski Na tym etapie montujemy stolarkę okienną i drzwiową. Wykonujemy\n            wszystkie niezbędne instalacje: elektryczną, wodno-kanalizacyjną,\n            grzewczą (w tym ogrzewanie podłogowe i gazowe). Kładziemy tynki\n            wewnętrzne i wykonujemy wylewki, przygotowując dom do ostatecznego\n            wykończenia. Ocieplamy budynek styropianem fasadowym i wykonujemy\n            elewację. Etap 4: Prace wykończeniowe (Pod Klucz) Dla Klientów, którzy wybierają wariant \"pod klucz\", realizujemy\n            kompleksowe prace wykończeniowe. Układamy podłogi, malujemy ściany,\n            wykańczamy łazienki \"na gotowo\" z montażem armatury. Montujemy drzwi\n            wewnętrzne i osprzęt elektryczny. Oddajemy dom gotowy do wniesienia\n            mebli. Nasze standardy materiałowe Pustaki ceramiczne i beton komórkowy z atestami Energooszczędne okna 3-szybowe (profil 82mm) z ciepłym montażem Wydajne i ekonomiczne ogrzewanie gazowe (nowoczesne kotły\n                kondensacyjne) Styropian grafitowy EPS 031 na elewację (minimum 20 cm)"
+    },
+    {
+      "path": "/domy-na-sprzedaz-bielsko",
+      "status": 200,
+      "redirected_to_login": false,
+      "x_robots_tag": "noindex",
+      "canonical": [
+        "https://www.investdom.com.pl/domy-na-sprzedaz-bielsko"
+      ],
+      "title": "Nowe domy na sprzedaż Bielsko-Biała | Inwestycje | INVESTDOM",
+      "description": [
+        "Poznaj nasze aktualne inwestycje deweloperskie w Bielsku-Białej i okolicach. Gotowe domy na sprzedaż w stanie deweloperskim m.in w atrakcyjnych dzielnicach, takich jak Pisarzowice."
+      ],
+      "h1": [
+        "Nowe domy na sprzedaż w Bielsku-Białej"
+      ],
+      "phone_links": [
+        "tel:+48571328993"
+      ],
+      "schemas": [
+        {
+          "@context": "https://schema.org",
+          "@type": "HomeAndConstructionBusiness",
+          "@id": "https://www.investdom.com.pl/#organization",
+          "name": "INVESTDOM",
+          "url": "https://www.investdom.com.pl/",
+          "logo": "https://www.investdom.com.pl/logo.png",
+          "image": "https://www.investdom.com.pl/og-image.jpg",
+          "telephone": "+48571328993",
+          "email": "kontakt@investdom.pl",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "ul. Do lasu 25",
+            "addressLocality": "Bielsko-Biała",
+            "postalCode": "43-300",
+            "addressRegion": "śląskie",
+            "addressCountry": "PL"
+          },
+          "areaServed": [
+            {
+              "@type": "City",
+              "name": "Bielsko-Biała"
+            },
+            {
+              "@type": "City",
+              "name": "Czechowice-Dziedzice"
+            },
+            {
+              "@type": "City",
+              "name": "Żywiec"
+            },
+            {
+              "@type": "City",
+              "name": "Cieszyn"
+            },
+            {
+              "@type": "City",
+              "name": "Szczyrk"
+            }
+          ]
+        }
+      ],
+      "label_subject": false,
+      "menu_inert": true,
+      "old_green_badge": false,
+      "main_text": "Oferta deweloperska Nowe domy na sprzedaż w Bielsku-Białej Zrealizowane w wysokim standardzie, nowoczesne domy jednorodzinne\n          czekają na nowych właścicieli. Wybierz dzielnicę i znajdź dom dla\n          swojej rodziny. Inwestycje: Pisarzowice Stan deweloperski Dom Wolnostojący Pisarzowice (Etap II) Powierzchnia 135 m² Działka 700 m² Rozpoczynamy drugi etap budowy domów jednorodzinnych, położonych w spokojnej i zielonej okolicy w Pisarzowicach. To kontynuacja zrealizowanego już etapu pierwszego, w ramach którego wybudowano i sprzedano 6 domów. Domy zostaną wybudowany z wysokiej jakości materiałów. Posiadają przestronny salon, dwie łazienki, garaż oraz trzy sypialnie.Idealne dla rodziny ceniącej komfort, bliskość natury. Położone są w dogodnej lokalizacji, niedaleko znajduje się szkoła podstawowa, przystanek autobusowy, sklepy spożywcze i punkty usługowe. Zamieszczone zdjęcia przedstawiają sprzedany budynek w pierwszym etapie. Zainteresowanych zapraszam do kontaktu i umówienia się na prezentację. Garaż Ogrzewanie gazowe 2 łazienki 3 sypialnie Cena: 895 000 zł Zapytaj o detale"
+    },
+    {
+      "path": "/projekty-domow",
+      "status": 200,
+      "redirected_to_login": false,
+      "x_robots_tag": "noindex",
+      "canonical": [
+        "https://www.investdom.com.pl/projekty-domow"
+      ],
+      "title": "Projekty Domów Bielsko-Biała | Autorskie Projekty | INVESTDOM",
+      "description": [
+        "Zobacz naszą bazę sprawdzonych projektów domów jednorodzinnych. Domy parterowe, z poddaszem użytkowym i piętrowe, gotowe do realizacji w Bielsku-Białej i okolicach."
+      ],
+      "h1": [
+        "Autorskie Projekty Domów"
+      ],
+      "phone_links": [
+        "tel:+48571328993"
+      ],
+      "schemas": [
+        {
+          "@context": "https://schema.org",
+          "@type": "HomeAndConstructionBusiness",
+          "@id": "https://www.investdom.com.pl/#organization",
+          "name": "INVESTDOM",
+          "url": "https://www.investdom.com.pl/",
+          "logo": "https://www.investdom.com.pl/logo.png",
+          "image": "https://www.investdom.com.pl/og-image.jpg",
+          "telephone": "+48571328993",
+          "email": "kontakt@investdom.pl",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "ul. Do lasu 25",
+            "addressLocality": "Bielsko-Biała",
+            "postalCode": "43-300",
+            "addressRegion": "śląskie",
+            "addressCountry": "PL"
+          },
+          "areaServed": [
+            {
+              "@type": "City",
+              "name": "Bielsko-Biała"
+            },
+            {
+              "@type": "City",
+              "name": "Czechowice-Dziedzice"
+            },
+            {
+              "@type": "City",
+              "name": "Żywiec"
+            },
+            {
+              "@type": "City",
+              "name": "Cieszyn"
+            },
+            {
+              "@type": "City",
+              "name": "Szczyrk"
+            }
+          ]
+        }
+      ],
+      "label_subject": false,
+      "menu_inert": true,
+      "old_green_badge": false,
+      "main_text": "Nasze projekty Autorskie Projekty Domów Wybraliśmy i zoptymalizowaliśmy projekty domów jednorodzinnych, które\n          idealnie wpisują się w potrzeby nowoczesnej rodziny oraz uwarunkowania\n          terenowe Śląska i Podbeskidzia. Dom Wolnostojący Pisarzowice (Etap II) Pow. użytkowa: 135 m² Ilość pokoi (P/S): 4 Łazienki: 2 Wycena budowy tego projektu"
+    },
+    {
+      "path": "/robots.txt",
+      "status": 200,
+      "redirected_to_login": false,
+      "x_robots_tag": "noindex",
+      "canonical": [],
+      "title": null,
+      "description": [],
+      "h1": [],
+      "phone_links": [],
+      "schemas": [],
+      "label_subject": false,
+      "menu_inert": false,
+      "old_green_badge": false,
+      "main_text": null,
+      "body": "# robots.txt for investdom.com.pl\nUser-agent: *\nAllow: /\n\n# Sitemap location\nSitemap: https://www.investdom.com.pl/sitemap-index.xml\n"
+    },
+    {
+      "path": "/sitemap-0.xml",
+      "status": 200,
+      "redirected_to_login": false,
+      "x_robots_tag": "noindex",
+      "canonical": [],
+      "title": null,
+      "description": [],
+      "h1": [],
+      "phone_links": [],
+      "schemas": [],
+      "label_subject": false,
+      "menu_inert": false,
+      "old_green_badge": false,
+      "main_text": null,
+      "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\" xmlns:news=\"http://www.google.com/schemas/sitemap-news/0.9\" xmlns:xhtml=\"http://www.w3.org/1999/xhtml\" xmlns:image=\"http://www.google.com/schemas/sitemap-image/1.1\" xmlns:video=\"http://www.google.com/schemas/sitemap-video/1.1\"><url><loc>https://www.investdom.com.pl</loc></url><url><loc>https://www.investdom.com.pl/budowa-domow-pod-klucz</loc></url><url><loc>https://www.investdom.com.pl/domy-na-sprzedaz-bielsko</loc></url><url><loc>https://www.investdom.com.pl/projekty-domow</loc></url></urlset>"
+    },
+    {
+      "path": "/seo-audit-unknown",
+      "status": 404,
+      "redirected_to_login": false,
+      "x_robots_tag": "noindex",
+      "canonical": [],
+      "title": null,
+      "description": [],
+      "h1": [],
+      "phone_links": [],
+      "schemas": [],
+      "label_subject": false,
+      "menu_inert": false,
+      "old_green_badge": false,
+      "main_text": null
+    }
+  ]
+}

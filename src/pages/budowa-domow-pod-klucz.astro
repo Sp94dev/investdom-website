@@ -3,11 +3,15 @@ import Layout from "../layouts/Layout.astro";
 import Header from "../components/layout/Header.astro";
 import Footer from "../components/layout/Footer.astro";
 import Container from "../components/ui/Container.astro";
+import { getServiceSchema } from "../lib/seo.mjs";
+
+if (!Astro.site) throw new Error("The canonical site URL must be configured in Astro.");
 ---
 
 <Layout
   title="Budowa domów pod klucz Bielsko-Biała | Etapy i standardy | INVESTDOM"
   description="Dowiedz się, jak wygląda proces budowy domu pod klucz z INVESTDOM. Sprawdź nasze standardy materiałowe i etapy realizacji od fundamentów po wykończenie."
+  structuredData={[getServiceSchema(Astro.site)]}
 >
   <Header />
   <main class="pt-32 pb-16 bg-stone-50 min-h-screen">
