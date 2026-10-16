@@ -8,6 +8,7 @@ Branch: `seo/technical-foundation`, PR #1. Zakres wynika z błędów z poprzedni
 - Dodano `inert` do zamkniętego menu mobilnego i synchronizację z `aria-hidden` oraz `aria-expanded`. Zamknięte linki nie uczestniczą w nawigacji klawiaturą. Menu zamyka się po wyborze linku, klawiszem Escape i przy przejściu na szerokość desktop; fokus z zamykanego panelu wraca do przycisku.
 - Podniesiono kontrast opisów usług, kontaktu i stopki: `text-stone-400` → `text-stone-300`. Zielone etykiety z białym tekstem: `bg-green-500` → `bg-green-700`. Są to celowe, niewielkie zmiany odcieni potrzebne do poprawienia czytelności; układ pozostaje taki sam.
 - Nagłówek projektu zmieniono z H3 na H2 przy zachowaniu klas wizualnych, eliminując przeskok H1 → H3.
+- Po zgłoszeniu z mobilnego skanera powiększono trzy linki w opisie usług: `inline-flex`, minimum wysokości 24 px i pionowy padding. Zapewnia to większe pola dotykowe zamiast małych prostokątów tekstu inline; może nieznacznie zmienić łamanie tego akapitu.
 
 ## Weryfikacja
 

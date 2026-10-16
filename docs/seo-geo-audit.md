@@ -1,5 +1,27 @@
 # INVESTDOM — ponowny audyt SEO i GEO
 
+## Uzupełnienie: dostęp do właściwego podglądu — 16.10.2026
+
+Po otrzymaniu od właściciela działającego linku udostępnienia sprawdzono bezpośrednio podgląd brancha `seo/technical-foundation` (wdrożenie zawierające poprawki a11y `d59f257`). Tokenu udostępnienia ani cookies nie zapisano w repozytorium. [Dowody z podglądu](seo-evidence/2026-10-16-preview.json).
+
+**Poniższe ustalenia dotyczą podglądu, nie produkcji.** Starsze części raportu opisują stan produkcji z 15.10 i pozostają zapisem historycznym.
+
+- Cztery strony zwracają HTTP 200; treści, metadane i JSON-LD są dostępne w surowym HTML. Nie trzeba wykonywać JavaScript, by odczytać opis firmy, usługi, FAQ i kontakt.
+- Canonical wszystkich czterech stron prawidłowo wskazuje publiczną domenę `https://www.investdom.com.pl`, a telefon i adres są spójne: `+48571328993`, `ul. Do lasu 25`. To wcześniejsze problemy produkcji usunięte w podglądzie.
+- Firma ma schemat `HomeAndConstructionBusiness`; usługa ma `Service` z powiązaniem do stabilnego `#organization`. JSON-LD parsuje się i nie zawiera poprzednich niepotwierdzonych GPS/priceRange. Samo schema nie zapewnia rekomendacji przez LLM.
+- Sitemap zawiera adresy domeny produkcyjnej; nieistniejący adres zwraca 404. Odpowiedzi podglądu mają `X-Robots-Tag: noindex`, co jest **pożądane dla preview**. Nie zdejmować tego ograniczenia w celu GEO; indeksować należy produkcję po wdrożeniu. Kontrola botów przez udostępnioną sesję nie jest pomiarem dostępu publicznych crawlerów.
+- Poprawki a11y etykiety `subject-select`, `inert` zamkniętego menu i kontrastu są już obecne w HTML tego wdrożenia. Zrzuty właściciela zawierają wcześniejsze klasy `bg-green-500` / `text-stone-400`; aktualny podgląd ma poprawione klasy tych elementów. Oddzielnie poprawiono pola dotykowe trzech linków w sekcji usług — zmiana powstała po tej kontroli podglądu.
+
+### Pozostałe priorytety GEO potwierdzone na tym podglądzie
+
+1. **Spójność oferty:** opis meta obiecuje „gotowe domy”, podczas gdy treść mówi „rozpoczynamy drugi etap” i pokazuje zdjęcia sprzedanego etapu I. Pisarzowice określono w opisie jako dzielnicę. Uzgodnić faktyczny status i poprawić komunikację, aby odpowiedzi AI nie przedstawiały oferty jako gotowego budynku.
+2. **Weryfikacja faktów:** podgląd nadal pokazuje działkę 700 m² (w źródle oznaczoną jako przykładowa), cenę 895 000 zł oraz widełki i terminy w FAQ. Właściciel powinien potwierdzić aktualność tych informacji przed ich dalszym rozpowszechnianiem. Brak potwierdzenia nie oznacza automatycznie, że są fałszywe.
+3. **Własne dowody realizacji:** podgląd informuje o sześciu sprzedanych domach etapu I, ale nie zawiera osobnej strony realizacji. Po potwierdzeniu dodać własne materiały: zakres wykonanych prac, zdjęcia etapów, daty i opis konkretnych rozwiązań. To bardziej użyteczna podstawa cytowania doświadczenia firmy niż ogólne deklaracje.
+4. **Rozpoznanie firmy:** zachować spójny kontakt i uzupełnić zweryfikowane dane przedsiębiorcy oraz własne profile lokalne. Nie przypisywać profili innych firm INVESTDOM. Własność zewnętrznych profili pozostaje niezweryfikowana.
+5. **Treści projektów:** meta description obiecuje bazę wielu typów projektów, a widoczna jest jedna karta. Dopasować obietnicę opisu do zawartości; dodatkowe projekty publikować dopiero z rzeczywistymi materiałami.
+
+Aktualny podgląd ma poprawioną bazę techniczną SEO/GEO. Pozostają treści i dowody potrzebne do wiarygodnego opisania firmy i oferty. Nie potwierdzono jeszcze cytowań tej wersji przez ChatGPT, Claude, Perplexity lub Google AI. Kontrola prywatnego preview nie może ich wykazać.
+
 **Data:** 15 października 2026, pomiary od 20:40 UTC. **Zakres:** publiczna produkcja `https://www.investdom.com.pl/`, cztery podstrony, próba odczytu podglądu PR i przegląd kodu brancha `seo/technical-foundation` na `6e2b345`.
 
 ## Wniosek
