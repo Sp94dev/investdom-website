@@ -6,18 +6,7 @@ import Header from "../components/layout/Header.astro";
 import Footer from "../components/layout/Footer.astro";
 import Container from "../components/ui/Container.astro";
 import { Picture } from "astro:assets";
-import projectImage from "../assets/images/nowoczesny-dom-na-sprzedaz-bielsko.jpg";
-
-const projects = [
-  {
-    id: 1,
-    title: "Dom Wolnostojący Pisarzowice (Etap II)",
-    size: "135 m²",
-    rooms: 4,
-    bathrooms: 2,
-    image: projectImage,
-  },
-];
+import { properties as projects } from "../data/properties";
 ---
 
 <Layout
@@ -53,7 +42,7 @@ const projects = [
               <div class="relative h-48 overflow-hidden bg-white flex items-center justify-center p-4">
                 <Picture
                   src={project.image}
-                  alt="Dom z pierwszego etapu inwestycji INVESTDOM w Pisarzowicach — ilustracja projektu"
+                  alt={`${project.imageAlt} — ilustracja projektu`}
                   class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-500"
                   pictureAttributes={{ class: "contents" }}
                   width={400}

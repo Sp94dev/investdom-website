@@ -1,157 +1,138 @@
 import type { APIRoute } from 'astro';
-import { Resend } from 'resend';
+import { CONTACT_MESSAGES, validateContactData } from '../../lib/contact';
+import { createContactEmail, escapeHtml } from '../../lib/contact-email';
 
-// Interface dla danych z formularza
-interface ContactFormData {
-  name: string;
-  email: string;
-  phone: string;
-  temat_wybrany: string;
-  message: string;
+export const prerender = false;
+// urlencoded Polish/non-Latin text can use up to nine bytes per UTF-16 unit.
+const MAX_BODY_BYTES = 64 * 1024;
+const BODY_TIMEOUT_MS = 3000;
+const PROVIDER_TIMEOUT_MS = 8000;
+
+class ContactRequestError extends Error {
+  constructor(public status: number, message: string) {
+    super(message);
+  }
 }
 
-// Mapowanie tematów na czytelne nazwy
-const subjectLabels: Record<string, string> = {
-  kupno: 'Chcę kupić dom',
-  budowa: 'Zlecenie budowy domu',
-  inne: 'Inne zapytanie',
-};
+async function readPayload(request: Request): Promise<unknown> {
+  const contentType = request.headers.get('content-type')?.split(';', 1)[0].trim().toLowerCase();
+  if (contentType !== 'application/json' && contentType !== 'application/x-www-form-urlencoded') {
+    throw new ContactRequestError(415, CONTACT_MESSAGES.invalid);
+  }
+  const advertisedLength = request.headers.get('content-length');
+  if (advertisedLength && (!/^\d+$/.test(advertisedLength) || Number(advertisedLength) > MAX_BODY_BYTES)) {
+    throw new ContactRequestError(413, CONTACT_MESSAGES.tooLarge);
+  }
+  if (!request.body) throw new ContactRequestError(400, CONTACT_MESSAGES.invalid);
+  const reader = request.body.getReader();
+  const chunks: Uint8Array[] = [];
+  let size = 0;
+  let timeout: ReturnType<typeof setTimeout> | undefined;
+  const deadline = new Promise<never>((_, reject) => {
+    timeout = setTimeout(() => reject(new ContactRequestError(408, CONTACT_MESSAGES.connection)), BODY_TIMEOUT_MS);
+  });
+  try {
+    for (;;) {
+      const { done, value } = await Promise.race([reader.read(), deadline]);
+      if (done) break;
+      size += value.byteLength;
+      if (size > MAX_BODY_BYTES) throw new ContactRequestError(413, CONTACT_MESSAGES.tooLarge);
+      chunks.push(value);
+    }
+    const bytes = new Uint8Array(size);
+    let offset = 0;
+    for (const chunk of chunks) {
+      bytes.set(chunk, offset);
+      offset += chunk.byteLength;
+    }
+    const text = new TextDecoder('utf-8', { fatal: true }).decode(bytes);
+    if (contentType === 'application/json') return JSON.parse(text) as unknown;
+    const fields = new URLSearchParams(text);
+    const seen = new Set<string>();
+    for (const key of fields.keys()) {
+      if (seen.has(key)) throw new ContactRequestError(400, CONTACT_MESSAGES.invalid);
+      seen.add(key);
+    }
+    return Object.fromEntries(fields);
+  } catch (error) {
+    void reader.cancel().catch(() => {});
+    if (error instanceof ContactRequestError) throw error;
+    throw new ContactRequestError(400, CONTACT_MESSAGES.invalid);
+  } finally {
+    clearTimeout(timeout);
+    reader.releaseLock();
+  }
+}
+
+function reply(request: Request, status: number, message: string, success = false): Response {
+  const headers = new Headers({
+    'Cache-Control': 'no-store', 'X-Robots-Tag': 'noindex, nofollow',
+    'X-Content-Type-Options': 'nosniff', 'Referrer-Policy': 'no-referrer',
+  });
+  const wantsJson = request.headers.get('accept')?.includes('application/json') ||
+    request.headers.get('content-type')?.toLowerCase().startsWith('application/json');
+  if (wantsJson) {
+    headers.set('Content-Type', 'application/json; charset=utf-8');
+    return new Response(JSON.stringify(success ? { success: true, message } : { error: message }), { status, headers });
+  }
+  headers.set('Content-Type', 'text/html; charset=utf-8');
+  headers.set('Content-Security-Policy', "default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; frame-ancestors 'none'");
+  const title = success ? 'Wiadomość wysłana' : 'Sprawdź wysyłkę wiadomości';
+  return new Response(`<!doctype html><html lang="pl"><head><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="robots" content="noindex,nofollow"><title>${title} | INVESTDOM</title>
+    <style>body{font:1rem/1.6 system-ui,sans-serif;background:#fafaf9;color:#1a3b5d;margin:0;padding:24px}main{max-width:40rem;margin:10vh auto;background:white;padding:32px;border-radius:16px}h1{font-size:1.75rem}a{color:inherit;display:inline-block;padding:12px 0}a:focus-visible{outline:2px solid;outline-offset:4px}</style>
+    </head><body><main><h1>${title}</h1><p role="status">${escapeHtml(message)}</p>
+    ${success ? '' : '<p>Użyj przycisku „Wstecz”, aby wrócić do wpisanych danych.</p>'}
+    <a href="/#kontakt">Wróć do kontaktu z INVESTDOM</a></main></body></html>`, { status, headers });
+}
 
 export const POST: APIRoute = async ({ request }) => {
   try {
-    // Sprawdź czy API key jest skonfigurowany
-    const apiKey = import.meta.env.RESEND_API_KEY;
-    if (!apiKey) {
-      console.error('RESEND_API_KEY nie jest skonfigurowany');
-      return new Response(
-        JSON.stringify({ error: 'Błąd konfiguracji serwera' }),
-        { status: 500, headers: { 'Content-Type': 'application/json' } }
-      );
+    const origin = request.headers.get('origin');
+    if ((origin && origin !== new URL(request.url).origin) || request.headers.get('sec-fetch-site') === 'cross-site') {
+      return reply(request, 403, CONTACT_MESSAGES.invalid);
+    }
+    const payload = await readPayload(request);
+    const validated = validateContactData(payload);
+    if (!validated.ok) return reply(request, 400, validated.error);
+    const honeypot = (payload as Record<string, unknown>).website;
+    if (honeypot !== undefined && (typeof honeypot !== 'string' || honeypot.length > 0)) {
+      return reply(request, 200, CONTACT_MESSAGES.success, true);
     }
 
-    // Parsuj dane z formularza
-    const data: ContactFormData = await request.json();
-    const { name, email, phone, temat_wybrany, message } = data;
-
-    // Walidacja wymaganych pól
-    if (!name || !email || !message) {
-      return new Response(
-        JSON.stringify({ error: 'Wszystkie wymagane pola muszą być wypełnione' }),
-        { status: 400, headers: { 'Content-Type': 'application/json' } }
-      );
+    const apiKey = import.meta.env.RESEND_API_KEY?.trim();
+    // Preserve the destination until the owner confirms the fallback domain.
+    const to = (import.meta.env.CONTACT_EMAIL || 'kontakt@investdom.com.pl').trim();
+    if (!apiKey || !to) {
+      console.error('Contact delivery configuration is missing.');
+      return reply(request, 503, CONTACT_MESSAGES.unavailable);
     }
 
-    // Walidacja formatu email
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-      return new Response(
-        JSON.stringify({ error: 'Niepoprawny format adresu email' }),
-        { status: 400, headers: { 'Content-Type': 'application/json' } }
-      );
-    }
-
-    // Inicjalizuj Resend
-    const resend = new Resend(apiKey);
-
-    // Przygotuj czytelny temat
-    const subjectLabel = subjectLabels[temat_wybrany] || temat_wybrany || 'Kontakt';
-
-    // Wyślij email
-    const toEmail = import.meta.env.CONTACT_EMAIL || 'kontakt@investdom.com.pl';
-    const { data: emailData, error: emailError } = await resend.emails.send({
-      from: 'Formularz InvestDom <formularz@investdom.com.pl>',
-      to: toEmail,
-      replyTo: email,
-      subject: `Nowa wiadomość od ${name} - ${subjectLabel}`,
-      html: `
-        <!DOCTYPE html>
-        <html>
-        <head>
-          <meta charset="utf-8">
-          <style>
-            body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
-            .container { max-width: 600px; margin: 0 auto; padding: 20px; }
-            .header { background: #0f172a; color: white; padding: 20px; border-radius: 8px 8px 0 0; }
-            .content { background: #f8f9fa; padding: 20px; border: 1px solid #e9ecef; }
-            .field { margin-bottom: 15px; }
-            .label { font-weight: bold; color: #0f172a; }
-            .value { margin-top: 5px; padding: 10px; background: white; border-radius: 4px; }
-            .message-box { background: white; padding: 15px; border-left: 4px solid #0ea5e9; margin-top: 10px; }
-            .footer { padding: 15px; font-size: 12px; color: #6c757d; text-align: center; }
-          </style>
-        </head>
-        <body>
-          <div class="container">
-            <div class="header">
-              <h1 style="margin: 0; font-size: 24px;">📬 Nowa wiadomość z formularza</h1>
-              <p style="margin: 10px 0 0 0; opacity: 0.9;">InvestDom - Formularz kontaktowy</p>
-            </div>
-            <div class="content">
-              <div class="field">
-                <div class="label">👤 Imię i nazwisko:</div>
-                <div class="value">${escapeHtml(name)}</div>
-              </div>
-              <div class="field">
-                <div class="label">📧 Email:</div>
-                <div class="value"><a href="mailto:${escapeHtml(email)}">${escapeHtml(email)}</a></div>
-              </div>
-              <div class="field">
-                <div class="label">📱 Telefon:</div>
-                <div class="value"><a href="tel:${escapeHtml(phone)}">${escapeHtml(phone || 'Nie podano')}</a></div>
-              </div>
-              <div class="field">
-                <div class="label">📋 Temat:</div>
-                <div class="value">${escapeHtml(subjectLabel)}</div>
-              </div>
-              <div class="field">
-                <div class="label">💬 Wiadomość:</div>
-                <div class="message-box">${escapeHtml(message).replace(/\n/g, '<br>')}</div>
-              </div>
-            </div>
-            <div class="footer">
-              Wiadomość wysłana przez formularz kontaktowy na stronie investdom.com.pl
-            </div>
-          </div>
-        </body>
-        </html>
-      `,
+    const email = createContactEmail(validated.data, to, apiKey);
+    const response = await fetch('https://api.resend.com/emails', {
+      method: 'POST',
+      headers: {
+        Authorization: `Bearer ${apiKey}`,
+        'Content-Type': 'application/json',
+        'Idempotency-Key': email.idempotencyKey,
+      },
+      body: email.body,
+      signal: AbortSignal.timeout(PROVIDER_TIMEOUT_MS),
     });
-
-    if (emailError) {
-      console.error('Błąd Resend API:', JSON.stringify(emailError, null, 2));
-      return new Response(
-        JSON.stringify({ 
-          error: 'Nie udało się wysłać wiadomości. Spróbuj ponownie później.',
-          details: emailError.message || emailError.name
-        }),
-        { status: 500, headers: { 'Content-Type': 'application/json' } }
-      );
+    if (!response.ok) {
+      console.error('Contact provider rejected delivery.', { status: response.status });
+      await response.body?.cancel();
+      return reply(request, 502, CONTACT_MESSAGES.unavailable);
     }
-
-    console.log('Email wysłany pomyślnie:', emailData?.id);
-
-    return new Response(
-      JSON.stringify({ success: true, messageId: emailData?.id }),
-      { status: 200, headers: { 'Content-Type': 'application/json' } }
-    );
-
+    const result: unknown = await response.json();
+    if (!result || typeof result !== 'object' || !('id' in result) || typeof result.id !== 'string' || !result.id) {
+      return reply(request, 502, CONTACT_MESSAGES.unavailable);
+    }
+    return reply(request, 200, CONTACT_MESSAGES.success, true);
   } catch (error) {
-    console.error('Nieoczekiwany błąd:', error);
-    return new Response(
-      JSON.stringify({ error: 'Wystąpił nieoczekiwany błąd serwera' }),
-      { status: 500, headers: { 'Content-Type': 'application/json' } }
-    );
+    if (error instanceof ContactRequestError) return reply(request, error.status, error.message);
+    console.error('Contact delivery could not be confirmed.');
+    return reply(request, 503, CONTACT_MESSAGES.unavailable);
   }
 };
-
-// Funkcja pomocnicza do escapowania HTML
-function escapeHtml(text: string): string {
-  const htmlEntities: Record<string, string> = {
-    '&': '&amp;',
-    '<': '&lt;',
-    '>': '&gt;',
-    '"': '&quot;',
-    "'": '&#039;',
-  };
-  return text.replace(/[&<>"']/g, (char) => htmlEntities[char] || char);
-}
