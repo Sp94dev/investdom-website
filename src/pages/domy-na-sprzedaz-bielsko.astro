@@ -8,26 +8,7 @@ import Footer from "../components/layout/Footer.astro";
 import Container from "../components/ui/Container.astro";
 import Button from "../components/ui/Button.astro";
 import { Picture } from "astro:assets";
-import houseImage from "../assets/images/nowoczesny-dom-na-sprzedaz-bielsko.jpg";
-
-const districts = [
-  {
-    name: "Pisarzowice",
-    offers: [
-      {
-        title: "Dom Wolnostojący Pisarzowice (Etap II)",
-        price: "895 000 zł",
-        size: "135 m²",
-        plot: "700 m²", // Zakładam przykładową, ew. do usunięcia w kodzie jeśli niepotrzebna, ale zostawię dla spójności układu
-        status: "Stan deweloperski",
-        features: ["Garaż", "Ogrzewanie gazowe", "2 łazienki", "3 sypialnie"],
-        image: houseImage,
-        description:
-          "Rozpoczynamy drugi etap budowy domów jednorodzinnych, położonych w spokojnej i zielonej okolicy w Pisarzowicach. To kontynuacja zrealizowanego już etapu pierwszego, w ramach którego wybudowano i sprzedano 6 domów.\n\nDomy zostaną wybudowany z wysokiej jakości materiałów. Posiadają przestronny salon, dwie łazienki, garaż oraz trzy sypialnie.Idealne dla rodziny ceniącej komfort, bliskość natury. Położone są w dogodnej lokalizacji, niedaleko znajduje się szkoła podstawowa, przystanek autobusowy, sklepy spożywcze i punkty usługowe.\n\nZamieszczone zdjęcia przedstawiają sprzedany budynek w pierwszym etapie. Zainteresowanych zapraszam do kontaktu i umówienia się na prezentację.",
-      },
-    ],
-  },
-];
+import { propertyLocations as districts } from "../data/properties";
 ---
 
 <Layout
@@ -68,7 +49,7 @@ const districts = [
                     <div class="relative h-64">
                       <Picture
                         src={offer.image}
-                        alt="Dom z pierwszego etapu inwestycji INVESTDOM w Pisarzowicach"
+                        alt={offer.imageAlt}
                         class="absolute inset-0 w-full h-full object-cover"
                         pictureAttributes={{ class: "contents" }}
                         width={800}
