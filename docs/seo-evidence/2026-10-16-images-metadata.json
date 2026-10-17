@@ -1,0 +1,1091 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-10-16T16:08:20.173223+02:00",
+  "baselineCommit": "e15dcbdc285ebfb37aeb167392b4d583d07c105b",
+  "implementationCommit": "f45e2f4",
+  "tools": {
+    "lighthouse": "13.5.0",
+    "chromium": "156.0.8078.4",
+    "partytownIntegration": "2.1.8",
+    "partytownRuntime": "0.14.5"
+  },
+  "environment": "same local compiled Vercel handler/static server, before/after sequential; no dev server",
+  "lighthouse": {
+    "runsPerCasePerPhase": 3,
+    "before": [
+      {
+        "name": "home-mobile",
+        "run": 1,
+        "path": "/",
+        "fetch_time": "2026-10-16T13:44:12.393Z",
+        "version": "13.5.0",
+        "scores": {
+          "performance": 0.49,
+          "accessibility": 1,
+          "best-practices": 0.81,
+          "seo": 1
+        },
+        "metrics": {
+          "largest-contentful-paint": 4661.237608313582,
+          "total-blocking-time": 2578.7623916864172,
+          "cumulative-layout-shift": 0,
+          "speed-index": 5335.568738159306
+        },
+        "warnings": [
+          "The tested device appears to have a slower CPU than  Lighthouse expects. This can negatively affect your performance score. Learn more about [calibrating an appropriate CPU slowdown multiplier](https://github.com/GoogleChrome/lighthouse/blob/main/docs/throttling.md#cpu-throttling)."
+        ],
+        "error": null
+      },
+      {
+        "name": "service-mobile",
+        "run": 1,
+        "path": "/budowa-domow-pod-klucz",
+        "fetch_time": "2026-10-16T13:44:31.334Z",
+        "version": "13.5.0",
+        "scores": {
+          "performance": 1,
+          "accessibility": 1,
+          "best-practices": 0.81,
+          "seo": 1
+        },
+        "metrics": {
+          "largest-contentful-paint": 1509.7265,
+          "total-blocking-time": 38,
+          "cumulative-layout-shift": 0,
+          "speed-index": 1059.7265
+        },
+        "warnings": [
+          "The tested device appears to have a slower CPU than  Lighthouse expects. This can negatively affect your performance score. Learn more about [calibrating an appropriate CPU slowdown multiplier](https://github.com/GoogleChrome/lighthouse/blob/main/docs/throttling.md#cpu-throttling)."
+        ],
+        "error": null
+      },
+      {
+        "name": "offers-mobile",
+        "run": 1,
+        "path": "/domy-na-sprzedaz-bielsko",
+        "fetch_time": "2026-10-16T13:44:45.436Z",
+        "version": "13.5.0",
+        "scores": {
+          "performance": 0.99,
+          "accessibility": 1,
+          "best-practices": 0.81,
+          "seo": 1
+        },
+        "metrics": {
+          "largest-contentful-paint": 1959.5088,
+          "total-blocking-time": 108,
+          "cumulative-layout-shift": 0,
+          "speed-index": 1059.5088
+        },
+        "warnings": [],
+        "error": null
+      },
+      {
+        "name": "projects-mobile",
+        "run": 1,
+        "path": "/projekty-domow",
+        "fetch_time": "2026-10-16T13:45:00.616Z",
+        "version": "13.5.0",
+        "scores": {
+          "performance": 0.95,
+          "accessibility": 1,
+          "best-practices": 0.81,
+          "seo": 1
+        },
+        "metrics": {
+          "largest-contentful-paint": 1660.6741941269242,
+          "total-blocking-time": 245,
+          "cumulative-layout-shift": 0,
+          "speed-index": 1060.6741941269242
+        },
+        "warnings": [],
+        "error": null
+      },
+      {
+        "name": "home-desktop",
+        "run": 1,
+        "path": "/",
+        "fetch_time": "2026-10-16T13:45:14.559Z",
+        "version": "13.5.0",
+        "scores": {
+          "performance": 0.98,
+          "accessibility": 1,
+          "best-practices": 0.81,
+          "seo": 1
+        },
+        "metrics": {
+          "largest-contentful-paint": 925.8197024238873,
+          "total-blocking-time": 0,
+          "cumulative-layout-shift": 0,
+          "speed-index": 1199.3512293724398
+        },
+        "warnings": [],
+        "error": null
+      },
+      {
+        "name": "home-mobile",
+        "run": 2,
+        "path": "/",
+        "fetch_time": "2026-10-16T13:45:33.544Z",
+        "version": "13.5.0",
+        "scores": {
+          "performance": 0.6,
+          "accessibility": 1,
+          "best-practices": 0.81,
+          "seo": 1
+        },
+        "metrics": {
+          "largest-contentful-paint": 4661.666661791092,
+          "total-blocking-time": 851,
+          "cumulative-layout-shift": 0,
+          "speed-index": 3967.5759621572693
+        },
+        "warnings": [],
+        "error": null
+      },
+      {
+        "name": "service-mobile",
+        "run": 2,
+        "path": "/budowa-domow-pod-klucz",
+        "fetch_time": "2026-10-16T13:45:54.358Z",
+        "version": "13.5.0",
+        "scores": {
+          "performance": 1,
+          "accessibility": 1,
+          "best-practices": 0.81,
+          "seo": 1
+        },
+        "metrics": {
+          "largest-contentful-paint": 1506.265797835003,
+          "total-blocking-time": 59,
+          "cumulative-layout-shift": 0,
+          "speed-index": 1056.265797835003
+        },
+        "warnings": [],
+        "error": null
+      },
+      {
+        "name": "offers-mobile",
+        "run": 2,
+        "path": "/domy-na-sprzedaz-bielsko",
+        "fetch_time": "2026-10-16T13:46:08.971Z",
+        "version": "13.5.0",
+        "scores": {
+          "performance": 0.84,
+          "accessibility": 1,
+          "best-practices": 0.81,
+          "seo": 1
+        },
+        "metrics": {
+          "largest-contentful-paint": 1959.6449,
+          "total-blocking-time": 593,
+          "cumulative-layout-shift": 0,
+          "speed-index": 1247.9415594560598
+        },
+        "warnings": [],
+        "error": null
+      },
+      {
+        "name": "projects-mobile",
+        "run": 2,
+        "path": "/projekty-domow",
+        "fetch_time": "2026-10-16T13:46:24.723Z",
+        "version": "13.5.0",
+        "scores": {
+          "performance": 0.99,
+          "accessibility": 1,
+          "best-practices": 0.81,
+          "seo": 1
+        },
+        "metrics": {
+          "largest-contentful-paint": 1656.6483,
+          "total-blocking-time": 98,
+          "cumulative-layout-shift": 0,
+          "speed-index": 1056.6483
+        },
+        "warnings": [
+          "The tested device appears to have a slower CPU than  Lighthouse expects. This can negatively affect your performance score. Learn more about [calibrating an appropriate CPU slowdown multiplier](https://github.com/GoogleChrome/lighthouse/blob/main/docs/throttling.md#cpu-throttling)."
+        ],
+        "error": null
+      },
+      {
+        "name": "home-desktop",
+        "run": 2,
+        "path": "/",
+        "fetch_time": "2026-10-16T13:46:39.142Z",
+        "version": "13.5.0",
+        "scores": {
+          "performance": 0.95,
+          "accessibility": 1,
+          "best-practices": 0.81,
+          "seo": 1
+        },
+        "metrics": {
+          "largest-contentful-paint": 932.4163000000001,
+          "total-blocking-time": 118.00000000000011,
+          "cumulative-layout-shift": 0,
+          "speed-index": 1752.5357100019842
+        },
+        "warnings": [],
+        "error": null
+      },
+      {
+        "name": "home-mobile",
+        "run": 3,
+        "path": "/",
+        "fetch_time": "2026-10-16T13:46:56.948Z",
+        "version": "13.5.0",
+        "scores": {
+          "performance": 0.82,
+          "accessibility": 1,
+          "best-practices": 0.81,
+          "seo": 1
+        },
+        "metrics": {
+          "largest-contentful-paint": 4662.5603817264455,
+          "total-blocking-time": 85.43961827355474,
+          "cumulative-layout-shift": 0,
+          "speed-index": 2576.8052817248226
+        },
+        "warnings": [],
+        "error": null
+      },
+      {
+        "name": "service-mobile",
+        "run": 3,
+        "path": "/budowa-domow-pod-klucz",
+        "fetch_time": "2026-10-16T13:47:13.388Z",
+        "version": "13.5.0",
+        "scores": {
+          "performance": 1,
+          "accessibility": 1,
+          "best-practices": 0.81,
+          "seo": 1
+        },
+        "metrics": {
+          "largest-contentful-paint": 1206.444729553583,
+          "total-blocking-time": 14,
+          "cumulative-layout-shift": 0,
+          "speed-index": 1056.444729553583
+        },
+        "warnings": [
+          "The tested device appears to have a slower CPU than  Lighthouse expects. This can negatively affect your performance score. Learn more about [calibrating an appropriate CPU slowdown multiplier](https://github.com/GoogleChrome/lighthouse/blob/main/docs/throttling.md#cpu-throttling)."
+        ],
+        "error": null
+      },
+      {
+        "name": "offers-mobile",
+        "run": 3,
+        "path": "/domy-na-sprzedaz-bielsko",
+        "fetch_time": "2026-10-16T13:47:26.340Z",
+        "version": "13.5.0",
+        "scores": {
+          "performance": 0.99,
+          "accessibility": 1,
+          "best-practices": 0.81,
+          "seo": 1
+        },
+        "metrics": {
+          "largest-contentful-paint": 1957.8786217611892,
+          "total-blocking-time": 29,
+          "cumulative-layout-shift": 0,
+          "speed-index": 1057.8786217611892
+        },
+        "warnings": [],
+        "error": null
+      },
+      {
+        "name": "projects-mobile",
+        "run": 3,
+        "path": "/projekty-domow",
+        "fetch_time": "2026-10-16T13:47:40.636Z",
+        "version": "13.5.0",
+        "scores": {
+          "performance": 1,
+          "accessibility": 1,
+          "best-practices": 0.81,
+          "seo": 1
+        },
+        "metrics": {
+          "largest-contentful-paint": 1505.0688147562303,
+          "total-blocking-time": 84,
+          "cumulative-layout-shift": 0,
+          "speed-index": 1055.0688147562303
+        },
+        "warnings": [],
+        "error": null
+      },
+      {
+        "name": "home-desktop",
+        "run": 3,
+        "path": "/",
+        "fetch_time": "2026-10-16T13:47:53.787Z",
+        "version": "13.5.0",
+        "scores": {
+          "performance": 0.99,
+          "accessibility": 1,
+          "best-practices": 0.81,
+          "seo": 1
+        },
+        "metrics": {
+          "largest-contentful-paint": 926.3322311408594,
+          "total-blocking-time": 43.000000000000114,
+          "cumulative-layout-shift": 0,
+          "speed-index": 1060.6703797971065
+        },
+        "warnings": [],
+        "error": null
+      }
+    ],
+    "after": [
+      {
+        "name": "home-mobile",
+        "run": 1,
+        "path": "/",
+        "fetch_time": "2026-10-16T14:03:02.055Z",
+        "version": "13.5.0",
+        "scores": {
+          "performance": 0.9,
+          "accessibility": 1,
+          "best-practices": 0.81,
+          "seo": 1
+        },
+        "metrics": {
+          "largest-contentful-paint": 3383.4696604339215,
+          "total-blocking-time": 0,
+          "cumulative-layout-shift": 0,
+          "speed-index": 2830.891250261751
+        },
+        "warnings": [],
+        "error": null
+      },
+      {
+        "name": "service-mobile",
+        "run": 1,
+        "path": "/budowa-domow-pod-klucz",
+        "fetch_time": "2026-10-16T14:03:17.362Z",
+        "version": "13.5.0",
+        "scores": {
+          "performance": 0.99,
+          "accessibility": 1,
+          "best-practices": 0.81,
+          "seo": 1
+        },
+        "metrics": {
+          "largest-contentful-paint": 1504.9089327976196,
+          "total-blocking-time": 108,
+          "cumulative-layout-shift": 0,
+          "speed-index": 1054.9089327976196
+        },
+        "warnings": [],
+        "error": null
+      },
+      {
+        "name": "offers-mobile",
+        "run": 1,
+        "path": "/domy-na-sprzedaz-bielsko",
+        "fetch_time": "2026-10-16T14:03:30.291Z",
+        "version": "13.5.0",
+        "scores": {
+          "performance": 1,
+          "accessibility": 1,
+          "best-practices": 0.81,
+          "seo": 1
+        },
+        "metrics": {
+          "largest-contentful-paint": 1507.3820879714174,
+          "total-blocking-time": 59,
+          "cumulative-layout-shift": 0,
+          "speed-index": 1057.3820879714174
+        },
+        "warnings": [],
+        "error": null
+      },
+      {
+        "name": "projects-mobile",
+        "run": 1,
+        "path": "/projekty-domow",
+        "fetch_time": "2026-10-16T14:03:43.581Z",
+        "version": "13.5.0",
+        "scores": {
+          "performance": 1,
+          "accessibility": 1,
+          "best-practices": 0.81,
+          "seo": 1
+        },
+        "metrics": {
+          "largest-contentful-paint": 1655.8664,
+          "total-blocking-time": 14,
+          "cumulative-layout-shift": 0,
+          "speed-index": 1055.8664
+        },
+        "warnings": [],
+        "error": null
+      },
+      {
+        "name": "home-desktop",
+        "run": 1,
+        "path": "/",
+        "fetch_time": "2026-10-16T14:03:57.856Z",
+        "version": "13.5.0",
+        "scores": {
+          "performance": 1,
+          "accessibility": 1,
+          "best-practices": 0.81,
+          "seo": 1
+        },
+        "metrics": {
+          "largest-contentful-paint": 649.0467000000001,
+          "total-blocking-time": 0,
+          "cumulative-layout-shift": 0,
+          "speed-index": 544.6856435876199
+        },
+        "warnings": [],
+        "error": null
+      },
+      {
+        "name": "home-mobile",
+        "run": 2,
+        "path": "/",
+        "fetch_time": "2026-10-16T14:04:14.074Z",
+        "version": "13.5.0",
+        "scores": {
+          "performance": 0.9,
+          "accessibility": 1,
+          "best-practices": 0.81,
+          "seo": 1
+        },
+        "metrics": {
+          "largest-contentful-paint": 3387.282518530441,
+          "total-blocking-time": 0,
+          "cumulative-layout-shift": 0,
+          "speed-index": 2841.713519117386
+        },
+        "warnings": [],
+        "error": null
+      },
+      {
+        "name": "service-mobile",
+        "run": 2,
+        "path": "/budowa-domow-pod-klucz",
+        "fetch_time": "2026-10-16T14:04:29.769Z",
+        "version": "13.5.0",
+        "scores": {
+          "performance": 1,
+          "accessibility": 1,
+          "best-practices": 0.81,
+          "seo": 1
+        },
+        "metrics": {
+          "largest-contentful-paint": 1506.0414382262925,
+          "total-blocking-time": 23,
+          "cumulative-layout-shift": 0,
+          "speed-index": 1056.0414382262925
+        },
+        "warnings": [],
+        "error": null
+      },
+      {
+        "name": "offers-mobile",
+        "run": 2,
+        "path": "/domy-na-sprzedaz-bielsko",
+        "fetch_time": "2026-10-16T14:04:43.285Z",
+        "version": "13.5.0",
+        "scores": {
+          "performance": 1,
+          "accessibility": 1,
+          "best-practices": 0.81,
+          "seo": 1
+        },
+        "metrics": {
+          "largest-contentful-paint": 1655.5599,
+          "total-blocking-time": 3,
+          "cumulative-layout-shift": 0,
+          "speed-index": 1055.5599
+        },
+        "warnings": [],
+        "error": null
+      },
+      {
+        "name": "projects-mobile",
+        "run": 2,
+        "path": "/projekty-domow",
+        "fetch_time": "2026-10-16T14:04:56.317Z",
+        "version": "13.5.0",
+        "scores": {
+          "performance": 1,
+          "accessibility": 1,
+          "best-practices": 0.81,
+          "seo": 1
+        },
+        "metrics": {
+          "largest-contentful-paint": 1656.0348,
+          "total-blocking-time": 32,
+          "cumulative-layout-shift": 0,
+          "speed-index": 1056.0348
+        },
+        "warnings": [],
+        "error": null
+      },
+      {
+        "name": "home-desktop",
+        "run": 2,
+        "path": "/",
+        "fetch_time": "2026-10-16T14:05:11.147Z",
+        "version": "13.5.0",
+        "scores": {
+          "performance": 1,
+          "accessibility": 1,
+          "best-practices": 0.81,
+          "seo": 1
+        },
+        "metrics": {
+          "largest-contentful-paint": 649.6178750232846,
+          "total-blocking-time": 0,
+          "cumulative-layout-shift": 0,
+          "speed-index": 551.7605930957457
+        },
+        "warnings": [],
+        "error": null
+      },
+      {
+        "name": "home-mobile",
+        "run": 3,
+        "path": "/",
+        "fetch_time": "2026-10-16T14:05:26.093Z",
+        "version": "13.5.0",
+        "scores": {
+          "performance": 0.65,
+          "accessibility": 1,
+          "best-practices": 0.81,
+          "seo": 1
+        },
+        "metrics": {
+          "largest-contentful-paint": 3385.962968094428,
+          "total-blocking-time": 1344.5370319055721,
+          "cumulative-layout-shift": 0,
+          "speed-index": 3033.5528405225587
+        },
+        "warnings": [
+          "The tested device appears to have a slower CPU than  Lighthouse expects. This can negatively affect your performance score. Learn more about [calibrating an appropriate CPU slowdown multiplier](https://github.com/GoogleChrome/lighthouse/blob/main/docs/throttling.md#cpu-throttling)."
+        ],
+        "error": null
+      },
+      {
+        "name": "service-mobile",
+        "run": 3,
+        "path": "/budowa-domow-pod-klucz",
+        "fetch_time": "2026-10-16T14:05:41.983Z",
+        "version": "13.5.0",
+        "scores": {
+          "performance": 1,
+          "accessibility": 1,
+          "best-practices": 0.81,
+          "seo": 1
+        },
+        "metrics": {
+          "largest-contentful-paint": 1505.5704807139282,
+          "total-blocking-time": 0,
+          "cumulative-layout-shift": 0,
+          "speed-index": 1055.5704807139282
+        },
+        "warnings": [],
+        "error": null
+      },
+      {
+        "name": "offers-mobile",
+        "run": 3,
+        "path": "/domy-na-sprzedaz-bielsko",
+        "fetch_time": "2026-10-16T14:05:57.218Z",
+        "version": "13.5.0",
+        "scores": {
+          "performance": 0.97,
+          "accessibility": 1,
+          "best-practices": 0.81,
+          "seo": 1
+        },
+        "metrics": {
+          "largest-contentful-paint": 1669.097382927752,
+          "total-blocking-time": 191,
+          "cumulative-layout-shift": 0,
+          "speed-index": 2308.992771160718
+        },
+        "warnings": [
+          "The tested device appears to have a slower CPU than  Lighthouse expects. This can negatively affect your performance score. Learn more about [calibrating an appropriate CPU slowdown multiplier](https://github.com/GoogleChrome/lighthouse/blob/main/docs/throttling.md#cpu-throttling)."
+        ],
+        "error": null
+      },
+      {
+        "name": "projects-mobile",
+        "run": 3,
+        "path": "/projekty-domow",
+        "fetch_time": "2026-10-16T14:06:19.194Z",
+        "version": "13.5.0",
+        "scores": {
+          "performance": 0.97,
+          "accessibility": 1,
+          "best-practices": 0.81,
+          "seo": 1
+        },
+        "metrics": {
+          "largest-contentful-paint": 1665.7566924314983,
+          "total-blocking-time": 173.5,
+          "cumulative-layout-shift": 0,
+          "speed-index": 1140.7566924314983
+        },
+        "warnings": [],
+        "error": null
+      },
+      {
+        "name": "home-desktop",
+        "run": 3,
+        "path": "/",
+        "fetch_time": "2026-10-16T14:06:38.738Z",
+        "version": "13.5.0",
+        "scores": {
+          "performance": 1,
+          "accessibility": 1,
+          "best-practices": 0.81,
+          "seo": 1
+        },
+        "metrics": {
+          "largest-contentful-paint": 656.8363496723664,
+          "total-blocking-time": 0,
+          "cumulative-layout-shift": 0,
+          "speed-index": 725.5113948670908
+        },
+        "warnings": [],
+        "error": null
+      }
+    ],
+    "medians": [
+      {
+        "name": "home-mobile",
+        "before": {
+          "scores": {
+            "performance": 60.0,
+            "accessibility": 100,
+            "best-practices": 81.0,
+            "seo": 100
+          },
+          "metrics": {
+            "largest-contentful-paint": 4661.666661791092,
+            "total-blocking-time": 851,
+            "cumulative-layout-shift": 0,
+            "speed-index": 3967.5759621572693
+          },
+          "performanceRange": [
+            49.0,
+            82.0
+          ]
+        },
+        "after": {
+          "scores": {
+            "performance": 90.0,
+            "accessibility": 100,
+            "best-practices": 81.0,
+            "seo": 100
+          },
+          "metrics": {
+            "largest-contentful-paint": 3385.962968094428,
+            "total-blocking-time": 0,
+            "cumulative-layout-shift": 0,
+            "speed-index": 2841.713519117386
+          },
+          "performanceRange": [
+            65.0,
+            90.0
+          ]
+        }
+      },
+      {
+        "name": "service-mobile",
+        "before": {
+          "scores": {
+            "performance": 100,
+            "accessibility": 100,
+            "best-practices": 81.0,
+            "seo": 100
+          },
+          "metrics": {
+            "largest-contentful-paint": 1506.265797835003,
+            "total-blocking-time": 38,
+            "cumulative-layout-shift": 0,
+            "speed-index": 1056.444729553583
+          },
+          "performanceRange": [
+            100,
+            100
+          ]
+        },
+        "after": {
+          "scores": {
+            "performance": 100,
+            "accessibility": 100,
+            "best-practices": 81.0,
+            "seo": 100
+          },
+          "metrics": {
+            "largest-contentful-paint": 1505.5704807139282,
+            "total-blocking-time": 23,
+            "cumulative-layout-shift": 0,
+            "speed-index": 1055.5704807139282
+          },
+          "performanceRange": [
+            99.0,
+            100
+          ]
+        }
+      },
+      {
+        "name": "offers-mobile",
+        "before": {
+          "scores": {
+            "performance": 99.0,
+            "accessibility": 100,
+            "best-practices": 81.0,
+            "seo": 100
+          },
+          "metrics": {
+            "largest-contentful-paint": 1959.5088,
+            "total-blocking-time": 108,
+            "cumulative-layout-shift": 0,
+            "speed-index": 1059.5088
+          },
+          "performanceRange": [
+            84.0,
+            99.0
+          ]
+        },
+        "after": {
+          "scores": {
+            "performance": 100,
+            "accessibility": 100,
+            "best-practices": 81.0,
+            "seo": 100
+          },
+          "metrics": {
+            "largest-contentful-paint": 1655.5599,
+            "total-blocking-time": 59,
+            "cumulative-layout-shift": 0,
+            "speed-index": 1057.3820879714174
+          },
+          "performanceRange": [
+            97.0,
+            100
+          ]
+        }
+      },
+      {
+        "name": "projects-mobile",
+        "before": {
+          "scores": {
+            "performance": 99.0,
+            "accessibility": 100,
+            "best-practices": 81.0,
+            "seo": 100
+          },
+          "metrics": {
+            "largest-contentful-paint": 1656.6483,
+            "total-blocking-time": 98,
+            "cumulative-layout-shift": 0,
+            "speed-index": 1056.6483
+          },
+          "performanceRange": [
+            95.0,
+            100
+          ]
+        },
+        "after": {
+          "scores": {
+            "performance": 100,
+            "accessibility": 100,
+            "best-practices": 81.0,
+            "seo": 100
+          },
+          "metrics": {
+            "largest-contentful-paint": 1656.0348,
+            "total-blocking-time": 32,
+            "cumulative-layout-shift": 0,
+            "speed-index": 1056.0348
+          },
+          "performanceRange": [
+            97.0,
+            100
+          ]
+        }
+      },
+      {
+        "name": "home-desktop",
+        "before": {
+          "scores": {
+            "performance": 98.0,
+            "accessibility": 100,
+            "best-practices": 81.0,
+            "seo": 100
+          },
+          "metrics": {
+            "largest-contentful-paint": 926.3322311408594,
+            "total-blocking-time": 43.000000000000114,
+            "cumulative-layout-shift": 0,
+            "speed-index": 1199.3512293724398
+          },
+          "performanceRange": [
+            95.0,
+            99.0
+          ]
+        },
+        "after": {
+          "scores": {
+            "performance": 100,
+            "accessibility": 100,
+            "best-practices": 81.0,
+            "seo": 100
+          },
+          "metrics": {
+            "largest-contentful-paint": 649.6178750232846,
+            "total-blocking-time": 0,
+            "cumulative-layout-shift": 0,
+            "speed-index": 551.7605930957457
+          },
+          "performanceRange": [
+            100,
+            100
+          ]
+        }
+      }
+    ]
+  },
+  "hero1920": {
+    "beforeWebpBytes": 429016,
+    "afterAvifBytes": 180003,
+    "savedPercent": 58.04
+  },
+  "visualGeometry": [
+    {
+      "case": "home",
+      "viewport": {
+        "width": 375,
+        "height": 812,
+        "dpr": 1
+      },
+      "geometryDifferences": [],
+      "overflow": false
+    },
+    {
+      "case": "home-tall",
+      "viewport": {
+        "width": 412,
+        "height": 915,
+        "dpr": 1
+      },
+      "geometryDifferences": [],
+      "overflow": false
+    },
+    {
+      "case": "home-retina",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 3
+      },
+      "geometryDifferences": [],
+      "overflow": false
+    },
+    {
+      "case": "home-desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "dpr": 1
+      },
+      "geometryDifferences": [],
+      "overflow": false
+    },
+    {
+      "case": "offers",
+      "viewport": {
+        "width": 375,
+        "height": 812,
+        "dpr": 1
+      },
+      "geometryDifferences": [],
+      "overflow": false
+    },
+    {
+      "case": "projects",
+      "viewport": {
+        "width": 375,
+        "height": 812,
+        "dpr": 1
+      },
+      "geometryDifferences": [],
+      "overflow": false
+    }
+  ],
+  "selectedAfterAssets": [
+    {
+      "case": "home",
+      "selectedPath": "/_astro/budowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv_1PvhWH.avif",
+      "bytes": 67963
+    },
+    {
+      "case": "home-tall",
+      "selectedPath": "/_astro/budowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv_1PvhWH.avif",
+      "bytes": 67963
+    },
+    {
+      "case": "home-retina",
+      "selectedPath": "/_astro/budowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv_Z23STAG.avif",
+      "bytes": 389895
+    },
+    {
+      "case": "home-desktop",
+      "selectedPath": "/_astro/budowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv_Z1OXMDw.avif",
+      "bytes": 126748
+    },
+    {
+      "case": "offers",
+      "selectedPath": "/_astro/nowoczesny-dom-na-sprzedaz-bielsko.CFyHeYfm_Z248vfr.avif",
+      "bytes": 9799
+    },
+    {
+      "case": "projects",
+      "selectedPath": "/_astro/nowoczesny-dom-na-sprzedaz-bielsko.CFyHeYfm_Z248vfr.avif",
+      "bytes": 9799
+    }
+  ],
+  "browserControls": [
+    {
+      "name": "mobile-home-axe",
+      "violations": []
+    },
+    {
+      "name": "mobile-service-axe",
+      "violations": []
+    },
+    {
+      "name": "mobile-offers-axe",
+      "violations": []
+    },
+    {
+      "name": "mobile-projects-axe",
+      "violations": []
+    },
+    {
+      "name": "mobile-direct-contact",
+      "focus": "contact-form",
+      "formTop": 96.84375
+    },
+    {
+      "name": "mobile-menu-scroll-focus",
+      "passed": true
+    },
+    {
+      "name": "desktop-home-axe",
+      "violations": []
+    },
+    {
+      "name": "desktop-service-axe",
+      "violations": []
+    },
+    {
+      "name": "desktop-offers-axe",
+      "violations": []
+    },
+    {
+      "name": "desktop-projects-axe",
+      "violations": []
+    },
+    {
+      "name": "desktop-direct-contact",
+      "focus": "contact-form",
+      "formTop": 96.5
+    },
+    {
+      "name": "desktop-menu-scroll-focus",
+      "passed": true
+    },
+    {
+      "name": "normal-motion-contact",
+      "passed": true
+    },
+    {
+      "name": "native-validation",
+      "passed": true
+    },
+    {
+      "name": "loading-status-axe",
+      "violations": []
+    },
+    {
+      "name": "success-status-axe",
+      "violations": []
+    },
+    {
+      "name": "success",
+      "passed": true,
+      "transport": "intercepted locally",
+      "status": "Dziękujemy! Wiadomość została wysłana pomyślnie."
+    },
+    {
+      "name": "server-error-status-axe",
+      "violations": []
+    },
+    {
+      "name": "server-error",
+      "passed": true,
+      "transport": "intercepted locally",
+      "status": "Kontrolowany błąd serwera"
+    },
+    {
+      "name": "network-error-status-axe",
+      "violations": []
+    },
+    {
+      "name": "network-error",
+      "passed": true,
+      "transport": "intercepted locally",
+      "status": "Wystąpił błąd połączenia. Sprawdź internet i spróbuj ponownie."
+    },
+    {
+      "name": "no-javascript",
+      "pages": 4,
+      "passed": true
+    }
+  ],
+  "fallbackAndAnalytics": [
+    {
+      "name": "webp-fallback",
+      "method": "AVIF source marked unsupported in intercepted HTML; native WebP selection",
+      "source": "/_astro/budowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv_FC4Ds.webp",
+      "passed": true
+    },
+    {
+      "name": "new-service-worker",
+      "gtagLoads": 1,
+      "configCalls": 1,
+      "measurementId": "G-XDW3BJ5BJ9",
+      "forwarding": true,
+      "transport": "local stub, no production analytics sent"
+    },
+    {
+      "name": "existing-service-worker",
+      "gtagLoads": 1,
+      "configCalls": 1,
+      "measurementId": "G-XDW3BJ5BJ9",
+      "forwarding": true,
+      "transport": "local stub, no production analytics sent"
+    }
+  ],
+  "limitations": [
+    "Local compiled Vercel output served without Vercel compression/CDN; not a production PageSpeed or field CWV result.",
+    "Slow host CPU warnings and large TBT variance in some runs; show medians and ranges.",
+    "Google Analytics transport blocked in Lighthouse and browser controls; SDK stub verifies initialization/forwarding, not real GA4 delivery.",
+    "Form requests intercepted; no email delivery tested.",
+    "WebP selection tested in Chromium with AVIF marked unsupported; no physical Safari/iPhone or screen-reader test.",
+    "Unit test suite not run; pre-existing uncommitted tests excluded from branch.",
+    "FencedFrame warning remains in Partytown0.14.5 after integration2.1.8 update.",
+    "Home mobile local median Performance90/LCP3.386s remains below earlier target95/2.5s; verify deployed CDN output and field data after merge."
+  ]
+}

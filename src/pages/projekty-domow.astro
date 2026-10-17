@@ -1,26 +1,17 @@
 ---
+export const prerender = true;
+
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/layout/Header.astro";
 import Footer from "../components/layout/Footer.astro";
 import Container from "../components/ui/Container.astro";
-import { Image } from "astro:assets";
-import projectImage from "../assets/images/nowoczesny-dom-na-sprzedaz-bielsko.jpg";
-
-const projects = [
-  {
-    id: 1,
-    title: "Dom Wolnostojący Pisarzowice (Etap II)",
-    size: "135 m²",
-    rooms: 4,
-    bathrooms: 2,
-    image: projectImage,
-  },
-];
+import { Picture } from "astro:assets";
+import { properties as projects } from "../data/properties";
 ---
 
 <Layout
   title="Projekty Domów Bielsko-Biała | Autorskie Projekty | INVESTDOM"
-  description="Zobacz naszą bazę sprawdzonych projektów domów jednorodzinnych. Domy parterowe, z poddaszem użytkowym i piętrowe, gotowe do realizacji w Bielsku-Białej i okolicach."
+  description="Poznaj projekt domu prezentowany przez INVESTDOM: powierzchnię, liczbę pokoi i łazienek. Zapytaj o realizację w Bielsku-Białej i okolicach."
 >
   <Header />
   <main class="pt-32 pb-16 bg-white min-h-screen">
@@ -46,15 +37,24 @@ const projects = [
         class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
       >
         {
-          projects.map((project) => (
+          projects.map((project, index) => (
             <div class="bg-stone-50 rounded-2xl overflow-hidden border border-stone-100 hover:shadow-xl transition-all duration-300 group cursor-pointer">
               <div class="relative h-48 overflow-hidden bg-white flex items-center justify-center p-4">
-                <Image
+                <Picture
                   src={project.image}
-                  alt={project.title}
+                  alt={`${project.imageAlt} — ilustracja projektu`}
                   class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-500"
+                  pictureAttributes={{ class: "contents" }}
                   width={400}
                   height={300}
+                  widths={[400, 640, 800, 1200]}
+                  sizes="(min-width: 1280px) 254px, (min-width: 1024px) calc((100vw - 112px) / 3 - 32px), (min-width: 768px) calc((100vw - 72px) / 2 - 32px), (min-width: 640px) calc(100vw - 80px), calc(100vw - 64px)"
+                  formats={["avif", "webp"]}
+                  fallbackFormat="webp"
+                  quality={45}
+                  loading={index === 0 ? "eager" : "lazy"}
+                  fetchpriority={index === 0 ? "high" : "auto"}
+                  decoding="async"
                 />
               </div>
 

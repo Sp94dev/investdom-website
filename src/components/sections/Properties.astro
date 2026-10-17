@@ -2,22 +2,8 @@
 import Container from '../ui/Container.astro';
 import Button from '../ui/Button.astro';
 import PropertySpecs from '../ui/PropertySpecs.astro';
-import { Image } from 'astro:assets';
-import houseImage from '../../assets/images/nowoczesny-dom-na-sprzedaz-bielsko.jpg';
-
-const properties = [
-  {
-    id: 1,
-    title: 'Dom Wolnostojący Pisarzowice (Etap II)',
-    location: 'Pisarzowice',
-    price: '895 000 zł',
-    size: '135 m²',
-    plot: '700 m²',
-    status: 'Stan deweloperski',
-    image: houseImage,
-    features: ['Ogrzewanie gazowe', 'Garaż', '2 łazienki', '3 sypialnie']
-  }
-];
+import { Picture } from 'astro:assets';
+import { properties } from '../../data/properties';
 ---
 
 <section id="domy" class="py-24 bg-stone-50">
@@ -45,13 +31,18 @@ const properties = [
           <div class="grid grid-cols-1 lg:grid-cols-2">
             <!-- Image -->
             <div class="relative h-72 lg:h-full min-h-[300px]">
-              <Image 
+              <Picture
                 src={property.image} 
-                alt={`Realizacja budowy domu jednorodzinnego w Bielsku-Białej przez firmę INVESTDOM - ${property.title}`}
+                alt={property.imageAlt}
                 class="absolute inset-0 w-full h-full object-cover"
+                pictureAttributes={{ class: "contents" }}
                 width={800}
                 height={600}
-                quality={80}
+                widths={[400, 640, 800, 1200, 1600]}
+                sizes="(min-width: 1024px) 800px, (min-width: 640px) calc(100vw - 48px), max(calc(100vw - 32px), 400px)"
+                formats={["avif", "webp"]}
+                fallbackFormat="webp"
+                quality={45}
                 loading="lazy"
                 decoding="async"
               />

@@ -1,7 +1,7 @@
 ---
 import Container from "../ui/Container.astro";
 import Button from "../ui/Button.astro";
-import { Image } from "astro:assets";
+import { Picture } from "astro:assets";
 import heroImage from "../../assets/images/budowa-domu-jednorodzinnego-bielsko-biala.jpg";
 ---
 
@@ -11,13 +11,18 @@ import heroImage from "../../assets/images/budowa-domu-jednorodzinnego-bielsko-b
   <!-- Background Image with Stronger Overlay -->
   <div class="absolute inset-0 z-0">
     <!-- Zdjęcie tła -->
-    <Image
+    <Picture
       src={heroImage}
-      alt="Realizacja budowy domu jednorodzinnego w Bielsku-Białej przez firmę INVESTDOM"
+      alt="Dom jednorodzinny zrealizowany przez INVESTDOM — widok elewacji i ogrodu"
       class="w-full h-full object-cover"
+      pictureAttributes={{ class: "contents" }}
       width={1920}
-      height={1080}
-      quality={75}
+      height={1440}
+      widths={[800, 1200, 1600, 1920, 2560, 3200, 4032]}
+      sizes="max(100vw, 120vh, 800px)"
+      formats={["avif", "webp"]}
+      fallbackFormat="webp"
+      quality={35}
       loading="eager"
       decoding="async"
       fetchpriority="high"
@@ -101,5 +106,13 @@ import heroImage from "../../assets/images/budowa-domu-jednorodzinnego-bielsko-b
   .animate-fade-in-up {
     animation: fade-in-up 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
     animation-delay: 0.2s;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .animate-fade-in-up {
+      animation: none;
+      opacity: 1;
+      transform: none;
+    }
   }
 </style>
