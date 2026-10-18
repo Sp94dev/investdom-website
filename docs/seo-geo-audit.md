@@ -4,7 +4,7 @@
 
 Właściciel poinformował o aktualizacji wizytówki i przekazał [własny profil Google](https://share.google/O1Nye5JlpKbt5C3nc). Link rozwiązuje się do encji `/g/11yn13tdbh`, z nazwą „FIRMA USŁUGOWA INVEST DOM Paduch Andrzej” w przekierowaniu Google. Wspólne dane firmy w projekcie zawierają ten URL, a JSON-LD `HomeAndConstructionBusiness.sameAs` odwołuje się do wskazanego przez właściciela profilu. Nie zastąpiono marki INVESTDOM nazwą rejestrową ani nie skopiowano danych z nieoficjalnych katalogów.
 
-Pełne pola wizytówki nie były dostępne w użytym odczycie Google, więc nie potwierdzono aktualności telefonu, adresu, godzin, kategorii ani linku WWW w panelu. Wykonanie aktualizacji jest potwierdzone przez właściciela; pełna zgodność i widoczność zmian pozostaje do kontroli. Nie przenoszono ocen/opinii do schema. Właściciel potwierdził też, że firma nie świadczy remontów; opcja formularza została już usunięta, a pozostałe wzmianki w treści usług i keywords wymagają uwzględnienia przy porządkowaniu zgodności oferty.
+Pełne pola wizytówki nie były dostępne w użytym odczycie Google, więc nie potwierdzono aktualności telefonu, adresu, godzin, kategorii ani linku WWW w panelu. Wykonanie aktualizacji jest potwierdzone przez właściciela; pełna zgodność i widoczność zmian pozostaje do kontroli. Nie przenoszono ocen/opinii do schema. Właściciel potwierdził też, że firma nie świadczy remontów; opcja formularza została wcześniej usunięta. W kolejnej poprawce z 16.10.2026 usunięto z kodu kartę „Remonty” z opisem „Modernizacja i naprawy” oraz frazy „remont domów” i „firma remontowa” ze wspólnych metadanych. Historyczne dowody audytów opisują wcześniejszy stan strony.
 
 ## Uzupełnienie: dostęp do właściwego podglądu — 16.10.2026
 
