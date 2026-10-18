@@ -1,0 +1,199 @@
+Astro check
+> investdom-website@0.0.1 check
+> astro check
+
+10:30:58 [content] Syncing content
+10:30:58 [content] Synced content
+10:30:58 [types] Generated 59ms
+10:30:58 [check] Getting diagnostics for Astro files in /workspace/investdom-website...
+[96msrc/components/sections/FAQ.astro[0m:[93m57[0m:[93m26[0m - [93mwarning[0m[90m ts(6133): [0m'index' is declared but its value is never read.
+
+[7m57[0m           faqs.map((faq, index) => (
+[7m  [0m [93m                         ~~~~~[0m
+[96msrc/components/sections/FAQ.astro[0m:[93m71[0m:[93m11[0m - [93mwarning[0m[90m astro(4000): [0mThis script will be treated as if it has the `is:inline` directive because it contains an attribute. Therefore, features that require processing (e.g. using TypeScript or npm packages in the script) are unavailable.
+
+See docs for more details: https://docs.astro.build/en/guides/client-side-scripts/#script-processing.
+
+Add the `is:inline` directive explicitly to silence this hint.
+
+[7m71[0m   <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+[7m  [0m [93m          ~~~~[0m
+
+[96msrc/layouts/Layout.astro[0m:[93m149[0m:[93m13[0m - [93mwarning[0m[90m astro(4000): [0mThis script will be treated as if it has the `is:inline` directive because it contains an attribute. Therefore, features that require processing (e.g. using TypeScript or npm packages in the script) are unavailable.
+
+See docs for more details: https://docs.astro.build/en/guides/client-side-scripts/#script-processing.
+
+Add the `is:inline` directive explicitly to silence this hint.
+
+[7m149[0m     <script type="text/partytown">
+[7m   [0m [93m            ~~~~[0m
+[96msrc/layouts/Layout.astro[0m:[93m147[0m:[93m7[0m - [93mwarning[0m[90m astro(4000): [0mThis script will be treated as if it has the `is:inline` directive because it contains an attribute. Therefore, features that require processing (e.g. using TypeScript or npm packages in the script) are unavailable.
+
+See docs for more details: https://docs.astro.build/en/guides/client-side-scripts/#script-processing.
+
+Add the `is:inline` directive explicitly to silence this hint.
+
+[7m147[0m       type="text/partytown"
+[7m   [0m [93m      ~~~~[0m
+
+Result (32 files):
+- 0 errors
+- 0 warnings
+- 4 hints
+
+Build
+> investdom-website@0.0.1 build
+> astro build
+
+10:31:06 [content] Syncing content
+10:31:06 [content] Synced content
+10:31:06 [types] Generated 68ms
+10:31:06 [build] output: "server"
+10:31:06 [build] mode: "server"
+10:31:06 [build] directory: /workspace/investdom-website/dist/
+10:31:06 [build] adapter: @astrojs/vercel
+10:31:06 [build] Collecting build info...
+10:31:06 [build] ✓ Completed in 129ms.
+10:31:06 [build] Building server entrypoints...
+10:31:09 [vite] ✓ built in 2.52s
+10:31:09 [build] ✓ Completed in 2.59s.
+
+ building client (vite)
+10:31:09 [vite] transforming...
+10:31:09 [vite] ✓ 6 modules transformed.
+10:31:09 [vite] rendering chunks...
+10:31:09 [vite] computing gzip size...
+10:31:09 [vite] dist/client/_astro/Contact.astro_astro_type_script_index_0_lang.BoXnBT9x.js  4.56 kB │ gzip: 2.21 kB
+10:31:09 [vite] ✓ built in 53ms
+
+ prerendering static routes
+10:31:09 ▶ src/pages/budowa-domow-pod-klucz.astro
+10:31:09   └─ /budowa-domow-pod-klucz/index.html (+17ms)
+10:31:09 ▶ src/pages/domy-na-sprzedaz-bielsko.astro
+10:31:09   └─ /domy-na-sprzedaz-bielsko/index.html (+14ms)
+10:31:09 ▶ src/pages/projekty-domow.astro
+10:31:09   └─ /projekty-domow/index.html (+8ms)
+10:31:09 ▶ src/pages/index.astro
+10:31:09   └─ /index.html (+13ms)
+10:31:09 ✓ Completed in 93ms.
+
+ generating optimized images
+10:31:09   ▶ /_astro/nowoczesny-dom-na-sprzedaz-bielsko.CFyHeYfm_ZBhGfP.avif (reused cache entry) (+2ms) (1/34)
+10:31:09   ▶ /_astro/budowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv_Z1TgJsV.avif (reused cache entry) (+2ms) (2/34)
+10:31:09   ▶ /_astro/nowoczesny-dom-na-sprzedaz-bielsko.CFyHeYfm_Z248vfr.avif (reused cache entry) (+1ms) (3/34)
+10:31:09   ▶ /_astro/budowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv_ZssGSJ.avif (reused cache entry) (+1ms) (4/34)
+10:31:09   ▶ /_astro/nowoczesny-dom-na-sprzedaz-bielsko.CFyHeYfm_2ibXkw.avif (reused cache entry) (+1ms) (5/34)
+10:31:09   ▶ /_astro/budowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv_1PvhWH.avif (reused cache entry) (+1ms) (6/34)
+10:31:09   ▶ /_astro/budowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv_Z1OXMDw.avif (reused cache entry) (+2ms) (7/34)
+10:31:09   ▶ /_astro/nowoczesny-dom-na-sprzedaz-bielsko.CFyHeYfm_wciRB.avif (reused cache entry) (+2ms) (8/34)
+10:31:09   ▶ /_astro/nowoczesny-dom-na-sprzedaz-bielsko.CFyHeYfm_Z1CqEPe.avif (reused cache entry) (+1ms) (9/34)
+10:31:09   ▶ /_astro/budowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv_ZTfcvJ.avif (reused cache entry) (+2ms) (10/34)
+10:31:09   ▶ /_astro/nowoczesny-dom-na-sprzedaz-bielsko.CFyHeYfm_2ecISu.webp (reused cache entry) (+1ms) (11/34)
+10:31:09   ▶ /_astro/nowoczesny-dom-na-sprzedaz-bielsko.CFyHeYfm_LlTSS.webp (reused cache entry) (+2ms) (12/34)
+10:31:09   ▶ /_astro/nowoczesny-dom-na-sprzedaz-bielsko.CFyHeYfm_3ufEU.webp (reused cache entry) (+1ms) (13/34)
+10:31:09   ▶ /_astro/nowoczesny-dom-na-sprzedaz-bielsko.CFyHeYfm_2fh8GS.webp (reused cache entry) (+1ms) (14/34)
+10:31:09   ▶ /_astro/budowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv_Z23STAG.avif (reused cache entry) (+7ms) (15/34)
+10:31:09   ▶ /_astro/nowoczesny-dom-na-sprzedaz-bielsko.CFyHeYfm_U1Hw4.webp (reused cache entry) (+2ms) (16/34)
+10:31:09   ▶ /_astro/budowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv_XCyd3.avif (reused cache entry) (+3ms) (17/34)
+10:31:09   ▶ /_astro/budowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv_PfeLd.webp (reused cache entry) (+1ms) (18/34)
+10:31:09   ▶ /_astro/budowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv_Z2qGs6j.webp (reused cache entry) (+1ms) (19/34)
+10:31:09   ▶ /_astro/budowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv_1KTxo8.webp (reused cache entry) (+1ms) (20/34)
+10:31:09   ▶ /_astro/budowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv_TxbAC.webp (reused cache entry) (+1ms) (21/34)
+10:31:09   ▶ /_astro/budowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv_1PgLIp.webp (reused cache entry) (+2ms) (22/34)
+10:31:09   ▶ /_astro/budowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv_FC4Ds.webp (reused cache entry) (+2ms) (23/34)
+10:31:09   ▶ /_astro/budowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv_Z1m2AlJ.webp (reused cache entry) (+2ms) (24/34)
+10:31:09   ▶ /_astro/budowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv_ZVVjbs.avif (reused cache entry) (+1ms) (25/34)
+10:31:09   ▶ /_astro/budowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv_1szORO.avif (reused cache entry) (+1ms) (26/34)
+10:31:09   ▶ /_astro/budowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv_Z12oRK2.avif (reused cache entry) (+1ms) (27/34)
+10:31:09   ▶ /_astro/budowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv_27yLp9.avif (reused cache entry) (+1ms) (28/34)
+10:31:09   ▶ /_astro/budowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv_Z1xUjc5.avif (reused cache entry) (+1ms) (29/34)
+10:31:09   ▶ /_astro/budowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv_2a24pT.webp (reused cache entry) (+1ms) (30/34)
+10:31:09   ▶ /_astro/budowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv_ZuCUjK.webp (reused cache entry) (+1ms) (31/34)
+10:31:09   ▶ /_astro/budowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv_24yuQk.webp (reused cache entry) (+1ms) (32/34)
+10:31:09   ▶ /_astro/budowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv_22X1Pz.webp (reused cache entry) (+1ms) (33/34)
+10:31:09   ▶ /_astro/budowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv_1bAF34.webp (reused cache entry) (+1ms) (34/34)
+10:31:09 ✓ Completed in 41ms.
+
+10:31:09 [build] Rearranging server assets...
+10:31:09 [@astrojs/vercel] Bundling function ../../../../dist/server/entry.mjs
+10:31:11 [@astrojs/sitemap] `sitemap-index.xml` created at `dist/client`
+10:31:11 [@astrojs/vercel] Copying static files to .vercel/output/static
+10:31:11 [build] Server built in 4.74s
+10:31:11 [build] Complete!
+
+Project tests: normal npm test with localhost permission
+> investdom-website@0.0.1 test
+> node --test tests/*.test.mjs
+
+✔ SSR exposes unique metadata and a single canonical on the final production host (3189.295724ms)
+✔ tracking parameters cannot enter the canonical URL (14.37323ms)
+✔ production routing permanently normalizes slashes and preserves HTTP methods (2.675153ms)
+✔ unknown pages remain HTTP 404 and never become indexable content (14.552999ms)
+✔ built sitemap contains only the four canonical, indexable URLs (1.858874ms)
+✔ visible contact details and telephone links use the confirmed business data (0.628819ms)
+✔ business JSON-LD describes the confirmed builder without unsupported claims (0.37334ms)
+✔ the service page connects its real service to the same business entity (0.269267ms)
+✔ JSON-LD serialization preserves text without permitting script termination (1.537675ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 7024.944628
+
+Supplemental form regression checks: stub provider
+Contact provider rejected delivery. { status: 500 }
+Contact delivery could not be confirmed.
+✔ runtime validates and trims all fields (2.003918ms)
+✔ 400 before provider: null (36.409352ms)
+✔ 400 before provider: array (0.957094ms)
+✔ 400 before provider: name object (1.366619ms)
+✔ 400 before provider: email array (2.14372ms)
+✔ 400 before provider: missing phone (2.498979ms)
+✔ 400 before provider: phone null (0.515232ms)
+✔ 400 before provider: whitespace name (0.443553ms)
+✔ 400 before provider: long name (0.625881ms)
+✔ 400 before provider: name newline (0.860938ms)
+✔ 400 before provider: invalid email (0.622235ms)
+✔ 400 before provider: phone letters (0.879544ms)
+✔ 400 before provider: phone fewer digits (0.528655ms)
+✔ 400 before provider: phone too many digits (0.275332ms)
+✔ 400 before provider: message too long (0.344865ms)
+✔ 400 before provider: message NUL (1.019809ms)
+✔ 400 before provider: missing subject (1.131469ms)
+✔ 400 before provider: subject prototype (0.481193ms)
+✔ 400 before provider: subject constructor (0.499113ms)
+✔ 400 before provider: unknown subject (0.291791ms)
+✔ malformed JSON returns400 (1.545ms)
+✔ unsupported media type returns415 (0.377724ms)
+✔ duplicate native fields rejected (1.852952ms)
+✔ raw byte cap enforced without content length (1.084848ms)
+✔ advertised oversized body rejected (1.454677ms)
+✔ invalid UTF8 rejected (0.599439ms)
+✔ foreign Origin rejected (0.494693ms)
+✔ cross-site fetch metadata rejected (0.625524ms)
+✔ honeypot returns success without provider (0.928793ms)
+✔ JSON success has headers, escaped HTML, text, abort signal (3.4641ms)
+✔ native5000 CRLF message and JSON LF create exact same provider body/key (4.827718ms)
+✔ native5000 nonLatin characters fit bounded encoded request (4.957204ms)
+✔ provider error hides sensitive details (2.209463ms)
+✔ provider missing id is not false success (1.949468ms)
+✔ provider network error preserves uncertainty (2.327019ms)
+✔ idempotency stable for exact mail and differs after content change (2.35532ms)
+✔ stalled body returns408 and cancels stream (3000.833495ms)
+ℹ tests 37
+ℹ suites 0
+ℹ pass 37
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3202.445675
+
+SEO HTML checks
+Production:4/4PASS. Compiled local output:4/4PASS. Commands require base URL; see report.
+
+No real emails sent. Tested application commit:3ec3a6e723014f5a32079bbe844135423f9ce43c.
+Logs are verification evidence, not a test suite added to the application.

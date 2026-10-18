@@ -1,0 +1,3473 @@
+{
+  "audit_date": "2026-10-18",
+  "production_origin": "https://www.investdom.com.pl",
+  "scope": "four public pages; production HTTP and browser audit; separate merged-code verification",
+  "deployment": {
+    "main": "e15dcbdc285ebfb37aeb167392b4d583d07c105b",
+    "audited_code": "3ec3a6e723014f5a32079bbe844135423f9ce43c",
+    "pr2": "open to main; removal of renovations",
+    "pr3": "open to main; includes merged PR4",
+    "pr4": "merged to perf/seo-images-metadata, not main",
+    "production_matches_audited_code": false,
+    "confirmed_by_live_html": [
+      "renovation service present",
+      "native form method/action absent",
+      "no picture/srcset"
+    ]
+  },
+  "verification": {
+    "audited_commit": "3ec3a6e723014f5a32079bbe844135423f9ce43c",
+    "check": {
+      "errors": 0,
+      "warnings": 0,
+      "existing_hints": 4
+    },
+    "build": {
+      "passed": true,
+      "prerendered_pages": 4,
+      "image_variants": 34
+    },
+    "project_tests": {
+      "passed": 9,
+      "failed": 0
+    },
+    "supplemental_form_tests": {
+      "passed": 37,
+      "failed": 0,
+      "provider": "strictly stubbed fetch; no real messages"
+    },
+    "check_seo": {
+      "production_pages_passed": 4,
+      "compiled_local_pages_passed": 4,
+      "canonical_origin": "https://www.investdom.com.pl"
+    },
+    "lint": "No lint script configured; astro check and diff --check performed",
+    "limitations": [
+      "Initial npm test required network permission for localhost listener; final normal npm test passed.",
+      "Bare npm run check:seo requires base URL argument; both invocations with arguments passed.",
+      "No valid production form submitted; empty JSON only."
+    ]
+  },
+  "technical": {
+    "timestamp_utc": "2026-10-18T10:30:17.921867+00:00",
+    "issues": [
+      {
+        "id": "TS-01",
+        "priority": "P1",
+        "finding": "Renovation service contradicts owner; present in production and branch",
+        "pages": [
+          "/"
+        ],
+        "branch_fixed": false,
+        "source": [
+          "src/components/sections/Services.astro:27",
+          "src/layouts/Layout.astro:67"
+        ]
+      },
+      {
+        "id": "TS-02",
+        "priority": "P1 conversion",
+        "finding": "Live contact form lacks native method/action fallback; defaults GET to current page",
+        "pages": [
+          "/"
+        ],
+        "branch_fixed": true,
+        "source": [
+          "src/components/sections/Contact.astro:146"
+        ],
+        "submission_tested": false
+      },
+      {
+        "id": "TS-03",
+        "priority": "P2",
+        "finding": "OG image declares1200x630 but decoded asset1024x1024",
+        "pages": [
+          "/",
+          "/budowa-domow-pod-klucz",
+          "/domy-na-sprzedaz-bielsko",
+          "/projekty-domow"
+        ],
+        "branch_fixed": true
+      },
+      {
+        "id": "TS-04",
+        "priority": "P2",
+        "finding": "No responsive image candidates in live HTML; hero declared1920x1080 but decoded1920x1440",
+        "branch_fixed": true,
+        "cls_proven": false
+      },
+      {
+        "id": "TS-05",
+        "priority": "P3",
+        "finding": "Apex uses temporary307; HTTP apex takes2 redirect hops",
+        "branch_fixed": "not established"
+      }
+    ],
+    "pages": [
+      {
+        "url": "https://www.investdom.com.pl/",
+        "status": 200,
+        "raw_html_bytes": 57355,
+        "title": [
+          "Budowa Domów Bielsko-Biała | Nowe Domy na Sprzedaż | INVESTDOM"
+        ],
+        "description": "Szukasz profesjonalnej firmy budowlanej w Bielsku-Białej? INVESTDOM to kompleksowa budowa domów pod klucz oraz nowoczesne domy na sprzedaż. Zobacz nasze realizacje i projekty domów!",
+        "canonical": [
+          "https://www.investdom.com.pl/"
+        ],
+        "robots": {
+          "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+          "googlebot": "index, follow",
+          "bingbot": "index, follow"
+        },
+        "x_robots_tag": null,
+        "h1_count": 1,
+        "landmarks": {
+          "header": 1,
+          "nav": 2,
+          "main": 1,
+          "footer": 1
+        },
+        "main_word_count_approx": 451,
+        "image_count": 6,
+        "missing_alt_count": 0,
+        "missing_dimension_count": 3,
+        "srcset_count": 0,
+        "picture_count": 0,
+        "schema_types": [
+          "HomeAndConstructionBusiness",
+          "FAQPage"
+        ]
+      },
+      {
+        "url": "https://www.investdom.com.pl/budowa-domow-pod-klucz",
+        "status": 200,
+        "raw_html_bytes": 22911,
+        "title": [
+          "Budowa domów pod klucz Bielsko-Biała | Etapy i standardy | INVESTDOM"
+        ],
+        "description": "Dowiedz się, jak wygląda proces budowy domu pod klucz z INVESTDOM. Sprawdź nasze standardy materiałowe i etapy realizacji od fundamentów po wykończenie.",
+        "canonical": [
+          "https://www.investdom.com.pl/budowa-domow-pod-klucz"
+        ],
+        "robots": {
+          "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+          "googlebot": "index, follow",
+          "bingbot": "index, follow"
+        },
+        "x_robots_tag": null,
+        "h1_count": 1,
+        "landmarks": {
+          "header": 1,
+          "nav": 2,
+          "main": 1,
+          "footer": 1
+        },
+        "main_word_count_approx": 225,
+        "image_count": 3,
+        "missing_alt_count": 0,
+        "missing_dimension_count": 3,
+        "srcset_count": 0,
+        "picture_count": 0,
+        "schema_types": [
+          "HomeAndConstructionBusiness",
+          "Service"
+        ]
+      },
+      {
+        "url": "https://www.investdom.com.pl/domy-na-sprzedaz-bielsko",
+        "status": 200,
+        "raw_html_bytes": 23697,
+        "title": [
+          "Nowe domy na sprzedaż Bielsko-Biała | Inwestycje | INVESTDOM"
+        ],
+        "description": "Poznaj nasze aktualne inwestycje deweloperskie w Bielsku-Białej i okolicach. Gotowe domy na sprzedaż w stanie deweloperskim m.in w atrakcyjnych dzielnicach, takich jak Pisarzowice.",
+        "canonical": [
+          "https://www.investdom.com.pl/domy-na-sprzedaz-bielsko"
+        ],
+        "robots": {
+          "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+          "googlebot": "index, follow",
+          "bingbot": "index, follow"
+        },
+        "x_robots_tag": null,
+        "h1_count": 1,
+        "landmarks": {
+          "header": 1,
+          "nav": 2,
+          "main": 1,
+          "footer": 1
+        },
+        "main_word_count_approx": 140,
+        "image_count": 4,
+        "missing_alt_count": 0,
+        "missing_dimension_count": 3,
+        "srcset_count": 0,
+        "picture_count": 0,
+        "schema_types": [
+          "HomeAndConstructionBusiness"
+        ]
+      },
+      {
+        "url": "https://www.investdom.com.pl/projekty-domow",
+        "status": 200,
+        "raw_html_bytes": 21299,
+        "title": [
+          "Projekty Domów Bielsko-Biała | Autorskie Projekty | INVESTDOM"
+        ],
+        "description": "Zobacz naszą bazę sprawdzonych projektów domów jednorodzinnych. Domy parterowe, z poddaszem użytkowym i piętrowe, gotowe do realizacji w Bielsku-Białej i okolicach.",
+        "canonical": [
+          "https://www.investdom.com.pl/projekty-domow"
+        ],
+        "robots": {
+          "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+          "googlebot": "index, follow",
+          "bingbot": "index, follow"
+        },
+        "x_robots_tag": null,
+        "h1_count": 1,
+        "landmarks": {
+          "header": 1,
+          "nav": 2,
+          "main": 1,
+          "footer": 1
+        },
+        "main_word_count_approx": 44,
+        "image_count": 4,
+        "missing_alt_count": 0,
+        "missing_dimension_count": 3,
+        "srcset_count": 0,
+        "picture_count": 0,
+        "schema_types": [
+          "HomeAndConstructionBusiness"
+        ]
+      }
+    ],
+    "robots_sitemap": {
+      "robots_status": 200,
+      "wildcard": "Allow:/",
+      "index_status": 200,
+      "child_status": 200,
+      "valid_xml": true,
+      "urls": [
+        "https://www.investdom.com.pl",
+        "https://www.investdom.com.pl/budowa-domow-pod-klucz",
+        "https://www.investdom.com.pl/domy-na-sprzedaz-bielsko",
+        "https://www.investdom.com.pl/projekty-domow"
+      ]
+    },
+    "schema": {
+      "blocks": 6,
+      "json_parse_pass": 6,
+      "unresolved_local_references": 0,
+      "faq_visible_parity": true,
+      "fake_ratings_detected": false,
+      "google_rich_results_test": "not run",
+      "google_actual_indexation": "not measured",
+      "faq_serp_status_per_skill": "retired2026-05-07; informational existing markup",
+      "breadcrumb_ui_detected": false,
+      "product_offer_absence_is_failure": false,
+      "owner_identity_facts_match": "Phone/address match owner; email is consistent in HTML but target mailbox not owner-confirmed.",
+      "owner_property_facts_match": true,
+      "faq_price_time_claims_owner_confirmed": false,
+      "faq_serp_status_source": "https://developers.google.com/search/updates"
+    },
+    "internal_links": {
+      "same_origin_occurrences": 63,
+      "known_broken_page_links": 0,
+      "broken_known_fragments": 0,
+      "home_depth_to_three_subpages": 1
+    },
+    "routing": [
+      {
+        "key": "http-www",
+        "input": "http://www.investdom.com.pl/",
+        "codes": [
+          308,
+          200
+        ],
+        "final": "https://www.investdom.com.pl/"
+      },
+      {
+        "key": "https-apex",
+        "input": "https://investdom.com.pl/",
+        "codes": [
+          307,
+          200
+        ],
+        "final": "https://www.investdom.com.pl/"
+      },
+      {
+        "key": "http-apex",
+        "input": "http://investdom.com.pl/",
+        "codes": [
+          308,
+          307,
+          200
+        ],
+        "final": "https://www.investdom.com.pl/"
+      },
+      {
+        "key": "slash-budowa",
+        "input": "https://www.investdom.com.pl/budowa-domow-pod-klucz/",
+        "codes": [
+          308,
+          200
+        ],
+        "final": "https://www.investdom.com.pl/budowa-domow-pod-klucz"
+      },
+      {
+        "key": "slash-sprzedaz",
+        "input": "https://www.investdom.com.pl/domy-na-sprzedaz-bielsko/",
+        "codes": [
+          308,
+          200
+        ],
+        "final": "https://www.investdom.com.pl/domy-na-sprzedaz-bielsko"
+      },
+      {
+        "key": "slash-projekty",
+        "input": "https://www.investdom.com.pl/projekty-domow/",
+        "codes": [
+          308,
+          200
+        ],
+        "final": "https://www.investdom.com.pl/projekty-domow"
+      },
+      {
+        "key": "utm-home",
+        "input": "https://www.investdom.com.pl/?utm_source=seo_audit&utm_medium=read_only",
+        "codes": [
+          200
+        ],
+        "final": "https://www.investdom.com.pl/?utm_source=seo_audit&utm_medium=read_only"
+      },
+      {
+        "key": "utm-budowa",
+        "input": "https://www.investdom.com.pl/budowa-domow-pod-klucz?utm_source=seo_audit&utm_medium=read_only",
+        "codes": [
+          200
+        ],
+        "final": "https://www.investdom.com.pl/budowa-domow-pod-klucz?utm_source=seo_audit&utm_medium=read_only"
+      },
+      {
+        "key": "missing-page",
+        "input": "https://www.investdom.com.pl/seo-audit-nonexistent-20261018",
+        "codes": [
+          404
+        ],
+        "final": "https://www.investdom.com.pl/seo-audit-nonexistent-20261018"
+      }
+    ],
+    "assets": [
+      {
+        "key": "image-1",
+        "url": "https://www.investdom.com.pl/logo.svg",
+        "status": 200,
+        "bytes": 5287,
+        "decoded_dimensions": null,
+        "svg_dimensions": {
+          "width": "875",
+          "height": "190",
+          "viewBox": "0 0 875 190",
+          "fill": "none"
+        }
+      },
+      {
+        "key": "image-2",
+        "url": "https://www.investdom.com.pl/_image?href=%2F_astro%2Fbudowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv.jpg&w=1920&h=1080&q=75&f=webp",
+        "status": 200,
+        "bytes": 429016,
+        "decoded_dimensions": [
+          1920,
+          1440
+        ],
+        "svg_dimensions": null
+      },
+      {
+        "key": "image-3",
+        "url": "https://www.investdom.com.pl/_image?href=%2F_astro%2Fbudowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv.jpg&w=800&h=600&q=80&f=webp",
+        "status": 200,
+        "bytes": 87632,
+        "decoded_dimensions": [
+          800,
+          600
+        ],
+        "svg_dimensions": null
+      },
+      {
+        "key": "image-4",
+        "url": "https://www.investdom.com.pl/_image?href=%2F_astro%2Fnowoczesny-dom-na-sprzedaz-bielsko.CFyHeYfm.jpg&w=800&h=600&q=80&f=webp",
+        "status": 200,
+        "bytes": 79678,
+        "decoded_dimensions": [
+          800,
+          600
+        ],
+        "svg_dimensions": null
+      },
+      {
+        "key": "image-5",
+        "url": "https://www.investdom.com.pl/_image?href=%2F_astro%2Fnowoczesny-dom-na-sprzedaz-bielsko.CFyHeYfm.jpg&w=400&h=300&f=webp",
+        "status": 200,
+        "bytes": 20520,
+        "decoded_dimensions": [
+          400,
+          300
+        ],
+        "svg_dimensions": null
+      },
+      {
+        "key": "schema-logo",
+        "url": "https://www.investdom.com.pl/logo.png",
+        "status": 200,
+        "bytes": 9524,
+        "decoded_dimensions": [
+          720,
+          360
+        ],
+        "svg_dimensions": null
+      },
+      {
+        "key": "og-image",
+        "url": "https://www.investdom.com.pl/og-image.jpg",
+        "status": 200,
+        "bytes": 640604,
+        "decoded_dimensions": [
+          1024,
+          1024
+        ],
+        "svg_dimensions": null
+      }
+    ],
+    "limitations": [
+      "No form submissions or email delivery test",
+      "No Google URL Inspection, Rich Results Test or Schema.org Validator",
+      "No rendered browser/mobile parity, Lighthouse or field CWV by this worker",
+      "Four-page bounded crawl; external targets not crawled",
+      "No whole-site numeric score assigned by this worker"
+    ]
+  },
+  "browser": {
+    "version": "154.0.8037.57",
+    "cases": [
+      {
+        "environment": "production",
+        "path": "/",
+        "device": "mobile",
+        "status": 200,
+        "axe": {
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": 10
+            }
+          ]
+        },
+        "dom": {
+          "width": 375,
+          "scrollWidth": 375,
+          "h1": [
+            "Kompleksowa Budowa Domów w  Bielsku-Białej i na Śląsku"
+          ],
+          "form": {
+            "method": null,
+            "action": null,
+            "enhanced": null
+          },
+          "images": [
+            {
+              "alt": "InvestDom Logo",
+              "currentSrc": "https://www.investdom.com.pl/logo.svg",
+              "width": 875,
+              "height": 190,
+              "loading": "auto",
+              "fetchPriority": "auto"
+            },
+            {
+              "alt": "InvestDom Logo",
+              "currentSrc": "https://www.investdom.com.pl/logo.svg",
+              "width": 184,
+              "height": 40,
+              "loading": "auto",
+              "fetchPriority": "auto"
+            },
+            {
+              "alt": "Realizacja budowy domu jednorodzinnego w Bielsku-Białej przez firmę INVESTDOM",
+              "currentSrc": "https://www.investdom.com.pl/_image?href=%2F_astro%2Fbudowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv.jpg&w=1920&h=1080&q=75&f=webp",
+              "width": 375,
+              "height": 731,
+              "loading": "eager",
+              "fetchPriority": "high"
+            },
+            {
+              "alt": "Realizacja budowy domu jednorodzinnego w Bielsku-Białej przez firmę INVESTDOM",
+              "currentSrc": "https://www.investdom.com.pl/_image?href=%2F_astro%2Fbudowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv.jpg&w=800&h=600&q=80&f=webp",
+              "width": 343,
+              "height": 400,
+              "loading": "lazy",
+              "fetchPriority": "auto"
+            },
+            {
+              "alt": "Realizacja budowy domu jednorodzinnego w Bielsku-Białej przez firmę INVESTDOM - Dom Wolnostojący Pisarzowice (Etap II)",
+              "currentSrc": "",
+              "width": 341,
+              "height": 300,
+              "loading": "lazy",
+              "fetchPriority": "auto"
+            },
+            {
+              "alt": "InvestDom Logo",
+              "currentSrc": "https://www.investdom.com.pl/logo.svg",
+              "width": 184,
+              "height": 40,
+              "loading": "auto",
+              "fetchPriority": "auto"
+            }
+          ],
+          "font": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\""
+        },
+        "pageErrors": [
+          "Cannot read properties of undefined (reading 'active')"
+        ]
+      },
+      {
+        "environment": "production",
+        "path": "/budowa-domow-pod-klucz",
+        "device": "mobile",
+        "status": 200,
+        "axe": {
+          "violations": [],
+          "incomplete": []
+        },
+        "dom": {
+          "width": 375,
+          "scrollWidth": 375,
+          "h1": [
+            "Budowa domów pod klucz – krok po kroku"
+          ],
+          "form": null,
+          "images": [
+            {
+              "alt": "InvestDom Logo",
+              "currentSrc": "https://www.investdom.com.pl/logo.svg",
+              "width": 875,
+              "height": 190,
+              "loading": "auto",
+              "fetchPriority": "auto"
+            },
+            {
+              "alt": "InvestDom Logo",
+              "currentSrc": "https://www.investdom.com.pl/logo.svg",
+              "width": 184,
+              "height": 40,
+              "loading": "auto",
+              "fetchPriority": "auto"
+            },
+            {
+              "alt": "InvestDom Logo",
+              "currentSrc": "https://www.investdom.com.pl/logo.svg",
+              "width": 184,
+              "height": 40,
+              "loading": "auto",
+              "fetchPriority": "auto"
+            }
+          ],
+          "font": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\""
+        },
+        "pageErrors": [
+          "Cannot read properties of undefined (reading 'active')"
+        ]
+      },
+      {
+        "environment": "production",
+        "path": "/domy-na-sprzedaz-bielsko",
+        "device": "mobile",
+        "status": 200,
+        "axe": {
+          "violations": [],
+          "incomplete": []
+        },
+        "dom": {
+          "width": 375,
+          "scrollWidth": 375,
+          "h1": [
+            "Nowe domy na sprzedaż w Bielsku-Białej"
+          ],
+          "form": null,
+          "images": [
+            {
+              "alt": "InvestDom Logo",
+              "currentSrc": "https://www.investdom.com.pl/logo.svg",
+              "width": 875,
+              "height": 190,
+              "loading": "auto",
+              "fetchPriority": "auto"
+            },
+            {
+              "alt": "InvestDom Logo",
+              "currentSrc": "https://www.investdom.com.pl/logo.svg",
+              "width": 184,
+              "height": 40,
+              "loading": "auto",
+              "fetchPriority": "auto"
+            },
+            {
+              "alt": "Dom Wolnostojący Pisarzowice (Etap II)",
+              "currentSrc": "https://www.investdom.com.pl/_image?href=%2F_astro%2Fnowoczesny-dom-na-sprzedaz-bielsko.CFyHeYfm.jpg&w=800&h=600&q=80&f=webp",
+              "width": 341,
+              "height": 256,
+              "loading": "lazy",
+              "fetchPriority": "auto"
+            },
+            {
+              "alt": "InvestDom Logo",
+              "currentSrc": "https://www.investdom.com.pl/logo.svg",
+              "width": 184,
+              "height": 40,
+              "loading": "auto",
+              "fetchPriority": "auto"
+            }
+          ],
+          "font": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\""
+        },
+        "pageErrors": [
+          "Cannot read properties of undefined (reading 'active')"
+        ]
+      },
+      {
+        "environment": "production",
+        "path": "/projekty-domow",
+        "device": "mobile",
+        "status": 200,
+        "axe": {
+          "violations": [],
+          "incomplete": []
+        },
+        "dom": {
+          "width": 375,
+          "scrollWidth": 375,
+          "h1": [
+            "Autorskie Projekty Domów"
+          ],
+          "form": null,
+          "images": [
+            {
+              "alt": "InvestDom Logo",
+              "currentSrc": "https://www.investdom.com.pl/logo.svg",
+              "width": 875,
+              "height": 190,
+              "loading": "auto",
+              "fetchPriority": "auto"
+            },
+            {
+              "alt": "InvestDom Logo",
+              "currentSrc": "https://www.investdom.com.pl/logo.svg",
+              "width": 184,
+              "height": 40,
+              "loading": "auto",
+              "fetchPriority": "auto"
+            },
+            {
+              "alt": "Dom Wolnostojący Pisarzowice (Etap II)",
+              "currentSrc": "https://www.investdom.com.pl/_image?href=%2F_astro%2Fnowoczesny-dom-na-sprzedaz-bielsko.CFyHeYfm.jpg&w=400&h=300&f=webp",
+              "width": 309,
+              "height": 160,
+              "loading": "lazy",
+              "fetchPriority": "auto"
+            },
+            {
+              "alt": "InvestDom Logo",
+              "currentSrc": "https://www.investdom.com.pl/logo.svg",
+              "width": 184,
+              "height": 40,
+              "loading": "auto",
+              "fetchPriority": "auto"
+            }
+          ],
+          "font": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\""
+        },
+        "pageErrors": [
+          "Cannot read properties of undefined (reading 'active')"
+        ]
+      },
+      {
+        "environment": "production",
+        "path": "/",
+        "device": "desktop",
+        "status": 200,
+        "axe": {
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": 6
+            }
+          ]
+        },
+        "dom": {
+          "width": 1440,
+          "scrollWidth": 1440,
+          "h1": [
+            "Kompleksowa Budowa Domów w  Bielsku-Białej i na Śląsku"
+          ],
+          "form": {
+            "method": null,
+            "action": null,
+            "enhanced": null
+          },
+          "images": [
+            {
+              "alt": "InvestDom Logo",
+              "currentSrc": "https://www.investdom.com.pl/logo.svg",
+              "width": 184,
+              "height": 40,
+              "loading": "auto",
+              "fetchPriority": "auto"
+            },
+            {
+              "alt": "InvestDom Logo",
+              "currentSrc": "https://www.investdom.com.pl/logo.svg",
+              "width": 875,
+              "height": 190,
+              "loading": "auto",
+              "fetchPriority": "auto"
+            },
+            {
+              "alt": "Realizacja budowy domu jednorodzinnego w Bielsku-Białej przez firmę INVESTDOM",
+              "currentSrc": "https://www.investdom.com.pl/_image?href=%2F_astro%2Fbudowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv.jpg&w=1920&h=1080&q=75&f=webp",
+              "width": 1440,
+              "height": 900,
+              "loading": "eager",
+              "fetchPriority": "high"
+            },
+            {
+              "alt": "Realizacja budowy domu jednorodzinnego w Bielsku-Białej przez firmę INVESTDOM",
+              "currentSrc": "https://www.investdom.com.pl/_image?href=%2F_astro%2Fbudowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv.jpg&w=800&h=600&q=80&f=webp",
+              "width": 584,
+              "height": 400,
+              "loading": "lazy",
+              "fetchPriority": "auto"
+            },
+            {
+              "alt": "Realizacja budowy domu jednorodzinnego w Bielsku-Białej przez firmę INVESTDOM - Dom Wolnostojący Pisarzowice (Etap II)",
+              "currentSrc": "",
+              "width": 607,
+              "height": 533,
+              "loading": "lazy",
+              "fetchPriority": "auto"
+            },
+            {
+              "alt": "InvestDom Logo",
+              "currentSrc": "https://www.investdom.com.pl/logo.svg",
+              "width": 184,
+              "height": 40,
+              "loading": "auto",
+              "fetchPriority": "auto"
+            }
+          ],
+          "font": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\""
+        },
+        "pageErrors": [
+          "Cannot read properties of undefined (reading 'active')"
+        ]
+      },
+      {
+        "environment": "production",
+        "path": "/budowa-domow-pod-klucz",
+        "device": "desktop",
+        "status": 200,
+        "axe": {
+          "violations": [],
+          "incomplete": []
+        },
+        "dom": {
+          "width": 1440,
+          "scrollWidth": 1440,
+          "h1": [
+            "Budowa domów pod klucz – krok po kroku"
+          ],
+          "form": null,
+          "images": [
+            {
+              "alt": "InvestDom Logo",
+              "currentSrc": "https://www.investdom.com.pl/logo.svg",
+              "width": 184,
+              "height": 40,
+              "loading": "auto",
+              "fetchPriority": "auto"
+            },
+            {
+              "alt": "InvestDom Logo",
+              "currentSrc": "https://www.investdom.com.pl/logo.svg",
+              "width": 875,
+              "height": 190,
+              "loading": "auto",
+              "fetchPriority": "auto"
+            },
+            {
+              "alt": "InvestDom Logo",
+              "currentSrc": "https://www.investdom.com.pl/logo.svg",
+              "width": 184,
+              "height": 40,
+              "loading": "auto",
+              "fetchPriority": "auto"
+            }
+          ],
+          "font": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\""
+        },
+        "pageErrors": [
+          "Cannot read properties of undefined (reading 'active')"
+        ]
+      },
+      {
+        "environment": "production",
+        "path": "/domy-na-sprzedaz-bielsko",
+        "device": "desktop",
+        "status": 200,
+        "axe": {
+          "violations": [],
+          "incomplete": []
+        },
+        "dom": {
+          "width": 1440,
+          "scrollWidth": 1440,
+          "h1": [
+            "Nowe domy na sprzedaż w Bielsku-Białej"
+          ],
+          "form": null,
+          "images": [
+            {
+              "alt": "InvestDom Logo",
+              "currentSrc": "https://www.investdom.com.pl/logo.svg",
+              "width": 184,
+              "height": 40,
+              "loading": "auto",
+              "fetchPriority": "auto"
+            },
+            {
+              "alt": "InvestDom Logo",
+              "currentSrc": "https://www.investdom.com.pl/logo.svg",
+              "width": 875,
+              "height": 190,
+              "loading": "auto",
+              "fetchPriority": "auto"
+            },
+            {
+              "alt": "Dom Wolnostojący Pisarzowice (Etap II)",
+              "currentSrc": "https://www.investdom.com.pl/_image?href=%2F_astro%2Fnowoczesny-dom-na-sprzedaz-bielsko.CFyHeYfm.jpg&w=800&h=600&q=80&f=webp",
+              "width": 590,
+              "height": 256,
+              "loading": "lazy",
+              "fetchPriority": "auto"
+            },
+            {
+              "alt": "InvestDom Logo",
+              "currentSrc": "https://www.investdom.com.pl/logo.svg",
+              "width": 184,
+              "height": 40,
+              "loading": "auto",
+              "fetchPriority": "auto"
+            }
+          ],
+          "font": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\""
+        },
+        "pageErrors": [
+          "Cannot read properties of undefined (reading 'active')"
+        ]
+      },
+      {
+        "environment": "production",
+        "path": "/projekty-domow",
+        "device": "desktop",
+        "status": 200,
+        "axe": {
+          "violations": [],
+          "incomplete": []
+        },
+        "dom": {
+          "width": 1440,
+          "scrollWidth": 1440,
+          "h1": [
+            "Autorskie Projekty Domów"
+          ],
+          "form": null,
+          "images": [
+            {
+              "alt": "InvestDom Logo",
+              "currentSrc": "https://www.investdom.com.pl/logo.svg",
+              "width": 184,
+              "height": 40,
+              "loading": "auto",
+              "fetchPriority": "auto"
+            },
+            {
+              "alt": "InvestDom Logo",
+              "currentSrc": "https://www.investdom.com.pl/logo.svg",
+              "width": 875,
+              "height": 190,
+              "loading": "auto",
+              "fetchPriority": "auto"
+            },
+            {
+              "alt": "Dom Wolnostojący Pisarzowice (Etap II)",
+              "currentSrc": "https://www.investdom.com.pl/_image?href=%2F_astro%2Fnowoczesny-dom-na-sprzedaz-bielsko.CFyHeYfm.jpg&w=400&h=300&f=webp",
+              "width": 252,
+              "height": 160,
+              "loading": "lazy",
+              "fetchPriority": "auto"
+            },
+            {
+              "alt": "InvestDom Logo",
+              "currentSrc": "https://www.investdom.com.pl/logo.svg",
+              "width": 184,
+              "height": 40,
+              "loading": "auto",
+              "fetchPriority": "auto"
+            }
+          ],
+          "font": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\""
+        },
+        "pageErrors": [
+          "Cannot read properties of undefined (reading 'active')"
+        ]
+      },
+      {
+        "environment": "merged-local",
+        "path": "/",
+        "device": "mobile",
+        "status": 200,
+        "axe": {
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": 10
+            }
+          ]
+        },
+        "dom": {
+          "width": 375,
+          "scrollWidth": 375,
+          "h1": [
+            "Kompleksowa Budowa Domów w  Bielsku-Białej i na Śląsku"
+          ],
+          "form": {
+            "method": "post",
+            "action": "/api/contact",
+            "enhanced": "true"
+          },
+          "images": [
+            {
+              "alt": "InvestDom Logo",
+              "currentSrc": "http://127.0.0.1:4322/logo.svg",
+              "width": 875,
+              "height": 190,
+              "loading": "auto",
+              "fetchPriority": "auto"
+            },
+            {
+              "alt": "InvestDom Logo",
+              "currentSrc": "http://127.0.0.1:4322/logo.svg",
+              "width": 184,
+              "height": 40,
+              "loading": "auto",
+              "fetchPriority": "auto"
+            },
+            {
+              "alt": "Dom jednorodzinny zrealizowany przez INVESTDOM — widok elewacji i ogrodu",
+              "currentSrc": "http://127.0.0.1:4322/_astro/budowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv_1PvhWH.avif",
+              "width": 375,
+              "height": 731,
+              "loading": "eager",
+              "fetchPriority": "high"
+            },
+            {
+              "alt": "Dom jednorodzinny zrealizowany przez INVESTDOM — widok elewacji i ogrodu",
+              "currentSrc": "http://127.0.0.1:4322/_astro/budowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv_Z12oRK2.avif",
+              "width": 343,
+              "height": 400,
+              "loading": "lazy",
+              "fetchPriority": "auto"
+            },
+            {
+              "alt": "Dom z pierwszego etapu inwestycji INVESTDOM w Pisarzowicach",
+              "currentSrc": "",
+              "width": 341,
+              "height": 300,
+              "loading": "lazy",
+              "fetchPriority": "auto"
+            },
+            {
+              "alt": "InvestDom Logo",
+              "currentSrc": "http://127.0.0.1:4322/logo.svg",
+              "width": 184,
+              "height": 40,
+              "loading": "auto",
+              "fetchPriority": "auto"
+            }
+          ],
+          "font": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\""
+        },
+        "pageErrors": []
+      },
+      {
+        "environment": "merged-local",
+        "path": "/budowa-domow-pod-klucz",
+        "device": "mobile",
+        "status": 200,
+        "axe": {
+          "violations": [],
+          "incomplete": []
+        },
+        "dom": {
+          "width": 375,
+          "scrollWidth": 375,
+          "h1": [
+            "Budowa domów pod klucz – krok po kroku"
+          ],
+          "form": null,
+          "images": [
+            {
+              "alt": "InvestDom Logo",
+              "currentSrc": "http://127.0.0.1:4322/logo.svg",
+              "width": 875,
+              "height": 190,
+              "loading": "auto",
+              "fetchPriority": "auto"
+            },
+            {
+              "alt": "InvestDom Logo",
+              "currentSrc": "http://127.0.0.1:4322/logo.svg",
+              "width": 184,
+              "height": 40,
+              "loading": "auto",
+              "fetchPriority": "auto"
+            },
+            {
+              "alt": "InvestDom Logo",
+              "currentSrc": "http://127.0.0.1:4322/logo.svg",
+              "width": 184,
+              "height": 40,
+              "loading": "auto",
+              "fetchPriority": "auto"
+            }
+          ],
+          "font": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\""
+        },
+        "pageErrors": []
+      },
+      {
+        "environment": "merged-local",
+        "path": "/domy-na-sprzedaz-bielsko",
+        "device": "mobile",
+        "status": 200,
+        "axe": {
+          "violations": [],
+          "incomplete": []
+        },
+        "dom": {
+          "width": 375,
+          "scrollWidth": 375,
+          "h1": [
+            "Nowe domy na sprzedaż w Bielsku-Białej"
+          ],
+          "form": null,
+          "images": [
+            {
+              "alt": "InvestDom Logo",
+              "currentSrc": "http://127.0.0.1:4322/logo.svg",
+              "width": 875,
+              "height": 190,
+              "loading": "auto",
+              "fetchPriority": "auto"
+            },
+            {
+              "alt": "InvestDom Logo",
+              "currentSrc": "http://127.0.0.1:4322/logo.svg",
+              "width": 184,
+              "height": 40,
+              "loading": "auto",
+              "fetchPriority": "auto"
+            },
+            {
+              "alt": "Dom z pierwszego etapu inwestycji INVESTDOM w Pisarzowicach",
+              "currentSrc": "http://127.0.0.1:4322/_astro/nowoczesny-dom-na-sprzedaz-bielsko.CFyHeYfm_Z248vfr.avif",
+              "width": 341,
+              "height": 256,
+              "loading": "eager",
+              "fetchPriority": "high"
+            },
+            {
+              "alt": "InvestDom Logo",
+              "currentSrc": "http://127.0.0.1:4322/logo.svg",
+              "width": 184,
+              "height": 40,
+              "loading": "auto",
+              "fetchPriority": "auto"
+            }
+          ],
+          "font": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\""
+        },
+        "pageErrors": []
+      },
+      {
+        "environment": "merged-local",
+        "path": "/projekty-domow",
+        "device": "mobile",
+        "status": 200,
+        "axe": {
+          "violations": [],
+          "incomplete": []
+        },
+        "dom": {
+          "width": 375,
+          "scrollWidth": 375,
+          "h1": [
+            "Autorskie Projekty Domów"
+          ],
+          "form": null,
+          "images": [
+            {
+              "alt": "InvestDom Logo",
+              "currentSrc": "http://127.0.0.1:4322/logo.svg",
+              "width": 875,
+              "height": 190,
+              "loading": "auto",
+              "fetchPriority": "auto"
+            },
+            {
+              "alt": "InvestDom Logo",
+              "currentSrc": "http://127.0.0.1:4322/logo.svg",
+              "width": 184,
+              "height": 40,
+              "loading": "auto",
+              "fetchPriority": "auto"
+            },
+            {
+              "alt": "Dom z pierwszego etapu inwestycji INVESTDOM w Pisarzowicach — ilustracja projektu",
+              "currentSrc": "http://127.0.0.1:4322/_astro/nowoczesny-dom-na-sprzedaz-bielsko.CFyHeYfm_Z248vfr.avif",
+              "width": 309,
+              "height": 160,
+              "loading": "eager",
+              "fetchPriority": "high"
+            },
+            {
+              "alt": "InvestDom Logo",
+              "currentSrc": "http://127.0.0.1:4322/logo.svg",
+              "width": 184,
+              "height": 40,
+              "loading": "auto",
+              "fetchPriority": "auto"
+            }
+          ],
+          "font": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\""
+        },
+        "pageErrors": []
+      },
+      {
+        "environment": "merged-local",
+        "path": "/",
+        "device": "desktop",
+        "status": 200,
+        "axe": {
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": 6
+            }
+          ]
+        },
+        "dom": {
+          "width": 1440,
+          "scrollWidth": 1440,
+          "h1": [
+            "Kompleksowa Budowa Domów w  Bielsku-Białej i na Śląsku"
+          ],
+          "form": {
+            "method": "post",
+            "action": "/api/contact",
+            "enhanced": "true"
+          },
+          "images": [
+            {
+              "alt": "InvestDom Logo",
+              "currentSrc": "http://127.0.0.1:4322/logo.svg",
+              "width": 184,
+              "height": 40,
+              "loading": "auto",
+              "fetchPriority": "auto"
+            },
+            {
+              "alt": "InvestDom Logo",
+              "currentSrc": "http://127.0.0.1:4322/logo.svg",
+              "width": 875,
+              "height": 190,
+              "loading": "auto",
+              "fetchPriority": "auto"
+            },
+            {
+              "alt": "Dom jednorodzinny zrealizowany przez INVESTDOM — widok elewacji i ogrodu",
+              "currentSrc": "http://127.0.0.1:4322/_astro/budowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv_Z1OXMDw.avif",
+              "width": 1440,
+              "height": 900,
+              "loading": "eager",
+              "fetchPriority": "high"
+            },
+            {
+              "alt": "Dom jednorodzinny zrealizowany przez INVESTDOM — widok elewacji i ogrodu",
+              "currentSrc": "http://127.0.0.1:4322/_astro/budowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv_Z12oRK2.avif",
+              "width": 584,
+              "height": 400,
+              "loading": "lazy",
+              "fetchPriority": "auto"
+            },
+            {
+              "alt": "Dom z pierwszego etapu inwestycji INVESTDOM w Pisarzowicach",
+              "currentSrc": "",
+              "width": 607,
+              "height": 533,
+              "loading": "lazy",
+              "fetchPriority": "auto"
+            },
+            {
+              "alt": "InvestDom Logo",
+              "currentSrc": "http://127.0.0.1:4322/logo.svg",
+              "width": 184,
+              "height": 40,
+              "loading": "auto",
+              "fetchPriority": "auto"
+            }
+          ],
+          "font": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\""
+        },
+        "pageErrors": []
+      },
+      {
+        "environment": "merged-local",
+        "path": "/budowa-domow-pod-klucz",
+        "device": "desktop",
+        "status": 200,
+        "axe": {
+          "violations": [],
+          "incomplete": []
+        },
+        "dom": {
+          "width": 1440,
+          "scrollWidth": 1440,
+          "h1": [
+            "Budowa domów pod klucz – krok po kroku"
+          ],
+          "form": null,
+          "images": [
+            {
+              "alt": "InvestDom Logo",
+              "currentSrc": "http://127.0.0.1:4322/logo.svg",
+              "width": 184,
+              "height": 40,
+              "loading": "auto",
+              "fetchPriority": "auto"
+            },
+            {
+              "alt": "InvestDom Logo",
+              "currentSrc": "http://127.0.0.1:4322/logo.svg",
+              "width": 875,
+              "height": 190,
+              "loading": "auto",
+              "fetchPriority": "auto"
+            },
+            {
+              "alt": "InvestDom Logo",
+              "currentSrc": "http://127.0.0.1:4322/logo.svg",
+              "width": 184,
+              "height": 40,
+              "loading": "auto",
+              "fetchPriority": "auto"
+            }
+          ],
+          "font": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\""
+        },
+        "pageErrors": []
+      },
+      {
+        "environment": "merged-local",
+        "path": "/domy-na-sprzedaz-bielsko",
+        "device": "desktop",
+        "status": 200,
+        "axe": {
+          "violations": [],
+          "incomplete": []
+        },
+        "dom": {
+          "width": 1440,
+          "scrollWidth": 1440,
+          "h1": [
+            "Nowe domy na sprzedaż w Bielsku-Białej"
+          ],
+          "form": null,
+          "images": [
+            {
+              "alt": "InvestDom Logo",
+              "currentSrc": "http://127.0.0.1:4322/logo.svg",
+              "width": 184,
+              "height": 40,
+              "loading": "auto",
+              "fetchPriority": "auto"
+            },
+            {
+              "alt": "InvestDom Logo",
+              "currentSrc": "http://127.0.0.1:4322/logo.svg",
+              "width": 875,
+              "height": 190,
+              "loading": "auto",
+              "fetchPriority": "auto"
+            },
+            {
+              "alt": "Dom z pierwszego etapu inwestycji INVESTDOM w Pisarzowicach",
+              "currentSrc": "http://127.0.0.1:4322/_astro/nowoczesny-dom-na-sprzedaz-bielsko.CFyHeYfm_2ibXkw.avif",
+              "width": 590,
+              "height": 256,
+              "loading": "eager",
+              "fetchPriority": "high"
+            },
+            {
+              "alt": "InvestDom Logo",
+              "currentSrc": "http://127.0.0.1:4322/logo.svg",
+              "width": 184,
+              "height": 40,
+              "loading": "auto",
+              "fetchPriority": "auto"
+            }
+          ],
+          "font": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\""
+        },
+        "pageErrors": []
+      },
+      {
+        "environment": "merged-local",
+        "path": "/projekty-domow",
+        "device": "desktop",
+        "status": 200,
+        "axe": {
+          "violations": [],
+          "incomplete": []
+        },
+        "dom": {
+          "width": 1440,
+          "scrollWidth": 1440,
+          "h1": [
+            "Autorskie Projekty Domów"
+          ],
+          "form": null,
+          "images": [
+            {
+              "alt": "InvestDom Logo",
+              "currentSrc": "http://127.0.0.1:4322/logo.svg",
+              "width": 184,
+              "height": 40,
+              "loading": "auto",
+              "fetchPriority": "auto"
+            },
+            {
+              "alt": "InvestDom Logo",
+              "currentSrc": "http://127.0.0.1:4322/logo.svg",
+              "width": 875,
+              "height": 190,
+              "loading": "auto",
+              "fetchPriority": "auto"
+            },
+            {
+              "alt": "Dom z pierwszego etapu inwestycji INVESTDOM w Pisarzowicach — ilustracja projektu",
+              "currentSrc": "http://127.0.0.1:4322/_astro/nowoczesny-dom-na-sprzedaz-bielsko.CFyHeYfm_Z248vfr.avif",
+              "width": 252,
+              "height": 160,
+              "loading": "eager",
+              "fetchPriority": "high"
+            },
+            {
+              "alt": "InvestDom Logo",
+              "currentSrc": "http://127.0.0.1:4322/logo.svg",
+              "width": 184,
+              "height": 40,
+              "loading": "auto",
+              "fetchPriority": "auto"
+            }
+          ],
+          "font": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\""
+        },
+        "pageErrors": []
+      }
+    ],
+    "interaction_checks_initial": [
+      {
+        "name": "direct #kontakt focuses form on compiled site",
+        "pass": true,
+        "details": {
+          "focused": "contact-form",
+          "active": [
+            "uslugi",
+            "uslugi"
+          ]
+        }
+      },
+      {
+        "name": "repeated contact click focuses form",
+        "pass": true,
+        "details": {
+          "focused": "contact-form",
+          "active": [
+            "uslugi",
+            "uslugi"
+          ]
+        }
+      },
+      {
+        "name": "scrollspy follows actual section without changing hash",
+        "pass": true,
+        "details": {
+          "active": "domy",
+          "urlUnchanged": true
+        }
+      },
+      {
+        "name": "mobile menu opens/closes with inert and Escape focus",
+        "pass": true,
+        "details": {
+          "expanded": false,
+          "focusRestored": true
+        }
+      },
+      {
+        "name": "enhanced form success",
+        "pass": true,
+        "details": {
+          "statusText": "Dziękujemy! Wiadomość została wysłana pomyślnie.",
+          "calls": 1,
+          "axeViolations": []
+        }
+      },
+      {
+        "name": "enhanced form server",
+        "pass": true,
+        "details": {
+          "statusText": "Kontrolowany błąd wysyłki",
+          "calls": 1,
+          "axeViolations": []
+        }
+      },
+      {
+        "name": "enhanced form nonjson",
+        "pass": true,
+        "details": {
+          "statusText": "Zbyt wiele prób wysyłki. Odczekaj chwilę lub skontaktuj się z nami telefonicznie.",
+          "calls": 1,
+          "axeViolations": []
+        }
+      },
+      {
+        "name": "enhanced form network",
+        "pass": true,
+        "details": {
+          "statusText": "Nie udało się potwierdzić wysyłki. Sprawdź połączenie i spróbuj ponownie z tą samą treścią lub zadzwoń do nas.",
+          "calls": 1,
+          "axeViolations": []
+        }
+      },
+      {
+        "name": "duplicate submit during sending calls transport once",
+        "pass": true,
+        "details": {
+          "requests": 1
+        }
+      },
+      {
+        "name": "no-JS native form uses URLencoded POST with no PII in URL",
+        "pass": false,
+        "error": "Locator.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"#submit-btn\")\n    - locator resolved to <button type=\"submit\" id=\"submit-btn\" class=\"inline-flex items-center justify-center px-6 py-3 text-center text-base font-medium transition-all duration-300 ease-out rounded-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-navy-900 disabled:opacity-50 disabled:cursor-not-allowed bg-navy-900 text-white hover:bg-navy-800 w-full justify-center\">↵Wyślij wiadomość↵</button>\n  - attempting click action\n    2 × waiting for element to be visible, enabled and stable\n      - element is not stable\n    - retrying click action\n    - waiting 20ms\n"
+      },
+      {
+        "name": "reduced motion uses automatic scroll",
+        "pass": true,
+        "details": true
+      }
+    ],
+    "native_and_settled_contact_retest": {
+      "native": {
+        "pass": true,
+        "details": {
+          "method": "POST",
+          "url": "http://127.0.0.1:4322/api/contact",
+          "contentType": "application/x-www-form-urlencoded"
+        },
+        "methodOfInteraction": "keyboard Enter, JavaScript disabled"
+      },
+      "settledContact": {
+        "pass": true,
+        "details": {
+          "focus": "contact-form",
+          "panelTop": 96.5,
+          "headerBottom": 81,
+          "active": [
+            "kontakt",
+            "kontakt"
+          ]
+        }
+      }
+    },
+    "followup": [
+      {
+        "serviceWorkers": "allow",
+        "errors": [],
+        "activeServiceWorker": null,
+        "contrastManual": {
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                {
+                  "target": [
+                    "h1"
+                  ],
+                  "html": "<h1 class=\"font-heading font-bold text-2xl md:text-3xl lg:text-4xl text-white leading-tight drop-shadow-xl\" data-astro-cid-anhloy43=\"\">",
+                  "any": [
+                    {
+                      "id": "color-contrast",
+                      "data": {
+                        "fgColor": null,
+                        "bgColor": null,
+                        "contrastRatio": 0,
+                        "fontSize": "18.0pt (24px)",
+                        "fontWeight": "bold",
+                        "messageKey": "bgGradient",
+                        "expectedContrastRatio": "3:1",
+                        "shadowColor": null,
+                        "colorParse": null
+                      },
+                      "relatedNodes": [
+                        {
+                          "html": "<div class=\"absolute inset-0 bg-gradient-to-b from-navy-900/0 via-transparent to-transparent\" data-astro-cid-anhloy43=\"\"></div>",
+                          "target": [
+                            ".bg-gradient-to-b"
+                          ]
+                        }
+                      ],
+                      "impact": "serious",
+                      "message": "Element's background color could not be determined due to a background gradient"
+                    }
+                  ]
+                },
+                {
+                  "target": [
+                    ".lg\\:text-5xl"
+                  ],
+                  "html": "<span class=\"text-sky-300 text-3xl md:text-4xl lg:text-5xl\" data-astro-cid-anhloy43=\"\">Bielsku-Białej</span>",
+                  "any": [
+                    {
+                      "id": "color-contrast",
+                      "data": {
+                        "fgColor": null,
+                        "bgColor": null,
+                        "contrastRatio": 0,
+                        "fontSize": "22.5pt (30px)",
+                        "fontWeight": "bold",
+                        "messageKey": "bgGradient",
+                        "expectedContrastRatio": "3:1",
+                        "shadowColor": null,
+                        "colorParse": null
+                      },
+                      "relatedNodes": [
+                        {
+                          "html": "<div class=\"absolute inset-0 bg-gradient-to-b from-navy-900/0 via-transparent to-transparent\" data-astro-cid-anhloy43=\"\"></div>",
+                          "target": [
+                            ".bg-gradient-to-b"
+                          ]
+                        }
+                      ],
+                      "impact": "serious",
+                      "message": "Element's background color could not be determined due to a background gradient"
+                    }
+                  ]
+                },
+                {
+                  "target": [
+                    ".md\\:text-xl"
+                  ],
+                  "html": "<p class=\"text-xl text-lg md:text-xl text-white/90 max-w-xl leading-relaxed drop-shadow-lg\" data-astro-cid-anhloy43=\"\">\nSolidność potwierdzona przez lata.<br data-astro-cid-anhloy43=\"\">\nTworzymy miejsca, które nazwiesz domem.\n</p>",
+                  "any": [
+                    {
+                      "id": "color-contrast",
+                      "data": {
+                        "fgColor": null,
+                        "bgColor": null,
+                        "contrastRatio": 0,
+                        "fontSize": "15.0pt (20px)",
+                        "fontWeight": "normal",
+                        "messageKey": "bgGradient",
+                        "expectedContrastRatio": "4.5:1",
+                        "shadowColor": null,
+                        "colorParse": null
+                      },
+                      "relatedNodes": [
+                        {
+                          "html": "<div class=\"absolute inset-0 bg-gradient-to-b from-navy-900/0 via-transparent to-transparent\" data-astro-cid-anhloy43=\"\"></div>",
+                          "target": [
+                            ".bg-gradient-to-b"
+                          ]
+                        }
+                      ],
+                      "impact": "serious",
+                      "message": "Element's background color could not be determined due to a background gradient"
+                    }
+                  ]
+                },
+                {
+                  "target": [
+                    ".bg-stone-100"
+                  ],
+                  "html": "<a href=\"#kontakt\" class=\"inline-flex items-ce...\" data-astro-cid-anhlo...=\"true\">",
+                  "any": [
+                    {
+                      "id": "color-contrast",
+                      "data": {
+                        "fgColor": null,
+                        "bgColor": null,
+                        "contrastRatio": 0,
+                        "fontSize": "13.5pt (18px)",
+                        "fontWeight": "normal",
+                        "messageKey": "elmPartiallyObscuring",
+                        "expectedContrastRatio": "4.5:1",
+                        "shadowColor": null,
+                        "colorParse": null
+                      },
+                      "relatedNodes": [],
+                      "impact": "serious",
+                      "message": "Element's background color could not be determined because it partially overlaps other elements"
+                    }
+                  ]
+                },
+                {
+                  "target": [
+                    ".inline-block.py-2.bg-white\\/10"
+                  ],
+                  "html": "<span class=\"inline-block px-4 py-2 bg-white/10 text-white text-sm font-medium rounded-full mb-4\">Usługi budowlane</span>",
+                  "any": [
+                    {
+                      "id": "color-contrast",
+                      "data": {
+                        "fgColor": null,
+                        "bgColor": null,
+                        "contrastRatio": 0,
+                        "fontSize": "10.5pt (14px)",
+                        "fontWeight": "normal",
+                        "messageKey": "elmPartiallyObscured",
+                        "expectedContrastRatio": "4.5:1",
+                        "shadowColor": null,
+                        "colorParse": null
+                      },
+                      "relatedNodes": [
+                        {
+                          "html": "<span class=\"inline-block px-4 py-2 bg-white/10 text-white text-sm font-medium rounded-full mb-4\">Usługi budowlane</span>",
+                          "target": [
+                            ".inline-block.py-2.bg-white\\/10"
+                          ]
+                        },
+                        {
+                          "html": "<div class=\"absolute top-0 left-0 w-96 h-96 bg-navy-800/30 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2\"></div>",
+                          "target": [
+                            ".-translate-y-1\\/2"
+                          ]
+                        }
+                      ],
+                      "impact": "serious",
+                      "message": "Element's background color could not be determined because it's partially obscured by another element"
+                    }
+                  ]
+                },
+                {
+                  "target": [
+                    ".max-w-3xl.mb-16.mx-auto > h2"
+                  ],
+                  "html": "<h2 class=\"font-heading font-bold text-3xl md:text-4xl text-white mb-6\">\nBudowa Domów Pod Klucz i w Stanie Deweloperskim od A do Z\n</h2>",
+                  "any": [
+                    {
+                      "id": "color-contrast",
+                      "data": {
+                        "fgColor": null,
+                        "bgColor": null,
+                        "contrastRatio": 0,
+                        "fontSize": "22.5pt (30px)",
+                        "fontWeight": "bold",
+                        "messageKey": "elmPartiallyObscuring",
+                        "expectedContrastRatio": "3:1",
+                        "shadowColor": null,
+                        "colorParse": null
+                      },
+                      "relatedNodes": [],
+                      "impact": "serious",
+                      "message": "Element's background color could not be determined because it partially overlaps other elements"
+                    }
+                  ]
+                },
+                {
+                  "target": [
+                    ".md\\:text-5xl"
+                  ],
+                  "html": "<h2 class=\"font-heading font-bold text-3xl md:text-5xl text-white mb-6\">\nSkontaktuj się z nami\n</h2>",
+                  "any": [
+                    {
+                      "id": "color-contrast",
+                      "data": {
+                        "fgColor": null,
+                        "bgColor": null,
+                        "contrastRatio": 0,
+                        "fontSize": "22.5pt (30px)",
+                        "fontWeight": "bold",
+                        "messageKey": "elmPartiallyObscured",
+                        "expectedContrastRatio": "3:1",
+                        "shadowColor": null,
+                        "colorParse": null
+                      },
+                      "relatedNodes": [
+                        {
+                          "html": "<div class=\"absolute top-0 right-0 w-1/3 h-full bg-navy-800/30 skew-x-12 transform translate-x-1/2\"></div>",
+                          "target": [
+                            ".w-1\\/3"
+                          ]
+                        }
+                      ],
+                      "impact": "serious",
+                      "message": "Element's background color could not be determined because it's partially obscured by another element"
+                    }
+                  ]
+                },
+                {
+                  "target": [
+                    ".max-w-md"
+                  ],
+                  "html": "<p class=\"text-stone-300 text-lg leading-relaxed max-w-md\">\nChcesz kupić dom lub zlecić budowę? Zadzwoń do nas lub napisz.\n            Umówimy się na spotkanie i obejrzenie inwestycji.\n</p>",
+                  "any": [
+                    {
+                      "id": "color-contrast",
+                      "data": {
+                        "fgColor": null,
+                        "bgColor": null,
+                        "contrastRatio": 0,
+                        "fontSize": "13.5pt (18px)",
+                        "fontWeight": "normal",
+                        "messageKey": "elmPartiallyObscured",
+                        "expectedContrastRatio": "4.5:1",
+                        "shadowColor": null,
+                        "colorParse": null
+                      },
+                      "relatedNodes": [
+                        {
+                          "html": "<div class=\"absolute top-0 right-0 w-1/3 h-full bg-navy-800/30 skew-x-12 transform translate-x-1/2\"></div>",
+                          "target": [
+                            ".w-1\\/3"
+                          ]
+                        }
+                      ],
+                      "impact": "serious",
+                      "message": "Element's background color could not be determined because it's partially obscured by another element"
+                    }
+                  ]
+                },
+                {
+                  "target": [
+                    ".hover\\:text-sky-300[href=\"tel:+48571328993\"][data-astro-reload=\"\"]"
+                  ],
+                  "html": "<a href=\"tel:+48571328993\" data-astro-reload=\"\" class=\"text-2xl font-bold text-white hover:text-sky-300 transition-colors\"> +48 571 328 993 </a>",
+                  "any": [
+                    {
+                      "id": "color-contrast",
+                      "data": {
+                        "fgColor": null,
+                        "bgColor": null,
+                        "contrastRatio": 0,
+                        "fontSize": "18.0pt (24px)",
+                        "fontWeight": "bold",
+                        "messageKey": "elmPartiallyObscured",
+                        "expectedContrastRatio": "3:1",
+                        "shadowColor": null,
+                        "colorParse": null
+                      },
+                      "relatedNodes": [
+                        {
+                          "html": "<div class=\"absolute top-0 right-0 w-1/3 h-full bg-navy-800/30 skew-x-12 transform translate-x-1/2\"></div>",
+                          "target": [
+                            ".w-1\\/3"
+                          ]
+                        }
+                      ],
+                      "impact": "serious",
+                      "message": "Element's background color could not be determined because it's partially obscured by another element"
+                    }
+                  ]
+                },
+                {
+                  "target": [
+                    ".hover\\:text-sky-300[href=\"mailto:kontakt@investdom.pl\"][data-astro-reload=\"\"]"
+                  ],
+                  "html": "<a href=\"mailto:kontakt@investdom.pl\" data-astro-reload=\"\" class=\"text-xl font-medium text-white hover:text-sky-300 transition-colors\"> kontakt@investdom.pl </a>",
+                  "any": [
+                    {
+                      "id": "color-contrast",
+                      "data": {
+                        "fgColor": null,
+                        "bgColor": null,
+                        "contrastRatio": 0,
+                        "fontSize": "15.0pt (20px)",
+                        "fontWeight": "normal",
+                        "messageKey": "elmPartiallyObscured",
+                        "expectedContrastRatio": "4.5:1",
+                        "shadowColor": null,
+                        "colorParse": null
+                      },
+                      "relatedNodes": [
+                        {
+                          "html": "<div class=\"absolute top-0 right-0 w-1/3 h-full bg-navy-800/30 skew-x-12 transform translate-x-1/2\"></div>",
+                          "target": [
+                            ".w-1\\/3"
+                          ]
+                        }
+                      ],
+                      "impact": "serious",
+                      "message": "Element's background color could not be determined because it's partially obscured by another element"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "font": {
+          "h1": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+          "p": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+          "input": "Inter, sans-serif",
+          "a": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\""
+        }
+      },
+      {
+        "serviceWorkers": "block",
+        "errors": [
+          {
+            "message": "Cannot read properties of undefined (reading 'active')",
+            "stack": "TypeError: Cannot read properties of undefined (reading 'active')\n    at https://www.investdom.com.pl/:11:743"
+          }
+        ],
+        "activeServiceWorker": null
+      }
+    ],
+    "axe_scans_with_no_detected_violations": 20,
+    "limitations": [
+      "Chromium emulation, not physical Safari/iPhone.",
+      "GA requests blocked; service workers disabled.",
+      "No real email submission; local API responses intercepted.",
+      "Local server serves compiled Vercel static files and rejects all POST as a backstop.",
+      "Homepage color contrast incomplete:10mobile,6desktop. Manual assessment remains.",
+      "Initial native click test timed out for stability; keyboard submission with JS off passed.",
+      "Partytown error reproduced with service workers blocked only; allowed-worker follow-up had no page errors."
+    ]
+  },
+  "lighthouse": {
+    "tool": "Lighthouse13.5.0",
+    "browser": "Chromium154.0.8037.57",
+    "reports": [
+      {
+        "case": "home-mobile",
+        "trial": 1,
+        "fetchTime": "2026-10-18T10:45:19.195Z",
+        "requestedUrl": "https://www.investdom.com.pl/",
+        "finalUrl": "https://www.investdom.com.pl/",
+        "lighthouseVersion": "13.5.0",
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+        "scores": {
+          "performance": 84,
+          "accessibility": 100,
+          "best-practices": 81,
+          "seo": 100
+        },
+        "metrics": {
+          "first-contentful-paint": 956.4300000000001,
+          "largest-contentful-paint": 3156.835,
+          "total-blocking-time": 401.5,
+          "cumulative-layout-shift": 0,
+          "speed-index": 2502.904639279731
+        },
+        "warnings": [],
+        "runtimeError": null,
+        "agentic": {
+          "passed": 2,
+          "counted": 2,
+          "audits": [
+            {
+              "id": "agent-accessibility-tree",
+              "score": 1,
+              "mode": "binary",
+              "counted": true,
+              "pass": true
+            },
+            {
+              "id": "webmcp-form-coverage",
+              "score": null,
+              "mode": "notApplicable",
+              "counted": false,
+              "pass": false
+            },
+            {
+              "id": "webmcp-registered-tools",
+              "score": null,
+              "mode": "notApplicable",
+              "counted": false,
+              "pass": false
+            },
+            {
+              "id": "webmcp-schema-validity",
+              "score": null,
+              "mode": "notApplicable",
+              "counted": false,
+              "pass": false
+            },
+            {
+              "id": "cumulative-layout-shift",
+              "score": 1,
+              "mode": "numeric",
+              "counted": true,
+              "pass": true
+            },
+            {
+              "id": "llms-txt",
+              "score": null,
+              "mode": "notApplicable",
+              "counted": false,
+              "pass": false
+            },
+            {
+              "id": "ard-schema",
+              "score": null,
+              "mode": "notApplicable",
+              "counted": false,
+              "pass": false
+            }
+          ]
+        },
+        "failingAudits": [
+          {
+            "id": "largest-contentful-paint",
+            "score": 0.74,
+            "title": "Largest Contentful Paint",
+            "mode": "numeric"
+          },
+          {
+            "id": "total-blocking-time",
+            "score": 0.68,
+            "title": "Total Blocking Time",
+            "mode": "numeric"
+          },
+          {
+            "id": "max-potential-fid",
+            "score": 0.6,
+            "title": "Max Potential First Input Delay",
+            "mode": "numeric"
+          },
+          {
+            "id": "deprecations",
+            "score": 0,
+            "title": "Uses deprecated APIs",
+            "mode": "binary"
+          },
+          {
+            "id": "mainthread-work-breakdown",
+            "score": 0,
+            "title": "Minimize main-thread work",
+            "mode": "metricSavings"
+          },
+          {
+            "id": "unsized-images",
+            "score": 0.5,
+            "title": "Image elements do not have explicit `width` and `height`",
+            "mode": "metricSavings"
+          },
+          {
+            "id": "forced-reflow-insight",
+            "score": 0,
+            "title": "Forced reflow",
+            "mode": "numeric"
+          },
+          {
+            "id": "image-delivery-insight",
+            "score": 0,
+            "title": "Improve image delivery",
+            "mode": "metricSavings"
+          },
+          {
+            "id": "network-dependency-tree-insight",
+            "score": 0,
+            "title": "Network dependency tree",
+            "mode": "numeric"
+          },
+          {
+            "id": "render-blocking-insight",
+            "score": 0.5,
+            "title": "Render-blocking requests",
+            "mode": "metricSavings"
+          }
+        ]
+      },
+      {
+        "case": "home-mobile",
+        "trial": 2,
+        "fetchTime": "2026-10-18T10:45:35.321Z",
+        "requestedUrl": "https://www.investdom.com.pl/",
+        "finalUrl": "https://www.investdom.com.pl/",
+        "lighthouseVersion": "13.5.0",
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+        "scores": {
+          "performance": 73,
+          "accessibility": 100,
+          "best-practices": 81,
+          "seo": 100
+        },
+        "metrics": {
+          "first-contentful-paint": 1380,
+          "largest-contentful-paint": 3352.5,
+          "total-blocking-time": 593.5,
+          "cumulative-layout-shift": 0,
+          "speed-index": 4826.129348926441
+        },
+        "warnings": [],
+        "runtimeError": null,
+        "agentic": {
+          "passed": 2,
+          "counted": 2,
+          "audits": [
+            {
+              "id": "agent-accessibility-tree",
+              "score": 1,
+              "mode": "binary",
+              "counted": true,
+              "pass": true
+            },
+            {
+              "id": "webmcp-form-coverage",
+              "score": null,
+              "mode": "notApplicable",
+              "counted": false,
+              "pass": false
+            },
+            {
+              "id": "webmcp-registered-tools",
+              "score": null,
+              "mode": "notApplicable",
+              "counted": false,
+              "pass": false
+            },
+            {
+              "id": "webmcp-schema-validity",
+              "score": null,
+              "mode": "notApplicable",
+              "counted": false,
+              "pass": false
+            },
+            {
+              "id": "cumulative-layout-shift",
+              "score": 1,
+              "mode": "numeric",
+              "counted": true,
+              "pass": true
+            },
+            {
+              "id": "llms-txt",
+              "score": null,
+              "mode": "notApplicable",
+              "counted": false,
+              "pass": false
+            },
+            {
+              "id": "ard-schema",
+              "score": null,
+              "mode": "notApplicable",
+              "counted": false,
+              "pass": false
+            }
+          ]
+        },
+        "failingAudits": [
+          {
+            "id": "largest-contentful-paint",
+            "score": 0.68,
+            "title": "Largest Contentful Paint",
+            "mode": "numeric"
+          },
+          {
+            "id": "speed-index",
+            "score": 0.66,
+            "title": "Speed Index",
+            "mode": "numeric"
+          },
+          {
+            "id": "total-blocking-time",
+            "score": 0.5,
+            "title": "Total Blocking Time",
+            "mode": "numeric"
+          },
+          {
+            "id": "max-potential-fid",
+            "score": 0.07,
+            "title": "Max Potential First Input Delay",
+            "mode": "numeric"
+          },
+          {
+            "id": "deprecations",
+            "score": 0,
+            "title": "Uses deprecated APIs",
+            "mode": "binary"
+          },
+          {
+            "id": "mainthread-work-breakdown",
+            "score": 0,
+            "title": "Minimize main-thread work",
+            "mode": "metricSavings"
+          },
+          {
+            "id": "unsized-images",
+            "score": 0.5,
+            "title": "Image elements do not have explicit `width` and `height`",
+            "mode": "metricSavings"
+          },
+          {
+            "id": "forced-reflow-insight",
+            "score": 0,
+            "title": "Forced reflow",
+            "mode": "numeric"
+          },
+          {
+            "id": "image-delivery-insight",
+            "score": 0,
+            "title": "Improve image delivery",
+            "mode": "metricSavings"
+          },
+          {
+            "id": "lcp-breakdown-insight",
+            "score": 0,
+            "title": "LCP breakdown",
+            "mode": "numeric"
+          },
+          {
+            "id": "network-dependency-tree-insight",
+            "score": 0,
+            "title": "Network dependency tree",
+            "mode": "numeric"
+          },
+          {
+            "id": "render-blocking-insight",
+            "score": 0.5,
+            "title": "Render-blocking requests",
+            "mode": "metricSavings"
+          }
+        ]
+      },
+      {
+        "case": "home-mobile",
+        "trial": 3,
+        "fetchTime": "2026-10-18T10:45:51.732Z",
+        "requestedUrl": "https://www.investdom.com.pl/",
+        "finalUrl": "https://www.investdom.com.pl/",
+        "lighthouseVersion": "13.5.0",
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+        "scores": {
+          "performance": 88,
+          "accessibility": 100,
+          "best-practices": 81,
+          "seo": 100
+        },
+        "metrics": {
+          "first-contentful-paint": 1351.772,
+          "largest-contentful-paint": 3484.272,
+          "total-blocking-time": 172,
+          "cumulative-layout-shift": 0,
+          "speed-index": 3125.918183183819
+        },
+        "warnings": [],
+        "runtimeError": null,
+        "agentic": {
+          "passed": 2,
+          "counted": 2,
+          "audits": [
+            {
+              "id": "agent-accessibility-tree",
+              "score": 1,
+              "mode": "binary",
+              "counted": true,
+              "pass": true
+            },
+            {
+              "id": "webmcp-form-coverage",
+              "score": null,
+              "mode": "notApplicable",
+              "counted": false,
+              "pass": false
+            },
+            {
+              "id": "webmcp-registered-tools",
+              "score": null,
+              "mode": "notApplicable",
+              "counted": false,
+              "pass": false
+            },
+            {
+              "id": "webmcp-schema-validity",
+              "score": null,
+              "mode": "notApplicable",
+              "counted": false,
+              "pass": false
+            },
+            {
+              "id": "cumulative-layout-shift",
+              "score": 1,
+              "mode": "numeric",
+              "counted": true,
+              "pass": true
+            },
+            {
+              "id": "llms-txt",
+              "score": null,
+              "mode": "notApplicable",
+              "counted": false,
+              "pass": false
+            },
+            {
+              "id": "ard-schema",
+              "score": null,
+              "mode": "notApplicable",
+              "counted": false,
+              "pass": false
+            }
+          ]
+        },
+        "failingAudits": [
+          {
+            "id": "largest-contentful-paint",
+            "score": 0.64,
+            "title": "Largest Contentful Paint",
+            "mode": "numeric"
+          },
+          {
+            "id": "max-potential-fid",
+            "score": 0.53,
+            "title": "Max Potential First Input Delay",
+            "mode": "numeric"
+          },
+          {
+            "id": "interactive",
+            "score": 0.89,
+            "title": "Time to Interactive",
+            "mode": "numeric"
+          },
+          {
+            "id": "deprecations",
+            "score": 0,
+            "title": "Uses deprecated APIs",
+            "mode": "binary"
+          },
+          {
+            "id": "unsized-images",
+            "score": 0.5,
+            "title": "Image elements do not have explicit `width` and `height`",
+            "mode": "metricSavings"
+          },
+          {
+            "id": "forced-reflow-insight",
+            "score": 0,
+            "title": "Forced reflow",
+            "mode": "numeric"
+          },
+          {
+            "id": "image-delivery-insight",
+            "score": 0,
+            "title": "Improve image delivery",
+            "mode": "metricSavings"
+          },
+          {
+            "id": "network-dependency-tree-insight",
+            "score": 0,
+            "title": "Network dependency tree",
+            "mode": "numeric"
+          },
+          {
+            "id": "render-blocking-insight",
+            "score": 0.5,
+            "title": "Render-blocking requests",
+            "mode": "metricSavings"
+          }
+        ]
+      },
+      {
+        "case": "home-desktop",
+        "trial": 1,
+        "fetchTime": "2026-10-18T10:46:07.985Z",
+        "requestedUrl": "https://www.investdom.com.pl/",
+        "finalUrl": "https://www.investdom.com.pl/",
+        "lighthouseVersion": "13.5.0",
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+        "scores": {
+          "performance": 100,
+          "accessibility": 100,
+          "best-practices": 81,
+          "seo": 100
+        },
+        "metrics": {
+          "first-contentful-paint": 350,
+          "largest-contentful-paint": 710,
+          "total-blocking-time": 0,
+          "cumulative-layout-shift": 0,
+          "speed-index": 676.9873899260283
+        },
+        "warnings": [],
+        "runtimeError": null,
+        "agentic": {
+          "passed": 2,
+          "counted": 2,
+          "audits": [
+            {
+              "id": "agent-accessibility-tree",
+              "score": 1,
+              "mode": "binary",
+              "counted": true,
+              "pass": true
+            },
+            {
+              "id": "webmcp-form-coverage",
+              "score": null,
+              "mode": "notApplicable",
+              "counted": false,
+              "pass": false
+            },
+            {
+              "id": "webmcp-registered-tools",
+              "score": null,
+              "mode": "notApplicable",
+              "counted": false,
+              "pass": false
+            },
+            {
+              "id": "webmcp-schema-validity",
+              "score": null,
+              "mode": "notApplicable",
+              "counted": false,
+              "pass": false
+            },
+            {
+              "id": "cumulative-layout-shift",
+              "score": 1,
+              "mode": "numeric",
+              "counted": true,
+              "pass": true
+            },
+            {
+              "id": "llms-txt",
+              "score": null,
+              "mode": "notApplicable",
+              "counted": false,
+              "pass": false
+            },
+            {
+              "id": "ard-schema",
+              "score": null,
+              "mode": "notApplicable",
+              "counted": false,
+              "pass": false
+            }
+          ]
+        },
+        "failingAudits": [
+          {
+            "id": "deprecations",
+            "score": 0,
+            "title": "Uses deprecated APIs",
+            "mode": "binary"
+          },
+          {
+            "id": "unsized-images",
+            "score": 0.5,
+            "title": "Image elements do not have explicit `width` and `height`",
+            "mode": "metricSavings"
+          },
+          {
+            "id": "forced-reflow-insight",
+            "score": 0,
+            "title": "Forced reflow",
+            "mode": "numeric"
+          },
+          {
+            "id": "image-delivery-insight",
+            "score": 0,
+            "title": "Improve image delivery",
+            "mode": "metricSavings"
+          },
+          {
+            "id": "network-dependency-tree-insight",
+            "score": 0,
+            "title": "Network dependency tree",
+            "mode": "numeric"
+          },
+          {
+            "id": "render-blocking-insight",
+            "score": 0.5,
+            "title": "Render-blocking requests",
+            "mode": "metricSavings"
+          }
+        ]
+      },
+      {
+        "case": "home-desktop",
+        "trial": 2,
+        "fetchTime": "2026-10-18T10:46:22.999Z",
+        "requestedUrl": "https://www.investdom.com.pl/",
+        "finalUrl": "https://www.investdom.com.pl/",
+        "lighthouseVersion": "13.5.0",
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+        "scores": {
+          "performance": 100,
+          "accessibility": 100,
+          "best-practices": 81,
+          "seo": 100
+        },
+        "metrics": {
+          "first-contentful-paint": 362.896,
+          "largest-contentful-paint": 682.896,
+          "total-blocking-time": 13.5,
+          "cumulative-layout-shift": 0,
+          "speed-index": 641.3853121666477
+        },
+        "warnings": [],
+        "runtimeError": null,
+        "agentic": {
+          "passed": 2,
+          "counted": 2,
+          "audits": [
+            {
+              "id": "agent-accessibility-tree",
+              "score": 1,
+              "mode": "binary",
+              "counted": true,
+              "pass": true
+            },
+            {
+              "id": "webmcp-form-coverage",
+              "score": null,
+              "mode": "notApplicable",
+              "counted": false,
+              "pass": false
+            },
+            {
+              "id": "webmcp-registered-tools",
+              "score": null,
+              "mode": "notApplicable",
+              "counted": false,
+              "pass": false
+            },
+            {
+              "id": "webmcp-schema-validity",
+              "score": null,
+              "mode": "notApplicable",
+              "counted": false,
+              "pass": false
+            },
+            {
+              "id": "cumulative-layout-shift",
+              "score": 1,
+              "mode": "numeric",
+              "counted": true,
+              "pass": true
+            },
+            {
+              "id": "llms-txt",
+              "score": null,
+              "mode": "notApplicable",
+              "counted": false,
+              "pass": false
+            },
+            {
+              "id": "ard-schema",
+              "score": null,
+              "mode": "notApplicable",
+              "counted": false,
+              "pass": false
+            }
+          ]
+        },
+        "failingAudits": [
+          {
+            "id": "deprecations",
+            "score": 0,
+            "title": "Uses deprecated APIs",
+            "mode": "binary"
+          },
+          {
+            "id": "unsized-images",
+            "score": 0.5,
+            "title": "Image elements do not have explicit `width` and `height`",
+            "mode": "metricSavings"
+          },
+          {
+            "id": "forced-reflow-insight",
+            "score": 0,
+            "title": "Forced reflow",
+            "mode": "numeric"
+          },
+          {
+            "id": "image-delivery-insight",
+            "score": 0,
+            "title": "Improve image delivery",
+            "mode": "metricSavings"
+          },
+          {
+            "id": "network-dependency-tree-insight",
+            "score": 0,
+            "title": "Network dependency tree",
+            "mode": "numeric"
+          },
+          {
+            "id": "render-blocking-insight",
+            "score": 0.5,
+            "title": "Render-blocking requests",
+            "mode": "metricSavings"
+          }
+        ]
+      },
+      {
+        "case": "home-desktop",
+        "trial": 3,
+        "fetchTime": "2026-10-18T10:46:38.546Z",
+        "requestedUrl": "https://www.investdom.com.pl/",
+        "finalUrl": "https://www.investdom.com.pl/",
+        "lighthouseVersion": "13.5.0",
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+        "scores": {
+          "performance": 100,
+          "accessibility": 100,
+          "best-practices": 81,
+          "seo": 100
+        },
+        "metrics": {
+          "first-contentful-paint": 327.8564999999999,
+          "largest-contentful-paint": 698.4314999999998,
+          "total-blocking-time": 0,
+          "cumulative-layout-shift": 0,
+          "speed-index": 705.7743963915863
+        },
+        "warnings": [],
+        "runtimeError": null,
+        "agentic": {
+          "passed": 2,
+          "counted": 2,
+          "audits": [
+            {
+              "id": "agent-accessibility-tree",
+              "score": 1,
+              "mode": "binary",
+              "counted": true,
+              "pass": true
+            },
+            {
+              "id": "webmcp-form-coverage",
+              "score": null,
+              "mode": "notApplicable",
+              "counted": false,
+              "pass": false
+            },
+            {
+              "id": "webmcp-registered-tools",
+              "score": null,
+              "mode": "notApplicable",
+              "counted": false,
+              "pass": false
+            },
+            {
+              "id": "webmcp-schema-validity",
+              "score": null,
+              "mode": "notApplicable",
+              "counted": false,
+              "pass": false
+            },
+            {
+              "id": "cumulative-layout-shift",
+              "score": 1,
+              "mode": "numeric",
+              "counted": true,
+              "pass": true
+            },
+            {
+              "id": "llms-txt",
+              "score": null,
+              "mode": "notApplicable",
+              "counted": false,
+              "pass": false
+            },
+            {
+              "id": "ard-schema",
+              "score": null,
+              "mode": "notApplicable",
+              "counted": false,
+              "pass": false
+            }
+          ]
+        },
+        "failingAudits": [
+          {
+            "id": "deprecations",
+            "score": 0,
+            "title": "Uses deprecated APIs",
+            "mode": "binary"
+          },
+          {
+            "id": "unsized-images",
+            "score": 0.5,
+            "title": "Image elements do not have explicit `width` and `height`",
+            "mode": "metricSavings"
+          },
+          {
+            "id": "forced-reflow-insight",
+            "score": 0,
+            "title": "Forced reflow",
+            "mode": "numeric"
+          },
+          {
+            "id": "image-delivery-insight",
+            "score": 0,
+            "title": "Improve image delivery",
+            "mode": "metricSavings"
+          },
+          {
+            "id": "network-dependency-tree-insight",
+            "score": 0,
+            "title": "Network dependency tree",
+            "mode": "numeric"
+          },
+          {
+            "id": "render-blocking-insight",
+            "score": 0.5,
+            "title": "Render-blocking requests",
+            "mode": "metricSavings"
+          }
+        ]
+      },
+      {
+        "case": "service-mobile",
+        "trial": 1,
+        "fetchTime": "2026-10-18T10:46:53.101Z",
+        "requestedUrl": "https://www.investdom.com.pl/budowa-domow-pod-klucz",
+        "finalUrl": "https://www.investdom.com.pl/budowa-domow-pod-klucz",
+        "lighthouseVersion": "13.5.0",
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+        "scores": {
+          "performance": 98,
+          "accessibility": 100,
+          "best-practices": 81,
+          "seo": 100
+        },
+        "metrics": {
+          "first-contentful-paint": 930,
+          "largest-contentful-paint": 1025,
+          "total-blocking-time": 10.5,
+          "cumulative-layout-shift": 0,
+          "speed-index": 3754.916835827642
+        },
+        "warnings": [],
+        "runtimeError": null,
+        "agentic": {
+          "passed": 2,
+          "counted": 2,
+          "audits": [
+            {
+              "id": "agent-accessibility-tree",
+              "score": 1,
+              "mode": "binary",
+              "counted": true,
+              "pass": true
+            },
+            {
+              "id": "webmcp-form-coverage",
+              "score": null,
+              "mode": "notApplicable",
+              "counted": false,
+              "pass": false
+            },
+            {
+              "id": "webmcp-registered-tools",
+              "score": null,
+              "mode": "notApplicable",
+              "counted": false,
+              "pass": false
+            },
+            {
+              "id": "webmcp-schema-validity",
+              "score": null,
+              "mode": "notApplicable",
+              "counted": false,
+              "pass": false
+            },
+            {
+              "id": "cumulative-layout-shift",
+              "score": 1,
+              "mode": "numeric",
+              "counted": true,
+              "pass": true
+            },
+            {
+              "id": "llms-txt",
+              "score": null,
+              "mode": "notApplicable",
+              "counted": false,
+              "pass": false
+            },
+            {
+              "id": "ard-schema",
+              "score": null,
+              "mode": "notApplicable",
+              "counted": false,
+              "pass": false
+            }
+          ]
+        },
+        "failingAudits": [
+          {
+            "id": "speed-index",
+            "score": 0.84,
+            "title": "Speed Index",
+            "mode": "numeric"
+          },
+          {
+            "id": "deprecations",
+            "score": 0,
+            "title": "Uses deprecated APIs",
+            "mode": "binary"
+          },
+          {
+            "id": "unsized-images",
+            "score": 0.5,
+            "title": "Image elements do not have explicit `width` and `height`",
+            "mode": "metricSavings"
+          },
+          {
+            "id": "network-dependency-tree-insight",
+            "score": 0,
+            "title": "Network dependency tree",
+            "mode": "numeric"
+          },
+          {
+            "id": "render-blocking-insight",
+            "score": 0,
+            "title": "Render-blocking requests",
+            "mode": "metricSavings"
+          }
+        ]
+      },
+      {
+        "case": "offers-mobile",
+        "trial": 1,
+        "fetchTime": "2026-10-18T10:47:08.679Z",
+        "requestedUrl": "https://www.investdom.com.pl/domy-na-sprzedaz-bielsko",
+        "finalUrl": "https://www.investdom.com.pl/domy-na-sprzedaz-bielsko",
+        "lighthouseVersion": "13.5.0",
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+        "scores": {
+          "performance": 98,
+          "accessibility": 100,
+          "best-practices": 81,
+          "seo": 100
+        },
+        "metrics": {
+          "first-contentful-paint": 945.156,
+          "largest-contentful-paint": 1022.0504999999999,
+          "total-blocking-time": 8,
+          "cumulative-layout-shift": 0,
+          "speed-index": 3763.879435074592
+        },
+        "warnings": [],
+        "runtimeError": null,
+        "agentic": {
+          "passed": 2,
+          "counted": 2,
+          "audits": [
+            {
+              "id": "agent-accessibility-tree",
+              "score": 1,
+              "mode": "binary",
+              "counted": true,
+              "pass": true
+            },
+            {
+              "id": "webmcp-form-coverage",
+              "score": null,
+              "mode": "notApplicable",
+              "counted": false,
+              "pass": false
+            },
+            {
+              "id": "webmcp-registered-tools",
+              "score": null,
+              "mode": "notApplicable",
+              "counted": false,
+              "pass": false
+            },
+            {
+              "id": "webmcp-schema-validity",
+              "score": null,
+              "mode": "notApplicable",
+              "counted": false,
+              "pass": false
+            },
+            {
+              "id": "cumulative-layout-shift",
+              "score": 1,
+              "mode": "numeric",
+              "counted": true,
+              "pass": true
+            },
+            {
+              "id": "llms-txt",
+              "score": null,
+              "mode": "notApplicable",
+              "counted": false,
+              "pass": false
+            },
+            {
+              "id": "ard-schema",
+              "score": null,
+              "mode": "notApplicable",
+              "counted": false,
+              "pass": false
+            }
+          ]
+        },
+        "failingAudits": [
+          {
+            "id": "speed-index",
+            "score": 0.84,
+            "title": "Speed Index",
+            "mode": "numeric"
+          },
+          {
+            "id": "deprecations",
+            "score": 0,
+            "title": "Uses deprecated APIs",
+            "mode": "binary"
+          },
+          {
+            "id": "unsized-images",
+            "score": 0.5,
+            "title": "Image elements do not have explicit `width` and `height`",
+            "mode": "metricSavings"
+          },
+          {
+            "id": "image-delivery-insight",
+            "score": 0.5,
+            "title": "Improve image delivery",
+            "mode": "metricSavings"
+          },
+          {
+            "id": "lcp-discovery-insight",
+            "score": 0,
+            "title": "LCP request discovery",
+            "mode": "numeric"
+          },
+          {
+            "id": "network-dependency-tree-insight",
+            "score": 0,
+            "title": "Network dependency tree",
+            "mode": "numeric"
+          },
+          {
+            "id": "render-blocking-insight",
+            "score": 0,
+            "title": "Render-blocking requests",
+            "mode": "metricSavings"
+          }
+        ]
+      },
+      {
+        "case": "projects-mobile",
+        "trial": 1,
+        "fetchTime": "2026-10-18T10:47:25.629Z",
+        "requestedUrl": "https://www.investdom.com.pl/projekty-domow",
+        "finalUrl": "https://www.investdom.com.pl/projekty-domow",
+        "lighthouseVersion": "13.5.0",
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+        "scores": {
+          "performance": 100,
+          "accessibility": 100,
+          "best-practices": 81,
+          "seo": 100
+        },
+        "metrics": {
+          "first-contentful-paint": 941.72,
+          "largest-contentful-paint": 1171.1150000000002,
+          "total-blocking-time": 20.5,
+          "cumulative-layout-shift": 0,
+          "speed-index": 941.72
+        },
+        "warnings": [],
+        "runtimeError": null,
+        "agentic": {
+          "passed": 2,
+          "counted": 2,
+          "audits": [
+            {
+              "id": "agent-accessibility-tree",
+              "score": 1,
+              "mode": "binary",
+              "counted": true,
+              "pass": true
+            },
+            {
+              "id": "webmcp-form-coverage",
+              "score": null,
+              "mode": "notApplicable",
+              "counted": false,
+              "pass": false
+            },
+            {
+              "id": "webmcp-registered-tools",
+              "score": null,
+              "mode": "notApplicable",
+              "counted": false,
+              "pass": false
+            },
+            {
+              "id": "webmcp-schema-validity",
+              "score": null,
+              "mode": "notApplicable",
+              "counted": false,
+              "pass": false
+            },
+            {
+              "id": "cumulative-layout-shift",
+              "score": 1,
+              "mode": "numeric",
+              "counted": true,
+              "pass": true
+            },
+            {
+              "id": "llms-txt",
+              "score": null,
+              "mode": "notApplicable",
+              "counted": false,
+              "pass": false
+            },
+            {
+              "id": "ard-schema",
+              "score": null,
+              "mode": "notApplicable",
+              "counted": false,
+              "pass": false
+            }
+          ]
+        },
+        "failingAudits": [
+          {
+            "id": "deprecations",
+            "score": 0,
+            "title": "Uses deprecated APIs",
+            "mode": "binary"
+          },
+          {
+            "id": "unsized-images",
+            "score": 0.5,
+            "title": "Image elements do not have explicit `width` and `height`",
+            "mode": "metricSavings"
+          },
+          {
+            "id": "image-delivery-insight",
+            "score": 0.5,
+            "title": "Improve image delivery",
+            "mode": "metricSavings"
+          },
+          {
+            "id": "lcp-discovery-insight",
+            "score": 0,
+            "title": "LCP request discovery",
+            "mode": "numeric"
+          },
+          {
+            "id": "network-dependency-tree-insight",
+            "score": 0,
+            "title": "Network dependency tree",
+            "mode": "numeric"
+          },
+          {
+            "id": "render-blocking-insight",
+            "score": 0,
+            "title": "Render-blocking requests",
+            "mode": "metricSavings"
+          }
+        ]
+      }
+    ],
+    "medians": {
+      "home-mobile": {
+        "scores": {
+          "performance": 84,
+          "accessibility": 100,
+          "best-practices": 81,
+          "seo": 100
+        },
+        "metrics": {
+          "largest-contentful-paint": 3352.5,
+          "total-blocking-time": 401.5,
+          "cumulative-layout-shift": 0
+        }
+      },
+      "home-desktop": {
+        "scores": {
+          "performance": 100,
+          "accessibility": 100,
+          "best-practices": 81,
+          "seo": 100
+        },
+        "metrics": {
+          "largest-contentful-paint": 698.4314999999998,
+          "total-blocking-time": 0,
+          "cumulative-layout-shift": 0
+        }
+      },
+      "service-mobile": {
+        "scores": {
+          "performance": 98,
+          "accessibility": 100,
+          "best-practices": 81,
+          "seo": 100
+        },
+        "metrics": {
+          "largest-contentful-paint": 1025,
+          "total-blocking-time": 10.5,
+          "cumulative-layout-shift": 0
+        }
+      },
+      "offers-mobile": {
+        "scores": {
+          "performance": 98,
+          "accessibility": 100,
+          "best-practices": 81,
+          "seo": 100
+        },
+        "metrics": {
+          "largest-contentful-paint": 1022.0504999999999,
+          "total-blocking-time": 8,
+          "cumulative-layout-shift": 0
+        }
+      },
+      "projects-mobile": {
+        "scores": {
+          "performance": 100,
+          "accessibility": 100,
+          "best-practices": 81,
+          "seo": 100
+        },
+        "metrics": {
+          "largest-contentful-paint": 1171.1150000000002,
+          "total-blocking-time": 20.5,
+          "cumulative-layout-shift": 0
+        }
+      }
+    },
+    "limitations": [
+      "Lab results through required environment proxy, not CrUX/field INP.",
+      "Analytics hosts blocked by Lighthouse; no before/after production comparison.",
+      "Three home samples per device; other pages single samples."
+    ],
+    "agentic_interpretation": "2/2 applicable controls in every run; other agentic checks notApplicable. Not a whole-site integration or citation score."
+  },
+  "geo": {
+    "production_positives": [
+      "All four URLs HTTP 200",
+      "Complete core content in initial HTML",
+      "Visible and structured phone +48571328993 agree",
+      "Address ul. Do lasu 25, 43-300 Bielsko-Biała agrees",
+      "Owner GBP link already in sameAs",
+      "Confirmed property values agree across pages",
+      "Wildcard robots allows crawling"
+    ],
+    "ai_platform_visibility_measured": false,
+    "findings": [
+      {
+        "id": "GEO-01",
+        "priority": "P1",
+        "url": "https://www.investdom.com.pl/#uslugi",
+        "finding": "Renovations offered despite owner exclusion",
+        "code_status": "still present at audited commit"
+      },
+      {
+        "id": "GEO-02",
+        "priority": "P1",
+        "url": "https://www.investdom.com.pl/domy-na-sprzedaz-bielsko",
+        "finding": "Pisarzowice mislabeled district; completed/ready intro versus planned stage II",
+        "code_status": "meta partly corrected; visible intro still needs review"
+      },
+      {
+        "id": "GEO-03",
+        "priority": "P1",
+        "urls": [
+          "https://www.investdom.com.pl/#domy",
+          "https://www.investdom.com.pl/projekty-domow"
+        ],
+        "finding": "Stage I photograph used for stage II without visible disclosure on these pages",
+        "code_status": "alt corrected; visible caption absent"
+      },
+      {
+        "id": "GEO-04",
+        "priority": "P1",
+        "url": "https://www.investdom.com.pl/",
+        "finding": "Cost/timeline estimates and satisfaction/guarantee claims need owner evidence and scope"
+      },
+      {
+        "id": "GEO-05",
+        "priority": "P2",
+        "url": "https://www.investdom.com.pl/projekty-domow",
+        "finding": "Authorship claim and catalog promise exceed one brief card",
+        "code_status": "meta corrected; authorship remains unverified"
+      }
+    ],
+    "search_sample": {
+      "type": "ordinary web search, not AI platform answers",
+      "old_phone_983": "stale search excerpt on service page; current live phone is 993",
+      "unconfirmed_directory_candidate": "Panorama Firm similar full name with Piłsudskiego 25; require owner identity confirmation"
+    },
+    "gbp": {
+      "owner_url": "https://share.google/O1Nye5JlpKbt5C3nc",
+      "redirect_entity": "/g/11yn13tdbh",
+      "redirect_query": "FIRMA USŁUGOWA INVEST DOM Paduch Andrzej",
+      "profile_details_verified": false
+    },
+    "llms_txt": {
+      "status": 404,
+      "llms_full_status": 404,
+      "priority": "P3 optional",
+      "ranking_or_citation_guarantee": false
+    },
+    "pending_owner_facts": [
+      "Canonical email and actual CONTACT_EMAIL destination",
+      "Legal company identity",
+      "Offer current progress, availability and completion date",
+      "Gross/net price and exact included standard",
+      "Project authorship and rights",
+      "Evidence for experience, satisfaction and timeline claims",
+      "Customer-facing office conditions"
+    ],
+    "limitations": [
+      "No Search Console account",
+      "No GBP account or reliable profile detail rendering",
+      "No real bot logs",
+      "No email submissions/delivery test",
+      "No AI answer citation measurements"
+    ]
+  },
+  "ai_http_access": {
+    "checked_at": "2026-10-18T10:37:16.953240+00:00",
+    "user_agents": [
+      {
+        "token": "Googlebot",
+        "status": 200,
+        "robots_allows": true,
+        "bytes": 57355,
+        "unverified_ua_only": true
+      },
+      {
+        "token": "Bingbot",
+        "status": 200,
+        "robots_allows": true,
+        "bytes": 57355,
+        "unverified_ua_only": true
+      },
+      {
+        "token": "OAI-SearchBot",
+        "status": 200,
+        "robots_allows": true,
+        "bytes": 57355,
+        "unverified_ua_only": true
+      },
+      {
+        "token": "Claude-SearchBot",
+        "status": 200,
+        "robots_allows": true,
+        "bytes": 57355,
+        "unverified_ua_only": true
+      },
+      {
+        "token": "PerplexityBot",
+        "status": 200,
+        "robots_allows": true,
+        "bytes": 57355,
+        "unverified_ua_only": true
+      },
+      {
+        "token": "ChatGPT-User",
+        "status": 200,
+        "robots_allows": true,
+        "bytes": 57355,
+        "unverified_ua_only": true
+      },
+      {
+        "token": "GPTBot",
+        "status": 200,
+        "robots_allows": true,
+        "bytes": 57355,
+        "unverified_ua_only": true
+      },
+      {
+        "token": "ClaudeBot",
+        "status": 200,
+        "robots_allows": true,
+        "bytes": 57355,
+        "unverified_ua_only": true
+      }
+    ],
+    "other_checks": [
+      {
+        "url": "https://www.investdom.com.pl/llms.txt",
+        "status": 404,
+        "final_url": "https://www.investdom.com.pl/llms.txt",
+        "note": "Controlled HTTP observation"
+      },
+      {
+        "url": "https://www.investdom.com.pl/.well-known/ai-catalog.json",
+        "status": 404,
+        "final_url": "https://www.investdom.com.pl/.well-known/ai-catalog.json",
+        "note": "Controlled HTTP observation"
+      },
+      {
+        "url": "https://www.investdom.com.pl/",
+        "status": 200,
+        "final_url": "https://www.investdom.com.pl/",
+        "note": "Controlled HTTP observation"
+      },
+      {
+        "url": "https://www.investdom.com.pl/api/contact",
+        "status": 400,
+        "final_url": "https://www.investdom.com.pl/api/contact",
+        "note": "Controlled HTTP observation"
+      },
+      {
+        "url": "https://investdom-git-perf-seo-images-metadata-admins-projects-2bc10d0e.vercel.app/",
+        "status": 200,
+        "final_url": "https://vercel.com/login",
+        "note": "Vercel login is not an INVESTDOM page"
+      },
+      {
+        "url": "https://investdom-git-fix-contact-and-p-695859-admins-projects-2bc10d0e.vercel.app/",
+        "status": 200,
+        "final_url": "https://vercel.com/login",
+        "note": "Vercel login is not an INVESTDOM page"
+      }
+    ],
+    "limitations": [
+      "UA strings are unverified traffic, not proof of actual bot visits or citations.",
+      "Empty API payload cannot deliver mail; no valid form submitted on production."
+    ]
+  },
+  "cloudflare": {
+    "scannedAt": "2026-10-18T10:40:51.498Z",
+    "api": "https://isitagentready.com/api/scan",
+    "enabled_checks": [
+      "robotsTxt",
+      "sitemap",
+      "linkHeaders",
+      "dnsAid",
+      "markdownNegotiation",
+      "robotsTxtAiRules",
+      "contentSignals",
+      "webBotAuth",
+      "apiCatalog",
+      "oauthDiscovery",
+      "oauthProtectedResource",
+      "authMd",
+      "mcpServerCard",
+      "agentSkills",
+      "webMcp",
+      "ard"
+    ],
+    "level": 1,
+    "levelName": "Basic Web Presence",
+    "passed": 3,
+    "counted": 15,
+    "overall": 20,
+    "calculation": "Count pass/fail excluding neutral, informational Personal Agent Protocol and commerce, per fetched client JS.",
+    "checks": [
+      {
+        "group": "discoverability",
+        "id": "robotsTxt",
+        "status": "pass",
+        "counted": true,
+        "message": "robots.txt exists with valid format"
+      },
+      {
+        "group": "discoverability",
+        "id": "sitemap",
+        "status": "pass",
+        "counted": true,
+        "message": "sitemap.xml exists with valid structure"
+      },
+      {
+        "group": "discoverability",
+        "id": "linkHeaders",
+        "status": "fail",
+        "counted": true,
+        "message": "No Link headers found on target page"
+      },
+      {
+        "group": "discoverability",
+        "id": "dnsAid",
+        "status": "fail",
+        "counted": true,
+        "message": "DNS for AI Discovery (DNS-AID) well-known entrypoint records not found"
+      },
+      {
+        "group": "contentAccessibility",
+        "id": "markdownNegotiation",
+        "status": "fail",
+        "counted": true,
+        "message": "Site does not support Markdown for Agents"
+      },
+      {
+        "group": "botAccessControl",
+        "id": "robotsTxtAiRules",
+        "status": "pass",
+        "counted": true,
+        "message": "No AI-specific bot rules; wildcard rules apply to all crawlers including AI bots"
+      },
+      {
+        "group": "botAccessControl",
+        "id": "contentSignals",
+        "status": "fail",
+        "counted": true,
+        "message": "No Content Signals found in robots.txt"
+      },
+      {
+        "group": "botAccessControl",
+        "id": "webBotAuth",
+        "status": "neutral",
+        "counted": false,
+        "message": "Web Bot Auth directory not found (informational only)"
+      },
+      {
+        "group": "discovery",
+        "id": "apiCatalog",
+        "status": "fail",
+        "counted": true,
+        "message": "API Catalog not found"
+      },
+      {
+        "group": "discovery",
+        "id": "oauthDiscovery",
+        "status": "fail",
+        "counted": true,
+        "message": "No OAuth/OIDC discovery metadata found"
+      },
+      {
+        "group": "discovery",
+        "id": "oauthProtectedResource",
+        "status": "fail",
+        "counted": true,
+        "message": "No OAuth Protected Resource Metadata found"
+      },
+      {
+        "group": "discovery",
+        "id": "authMd",
+        "status": "fail",
+        "counted": true,
+        "message": "auth.md not found"
+      },
+      {
+        "group": "discovery",
+        "id": "mcpServerCard",
+        "status": "fail",
+        "counted": true,
+        "message": "MCP Server Card not found"
+      },
+      {
+        "group": "discovery",
+        "id": "a2aAgentCard",
+        "status": "neutral",
+        "counted": false,
+        "message": "A2A Agent Card not found (excluded by scan configuration)"
+      },
+      {
+        "group": "discovery",
+        "id": "agentSkills",
+        "status": "fail",
+        "counted": true,
+        "message": "Agent Skills index not found"
+      },
+      {
+        "group": "discovery",
+        "id": "webMcp",
+        "status": "fail",
+        "counted": true,
+        "message": "No WebMCP tools detected on page load"
+      },
+      {
+        "group": "discovery",
+        "id": "ard",
+        "status": "fail",
+        "counted": true,
+        "message": "ARD capability manifest not found"
+      },
+      {
+        "group": "discovery",
+        "id": "personalAgentProtocol",
+        "status": "neutral",
+        "counted": false,
+        "message": "Excluded by scan configuration"
+      },
+      {
+        "group": "commerce",
+        "id": "x402",
+        "status": "neutral",
+        "counted": false,
+        "message": "x402 payment protocol not detected (not a commerce site) (excluded by scan configuration)"
+      },
+      {
+        "group": "commerce",
+        "id": "mpp",
+        "status": "neutral",
+        "counted": false,
+        "message": "MPP payment discovery not detected (not a commerce site) (excluded by scan configuration)"
+      },
+      {
+        "group": "commerce",
+        "id": "ucp",
+        "status": "neutral",
+        "counted": false,
+        "message": "UCP profile not found (not a commerce site) (excluded by scan configuration)"
+      },
+      {
+        "group": "commerce",
+        "id": "acp",
+        "status": "neutral",
+        "counted": false,
+        "message": "ACP discovery document not found (not a commerce site) (excluded by scan configuration)"
+      },
+      {
+        "group": "commerce",
+        "id": "ap2",
+        "status": "neutral",
+        "counted": false,
+        "message": "AP2 not detected (no A2A Agent Card) (not a commerce site) (excluded by scan configuration)"
+      }
+    ],
+    "baseline_2026_10_16": {
+      "overall": 20,
+      "passed": 3,
+      "counted": 15
+    },
+    "limitations": [
+      "API freshness indicated by scannedAt; this is third-party protocol discovery, not SEO ranking or AI citation measurement."
+    ]
+  },
+  "raw_artifacts_local": "/workspace/shared/investdom-audit-2026-10-18/",
+  "sanitization": "Only selected HTTP fields exported; login queries and cookies excluded; no full Lighthouse screenshots/data URLs."
+}
