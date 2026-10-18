@@ -133,4 +133,5 @@ Zadania 1–4: domknięcie technicznego PR #1. Zadanie 5: osobny PR treści po u
 - [x] Sprawdzono aktualny wdrożony preview i pięć świeżych przebiegów Lighthouse.
 - [x] Zweryfikowano szczegóły: a11y/target-size przechodzą, SEO obniża wyłącznie celowe noindex, Best Practices ogranicza Partytown, główny koszt to hero.
 - [x] Plan samodzielnie porównano ze specyfikacją i dowodami; rozdzielono zadania techniczne, treści zależne od danych oraz czynności właściciela.
-- [ ] Implementacja tego planu: jeszcze nierozpoczęta. Obecny wynik pozostaje stanem bazowym, nie obietnicą wyniku po optymalizacji.
+- [x] Rozpoczęto realizację techniczną po PR #1: obrazy, prerenderowanie, metadane i semantyka oraz kontrole formularza/nawigacji wykonano w zakresie [planu kolejnej paczki](2026-10-16-seo-images-metadata.md). [Wyniki i ograniczenia](../../seo-technical-improvements.md) obejmują 30 lokalnych pomiarów; aktualizacja Partytown nie usunęła ostrzeżenia upstream.
+- [ ] Pełny odbiór pierwotnego planu, cele produkcyjne i terenowe oraz treści GEO i konfiguracja kont pozostają do kolejnych działań. Wcześniejsze wyniki preview są historycznym punktem odniesienia.

@@ -2,7 +2,9 @@
 
 Data: 2026-10-15. Branch: `seo/technical-foundation`. Analizowany commit aplikacji: `bef43ec35daab4bf93043f0f9c3f2da9c7f8c097`.
 
-**Stan: częściowe wdrożenie, draft PR do podglądu Vercel.** Rozdziały audytu opisują stan bazowy. Wdrożono etapy 1–2: kanonikalizację i sitemapę oraz dane firmy i JSON-LD. Metadane, semantyka, obrazy i końcowa weryfikacja pozostają w toku. Plan wykonawczy: [Technical SEO Foundation](superpowers/plans/2026-10-15-technical-seo-foundation.md).
+**Stan bazowy 15.10: częściowe wdrożenie.** Rozdziały audytu opisują historyczny punkt odniesienia. Etapy 1–2 (kanonikalizacja, sitemapa, dane firmy i JSON-LD) oraz późniejsze poprawki UI/a11y zostały scalone w PR #1. Plan pierwotny: [Technical SEO Foundation](superpowers/plans/2026-10-15-technical-seo-foundation.md).
+
+**Aktualizacja 16.10:** kolejna paczka techniczna obejmuje obrazy AVIF/WebP, natywne prerenderowanie, zgodność metadanych i ALT, hierarchię nagłówków oraz kontrolę formularza i nawigacji. Szczegóły, 30 pomiarów Lighthouse, dowody i pozostałe ograniczenia są w [raporcie zmian technicznych](seo-technical-improvements.md). Paczka jest przygotowana na osobnym branchu do przeglądu i wdrożenia; nie oznacza wykonania wszystkich dalszych zadań GEO ani kontroli produkcji.
 
 ## Wnioski
 

@@ -1,4 +1,6 @@
 ---
+export const prerender = true;
+
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/layout/Header.astro";
 import Footer from "../components/layout/Footer.astro";
@@ -82,9 +84,9 @@ if (!Astro.site) throw new Error("The canonical site URL must be configured in A
           </p>
 
           <div class="mt-12 p-8 bg-navy-50 rounded-2xl border border-navy-100">
-            <h3 class="text-xl font-bold text-navy-900 mb-4">
+            <h2 class="text-xl font-bold text-navy-900 mb-4">
               Nasze standardy materiałowe
-            </h3>
+            </h2>
             <ul class="list-disc list-inside space-y-2 text-slate-700">
               <li>Pustaki ceramiczne i beton komórkowy z atestami</li>
               <li>
