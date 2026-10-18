@@ -1,0 +1,3910 @@
+{
+  "audit_date": "2026-10-18",
+  "target": "https://www.investdom.com.pl/",
+  "phase": "post-deployment; fresh HTTP and browser observations after14:11UTC",
+  "reference_main_commit": "2c3193a8059063d8176f116b061d448df330892d",
+  "scope": {
+    "canonical_pages": 4,
+    "application_changes": false,
+    "form_submissions": 0,
+    "lab_runs": 9,
+    "axe_scans": 8,
+    "navigation_checks": 4
+  },
+  "technical": {
+    "audit_utc": "2026-10-18T14:11:36.755461+00:00",
+    "summary": {
+      "canonical_pages": 4,
+      "canonical_200": 4,
+      "unique_titles": 4,
+      "unique_descriptions": 4,
+      "internal_link_occurrences": 63,
+      "broken_known_internal_targets": 0,
+      "rendered_image_occurrences": 17,
+      "missing_alt": 0,
+      "missing_dimensions": 0,
+      "picture_occurrences": 5,
+      "responsive_img_occurrences": 5,
+      "jsonld_blocks": 6,
+      "jsonld_valid": 6,
+      "unresolved_local_schema_references": 0,
+      "assets_fetched": 14,
+      "assets_200": 14,
+      "index_html_aliases_200": 4,
+      "renovation_mentions": 0
+    },
+    "pages": [
+      {
+        "key": "home",
+        "url": "https://www.investdom.com.pl/",
+        "captured_utc": "2026-10-18T14:11:36.755461+00:00",
+        "status": 200,
+        "raw_html_bytes": 57399,
+        "sha256": "67ee839921e77e9d689443496b96d071332d5ec20e61f7e6cf8584304a32bf02",
+        "lang": "pl",
+        "title": [
+          "Budowa Domów Bielsko-Biała | Nowe Domy na Sprzedaż | INVESTDOM"
+        ],
+        "description": "Szukasz profesjonalnej firmy budowlanej w Bielsku-Białej? INVESTDOM to kompleksowa budowa domów pod klucz oraz nowoczesne domy na sprzedaż. Zobacz nasze realizacje i projekty domów!",
+        "canonical": [
+          "https://www.investdom.com.pl/"
+        ],
+        "robots": {
+          "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+          "googlebot": "index, follow",
+          "bingbot": "index, follow"
+        },
+        "x_robots_tag": null,
+        "og": {
+          "og:type": "website",
+          "og:url": "https://www.investdom.com.pl/",
+          "og:title": "Budowa Domów Bielsko-Biała | Nowe Domy na Sprzedaż | INVESTDOM",
+          "og:description": "Szukasz profesjonalnej firmy budowlanej w Bielsku-Białej? INVESTDOM to kompleksowa budowa domów pod klucz oraz nowoczesne domy na sprzedaż. Zobacz nasze realizacje i projekty domów!",
+          "og:image": "https://www.investdom.com.pl/og-image.jpg",
+          "og:image:width": "1024",
+          "og:image:height": "1024",
+          "og:image:alt": "INVESTDOM - Budowa Domów Bielsko-Biała",
+          "og:locale": "pl_PL",
+          "og:site_name": "INVESTDOM",
+          "og:see_also": "https://www.investdom.com.pl/"
+        },
+        "twitter": {
+          "twitter:card": "summary_large_image",
+          "twitter:url": "https://www.investdom.com.pl/",
+          "twitter:title": "Budowa Domów Bielsko-Biała | Nowe Domy na Sprzedaż | INVESTDOM",
+          "twitter:description": "Szukasz profesjonalnej firmy budowlanej w Bielsku-Białej? INVESTDOM to kompleksowa budowa domów pod klucz oraz nowoczesne domy na sprzedaż. Zobacz nasze realizacje i projekty domów!",
+          "twitter:image": "https://www.investdom.com.pl/og-image.jpg",
+          "twitter:image:alt": "INVESTDOM - Budowa Domów Bielsko-Biała"
+        },
+        "h1_count": 1,
+        "headings": [
+          {
+            "tag": "h1",
+            "text": "Kompleksowa Budowa Domów w Bielsku-Białej i na Śląsku"
+          },
+          {
+            "tag": "h2",
+            "text": "Sprawdzona Firma Budowlana – Dlaczego warto wybrać INVESTDOM?"
+          },
+          {
+            "tag": "h3",
+            "text": "Gwarancja Terminowości i Solidności"
+          },
+          {
+            "tag": "h3",
+            "text": "Osobisty Nadzór Właściciela"
+          },
+          {
+            "tag": "h3",
+            "text": "15+ Lat Doświadczenia"
+          },
+          {
+            "tag": "h2",
+            "text": "Nowe Domy na Sprzedaż w Bielsku-Białej i Okolicach"
+          },
+          {
+            "tag": "h3",
+            "text": "Dom Wolnostojący Pisarzowice (Etap II)"
+          },
+          {
+            "tag": "h2",
+            "text": "Budowa Domów Pod Klucz i w Stanie Deweloperskim od A do Z"
+          },
+          {
+            "tag": "h3",
+            "text": "Stan surowy"
+          },
+          {
+            "tag": "h3",
+            "text": "Stan deweloperski"
+          },
+          {
+            "tag": "h3",
+            "text": "Budowa pod klucz"
+          },
+          {
+            "tag": "h3",
+            "text": "Budowa na działce Klienta"
+          },
+          {
+            "tag": "h3",
+            "text": "Wykończenia"
+          },
+          {
+            "tag": "h2",
+            "text": "Najczęstsze Pytania"
+          },
+          {
+            "tag": "h3",
+            "text": "Ile kosztuje budowa domu w Bielsku-Białej?"
+          },
+          {
+            "tag": "h3",
+            "text": "Czy budujecie domy na działce klienta?"
+          },
+          {
+            "tag": "h3",
+            "text": "Ile trwa budowa domu pod klucz?"
+          },
+          {
+            "tag": "h2",
+            "text": "Skontaktuj się z nami"
+          },
+          {
+            "tag": "h3",
+            "text": "Wyślij wiadomość"
+          },
+          {
+            "tag": "h3",
+            "text": "Kontakt"
+          },
+          {
+            "tag": "h3",
+            "text": "Nawigacja"
+          },
+          {
+            "tag": "h3",
+            "text": "Gdzie budujemy?"
+          }
+        ],
+        "landmarks": {
+          "header": 1,
+          "nav": 2,
+          "main": 1,
+          "footer": 1
+        },
+        "main_word_count_approx": 451,
+        "jsonld": [
+          {
+            "valid_json": true,
+            "data": {
+              "@context": "https://schema.org",
+              "@type": "HomeAndConstructionBusiness",
+              "@id": "https://www.investdom.com.pl/#organization",
+              "name": "INVESTDOM",
+              "url": "https://www.investdom.com.pl/",
+              "logo": "https://www.investdom.com.pl/logo.png",
+              "image": "https://www.investdom.com.pl/og-image.jpg",
+              "telephone": "+48571328993",
+              "email": "kontakt@investdom.pl",
+              "sameAs": [
+                "https://share.google/O1Nye5JlpKbt5C3nc"
+              ],
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "ul. Do lasu 25",
+                "addressLocality": "Bielsko-Biała",
+                "postalCode": "43-300",
+                "addressRegion": "śląskie",
+                "addressCountry": "PL"
+              },
+              "areaServed": [
+                {
+                  "@type": "City",
+                  "name": "Bielsko-Biała"
+                },
+                {
+                  "@type": "City",
+                  "name": "Czechowice-Dziedzice"
+                },
+                {
+                  "@type": "City",
+                  "name": "Żywiec"
+                },
+                {
+                  "@type": "City",
+                  "name": "Cieszyn"
+                },
+                {
+                  "@type": "City",
+                  "name": "Szczyrk"
+                }
+              ]
+            }
+          },
+          {
+            "valid_json": true,
+            "data": {
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Ile kosztuje budowa domu w Bielsku-Białej?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ceny budowy domów w regionie śląskim zaczynają się od około 3000-3500 zł netto za metr kwadratowy w stanie surowym. Ostateczny koszt zależy od wybranego projektu, technologii oraz standardu wykończenia. Oferujemy bezpłatną, indywidualną wycenę dla każdego projektu."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Czy budujecie domy na działce klienta?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Tak, realizujemy budowę domów jednorodzinnych na działkach powierzonych przez Klienta. Głównie działamy na terenie Bielska-Białej oraz w okolicznych miejscowościach (m.in. Czechowice-Dziedzice, Żywiec, Szczyrk, Cieszyn). Pomagamy też w ocenie działki pod kątem budowlanym przed rozpoczęciem prac."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Ile trwa budowa domu pod klucz?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Czas budowy domu jednorodzinnego pod klucz wynosi zazwyczaj od 9 do 14 miesięcy, w zależności od warunków atmosferycznych, wielkości budynku i wybranej technologii. Stan surowy zamknięty jesteśmy w stanie osiągnąć często już po 3-4 miesiącach."
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "unresolved_local_schema_references": [],
+        "faq_parity": [
+          {
+            "question": "Ile kosztuje budowa domu w Bielsku-Białej?",
+            "question_in_html": true,
+            "answer_in_html": true
+          },
+          {
+            "question": "Czy budujecie domy na działce klienta?",
+            "question_in_html": true,
+            "answer_in_html": true
+          },
+          {
+            "question": "Ile trwa budowa domu pod klucz?",
+            "question_in_html": true,
+            "answer_in_html": true
+          }
+        ],
+        "image_count": 6,
+        "missing_alt_count": 0,
+        "missing_dimension_count": 0,
+        "srcset_count": 3,
+        "picture_count": 3,
+        "broken_known_fragments": [],
+        "forms": [
+          {
+            "id": "contact-form",
+            "method": "post",
+            "action": "/api/contact",
+            "aria-labelledby": "contact-form-heading",
+            "tabindex": "-1",
+            "class": "space-y-6"
+          }
+        ],
+        "internal_link_count": 22,
+        "images": [
+          {
+            "alt": "InvestDom Logo",
+            "src": "/logo.svg",
+            "width": "875",
+            "height": "190"
+          },
+          {
+            "alt": "InvestDom Logo",
+            "src": "/logo.svg",
+            "width": "875",
+            "height": "190"
+          },
+          {
+            "alt": "Dom jednorodzinny zrealizowany przez INVESTDOM — widok elewacji i ogrodu",
+            "src": "/_astro/budowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv_PfeLd.webp",
+            "width": "1920",
+            "height": "1440",
+            "loading": "eager",
+            "fetchpriority": "high"
+          },
+          {
+            "alt": "Dom jednorodzinny zrealizowany przez INVESTDOM — widok elewacji i ogrodu",
+            "src": "/_astro/budowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv_2a24pT.webp",
+            "width": "800",
+            "height": "600",
+            "loading": "lazy",
+            "fetchpriority": "auto"
+          },
+          {
+            "alt": "Dom z pierwszego etapu inwestycji INVESTDOM w Pisarzowicach",
+            "src": "/_astro/nowoczesny-dom-na-sprzedaz-bielsko.CFyHeYfm_2ecISu.webp",
+            "width": "800",
+            "height": "600",
+            "loading": "lazy",
+            "fetchpriority": "auto"
+          },
+          {
+            "alt": "InvestDom Logo",
+            "src": "/logo.svg",
+            "width": "875",
+            "height": "190"
+          }
+        ]
+      },
+      {
+        "key": "budowa",
+        "url": "https://www.investdom.com.pl/budowa-domow-pod-klucz",
+        "captured_utc": "2026-10-18T14:11:37.448181+00:00",
+        "status": 200,
+        "raw_html_bytes": 24005,
+        "sha256": "4a72de716b46f99566b6495dff7bce9bb0426f253369bffb463fe83d9668fcc6",
+        "lang": "pl",
+        "title": [
+          "Budowa domów pod klucz Bielsko-Biała | Etapy i standardy | INVESTDOM"
+        ],
+        "description": "Dowiedz się, jak wygląda proces budowy domu pod klucz z INVESTDOM. Sprawdź nasze standardy materiałowe i etapy realizacji od fundamentów po wykończenie.",
+        "canonical": [
+          "https://www.investdom.com.pl/budowa-domow-pod-klucz"
+        ],
+        "robots": {
+          "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+          "googlebot": "index, follow",
+          "bingbot": "index, follow"
+        },
+        "x_robots_tag": null,
+        "og": {
+          "og:type": "website",
+          "og:url": "https://www.investdom.com.pl/budowa-domow-pod-klucz",
+          "og:title": "Budowa domów pod klucz Bielsko-Biała | Etapy i standardy | INVESTDOM",
+          "og:description": "Dowiedz się, jak wygląda proces budowy domu pod klucz z INVESTDOM. Sprawdź nasze standardy materiałowe i etapy realizacji od fundamentów po wykończenie.",
+          "og:image": "https://www.investdom.com.pl/og-image.jpg",
+          "og:image:width": "1024",
+          "og:image:height": "1024",
+          "og:image:alt": "INVESTDOM - Budowa Domów Bielsko-Biała",
+          "og:locale": "pl_PL",
+          "og:site_name": "INVESTDOM",
+          "og:see_also": "https://www.investdom.com.pl/"
+        },
+        "twitter": {
+          "twitter:card": "summary_large_image",
+          "twitter:url": "https://www.investdom.com.pl/budowa-domow-pod-klucz",
+          "twitter:title": "Budowa domów pod klucz Bielsko-Biała | Etapy i standardy | INVESTDOM",
+          "twitter:description": "Dowiedz się, jak wygląda proces budowy domu pod klucz z INVESTDOM. Sprawdź nasze standardy materiałowe i etapy realizacji od fundamentów po wykończenie.",
+          "twitter:image": "https://www.investdom.com.pl/og-image.jpg",
+          "twitter:image:alt": "INVESTDOM - Budowa Domów Bielsko-Biała"
+        },
+        "h1_count": 1,
+        "headings": [
+          {
+            "tag": "h1",
+            "text": "Budowa domów pod klucz – krok po kroku"
+          },
+          {
+            "tag": "h2",
+            "text": "Etap 1: Prace ziemne i fundamenty"
+          },
+          {
+            "tag": "h2",
+            "text": "Etap 2: Stan surowy (ściany, strop, dach)"
+          },
+          {
+            "tag": "h2",
+            "text": "Etap 3: Stan deweloperski"
+          },
+          {
+            "tag": "h2",
+            "text": "Etap 4: Prace wykończeniowe (Pod Klucz)"
+          },
+          {
+            "tag": "h2",
+            "text": "Nasze standardy materiałowe"
+          },
+          {
+            "tag": "h3",
+            "text": "Kontakt"
+          },
+          {
+            "tag": "h3",
+            "text": "Nawigacja"
+          },
+          {
+            "tag": "h3",
+            "text": "Gdzie budujemy?"
+          }
+        ],
+        "landmarks": {
+          "header": 1,
+          "nav": 2,
+          "main": 1,
+          "footer": 1
+        },
+        "main_word_count_approx": 225,
+        "jsonld": [
+          {
+            "valid_json": true,
+            "data": {
+              "@context": "https://schema.org",
+              "@type": "HomeAndConstructionBusiness",
+              "@id": "https://www.investdom.com.pl/#organization",
+              "name": "INVESTDOM",
+              "url": "https://www.investdom.com.pl/",
+              "logo": "https://www.investdom.com.pl/logo.png",
+              "image": "https://www.investdom.com.pl/og-image.jpg",
+              "telephone": "+48571328993",
+              "email": "kontakt@investdom.pl",
+              "sameAs": [
+                "https://share.google/O1Nye5JlpKbt5C3nc"
+              ],
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "ul. Do lasu 25",
+                "addressLocality": "Bielsko-Biała",
+                "postalCode": "43-300",
+                "addressRegion": "śląskie",
+                "addressCountry": "PL"
+              },
+              "areaServed": [
+                {
+                  "@type": "City",
+                  "name": "Bielsko-Biała"
+                },
+                {
+                  "@type": "City",
+                  "name": "Czechowice-Dziedzice"
+                },
+                {
+                  "@type": "City",
+                  "name": "Żywiec"
+                },
+                {
+                  "@type": "City",
+                  "name": "Cieszyn"
+                },
+                {
+                  "@type": "City",
+                  "name": "Szczyrk"
+                }
+              ]
+            }
+          },
+          {
+            "valid_json": true,
+            "data": {
+              "@context": "https://schema.org",
+              "@type": "Service",
+              "@id": "https://www.investdom.com.pl/budowa-domow-pod-klucz#service",
+              "name": "Budowa domów pod klucz",
+              "serviceType": "Budowa domów pod klucz",
+              "description": "Budowa domów jednorodzinnych w Bielsku-Białej i okolicach: od fundamentów przez stan surowy i deweloperski po wykończenie pod klucz.",
+              "url": "https://www.investdom.com.pl/budowa-domow-pod-klucz",
+              "provider": {
+                "@id": "https://www.investdom.com.pl/#organization"
+              },
+              "areaServed": [
+                {
+                  "@type": "City",
+                  "name": "Bielsko-Biała"
+                },
+                {
+                  "@type": "City",
+                  "name": "Czechowice-Dziedzice"
+                },
+                {
+                  "@type": "City",
+                  "name": "Żywiec"
+                },
+                {
+                  "@type": "City",
+                  "name": "Cieszyn"
+                },
+                {
+                  "@type": "City",
+                  "name": "Szczyrk"
+                }
+              ]
+            }
+          }
+        ],
+        "unresolved_local_schema_references": [],
+        "faq_parity": [],
+        "image_count": 3,
+        "missing_alt_count": 0,
+        "missing_dimension_count": 0,
+        "srcset_count": 0,
+        "picture_count": 0,
+        "broken_known_fragments": [],
+        "forms": [],
+        "internal_link_count": 13,
+        "images": [
+          {
+            "alt": "InvestDom Logo",
+            "src": "/logo.svg",
+            "width": "875",
+            "height": "190"
+          },
+          {
+            "alt": "InvestDom Logo",
+            "src": "/logo.svg",
+            "width": "875",
+            "height": "190"
+          },
+          {
+            "alt": "InvestDom Logo",
+            "src": "/logo.svg",
+            "width": "875",
+            "height": "190"
+          }
+        ]
+      },
+      {
+        "key": "sprzedaz",
+        "url": "https://www.investdom.com.pl/domy-na-sprzedaz-bielsko",
+        "captured_utc": "2026-10-18T14:11:38.638038+00:00",
+        "status": 200,
+        "raw_html_bytes": 26238,
+        "sha256": "e2f6fd2273a3f9c95307d85f15b157a84416931fc2e4aacea0a0d9fa92732430",
+        "lang": "pl",
+        "title": [
+          "Nowe domy na sprzedaż Bielsko-Biała | Inwestycje | INVESTDOM"
+        ],
+        "description": "Poznaj inwestycję INVESTDOM w Pisarzowicach koło Bielska-Białej. Sprawdź informacje o drugim etapie budowy domów i skontaktuj się w sprawie oferty.",
+        "canonical": [
+          "https://www.investdom.com.pl/domy-na-sprzedaz-bielsko"
+        ],
+        "robots": {
+          "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+          "googlebot": "index, follow",
+          "bingbot": "index, follow"
+        },
+        "x_robots_tag": null,
+        "og": {
+          "og:type": "website",
+          "og:url": "https://www.investdom.com.pl/domy-na-sprzedaz-bielsko",
+          "og:title": "Nowe domy na sprzedaż Bielsko-Biała | Inwestycje | INVESTDOM",
+          "og:description": "Poznaj inwestycję INVESTDOM w Pisarzowicach koło Bielska-Białej. Sprawdź informacje o drugim etapie budowy domów i skontaktuj się w sprawie oferty.",
+          "og:image": "https://www.investdom.com.pl/og-image.jpg",
+          "og:image:width": "1024",
+          "og:image:height": "1024",
+          "og:image:alt": "INVESTDOM - Budowa Domów Bielsko-Biała",
+          "og:locale": "pl_PL",
+          "og:site_name": "INVESTDOM",
+          "og:see_also": "https://www.investdom.com.pl/"
+        },
+        "twitter": {
+          "twitter:card": "summary_large_image",
+          "twitter:url": "https://www.investdom.com.pl/domy-na-sprzedaz-bielsko",
+          "twitter:title": "Nowe domy na sprzedaż Bielsko-Biała | Inwestycje | INVESTDOM",
+          "twitter:description": "Poznaj inwestycję INVESTDOM w Pisarzowicach koło Bielska-Białej. Sprawdź informacje o drugim etapie budowy domów i skontaktuj się w sprawie oferty.",
+          "twitter:image": "https://www.investdom.com.pl/og-image.jpg",
+          "twitter:image:alt": "INVESTDOM - Budowa Domów Bielsko-Biała"
+        },
+        "h1_count": 1,
+        "headings": [
+          {
+            "tag": "h1",
+            "text": "Nowe domy na sprzedaż w Bielsku-Białej"
+          },
+          {
+            "tag": "h2",
+            "text": "Inwestycje: Pisarzowice"
+          },
+          {
+            "tag": "h3",
+            "text": "Dom Wolnostojący Pisarzowice (Etap II)"
+          },
+          {
+            "tag": "h3",
+            "text": "Kontakt"
+          },
+          {
+            "tag": "h3",
+            "text": "Nawigacja"
+          },
+          {
+            "tag": "h3",
+            "text": "Gdzie budujemy?"
+          }
+        ],
+        "landmarks": {
+          "header": 1,
+          "nav": 2,
+          "main": 1,
+          "footer": 1
+        },
+        "main_word_count_approx": 140,
+        "jsonld": [
+          {
+            "valid_json": true,
+            "data": {
+              "@context": "https://schema.org",
+              "@type": "HomeAndConstructionBusiness",
+              "@id": "https://www.investdom.com.pl/#organization",
+              "name": "INVESTDOM",
+              "url": "https://www.investdom.com.pl/",
+              "logo": "https://www.investdom.com.pl/logo.png",
+              "image": "https://www.investdom.com.pl/og-image.jpg",
+              "telephone": "+48571328993",
+              "email": "kontakt@investdom.pl",
+              "sameAs": [
+                "https://share.google/O1Nye5JlpKbt5C3nc"
+              ],
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "ul. Do lasu 25",
+                "addressLocality": "Bielsko-Biała",
+                "postalCode": "43-300",
+                "addressRegion": "śląskie",
+                "addressCountry": "PL"
+              },
+              "areaServed": [
+                {
+                  "@type": "City",
+                  "name": "Bielsko-Biała"
+                },
+                {
+                  "@type": "City",
+                  "name": "Czechowice-Dziedzice"
+                },
+                {
+                  "@type": "City",
+                  "name": "Żywiec"
+                },
+                {
+                  "@type": "City",
+                  "name": "Cieszyn"
+                },
+                {
+                  "@type": "City",
+                  "name": "Szczyrk"
+                }
+              ]
+            }
+          }
+        ],
+        "unresolved_local_schema_references": [],
+        "faq_parity": [],
+        "image_count": 4,
+        "missing_alt_count": 0,
+        "missing_dimension_count": 0,
+        "srcset_count": 1,
+        "picture_count": 1,
+        "broken_known_fragments": [],
+        "forms": [],
+        "internal_link_count": 14,
+        "images": [
+          {
+            "alt": "InvestDom Logo",
+            "src": "/logo.svg",
+            "width": "875",
+            "height": "190"
+          },
+          {
+            "alt": "InvestDom Logo",
+            "src": "/logo.svg",
+            "width": "875",
+            "height": "190"
+          },
+          {
+            "alt": "Dom z pierwszego etapu inwestycji INVESTDOM w Pisarzowicach",
+            "src": "/_astro/nowoczesny-dom-na-sprzedaz-bielsko.CFyHeYfm_2ecISu.webp",
+            "width": "800",
+            "height": "600",
+            "loading": "eager",
+            "fetchpriority": "high"
+          },
+          {
+            "alt": "InvestDom Logo",
+            "src": "/logo.svg",
+            "width": "875",
+            "height": "190"
+          }
+        ]
+      },
+      {
+        "key": "projekty",
+        "url": "https://www.investdom.com.pl/projekty-domow",
+        "captured_utc": "2026-10-18T14:11:39.662164+00:00",
+        "status": 200,
+        "raw_html_bytes": 23814,
+        "sha256": "5d26b6397ef4d200d20721bd54b45577e3249f1ae08a12032a266fbd2951df33",
+        "lang": "pl",
+        "title": [
+          "Projekty Domów Bielsko-Biała | Autorskie Projekty | INVESTDOM"
+        ],
+        "description": "Poznaj projekt domu prezentowany przez INVESTDOM: powierzchnię, liczbę pokoi i łazienek. Zapytaj o realizację w Bielsku-Białej i okolicach.",
+        "canonical": [
+          "https://www.investdom.com.pl/projekty-domow"
+        ],
+        "robots": {
+          "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+          "googlebot": "index, follow",
+          "bingbot": "index, follow"
+        },
+        "x_robots_tag": null,
+        "og": {
+          "og:type": "website",
+          "og:url": "https://www.investdom.com.pl/projekty-domow",
+          "og:title": "Projekty Domów Bielsko-Biała | Autorskie Projekty | INVESTDOM",
+          "og:description": "Poznaj projekt domu prezentowany przez INVESTDOM: powierzchnię, liczbę pokoi i łazienek. Zapytaj o realizację w Bielsku-Białej i okolicach.",
+          "og:image": "https://www.investdom.com.pl/og-image.jpg",
+          "og:image:width": "1024",
+          "og:image:height": "1024",
+          "og:image:alt": "INVESTDOM - Budowa Domów Bielsko-Biała",
+          "og:locale": "pl_PL",
+          "og:site_name": "INVESTDOM",
+          "og:see_also": "https://www.investdom.com.pl/"
+        },
+        "twitter": {
+          "twitter:card": "summary_large_image",
+          "twitter:url": "https://www.investdom.com.pl/projekty-domow",
+          "twitter:title": "Projekty Domów Bielsko-Biała | Autorskie Projekty | INVESTDOM",
+          "twitter:description": "Poznaj projekt domu prezentowany przez INVESTDOM: powierzchnię, liczbę pokoi i łazienek. Zapytaj o realizację w Bielsku-Białej i okolicach.",
+          "twitter:image": "https://www.investdom.com.pl/og-image.jpg",
+          "twitter:image:alt": "INVESTDOM - Budowa Domów Bielsko-Biała"
+        },
+        "h1_count": 1,
+        "headings": [
+          {
+            "tag": "h1",
+            "text": "Autorskie Projekty Domów"
+          },
+          {
+            "tag": "h2",
+            "text": "Dom Wolnostojący Pisarzowice (Etap II)"
+          },
+          {
+            "tag": "h3",
+            "text": "Kontakt"
+          },
+          {
+            "tag": "h3",
+            "text": "Nawigacja"
+          },
+          {
+            "tag": "h3",
+            "text": "Gdzie budujemy?"
+          }
+        ],
+        "landmarks": {
+          "header": 1,
+          "nav": 2,
+          "main": 1,
+          "footer": 1
+        },
+        "main_word_count_approx": 44,
+        "jsonld": [
+          {
+            "valid_json": true,
+            "data": {
+              "@context": "https://schema.org",
+              "@type": "HomeAndConstructionBusiness",
+              "@id": "https://www.investdom.com.pl/#organization",
+              "name": "INVESTDOM",
+              "url": "https://www.investdom.com.pl/",
+              "logo": "https://www.investdom.com.pl/logo.png",
+              "image": "https://www.investdom.com.pl/og-image.jpg",
+              "telephone": "+48571328993",
+              "email": "kontakt@investdom.pl",
+              "sameAs": [
+                "https://share.google/O1Nye5JlpKbt5C3nc"
+              ],
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "ul. Do lasu 25",
+                "addressLocality": "Bielsko-Biała",
+                "postalCode": "43-300",
+                "addressRegion": "śląskie",
+                "addressCountry": "PL"
+              },
+              "areaServed": [
+                {
+                  "@type": "City",
+                  "name": "Bielsko-Biała"
+                },
+                {
+                  "@type": "City",
+                  "name": "Czechowice-Dziedzice"
+                },
+                {
+                  "@type": "City",
+                  "name": "Żywiec"
+                },
+                {
+                  "@type": "City",
+                  "name": "Cieszyn"
+                },
+                {
+                  "@type": "City",
+                  "name": "Szczyrk"
+                }
+              ]
+            }
+          }
+        ],
+        "unresolved_local_schema_references": [],
+        "faq_parity": [],
+        "image_count": 4,
+        "missing_alt_count": 0,
+        "missing_dimension_count": 0,
+        "srcset_count": 1,
+        "picture_count": 1,
+        "broken_known_fragments": [],
+        "forms": [],
+        "internal_link_count": 14,
+        "images": [
+          {
+            "alt": "InvestDom Logo",
+            "src": "/logo.svg",
+            "width": "875",
+            "height": "190"
+          },
+          {
+            "alt": "InvestDom Logo",
+            "src": "/logo.svg",
+            "width": "875",
+            "height": "190"
+          },
+          {
+            "alt": "Dom z pierwszego etapu inwestycji INVESTDOM w Pisarzowicach — ilustracja projektu",
+            "src": "/_astro/nowoczesny-dom-na-sprzedaz-bielsko.CFyHeYfm_LlTSS.webp",
+            "width": "400",
+            "height": "300",
+            "loading": "eager",
+            "fetchpriority": "high"
+          },
+          {
+            "alt": "InvestDom Logo",
+            "src": "/logo.svg",
+            "width": "875",
+            "height": "190"
+          }
+        ]
+      }
+    ],
+    "routing": [
+      {
+        "captured_utc": "2026-10-18T14:12:16.217191+00:00",
+        "requested_url": "http://www.investdom.com.pl/",
+        "chain": [
+          {
+            "url": "http://www.investdom.com.pl/",
+            "status": 308,
+            "bytes": 14
+          },
+          {
+            "url": "https://www.investdom.com.pl/",
+            "status": 200,
+            "bytes": 57399
+          }
+        ],
+        "sha256": "67ee839921e77e9d689443496b96d071332d5ec20e61f7e6cf8584304a32bf02",
+        "key": "http-www"
+      },
+      {
+        "captured_utc": "2026-10-18T14:12:18.005811+00:00",
+        "requested_url": "https://investdom.com.pl/",
+        "chain": [
+          {
+            "url": "https://investdom.com.pl/",
+            "status": 307,
+            "bytes": 15
+          },
+          {
+            "url": "https://www.investdom.com.pl/",
+            "status": 200,
+            "bytes": 57399
+          }
+        ],
+        "sha256": "67ee839921e77e9d689443496b96d071332d5ec20e61f7e6cf8584304a32bf02",
+        "key": "https-apex"
+      },
+      {
+        "captured_utc": "2026-10-18T14:12:21.204910+00:00",
+        "requested_url": "http://investdom.com.pl/",
+        "chain": [
+          {
+            "url": "http://investdom.com.pl/",
+            "status": 308,
+            "bytes": 14
+          },
+          {
+            "url": "https://investdom.com.pl/",
+            "status": 307,
+            "bytes": 15
+          },
+          {
+            "url": "https://www.investdom.com.pl/",
+            "status": 200,
+            "bytes": 57399
+          }
+        ],
+        "sha256": "67ee839921e77e9d689443496b96d071332d5ec20e61f7e6cf8584304a32bf02",
+        "key": "http-apex"
+      },
+      {
+        "captured_utc": "2026-10-18T14:12:23.247234+00:00",
+        "requested_url": "https://www.investdom.com.pl/budowa-domow-pod-klucz/",
+        "chain": [
+          {
+            "url": "https://www.investdom.com.pl/budowa-domow-pod-klucz/",
+            "status": 308,
+            "bytes": 15
+          },
+          {
+            "url": "https://www.investdom.com.pl/budowa-domow-pod-klucz",
+            "status": 200,
+            "bytes": 24005
+          }
+        ],
+        "sha256": "4a72de716b46f99566b6495dff7bce9bb0426f253369bffb463fe83d9668fcc6",
+        "key": "slash-budowa"
+      },
+      {
+        "captured_utc": "2026-10-18T14:12:25.291448+00:00",
+        "requested_url": "https://www.investdom.com.pl/domy-na-sprzedaz-bielsko/",
+        "chain": [
+          {
+            "url": "https://www.investdom.com.pl/domy-na-sprzedaz-bielsko/",
+            "status": 308,
+            "bytes": 15
+          },
+          {
+            "url": "https://www.investdom.com.pl/domy-na-sprzedaz-bielsko",
+            "status": 200,
+            "bytes": 26238
+          }
+        ],
+        "sha256": "e2f6fd2273a3f9c95307d85f15b157a84416931fc2e4aacea0a0d9fa92732430",
+        "key": "slash-sprzedaz"
+      },
+      {
+        "captured_utc": "2026-10-18T14:12:27.369762+00:00",
+        "requested_url": "https://www.investdom.com.pl/projekty-domow/",
+        "chain": [
+          {
+            "url": "https://www.investdom.com.pl/projekty-domow/",
+            "status": 308,
+            "bytes": 15
+          },
+          {
+            "url": "https://www.investdom.com.pl/projekty-domow",
+            "status": 200,
+            "bytes": 23814
+          }
+        ],
+        "sha256": "5d26b6397ef4d200d20721bd54b45577e3249f1ae08a12032a266fbd2951df33",
+        "key": "slash-projekty"
+      },
+      {
+        "captured_utc": "2026-10-18T14:12:28.400895+00:00",
+        "requested_url": "https://www.investdom.com.pl/?utm_source=seo-audit&utm_medium=verification",
+        "chain": [
+          {
+            "url": "https://www.investdom.com.pl/?utm_source=seo-audit&utm_medium=verification",
+            "status": 200,
+            "bytes": 57399
+          }
+        ],
+        "sha256": "67ee839921e77e9d689443496b96d071332d5ec20e61f7e6cf8584304a32bf02",
+        "key": "utm-home",
+        "canonical": [
+          "https://www.investdom.com.pl/"
+        ]
+      },
+      {
+        "captured_utc": "2026-10-18T14:12:29.553993+00:00",
+        "requested_url": "https://www.investdom.com.pl/budowa-domow-pod-klucz?utm_source=seo-audit",
+        "chain": [
+          {
+            "url": "https://www.investdom.com.pl/budowa-domow-pod-klucz?utm_source=seo-audit",
+            "status": 200,
+            "bytes": 24005
+          }
+        ],
+        "sha256": "4a72de716b46f99566b6495dff7bce9bb0426f253369bffb463fe83d9668fcc6",
+        "key": "utm-budowa",
+        "canonical": [
+          "https://www.investdom.com.pl/budowa-domow-pod-klucz"
+        ]
+      },
+      {
+        "captured_utc": "2026-10-18T14:12:34.450344+00:00",
+        "requested_url": "https://www.investdom.com.pl/seo-audit-nonexistent-20261018",
+        "chain": [
+          {
+            "url": "https://www.investdom.com.pl/seo-audit-nonexistent-20261018",
+            "status": 404,
+            "bytes": 79
+          }
+        ],
+        "sha256": "94f1c812c2d164e4d693b4c4ca04b01a0787a4115ccccf406c4c28791e6064f2",
+        "key": "missing-page"
+      },
+      {
+        "captured_utc": "2026-10-18T14:14:10.229538+00:00",
+        "requested_url": "https://www.investdom.com.pl/index.html",
+        "chain": [
+          {
+            "url": "https://www.investdom.com.pl/index.html",
+            "status": 200,
+            "bytes": 57399
+          }
+        ],
+        "sha256": "67ee839921e77e9d689443496b96d071332d5ec20e61f7e6cf8584304a32bf02",
+        "key": "index-html",
+        "canonical": [
+          "https://www.investdom.com.pl/"
+        ]
+      },
+      {
+        "captured_utc": "2026-10-18T14:14:11.315140+00:00",
+        "requested_url": "https://www.investdom.com.pl/index",
+        "chain": [
+          {
+            "url": "https://www.investdom.com.pl/index",
+            "status": 404,
+            "bytes": 79
+          }
+        ],
+        "sha256": "c8349909a84210e580f1294cace5884afe7d3487a76da6e305972a7458df4d4b",
+        "key": "index-route"
+      },
+      {
+        "captured_utc": "2026-10-18T14:14:12.293373+00:00",
+        "requested_url": "https://www.investdom.com.pl/api/contact",
+        "chain": [
+          {
+            "url": "https://www.investdom.com.pl/api/contact",
+            "status": 404,
+            "bytes": 4305
+          }
+        ],
+        "sha256": "2650b43699981c50f67520b862a16989583680f9f1ccebe6d03a2bf6d2c36cc0",
+        "key": "api-get"
+      },
+      {
+        "captured_utc": "2026-10-18T14:14:38.591989+00:00",
+        "requested_url": "https://www.investdom.com.pl/budowa-domow-pod-klucz/index.html",
+        "chain": [
+          {
+            "url": "https://www.investdom.com.pl/budowa-domow-pod-klucz/index.html",
+            "status": 200,
+            "bytes": 24005
+          }
+        ],
+        "sha256": "4a72de716b46f99566b6495dff7bce9bb0426f253369bffb463fe83d9668fcc6",
+        "key": "index-budowa",
+        "canonical": [
+          "https://www.investdom.com.pl/budowa-domow-pod-klucz"
+        ]
+      },
+      {
+        "captured_utc": "2026-10-18T14:14:39.667161+00:00",
+        "requested_url": "https://www.investdom.com.pl/budowa-domow-pod-klucz.html",
+        "chain": [
+          {
+            "url": "https://www.investdom.com.pl/budowa-domow-pod-klucz.html",
+            "status": 404,
+            "bytes": 79
+          }
+        ],
+        "sha256": "29d1cc53211e4c010858cbef1a5fd655d7ff139ef64f642c1b4ac1420bee616b",
+        "key": "html-budowa"
+      },
+      {
+        "captured_utc": "2026-10-18T14:15:03.309354+00:00",
+        "requested_url": "https://www.investdom.com.pl/domy-na-sprzedaz-bielsko/index.html",
+        "chain": [
+          {
+            "url": "https://www.investdom.com.pl/domy-na-sprzedaz-bielsko/index.html",
+            "status": 200,
+            "bytes": 26238
+          }
+        ],
+        "sha256": "e2f6fd2273a3f9c95307d85f15b157a84416931fc2e4aacea0a0d9fa92732430",
+        "key": "index-sprzedaz",
+        "canonical": [
+          "https://www.investdom.com.pl/domy-na-sprzedaz-bielsko"
+        ]
+      },
+      {
+        "captured_utc": "2026-10-18T14:15:04.553698+00:00",
+        "requested_url": "https://www.investdom.com.pl/projekty-domow/index.html",
+        "chain": [
+          {
+            "url": "https://www.investdom.com.pl/projekty-domow/index.html",
+            "status": 200,
+            "bytes": 23814
+          }
+        ],
+        "sha256": "5d26b6397ef4d200d20721bd54b45577e3249f1ae08a12032a266fbd2951df33",
+        "key": "index-projekty",
+        "canonical": [
+          "https://www.investdom.com.pl/projekty-domow"
+        ]
+      }
+    ],
+    "robots": "# robots.txt for investdom.com.pl\nUser-agent: *\nAllow: /\n\n# Sitemap location\nSitemap: https://www.investdom.com.pl/sitemap-index.xml\n",
+    "sitemap": {
+      "index_xml_valid": true,
+      "child_xml_valid": true,
+      "urls": [
+        "https://www.investdom.com.pl",
+        "https://www.investdom.com.pl/budowa-domow-pod-klucz",
+        "https://www.investdom.com.pl/domy-na-sprzedaz-bielsko",
+        "https://www.investdom.com.pl/projekty-domow"
+      ]
+    },
+    "assets": [
+      {
+        "captured_utc": "2026-10-18T14:12:34.543237+00:00",
+        "requested_url": "https://www.investdom.com.pl/logo.svg",
+        "chain": [
+          {
+            "url": "https://www.investdom.com.pl/logo.svg",
+            "status": 200,
+            "bytes": 5287
+          }
+        ],
+        "sha256": "0c9216195858e30ec03a5acbb7e5fb4452cf7313032facd810bb6511c92d59ae",
+        "key": "image-1",
+        "svg_attributes": {
+          "width": "875",
+          "height": "190",
+          "viewBox": "0 0 875 190",
+          "fill": "none"
+        }
+      },
+      {
+        "captured_utc": "2026-10-18T14:12:36.141535+00:00",
+        "requested_url": "https://www.investdom.com.pl/_astro/budowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv_PfeLd.webp",
+        "chain": [
+          {
+            "url": "https://www.investdom.com.pl/_astro/budowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv_PfeLd.webp",
+            "status": 200,
+            "bytes": 257268
+          }
+        ],
+        "sha256": "a5e06213b66140de6f1e489664bedfe67c06054b58872847d7914ecfecfb214a",
+        "key": "image-2",
+        "decoded_dimensions": [
+          1920,
+          1440
+        ],
+        "format": "WEBP"
+      },
+      {
+        "captured_utc": "2026-10-18T14:12:37.227811+00:00",
+        "requested_url": "https://www.investdom.com.pl/_astro/budowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv_2a24pT.webp",
+        "chain": [
+          {
+            "url": "https://www.investdom.com.pl/_astro/budowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv_2a24pT.webp",
+            "status": 200,
+            "bytes": 51038
+          }
+        ],
+        "sha256": "b08f46150dbeb199fa3fa001aa32ddcdab1a1efff5b0916ec2fd5a60134da7c8",
+        "key": "image-3",
+        "decoded_dimensions": [
+          800,
+          600
+        ],
+        "format": "WEBP"
+      },
+      {
+        "captured_utc": "2026-10-18T14:12:38.828187+00:00",
+        "requested_url": "https://www.investdom.com.pl/_astro/nowoczesny-dom-na-sprzedaz-bielsko.CFyHeYfm_2ecISu.webp",
+        "chain": [
+          {
+            "url": "https://www.investdom.com.pl/_astro/nowoczesny-dom-na-sprzedaz-bielsko.CFyHeYfm_2ecISu.webp",
+            "status": 200,
+            "bytes": 45484
+          }
+        ],
+        "sha256": "72641dbb8239eb5bd26a97ab0da5486030c23d24df88aeed3c699f211300f835",
+        "key": "image-4",
+        "decoded_dimensions": [
+          800,
+          600
+        ],
+        "format": "WEBP"
+      },
+      {
+        "captured_utc": "2026-10-18T14:12:40.723309+00:00",
+        "requested_url": "https://www.investdom.com.pl/og-image.jpg",
+        "chain": [
+          {
+            "url": "https://www.investdom.com.pl/og-image.jpg",
+            "status": 200,
+            "bytes": 640604
+          }
+        ],
+        "sha256": "9c605ba24be1099c1b69e6ad09bc5ec090663146ce93cb39d9852488fb8780d2",
+        "key": "og-image",
+        "decoded_dimensions": [
+          1024,
+          1024
+        ],
+        "format": "JPEG"
+      },
+      {
+        "captured_utc": "2026-10-18T14:12:41.339073+00:00",
+        "requested_url": "https://www.investdom.com.pl/logo.png",
+        "chain": [
+          {
+            "url": "https://www.investdom.com.pl/logo.png",
+            "status": 200,
+            "bytes": 9524
+          }
+        ],
+        "sha256": "c749da3e8de148b83228bc377c21764790995445c7d1bed2b0730036ddfc872b",
+        "key": "schema-logo",
+        "decoded_dimensions": [
+          720,
+          360
+        ],
+        "format": "PNG"
+      },
+      {
+        "captured_utc": "2026-10-18T14:12:41.916723+00:00",
+        "requested_url": "https://www.investdom.com.pl/_astro/budowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv_ZssGSJ.avif",
+        "chain": [
+          {
+            "url": "https://www.investdom.com.pl/_astro/budowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv_ZssGSJ.avif",
+            "status": 200,
+            "bytes": 26818
+          }
+        ],
+        "sha256": "b68c1c91df29ccb075a958a99d48bda7dccd5065c91c3ccb75c9e4b0fdf537db",
+        "key": "variant-7",
+        "decoded_dimensions": [
+          800,
+          600
+        ],
+        "format": "AVIF"
+      },
+      {
+        "captured_utc": "2026-10-18T14:12:42.981096+00:00",
+        "requested_url": "https://www.investdom.com.pl/_astro/budowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv_XCyd3.avif",
+        "chain": [
+          {
+            "url": "https://www.investdom.com.pl/_astro/budowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv_XCyd3.avif",
+            "status": 200,
+            "bytes": 525749
+          }
+        ],
+        "sha256": "739ccbe5ec6eea99d55be523e3d05dbb03867eaf1f09ffdf0e70de1baa8a2e3f",
+        "key": "variant-8",
+        "decoded_dimensions": [
+          4032,
+          3024
+        ],
+        "format": "AVIF"
+      },
+      {
+        "captured_utc": "2026-10-18T14:12:44.080157+00:00",
+        "requested_url": "https://www.investdom.com.pl/_astro/budowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv_1szORO.avif",
+        "chain": [
+          {
+            "url": "https://www.investdom.com.pl/_astro/budowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv_1szORO.avif",
+            "status": 200,
+            "bytes": 11263
+          }
+        ],
+        "sha256": "2de87685c5182f9fa4afabc8f40fb45b30db829739c88bb211c349a7634372c6",
+        "key": "variant-9",
+        "decoded_dimensions": [
+          400,
+          300
+        ],
+        "format": "AVIF"
+      },
+      {
+        "captured_utc": "2026-10-18T14:12:45.420755+00:00",
+        "requested_url": "https://www.investdom.com.pl/_astro/budowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv_Z1xUjc5.avif",
+        "chain": [
+          {
+            "url": "https://www.investdom.com.pl/_astro/budowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv_Z1xUjc5.avif",
+            "status": 200,
+            "bytes": 197799
+          }
+        ],
+        "sha256": "9d2556aa42aee3a0a7c439aa940ea5fcfbdd22df250dd3c26176c0dcd1dcf73b",
+        "key": "variant-10",
+        "decoded_dimensions": [
+          1600,
+          1200
+        ],
+        "format": "AVIF"
+      },
+      {
+        "captured_utc": "2026-10-18T14:12:46.285700+00:00",
+        "requested_url": "https://www.investdom.com.pl/_astro/nowoczesny-dom-na-sprzedaz-bielsko.CFyHeYfm_Z248vfr.avif",
+        "chain": [
+          {
+            "url": "https://www.investdom.com.pl/_astro/nowoczesny-dom-na-sprzedaz-bielsko.CFyHeYfm_Z248vfr.avif",
+            "status": 200,
+            "bytes": 9799
+          }
+        ],
+        "sha256": "efcf9fed4885b05a7bad5609dfe22ed038c8f28bfae43bc5201614df43e0a8f0",
+        "key": "variant-11",
+        "decoded_dimensions": [
+          400,
+          300
+        ],
+        "format": "AVIF"
+      },
+      {
+        "captured_utc": "2026-10-18T14:12:47.327504+00:00",
+        "requested_url": "https://www.investdom.com.pl/_astro/nowoczesny-dom-na-sprzedaz-bielsko.CFyHeYfm_Z1CqEPe.avif",
+        "chain": [
+          {
+            "url": "https://www.investdom.com.pl/_astro/nowoczesny-dom-na-sprzedaz-bielsko.CFyHeYfm_Z1CqEPe.avif",
+            "status": 200,
+            "bytes": 157457
+          }
+        ],
+        "sha256": "aff3a800698d4981d017437a182e580fd7deae39f35b86da41cc8ced9ec8b0df",
+        "key": "variant-12",
+        "decoded_dimensions": [
+          1600,
+          1200
+        ],
+        "format": "AVIF"
+      },
+      {
+        "captured_utc": "2026-10-18T14:12:48.348846+00:00",
+        "requested_url": "https://www.investdom.com.pl/_astro/nowoczesny-dom-na-sprzedaz-bielsko.CFyHeYfm_LlTSS.webp",
+        "chain": [
+          {
+            "url": "https://www.investdom.com.pl/_astro/nowoczesny-dom-na-sprzedaz-bielsko.CFyHeYfm_LlTSS.webp",
+            "status": 200,
+            "bytes": 11302
+          }
+        ],
+        "sha256": "00e779db4486afc98ca51cb2e8ab5f2aeb6c55bc9fcc48563e45603ae7780236",
+        "key": "image-13",
+        "decoded_dimensions": [
+          400,
+          300
+        ],
+        "format": "WEBP"
+      },
+      {
+        "captured_utc": "2026-10-18T14:12:49.346719+00:00",
+        "requested_url": "https://www.investdom.com.pl/_astro/nowoczesny-dom-na-sprzedaz-bielsko.CFyHeYfm_wciRB.avif",
+        "chain": [
+          {
+            "url": "https://www.investdom.com.pl/_astro/nowoczesny-dom-na-sprzedaz-bielsko.CFyHeYfm_wciRB.avif",
+            "status": 200,
+            "bytes": 91758
+          }
+        ],
+        "sha256": "df3880c77148ffb7c5a7b2c8ea03273fe2d8af1f18b8779be278f41ce08d14ad",
+        "key": "variant-14",
+        "decoded_dimensions": [
+          1200,
+          900
+        ],
+        "format": "AVIF"
+      }
+    ],
+    "index_html_aliases": [
+      {
+        "url": "https://www.investdom.com.pl/index.html",
+        "status": 200,
+        "same_sha256_as_canonical": true,
+        "canonical": [
+          "https://www.investdom.com.pl/"
+        ]
+      },
+      {
+        "url": "https://www.investdom.com.pl/budowa-domow-pod-klucz/index.html",
+        "status": 200,
+        "same_sha256_as_canonical": true,
+        "canonical": [
+          "https://www.investdom.com.pl/budowa-domow-pod-klucz"
+        ]
+      },
+      {
+        "url": "https://www.investdom.com.pl/domy-na-sprzedaz-bielsko/index.html",
+        "status": 200,
+        "same_sha256_as_canonical": true,
+        "canonical": [
+          "https://www.investdom.com.pl/domy-na-sprzedaz-bielsko"
+        ]
+      },
+      {
+        "url": "https://www.investdom.com.pl/projekty-domow/index.html",
+        "status": 200,
+        "same_sha256_as_canonical": true,
+        "canonical": [
+          "https://www.investdom.com.pl/projekty-domow"
+        ]
+      }
+    ],
+    "resolved_since_baseline": [
+      "Renovations removed from all four public HTML responses",
+      "Explicit POST/action form markup public",
+      "Five responsive picture instances with AVIF/WebP",
+      "Hero intrinsic dimensions now match file and eager/high preserved",
+      "OG dimensions now match decoded1024x1024",
+      "Sale description names Pisarzowice near Bielsko and stageII",
+      "Projects description refers to one project",
+      "Prerender source configuration public output fully populated"
+    ],
+    "findings": [
+      {
+        "id": "TECH-URL-01",
+        "severity": "Low",
+        "title": "Four physical index.html aliases return200",
+        "evidence_keys": [
+          "index-html",
+          "index-budowa",
+          "index-sprzedaz",
+          "index-projekty"
+        ],
+        "recommendation": "Permanent redirect to clean canonical URLs; preserve existing correct canonical signal.",
+        "google_indexing_status": "unknown"
+      },
+      {
+        "id": "TECH-URL-02",
+        "severity": "Low",
+        "title": "Temporary apex307 and two-hopHTTPapex chain remain",
+        "evidence_keys": [
+          "https-apex",
+          "http-apex"
+        ],
+        "recommendation": "Review Vercel domain settings overriding permanent repository rule; use direct301/308 to HTTPS www."
+      },
+      {
+        "id": "CONTENT-LOCAL-01",
+        "severity": "Medium",
+        "title": "Sale H1 still says homes in Bielsko instead of Pisarzowice near Bielsko",
+        "evidence_keys": [
+          "sprzedaz"
+        ],
+        "recommendation": "Align H1/intro with verified locality/stage while retaining URL."
+      },
+      {
+        "id": "CONTENT-CLAIMS-01",
+        "severity": "Medium",
+        "title": "Authorship and FAQ factual promises still require business confirmation",
+        "evidence_keys": [
+          "projekty",
+          "home"
+        ],
+        "recommendation": "Confirm authorship, pricing and timing; keep valid FAQ markup truthful and in parity."
+      },
+      {
+        "id": "TECH-IMAGE-01",
+        "severity": "Low",
+        "title": "OG JPEG still640604 bytes; dimensionsfixed",
+        "evidence_keys": [
+          "og-image"
+        ],
+        "recommendation": "Optional JPEG compression for social preview; not an established pageLCP issue."
+      }
+    ],
+    "schema_validation_scope": "JSON parsing; manual type/context/required business fields and content/reference checks only. Not Google Rich Results Test or indexation confirmation.",
+    "limitations": [
+      "No Search Console/indexation/selectedGooglecanonical proof",
+      "No mail delivery or POST requests",
+      "No actual AI citations or authenticated bot logverification",
+      "No CrUX/field CWV measurement",
+      "No full schema.org validator or Google Rich Results Test",
+      "Fourteen-asset boundedsample, not all generated variants",
+      "Browser/accessibility/Lighthouse handled by separate worker"
+    ]
+  },
+  "lighthouse": {
+    "version": "13.5.0",
+    "browser": "Chromium154.0.8037.57",
+    "reports": [
+      {
+        "case": "home-mobile",
+        "trial": 1,
+        "fetchTime": "2026-10-18T14:12:18.372Z",
+        "requestedUrl": "https://www.investdom.com.pl/",
+        "finalUrl": "https://www.investdom.com.pl/",
+        "lighthouseVersion": "13.5.0",
+        "scores": {
+          "performance": 96,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        },
+        "metrics": {
+          "first-contentful-paint": 1350.578,
+          "largest-contentful-paint": 2282.578,
+          "total-blocking-time": 31,
+          "cumulative-layout-shift": 0,
+          "speed-index": 4351.140689082653
+        },
+        "warnings": [],
+        "runtimeError": null,
+        "agentic": {
+          "passed": 2,
+          "counted": 2
+        },
+        "failingAudits": [
+          {
+            "id": "speed-index",
+            "score": 0.75,
+            "title": "Speed Index"
+          },
+          {
+            "id": "image-delivery-insight",
+            "score": 0,
+            "title": "Improve image delivery"
+          },
+          {
+            "id": "network-dependency-tree-insight",
+            "score": 0,
+            "title": "Network dependency tree"
+          },
+          {
+            "id": "render-blocking-insight",
+            "score": 0.5,
+            "title": "Render-blocking requests"
+          }
+        ],
+        "lcpBreakdown": [
+          {
+            "subpart": "timeToFirstByte",
+            "label": "Time to first byte",
+            "duration": 177.31199999809266
+          },
+          {
+            "subpart": "resourceLoadDelay",
+            "label": "Resource load delay",
+            "duration": 21.87500000190735
+          },
+          {
+            "subpart": "resourceLoadDuration",
+            "label": "Resource load duration",
+            "duration": 335.44
+          },
+          {
+            "subpart": "elementRenderDelay",
+            "label": "Element render delay",
+            "duration": 1843.723
+          }
+        ],
+        "imageRequests": [
+          {
+            "url": "https://www.investdom.com.pl/logo.svg",
+            "resourceSize": 5287,
+            "transferSize": 2253,
+            "priority": "Medium"
+          },
+          {
+            "url": "https://www.investdom.com.pl/_astro/budowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv_Z1TgJsV.avif",
+            "resourceSize": 180003,
+            "transferSize": 180345,
+            "priority": "High"
+          },
+          {
+            "url": "https://www.investdom.com.pl/_astro/budowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv_27yLp9.avif",
+            "resourceSize": 108747,
+            "transferSize": 109037,
+            "priority": "Low"
+          },
+          {
+            "url": "https://www.investdom.com.pl/_astro/nowoczesny-dom-na-sprzedaz-bielsko.CFyHeYfm_ZBhGfP.avif",
+            "resourceSize": 39652,
+            "transferSize": 39900,
+            "priority": "Low"
+          }
+        ],
+        "imageEstimatedWasteBytes": 173522
+      },
+      {
+        "case": "home-mobile",
+        "trial": 2,
+        "fetchTime": "2026-10-18T14:12:44.202Z",
+        "requestedUrl": "https://www.investdom.com.pl/",
+        "finalUrl": "https://www.investdom.com.pl/",
+        "lighthouseVersion": "13.5.0",
+        "scores": {
+          "performance": 97,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        },
+        "metrics": {
+          "first-contentful-paint": 1507.685,
+          "largest-contentful-paint": 2446.623,
+          "total-blocking-time": 47.5,
+          "cumulative-layout-shift": 0,
+          "speed-index": 3177.260891811944
+        },
+        "warnings": [],
+        "runtimeError": null,
+        "agentic": {
+          "passed": 2,
+          "counted": 2
+        },
+        "failingAudits": [
+          {
+            "id": "mainthread-work-breakdown",
+            "score": 0,
+            "title": "Minimize main-thread work"
+          },
+          {
+            "id": "forced-reflow-insight",
+            "score": 0,
+            "title": "Forced reflow"
+          },
+          {
+            "id": "image-delivery-insight",
+            "score": 0.5,
+            "title": "Improve image delivery"
+          },
+          {
+            "id": "network-dependency-tree-insight",
+            "score": 0,
+            "title": "Network dependency tree"
+          },
+          {
+            "id": "render-blocking-insight",
+            "score": 0.5,
+            "title": "Render-blocking requests"
+          }
+        ],
+        "lcpBreakdown": [
+          {
+            "subpart": "timeToFirstByte",
+            "label": "Time to first byte",
+            "duration": 96.504
+          },
+          {
+            "subpart": "resourceLoadDelay",
+            "label": "Resource load delay",
+            "duration": 34.944
+          },
+          {
+            "subpart": "resourceLoadDuration",
+            "label": "Resource load duration",
+            "duration": 136.832
+          },
+          {
+            "subpart": "elementRenderDelay",
+            "label": "Element render delay",
+            "duration": 1215.253
+          }
+        ],
+        "imageRequests": [
+          {
+            "url": "https://www.investdom.com.pl/logo.svg",
+            "resourceSize": 5287,
+            "transferSize": 2231,
+            "priority": "High"
+          },
+          {
+            "url": "https://www.investdom.com.pl/_astro/budowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv_Z1TgJsV.avif",
+            "resourceSize": 180003,
+            "transferSize": 180311,
+            "priority": "High"
+          },
+          {
+            "url": "https://www.investdom.com.pl/_astro/budowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv_27yLp9.avif",
+            "resourceSize": 108747,
+            "transferSize": 109009,
+            "priority": "Low"
+          },
+          {
+            "url": "https://www.investdom.com.pl/_astro/nowoczesny-dom-na-sprzedaz-bielsko.CFyHeYfm_ZBhGfP.avif",
+            "resourceSize": 39652,
+            "transferSize": 39845,
+            "priority": "Low"
+          }
+        ],
+        "imageEstimatedWasteBytes": 16302
+      },
+      {
+        "case": "home-mobile",
+        "trial": 3,
+        "fetchTime": "2026-10-18T14:13:01.301Z",
+        "requestedUrl": "https://www.investdom.com.pl/",
+        "finalUrl": "https://www.investdom.com.pl/",
+        "lighthouseVersion": "13.5.0",
+        "scores": {
+          "performance": 97,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        },
+        "metrics": {
+          "first-contentful-paint": 1424.996,
+          "largest-contentful-paint": 2394.0640000000003,
+          "total-blocking-time": 25.5,
+          "cumulative-layout-shift": 0,
+          "speed-index": 2953.612384086471
+        },
+        "warnings": [],
+        "runtimeError": null,
+        "agentic": {
+          "passed": 2,
+          "counted": 2
+        },
+        "failingAudits": [
+          {
+            "id": "image-delivery-insight",
+            "score": 0,
+            "title": "Improve image delivery"
+          },
+          {
+            "id": "network-dependency-tree-insight",
+            "score": 0,
+            "title": "Network dependency tree"
+          },
+          {
+            "id": "render-blocking-insight",
+            "score": 0.5,
+            "title": "Render-blocking requests"
+          }
+        ],
+        "lcpBreakdown": [
+          {
+            "subpart": "timeToFirstByte",
+            "label": "Time to first byte",
+            "duration": 89.409
+          },
+          {
+            "subpart": "resourceLoadDelay",
+            "label": "Resource load delay",
+            "duration": 30.314
+          },
+          {
+            "subpart": "resourceLoadDuration",
+            "label": "Resource load duration",
+            "duration": 233.898
+          },
+          {
+            "subpart": "elementRenderDelay",
+            "label": "Element render delay",
+            "duration": 1092.795
+          }
+        ],
+        "imageRequests": [
+          {
+            "url": "https://www.investdom.com.pl/logo.svg",
+            "resourceSize": 5287,
+            "transferSize": 2227,
+            "priority": "Medium"
+          },
+          {
+            "url": "https://www.investdom.com.pl/_astro/budowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv_Z1TgJsV.avif",
+            "resourceSize": 180003,
+            "transferSize": 180329,
+            "priority": "High"
+          },
+          {
+            "url": "https://www.investdom.com.pl/_astro/budowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv_27yLp9.avif",
+            "resourceSize": 108747,
+            "transferSize": 109007,
+            "priority": "Low"
+          },
+          {
+            "url": "https://www.investdom.com.pl/_astro/nowoczesny-dom-na-sprzedaz-bielsko.CFyHeYfm_ZBhGfP.avif",
+            "resourceSize": 39652,
+            "transferSize": 39844,
+            "priority": "Low"
+          }
+        ],
+        "imageEstimatedWasteBytes": 173522
+      },
+      {
+        "case": "home-desktop",
+        "trial": 1,
+        "fetchTime": "2026-10-18T14:13:18.054Z",
+        "requestedUrl": "https://www.investdom.com.pl/",
+        "finalUrl": "https://www.investdom.com.pl/",
+        "lighthouseVersion": "13.5.0",
+        "scores": {
+          "performance": 100,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        },
+        "metrics": {
+          "first-contentful-paint": 402.77500000000003,
+          "largest-contentful-paint": 507.3375000000001,
+          "total-blocking-time": 0,
+          "cumulative-layout-shift": 0,
+          "speed-index": 530.6359449169358
+        },
+        "warnings": [],
+        "runtimeError": null,
+        "agentic": {
+          "passed": 2,
+          "counted": 2
+        },
+        "failingAudits": [
+          {
+            "id": "bf-cache",
+            "score": 0,
+            "title": "Page prevented back/forward cache restoration"
+          },
+          {
+            "id": "image-delivery-insight",
+            "score": 0,
+            "title": "Improve image delivery"
+          },
+          {
+            "id": "network-dependency-tree-insight",
+            "score": 0,
+            "title": "Network dependency tree"
+          },
+          {
+            "id": "render-blocking-insight",
+            "score": 0.5,
+            "title": "Render-blocking requests"
+          }
+        ],
+        "lcpBreakdown": [
+          {
+            "subpart": "timeToFirstByte",
+            "label": "Time to first byte",
+            "duration": 84.394
+          },
+          {
+            "subpart": "resourceLoadDelay",
+            "label": "Resource load delay",
+            "duration": 26.875
+          },
+          {
+            "subpart": "resourceLoadDuration",
+            "label": "Resource load duration",
+            "duration": 136.473
+          },
+          {
+            "subpart": "elementRenderDelay",
+            "label": "Element render delay",
+            "duration": 329.189
+          }
+        ],
+        "imageRequests": [
+          {
+            "url": "https://www.investdom.com.pl/logo.svg",
+            "resourceSize": 5287,
+            "transferSize": 2231,
+            "priority": "Medium"
+          },
+          {
+            "url": "https://www.investdom.com.pl/_astro/budowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv_Z1OXMDw.avif",
+            "resourceSize": 126748,
+            "transferSize": 127060,
+            "priority": "High"
+          },
+          {
+            "url": "https://www.investdom.com.pl/_astro/budowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv_Z12oRK2.avif",
+            "resourceSize": 28619,
+            "transferSize": 28917,
+            "priority": "Low"
+          },
+          {
+            "url": "https://www.investdom.com.pl/_astro/nowoczesny-dom-na-sprzedaz-bielsko.CFyHeYfm_ZBhGfP.avif",
+            "resourceSize": 39652,
+            "transferSize": 39845,
+            "priority": "Low"
+          }
+        ],
+        "imageEstimatedWasteBytes": 22237
+      },
+      {
+        "case": "home-desktop",
+        "trial": 2,
+        "fetchTime": "2026-10-18T14:13:32.908Z",
+        "requestedUrl": "https://www.investdom.com.pl/",
+        "finalUrl": "https://www.investdom.com.pl/",
+        "lighthouseVersion": "13.5.0",
+        "scores": {
+          "performance": 100,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        },
+        "metrics": {
+          "first-contentful-paint": 352.43600000000004,
+          "largest-contentful-paint": 453.451,
+          "total-blocking-time": 0,
+          "cumulative-layout-shift": 0,
+          "speed-index": 566.8212793275351
+        },
+        "warnings": [],
+        "runtimeError": null,
+        "agentic": {
+          "passed": 2,
+          "counted": 2
+        },
+        "failingAudits": [
+          {
+            "id": "image-delivery-insight",
+            "score": 0.5,
+            "title": "Improve image delivery"
+          },
+          {
+            "id": "network-dependency-tree-insight",
+            "score": 0,
+            "title": "Network dependency tree"
+          },
+          {
+            "id": "render-blocking-insight",
+            "score": 0.5,
+            "title": "Render-blocking requests"
+          }
+        ],
+        "lcpBreakdown": [
+          {
+            "subpart": "timeToFirstByte",
+            "label": "Time to first byte",
+            "duration": 80.08
+          },
+          {
+            "subpart": "resourceLoadDelay",
+            "label": "Resource load delay",
+            "duration": 18.707
+          },
+          {
+            "subpart": "resourceLoadDuration",
+            "label": "Resource load duration",
+            "duration": 109.389
+          },
+          {
+            "subpart": "elementRenderDelay",
+            "label": "Element render delay",
+            "duration": 203.407
+          }
+        ],
+        "imageRequests": [
+          {
+            "url": "https://www.investdom.com.pl/logo.svg",
+            "resourceSize": 5287,
+            "transferSize": 2231,
+            "priority": "High"
+          },
+          {
+            "url": "https://www.investdom.com.pl/_astro/budowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv_Z1OXMDw.avif",
+            "resourceSize": 126748,
+            "transferSize": 127042,
+            "priority": "High"
+          },
+          {
+            "url": "https://www.investdom.com.pl/_astro/budowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv_Z12oRK2.avif",
+            "resourceSize": 28619,
+            "transferSize": 28833,
+            "priority": "Low"
+          },
+          {
+            "url": "https://www.investdom.com.pl/_astro/nowoczesny-dom-na-sprzedaz-bielsko.CFyHeYfm_ZBhGfP.avif",
+            "resourceSize": 39652,
+            "transferSize": 39845,
+            "priority": "Low"
+          }
+        ],
+        "imageEstimatedWasteBytes": 22237
+      },
+      {
+        "case": "home-desktop",
+        "trial": 3,
+        "fetchTime": "2026-10-18T14:13:48.815Z",
+        "requestedUrl": "https://www.investdom.com.pl/",
+        "finalUrl": "https://www.investdom.com.pl/",
+        "lighthouseVersion": "13.5.0",
+        "scores": {
+          "performance": 73,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        },
+        "metrics": {
+          "first-contentful-paint": 350,
+          "largest-contentful-paint": 613.5,
+          "total-blocking-time": 694,
+          "cumulative-layout-shift": 0,
+          "speed-index": 1350.1443452041804
+        },
+        "warnings": [],
+        "runtimeError": null,
+        "agentic": {
+          "passed": 2,
+          "counted": 2
+        },
+        "failingAudits": [
+          {
+            "id": "speed-index",
+            "score": 0.88,
+            "title": "Speed Index"
+          },
+          {
+            "id": "total-blocking-time",
+            "score": 0.15,
+            "title": "Total Blocking Time"
+          },
+          {
+            "id": "max-potential-fid",
+            "score": 0.17,
+            "title": "Max Potential First Input Delay"
+          },
+          {
+            "id": "image-delivery-insight",
+            "score": 0,
+            "title": "Improve image delivery"
+          },
+          {
+            "id": "network-dependency-tree-insight",
+            "score": 0,
+            "title": "Network dependency tree"
+          },
+          {
+            "id": "render-blocking-insight",
+            "score": 0.5,
+            "title": "Render-blocking requests"
+          }
+        ],
+        "lcpBreakdown": [
+          {
+            "subpart": "timeToFirstByte",
+            "label": "Time to first byte",
+            "duration": 188.038
+          },
+          {
+            "subpart": "resourceLoadDelay",
+            "label": "Resource load delay",
+            "duration": 42.168
+          },
+          {
+            "subpart": "resourceLoadDuration",
+            "label": "Resource load duration",
+            "duration": 734.516
+          },
+          {
+            "subpart": "elementRenderDelay",
+            "label": "Element render delay",
+            "duration": 515.795
+          }
+        ],
+        "imageRequests": [
+          {
+            "url": "https://www.investdom.com.pl/logo.svg",
+            "resourceSize": 5287,
+            "transferSize": 2231,
+            "priority": "High"
+          },
+          {
+            "url": "https://www.investdom.com.pl/_astro/budowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv_Z1OXMDw.avif",
+            "resourceSize": 126748,
+            "transferSize": 127042,
+            "priority": "High"
+          },
+          {
+            "url": "https://www.investdom.com.pl/_astro/budowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv_Z12oRK2.avif",
+            "resourceSize": 28619,
+            "transferSize": 28834,
+            "priority": "Low"
+          },
+          {
+            "url": "https://www.investdom.com.pl/_astro/nowoczesny-dom-na-sprzedaz-bielsko.CFyHeYfm_ZBhGfP.avif",
+            "resourceSize": 39652,
+            "transferSize": 39868,
+            "priority": "Low"
+          }
+        ],
+        "imageEstimatedWasteBytes": 22237
+      },
+      {
+        "case": "service-mobile",
+        "trial": 1,
+        "fetchTime": "2026-10-18T14:14:05.635Z",
+        "requestedUrl": "https://www.investdom.com.pl/budowa-domow-pod-klucz",
+        "finalUrl": "https://www.investdom.com.pl/budowa-domow-pod-klucz",
+        "lighthouseVersion": "13.5.0",
+        "scores": {
+          "performance": 99,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        },
+        "metrics": {
+          "first-contentful-paint": 900.786,
+          "largest-contentful-paint": 975.7860000000001,
+          "total-blocking-time": 5.500000000000057,
+          "cumulative-layout-shift": 0,
+          "speed-index": 3593.48151400647
+        },
+        "warnings": [],
+        "runtimeError": null,
+        "agentic": {
+          "passed": 2,
+          "counted": 2
+        },
+        "failingAudits": [
+          {
+            "id": "speed-index",
+            "score": 0.87,
+            "title": "Speed Index"
+          },
+          {
+            "id": "network-dependency-tree-insight",
+            "score": 0,
+            "title": "Network dependency tree"
+          },
+          {
+            "id": "render-blocking-insight",
+            "score": 0,
+            "title": "Render-blocking requests"
+          }
+        ],
+        "lcpBreakdown": [
+          {
+            "subpart": "timeToFirstByte",
+            "label": "Time to first byte",
+            "duration": 101.324
+          },
+          {
+            "subpart": "elementRenderDelay",
+            "label": "Element render delay",
+            "duration": 2191.312
+          }
+        ],
+        "imageRequests": [
+          {
+            "url": "https://www.investdom.com.pl/logo.svg",
+            "resourceSize": 5287,
+            "transferSize": 2231,
+            "priority": "Medium"
+          }
+        ],
+        "imageEstimatedWasteBytes": 0
+      },
+      {
+        "case": "offers-mobile",
+        "trial": 1,
+        "fetchTime": "2026-10-18T14:14:21.705Z",
+        "requestedUrl": "https://www.investdom.com.pl/domy-na-sprzedaz-bielsko",
+        "finalUrl": "https://www.investdom.com.pl/domy-na-sprzedaz-bielsko",
+        "lighthouseVersion": "13.5.0",
+        "scores": {
+          "performance": 100,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        },
+        "metrics": {
+          "first-contentful-paint": 939.4,
+          "largest-contentful-paint": 1091.75,
+          "total-blocking-time": 87.5,
+          "cumulative-layout-shift": 0,
+          "speed-index": 1321.8377890179881
+        },
+        "warnings": [],
+        "runtimeError": null,
+        "agentic": {
+          "passed": 2,
+          "counted": 2
+        },
+        "failingAudits": [
+          {
+            "id": "network-dependency-tree-insight",
+            "score": 0,
+            "title": "Network dependency tree"
+          },
+          {
+            "id": "render-blocking-insight",
+            "score": 0,
+            "title": "Render-blocking requests"
+          }
+        ],
+        "lcpBreakdown": [
+          {
+            "subpart": "timeToFirstByte",
+            "label": "Time to first byte",
+            "duration": 336.193
+          },
+          {
+            "subpart": "resourceLoadDelay",
+            "label": "Resource load delay",
+            "duration": 33.259
+          },
+          {
+            "subpart": "resourceLoadDuration",
+            "label": "Resource load duration",
+            "duration": 199.693
+          },
+          {
+            "subpart": "elementRenderDelay",
+            "label": "Element render delay",
+            "duration": 92.755
+          }
+        ],
+        "imageRequests": [
+          {
+            "url": "https://www.investdom.com.pl/logo.svg",
+            "resourceSize": 5287,
+            "transferSize": 2231,
+            "priority": "High"
+          },
+          {
+            "url": "https://www.investdom.com.pl/_astro/nowoczesny-dom-na-sprzedaz-bielsko.CFyHeYfm_ZBhGfP.avif",
+            "resourceSize": 39652,
+            "transferSize": 39857,
+            "priority": "High"
+          }
+        ],
+        "imageEstimatedWasteBytes": 0
+      },
+      {
+        "case": "projects-mobile",
+        "trial": 1,
+        "fetchTime": "2026-10-18T14:14:35.855Z",
+        "requestedUrl": "https://www.investdom.com.pl/projekty-domow",
+        "finalUrl": "https://www.investdom.com.pl/projekty-domow",
+        "lighthouseVersion": "13.5.0",
+        "scores": {
+          "performance": 100,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        },
+        "metrics": {
+          "first-contentful-paint": 930,
+          "largest-contentful-paint": 1080,
+          "total-blocking-time": 20.5,
+          "cumulative-layout-shift": 0,
+          "speed-index": 930
+        },
+        "warnings": [],
+        "runtimeError": null,
+        "agentic": {
+          "passed": 2,
+          "counted": 2
+        },
+        "failingAudits": [
+          {
+            "id": "image-delivery-insight",
+            "score": 0.5,
+            "title": "Improve image delivery"
+          },
+          {
+            "id": "network-dependency-tree-insight",
+            "score": 0,
+            "title": "Network dependency tree"
+          },
+          {
+            "id": "render-blocking-insight",
+            "score": 0,
+            "title": "Render-blocking requests"
+          }
+        ],
+        "lcpBreakdown": [
+          {
+            "subpart": "timeToFirstByte",
+            "label": "Time to first byte",
+            "duration": 80.885
+          },
+          {
+            "subpart": "resourceLoadDelay",
+            "label": "Resource load delay",
+            "duration": 24.051
+          },
+          {
+            "subpart": "resourceLoadDuration",
+            "label": "Resource load duration",
+            "duration": 184.419
+          },
+          {
+            "subpart": "elementRenderDelay",
+            "label": "Element render delay",
+            "duration": 38.306
+          }
+        ],
+        "imageRequests": [
+          {
+            "url": "https://www.investdom.com.pl/logo.svg",
+            "resourceSize": 5287,
+            "transferSize": 2231,
+            "priority": "Medium"
+          },
+          {
+            "url": "https://www.investdom.com.pl/_astro/nowoczesny-dom-na-sprzedaz-bielsko.CFyHeYfm_2ibXkw.avif",
+            "resourceSize": 24725,
+            "transferSize": 24953,
+            "priority": "High"
+          }
+        ],
+        "imageEstimatedWasteBytes": 12982
+      }
+    ],
+    "medians": {
+      "home-mobile": {
+        "scores": {
+          "performance": 97,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        },
+        "metrics": {
+          "largest-contentful-paint": 2394.0640000000003,
+          "total-blocking-time": 31,
+          "cumulative-layout-shift": 0
+        }
+      },
+      "home-desktop": {
+        "scores": {
+          "performance": 100,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        },
+        "metrics": {
+          "largest-contentful-paint": 507.3375000000001,
+          "total-blocking-time": 0,
+          "cumulative-layout-shift": 0
+        }
+      },
+      "service-mobile": {
+        "scores": {
+          "performance": 99,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        },
+        "metrics": {
+          "largest-contentful-paint": 975.7860000000001,
+          "total-blocking-time": 5.500000000000057,
+          "cumulative-layout-shift": 0
+        }
+      },
+      "offers-mobile": {
+        "scores": {
+          "performance": 100,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        },
+        "metrics": {
+          "largest-contentful-paint": 1091.75,
+          "total-blocking-time": 87.5,
+          "cumulative-layout-shift": 0
+        }
+      },
+      "projects-mobile": {
+        "scores": {
+          "performance": 100,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100
+        },
+        "metrics": {
+          "largest-contentful-paint": 1080,
+          "total-blocking-time": 20.5,
+          "cumulative-layout-shift": 0
+        }
+      }
+    },
+    "agentic_audits": [
+      {
+        "id": "agent-accessibility-tree",
+        "score": 1,
+        "mode": "binary",
+        "counted": true,
+        "pass": true
+      },
+      {
+        "id": "webmcp-form-coverage",
+        "score": null,
+        "mode": "notApplicable",
+        "counted": false,
+        "pass": false
+      },
+      {
+        "id": "webmcp-registered-tools",
+        "score": null,
+        "mode": "notApplicable",
+        "counted": false,
+        "pass": false
+      },
+      {
+        "id": "webmcp-schema-validity",
+        "score": null,
+        "mode": "notApplicable",
+        "counted": false,
+        "pass": false
+      },
+      {
+        "id": "cumulative-layout-shift",
+        "score": 1,
+        "mode": "numeric",
+        "counted": true,
+        "pass": true
+      },
+      {
+        "id": "llms-txt",
+        "score": null,
+        "mode": "notApplicable",
+        "counted": false,
+        "pass": false
+      },
+      {
+        "id": "ard-schema",
+        "score": null,
+        "mode": "notApplicable",
+        "counted": false,
+        "pass": false
+      }
+    ],
+    "limitations": [
+      "Lab results through required environment proxy, not CrUX/field INP.",
+      "Analytics hosts blocked as in the pre-deployment production baseline; runtime versions/configuration unchanged. Network and CPU variability still limit causal before/after inference.",
+      "Three home samples per device; other pages single samples.",
+      "Desktop Performance samples100/100/73; last TBT694ms retained.",
+      "Same versions and lab configuration as baseline do not remove CPU/network variability.",
+      "Performance TBT is not field INP."
+    ]
+  },
+  "baseline": {
+    "evidence": "2026-10-18-post-merge-seo-geo.json",
+    "phase": "pre-deployment production earlier the same day",
+    "lighthouse_medians": {
+      "home-mobile": {
+        "scores": {
+          "performance": 84,
+          "accessibility": 100,
+          "best-practices": 81,
+          "seo": 100
+        },
+        "metrics": {
+          "largest-contentful-paint": 3352.5,
+          "total-blocking-time": 401.5,
+          "cumulative-layout-shift": 0
+        }
+      },
+      "home-desktop": {
+        "scores": {
+          "performance": 100,
+          "accessibility": 100,
+          "best-practices": 81,
+          "seo": 100
+        },
+        "metrics": {
+          "largest-contentful-paint": 698.4314999999998,
+          "total-blocking-time": 0,
+          "cumulative-layout-shift": 0
+        }
+      },
+      "service-mobile": {
+        "scores": {
+          "performance": 98,
+          "accessibility": 100,
+          "best-practices": 81,
+          "seo": 100
+        },
+        "metrics": {
+          "largest-contentful-paint": 1025,
+          "total-blocking-time": 10.5,
+          "cumulative-layout-shift": 0
+        }
+      },
+      "offers-mobile": {
+        "scores": {
+          "performance": 98,
+          "accessibility": 100,
+          "best-practices": 81,
+          "seo": 100
+        },
+        "metrics": {
+          "largest-contentful-paint": 1022.0504999999999,
+          "total-blocking-time": 8,
+          "cumulative-layout-shift": 0
+        }
+      },
+      "projects-mobile": {
+        "scores": {
+          "performance": 100,
+          "accessibility": 100,
+          "best-practices": 81,
+          "seo": 100
+        },
+        "metrics": {
+          "largest-contentful-paint": 1171.1150000000002,
+          "total-blocking-time": 20.5,
+          "cumulative-layout-shift": 0
+        }
+      }
+    },
+    "cloudflare_overall": 20,
+    "comparison_type": "same tool/browser/config production lab; not a controlled causal experiment or field CWV"
+  },
+  "browser": {
+    "cases": [
+      {
+        "path": "/",
+        "device": "mobile",
+        "axe": {
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                {
+                  "target": [
+                    "h1"
+                  ],
+                  "reasons": [
+                    "Element's background color could not be determined due to a background gradient"
+                  ]
+                },
+                {
+                  "target": [
+                    ".lg\\:text-5xl"
+                  ],
+                  "reasons": [
+                    "Element's background color could not be determined due to a background gradient"
+                  ]
+                },
+                {
+                  "target": [
+                    ".md\\:text-xl"
+                  ],
+                  "reasons": [
+                    "Element's background color could not be determined due to a background gradient"
+                  ]
+                },
+                {
+                  "target": [
+                    ".bg-stone-100"
+                  ],
+                  "reasons": [
+                    "Element's background color could not be determined because it partially overlaps other elements"
+                  ]
+                },
+                {
+                  "target": [
+                    ".inline-block.py-2.bg-white\\/10"
+                  ],
+                  "reasons": [
+                    "Element's background color could not be determined because it's partially obscured by another element"
+                  ]
+                },
+                {
+                  "target": [
+                    ".max-w-3xl.mb-16.mx-auto > h2"
+                  ],
+                  "reasons": [
+                    "Element's background color could not be determined because it partially overlaps other elements"
+                  ]
+                },
+                {
+                  "target": [
+                    ".md\\:text-5xl"
+                  ],
+                  "reasons": [
+                    "Element's background color could not be determined because it's partially obscured by another element"
+                  ]
+                },
+                {
+                  "target": [
+                    ".max-w-md"
+                  ],
+                  "reasons": [
+                    "Element's background color could not be determined because it's partially obscured by another element"
+                  ]
+                },
+                {
+                  "target": [
+                    ".hover\\:text-sky-300[href=\"tel:+48571328993\"][data-astro-reload=\"\"]"
+                  ],
+                  "reasons": [
+                    "Element's background color could not be determined because it's partially obscured by another element"
+                  ]
+                },
+                {
+                  "target": [
+                    ".hover\\:text-sky-300[href=\"mailto:kontakt@investdom.pl\"][data-astro-reload=\"\"]"
+                  ],
+                  "reasons": [
+                    "Element's background color could not be determined because it's partially obscured by another element"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "status": 200,
+        "errors": [],
+        "dom": {
+          "width": 375,
+          "scrollWidth": 375,
+          "h1": [
+            "Kompleksowa Budowa Domów w  Bielsku-Białej i na Śląsku"
+          ],
+          "form": {
+            "method": "post",
+            "action": "/api/contact",
+            "enhanced": "true"
+          },
+          "images": [
+            {
+              "alt": "InvestDom Logo",
+              "currentSrc": "https://www.investdom.com.pl/logo.svg",
+              "rendered": [
+                184,
+                40
+              ],
+              "natural": [
+                875,
+                190
+              ],
+              "loading": "auto",
+              "fetchPriority": "auto"
+            },
+            {
+              "alt": "Dom jednorodzinny zrealizowany przez INVESTDOM — widok elewacji i ogrodu",
+              "currentSrc": "https://www.investdom.com.pl/_astro/budowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv_1PvhWH.avif",
+              "rendered": [
+                375,
+                731
+              ],
+              "natural": [
+                974,
+                730
+              ],
+              "loading": "eager",
+              "fetchPriority": "high"
+            },
+            {
+              "alt": "Dom jednorodzinny zrealizowany przez INVESTDOM — widok elewacji i ogrodu",
+              "currentSrc": "https://www.investdom.com.pl/_astro/budowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv_Z12oRK2.avif",
+              "rendered": [
+                343,
+                400
+              ],
+              "natural": [
+                534,
+                400
+              ],
+              "loading": "lazy",
+              "fetchPriority": "auto"
+            },
+            {
+              "alt": "Dom z pierwszego etapu inwestycji INVESTDOM w Pisarzowicach",
+              "currentSrc": "",
+              "rendered": [
+                341,
+                300
+              ],
+              "natural": [
+                0,
+                0
+              ],
+              "loading": "lazy",
+              "fetchPriority": "auto"
+            },
+            {
+              "alt": "InvestDom Logo",
+              "currentSrc": "https://www.investdom.com.pl/logo.svg",
+              "rendered": [
+                184,
+                40
+              ],
+              "natural": [
+                875,
+                190
+              ],
+              "loading": "auto",
+              "fetchPriority": "auto"
+            }
+          ],
+          "fonts": {
+            "h1": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+            "p": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+            "input": "Inter, sans-serif"
+          }
+        }
+      },
+      {
+        "path": "/budowa-domow-pod-klucz",
+        "device": "mobile",
+        "axe": {
+          "violations": [],
+          "incomplete": []
+        },
+        "status": 200,
+        "errors": [],
+        "dom": {
+          "width": 375,
+          "scrollWidth": 375,
+          "h1": [
+            "Budowa domów pod klucz – krok po kroku"
+          ],
+          "form": null,
+          "images": [
+            {
+              "alt": "InvestDom Logo",
+              "currentSrc": "https://www.investdom.com.pl/logo.svg",
+              "rendered": [
+                184,
+                40
+              ],
+              "natural": [
+                875,
+                190
+              ],
+              "loading": "auto",
+              "fetchPriority": "auto"
+            },
+            {
+              "alt": "InvestDom Logo",
+              "currentSrc": "https://www.investdom.com.pl/logo.svg",
+              "rendered": [
+                184,
+                40
+              ],
+              "natural": [
+                875,
+                190
+              ],
+              "loading": "auto",
+              "fetchPriority": "auto"
+            }
+          ],
+          "fonts": {
+            "h1": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+            "p": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\""
+          }
+        }
+      },
+      {
+        "path": "/domy-na-sprzedaz-bielsko",
+        "device": "mobile",
+        "axe": {
+          "violations": [],
+          "incomplete": []
+        },
+        "status": 200,
+        "errors": [],
+        "dom": {
+          "width": 375,
+          "scrollWidth": 375,
+          "h1": [
+            "Nowe domy na sprzedaż w Bielsku-Białej"
+          ],
+          "form": null,
+          "images": [
+            {
+              "alt": "InvestDom Logo",
+              "currentSrc": "https://www.investdom.com.pl/logo.svg",
+              "rendered": [
+                184,
+                40
+              ],
+              "natural": [
+                875,
+                190
+              ],
+              "loading": "auto",
+              "fetchPriority": "auto"
+            },
+            {
+              "alt": "Dom z pierwszego etapu inwestycji INVESTDOM w Pisarzowicach",
+              "currentSrc": "https://www.investdom.com.pl/_astro/nowoczesny-dom-na-sprzedaz-bielsko.CFyHeYfm_Z248vfr.avif",
+              "rendered": [
+                341,
+                256
+              ],
+              "natural": [
+                343,
+                257
+              ],
+              "loading": "eager",
+              "fetchPriority": "high"
+            },
+            {
+              "alt": "InvestDom Logo",
+              "currentSrc": "https://www.investdom.com.pl/logo.svg",
+              "rendered": [
+                184,
+                40
+              ],
+              "natural": [
+                875,
+                190
+              ],
+              "loading": "auto",
+              "fetchPriority": "auto"
+            }
+          ],
+          "fonts": {
+            "h1": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+            "p": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\""
+          }
+        }
+      },
+      {
+        "path": "/projekty-domow",
+        "device": "mobile",
+        "axe": {
+          "violations": [],
+          "incomplete": []
+        },
+        "status": 200,
+        "errors": [],
+        "dom": {
+          "width": 375,
+          "scrollWidth": 375,
+          "h1": [
+            "Autorskie Projekty Domów"
+          ],
+          "form": null,
+          "images": [
+            {
+              "alt": "InvestDom Logo",
+              "currentSrc": "https://www.investdom.com.pl/logo.svg",
+              "rendered": [
+                184,
+                40
+              ],
+              "natural": [
+                875,
+                190
+              ],
+              "loading": "auto",
+              "fetchPriority": "auto"
+            },
+            {
+              "alt": "Dom z pierwszego etapu inwestycji INVESTDOM w Pisarzowicach — ilustracja projektu",
+              "currentSrc": "https://www.investdom.com.pl/_astro/nowoczesny-dom-na-sprzedaz-bielsko.CFyHeYfm_Z248vfr.avif",
+              "rendered": [
+                309,
+                160
+              ],
+              "natural": [
+                311,
+                233
+              ],
+              "loading": "eager",
+              "fetchPriority": "high"
+            },
+            {
+              "alt": "InvestDom Logo",
+              "currentSrc": "https://www.investdom.com.pl/logo.svg",
+              "rendered": [
+                184,
+                40
+              ],
+              "natural": [
+                875,
+                190
+              ],
+              "loading": "auto",
+              "fetchPriority": "auto"
+            }
+          ],
+          "fonts": {
+            "h1": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+            "p": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\""
+          }
+        }
+      },
+      {
+        "path": "/",
+        "device": "desktop",
+        "axe": {
+          "violations": [],
+          "incomplete": [
+            {
+              "id": "color-contrast",
+              "nodes": [
+                {
+                  "target": [
+                    ".md\\:flex > .hover\\:text-navy-900[data-section-link=\"o-firmie\"][href$=\"/#o-firmie\"] > span[data-section-label=\"\"][data-astro-cid-qlfjksao=\"\"]"
+                  ],
+                  "reasons": [
+                    "Element's background color could not be determined due to a background gradient"
+                  ]
+                },
+                {
+                  "target": [
+                    ".md\\:flex > .hover\\:text-navy-900[href$=\"/#domy\"][data-section-link=\"domy\"] > span[data-section-label=\"\"][data-astro-cid-qlfjksao=\"\"]"
+                  ],
+                  "reasons": [
+                    "Element's background color could not be determined due to a background gradient"
+                  ]
+                },
+                {
+                  "target": [
+                    ".md\\:flex > .hover\\:text-navy-900[data-section-link=\"uslugi\"][href$=\"/#uslugi\"] > span[data-section-label=\"\"][data-astro-cid-qlfjksao=\"\"]"
+                  ],
+                  "reasons": [
+                    "Element's background color could not be determined due to a background gradient"
+                  ]
+                },
+                {
+                  "target": [
+                    "h1"
+                  ],
+                  "reasons": [
+                    "Element's background color could not be determined due to a background gradient"
+                  ]
+                },
+                {
+                  "target": [
+                    ".lg\\:text-5xl"
+                  ],
+                  "reasons": [
+                    "Element's background color could not be determined due to a background gradient"
+                  ]
+                },
+                {
+                  "target": [
+                    ".md\\:text-xl"
+                  ],
+                  "reasons": [
+                    "Element's background color could not be determined due to a background gradient"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "status": 200,
+        "errors": [],
+        "dom": {
+          "width": 1440,
+          "scrollWidth": 1440,
+          "h1": [
+            "Kompleksowa Budowa Domów w  Bielsku-Białej i na Śląsku"
+          ],
+          "form": {
+            "method": "post",
+            "action": "/api/contact",
+            "enhanced": "true"
+          },
+          "images": [
+            {
+              "alt": "InvestDom Logo",
+              "currentSrc": "https://www.investdom.com.pl/logo.svg",
+              "rendered": [
+                184,
+                40
+              ],
+              "natural": [
+                875,
+                190
+              ],
+              "loading": "auto",
+              "fetchPriority": "auto"
+            },
+            {
+              "alt": "Dom jednorodzinny zrealizowany przez INVESTDOM — widok elewacji i ogrodu",
+              "currentSrc": "https://www.investdom.com.pl/_astro/budowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv_Z1OXMDw.avif",
+              "rendered": [
+                1440,
+                900
+              ],
+              "natural": [
+                1440,
+                1080
+              ],
+              "loading": "eager",
+              "fetchPriority": "high"
+            },
+            {
+              "alt": "Dom jednorodzinny zrealizowany przez INVESTDOM — widok elewacji i ogrodu",
+              "currentSrc": "https://www.investdom.com.pl/_astro/budowa-domu-jednorodzinnego-bielsko-biala.purg6Dsv_Z12oRK2.avif",
+              "rendered": [
+                584,
+                400
+              ],
+              "natural": [
+                584,
+                438
+              ],
+              "loading": "lazy",
+              "fetchPriority": "auto"
+            },
+            {
+              "alt": "Dom z pierwszego etapu inwestycji INVESTDOM w Pisarzowicach",
+              "currentSrc": "",
+              "rendered": [
+                607,
+                533
+              ],
+              "natural": [
+                0,
+                0
+              ],
+              "loading": "lazy",
+              "fetchPriority": "auto"
+            },
+            {
+              "alt": "InvestDom Logo",
+              "currentSrc": "https://www.investdom.com.pl/logo.svg",
+              "rendered": [
+                184,
+                40
+              ],
+              "natural": [
+                875,
+                190
+              ],
+              "loading": "auto",
+              "fetchPriority": "auto"
+            }
+          ],
+          "fonts": {
+            "h1": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+            "p": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+            "input": "Inter, sans-serif"
+          }
+        }
+      },
+      {
+        "path": "/budowa-domow-pod-klucz",
+        "device": "desktop",
+        "axe": {
+          "violations": [],
+          "incomplete": []
+        },
+        "status": 200,
+        "errors": [],
+        "dom": {
+          "width": 1440,
+          "scrollWidth": 1440,
+          "h1": [
+            "Budowa domów pod klucz – krok po kroku"
+          ],
+          "form": null,
+          "images": [
+            {
+              "alt": "InvestDom Logo",
+              "currentSrc": "https://www.investdom.com.pl/logo.svg",
+              "rendered": [
+                184,
+                40
+              ],
+              "natural": [
+                875,
+                190
+              ],
+              "loading": "auto",
+              "fetchPriority": "auto"
+            },
+            {
+              "alt": "InvestDom Logo",
+              "currentSrc": "https://www.investdom.com.pl/logo.svg",
+              "rendered": [
+                184,
+                40
+              ],
+              "natural": [
+                875,
+                190
+              ],
+              "loading": "auto",
+              "fetchPriority": "auto"
+            }
+          ],
+          "fonts": {
+            "h1": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+            "p": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\""
+          }
+        }
+      },
+      {
+        "path": "/domy-na-sprzedaz-bielsko",
+        "device": "desktop",
+        "axe": {
+          "violations": [],
+          "incomplete": []
+        },
+        "status": 200,
+        "errors": [],
+        "dom": {
+          "width": 1440,
+          "scrollWidth": 1440,
+          "h1": [
+            "Nowe domy na sprzedaż w Bielsku-Białej"
+          ],
+          "form": null,
+          "images": [
+            {
+              "alt": "InvestDom Logo",
+              "currentSrc": "https://www.investdom.com.pl/logo.svg",
+              "rendered": [
+                184,
+                40
+              ],
+              "natural": [
+                875,
+                190
+              ],
+              "loading": "auto",
+              "fetchPriority": "auto"
+            },
+            {
+              "alt": "Dom z pierwszego etapu inwestycji INVESTDOM w Pisarzowicach",
+              "currentSrc": "https://www.investdom.com.pl/_astro/nowoczesny-dom-na-sprzedaz-bielsko.CFyHeYfm_2ibXkw.avif",
+              "rendered": [
+                590,
+                256
+              ],
+              "natural": [
+                592,
+                444
+              ],
+              "loading": "eager",
+              "fetchPriority": "high"
+            },
+            {
+              "alt": "InvestDom Logo",
+              "currentSrc": "https://www.investdom.com.pl/logo.svg",
+              "rendered": [
+                184,
+                40
+              ],
+              "natural": [
+                875,
+                190
+              ],
+              "loading": "auto",
+              "fetchPriority": "auto"
+            }
+          ],
+          "fonts": {
+            "h1": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+            "p": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\""
+          }
+        }
+      },
+      {
+        "path": "/projekty-domow",
+        "device": "desktop",
+        "axe": {
+          "violations": [],
+          "incomplete": []
+        },
+        "status": 200,
+        "errors": [],
+        "dom": {
+          "width": 1440,
+          "scrollWidth": 1440,
+          "h1": [
+            "Autorskie Projekty Domów"
+          ],
+          "form": null,
+          "images": [
+            {
+              "alt": "InvestDom Logo",
+              "currentSrc": "https://www.investdom.com.pl/logo.svg",
+              "rendered": [
+                184,
+                40
+              ],
+              "natural": [
+                875,
+                190
+              ],
+              "loading": "auto",
+              "fetchPriority": "auto"
+            },
+            {
+              "alt": "Dom z pierwszego etapu inwestycji INVESTDOM w Pisarzowicach — ilustracja projektu",
+              "currentSrc": "https://www.investdom.com.pl/_astro/nowoczesny-dom-na-sprzedaz-bielsko.CFyHeYfm_Z248vfr.avif",
+              "rendered": [
+                252,
+                160
+              ],
+              "natural": [
+                254,
+                190
+              ],
+              "loading": "eager",
+              "fetchPriority": "high"
+            },
+            {
+              "alt": "InvestDom Logo",
+              "currentSrc": "https://www.investdom.com.pl/logo.svg",
+              "rendered": [
+                184,
+                40
+              ],
+              "natural": [
+                875,
+                190
+              ],
+              "loading": "auto",
+              "fetchPriority": "auto"
+            }
+          ],
+          "fonts": {
+            "h1": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+            "p": "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\""
+          }
+        }
+      }
+    ],
+    "interactions": [
+      {
+        "name": "Direct contact URL focuses form; settled scrollspy marks contact",
+        "passed": true,
+        "details": {
+          "focus": "contact-form",
+          "active": [
+            "kontakt",
+            "kontakt"
+          ]
+        }
+      },
+      {
+        "name": "Scrollspy follows actual section without changing hash",
+        "passed": true,
+        "details": {
+          "active": "domy",
+          "urlUnchanged": true
+        }
+      },
+      {
+        "name": "Mobile menu accessibility and Escape focus",
+        "passed": true,
+        "details": {
+          "escapeFocusRestored": true,
+          "closedMenuInert": true
+        }
+      },
+      {
+        "name": "Important content and native POST available with JavaScript off",
+        "passed": true,
+        "details": true
+      }
+    ],
+    "limitations": [
+      "Chromium emulation, not physical Safari or screen-reader audit.",
+      "GA/gtag transport blocked as in pre-deployment baseline; service workers allowed.",
+      "No form submitted or filled; no production messages.",
+      "axe incomplete contrast checks need manual assessment."
+    ],
+    "browser": "154.0.8037.57"
+  },
+  "geo": {
+    "resolved": [
+      "Nonoffered renovations removed from all 4 production HTML pages",
+      "Offer description no longer calls Pisarzowice a district",
+      "Project description no longer promises unsupported multi-type catalogue",
+      "Photo ALT identifies stage I in home/offer/project",
+      "Confirmed property numeric values consistent across views"
+    ],
+    "top5": [
+      {
+        "id": "GEO-01",
+        "priority": "P1",
+        "status": "partially_fixed",
+        "title": "Ujednoznacznić aktualną ofertę i miejscowość",
+        "url": "https://www.investdom.com.pl/domy-na-sprzedaz-bielsko",
+        "evidence": "Description poprawnie Pisarzowice koło Bielska-Białej; H1 wyłącznie Bielsko, intro gotowych domów i dzielnicy, karta rozpoczynanego II etapu w Pisarzowicach.",
+        "acceptance": "H1, intro, meta i karta zgodne co do miejscowości oraz etapu; dodatkowe informacje o cenie/standardzie/terminie potwierdzone.",
+        "dependency": "Właściciel: aktualny etap, dostępność, zakres ceny i rodzaj powierzchni."
+      },
+      {
+        "id": "GEO-02",
+        "priority": "P1/P2",
+        "status": "partially_fixed",
+        "title": "Widoczne podpisy zdjęć i dokumentacja rzeczywistej realizacji",
+        "url": "https://www.investdom.com.pl/",
+        "evidence": "ALT na 3 widokach poprawione na etap I, nadal brak widocznego podpisu przy zdjęciu w kartach II etapu; informacja istnieje w opisie sprzedaży.",
+        "acceptance": "Etap fotografii widoczny bez odczytu ALT; materiały i opis realizacji potwierdzone, prawa do publikacji zapewnione.",
+        "dependency": "Właściciel: zdjęcia/rzuty, daty/zakres/prawa i potwierdzenie sześciu sprzedanych domów."
+      },
+      {
+        "id": "GEO-03",
+        "priority": "P1",
+        "status": "open",
+        "title": "Zatwierdzić koszty, terminy i obietnice",
+        "url": "https://www.investdom.com.pl/",
+        "evidence": "FAQ 3000–3500 PLN netto/m², 9–14 oraz 3–4 miesięcy; 15+ lat, 100% klientów, gwarancja terminowości, odpowiedź24h bez publicznego uzasadnienia. Nie ustalono fałszywości.",
+        "acceptance": "Potwierdzona podstawa i zakres wszystkich liczb; brak nieuzasadnionych absolutnych obietnic; FAQ HTML/JSON-LD zgodne.",
+        "dependency": "Właściciel zatwierdza fakty i warunki; potwierdzenie oferty nie obejmuje automatycznie FAQ."
+      },
+      {
+        "id": "GEO-04",
+        "priority": "P2",
+        "status": "partially_fixed",
+        "title": "Potwierdzić autorstwo i zakres strony projektu",
+        "url": "https://www.investdom.com.pl/projekty-domow",
+        "evidence": "Description ograniczono do prezentowanego projektu; title/H1 nadal Autorskie; jedna karta, brak autora/rzutu/licencji.",
+        "acceptance": "Autorskie udokumentowane lub zastąpione; opis, parametry, materiały i linki zgodne z rzeczywistą funkcją projektu.",
+        "dependency": "Właściciel: autor, prawa i zakres adaptacji."
+      },
+      {
+        "id": "GEO-05",
+        "priority": "P2",
+        "status": "open",
+        "title": "Tożsamość wykonawcy i zweryfikowany profil lokalny",
+        "url": "https://www.investdom.com.pl/",
+        "evidence": "Zgodny NAP i sameAs; brak widocznego GBP linku i rozwiniętej tożsamości wykonawcy. GBP HTML to powłoka, pola/opinie nieodczytane.",
+        "acceptance": "Potwierdzona relacja marki do firmy; zgodne dane witryna/schema/GBP; działający widoczny link i prawdziwe referencje.",
+        "dependency": "Właściciel: panel GBP/tożsamość i autentyczne referencje."
+      }
+    ],
+    "contactDependency": {
+      "visibleEmail": "kontakt@investdom.pl",
+      "sourceFallbackEmail": "kontakt@investdom.com.pl",
+      "productionContactEmailOverride": "unknown",
+      "delivery": "not tested; no real submissions",
+      "acceptance": "Owner confirms destination and delivery in authorized live test"
+    },
+    "gbp": {
+      "ownerLink": "https://share.google/O1Nye5JlpKbt5C3nc",
+      "entityId": "/g/11yn13tdbh",
+      "queryName": "FIRMA USŁUGOWA INVEST DOM Paduch Andrzej",
+      "verifiedFields": [],
+      "notVerified": [
+        "phone",
+        "address",
+        "category",
+        "hours",
+        "verification",
+        "reviewRating",
+        "reviewCount"
+      ],
+      "reason": "Returned Google JS/redirection shell"
+    },
+    "searchSample": {
+      "freshQueries": true,
+      "measurement": "Small general web-search sample; no controlled Google/LocalPack rank or LLM citations",
+      "foundFirstPartyPages": [
+        "home",
+        "service",
+        "projects"
+      ],
+      "staleSnippets": [
+        "homepage renovations",
+        "service phone ending983; currentlive993"
+      ],
+      "socialDomainQueriesNoResults": [
+        "YouTube",
+        "Facebook",
+        "LinkedIn",
+        "Reddit"
+      ],
+      "thirdPartyCandidatesIdentityUnconfirmed": [
+        "GoWork",
+        "CABB",
+        "Panorama Firm"
+      ],
+      "noResultDoesNotProveAbsence": true
+    },
+    "platformVisibility": {
+      "GoogleAIOverviews": "not measured",
+      "GoogleAIMode": "not measured",
+      "ChatGPTSearch": "not measured",
+      "ClaudeSearch": "not measured",
+      "Perplexity": "not measured"
+    },
+    "geoScore": null,
+    "localScore": null,
+    "reasonNoScore": "No actual visibility, account or GBP/review measurement; report verifiable readiness findings instead of invented AI visibility points.",
+    "primarySources": [
+      "https://developers.google.com/search/docs/fundamentals/ai-optimization-guide",
+      "https://support.google.com/webmasters/answer/16908024",
+      "https://support.google.com/webmasters/answer/16984139",
+      "https://developers.openai.com/api/docs/bots",
+      "https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler",
+      "https://docs.perplexity.ai/docs/resources/perplexity-crawlers",
+      "https://support.google.com/business/answer/7091?hl=en",
+      "https://support.google.com/business/answer/3038177?hl=en",
+      "https://developers.google.com/search/updates",
+      "https://gmina.wilamowice.pl/strona/144-solectwa"
+    ],
+    "limitations": [
+      "No GSC/GBP/Bing accounts or full backlink/local-grid history",
+      "No real LLM recommendation tests or authenticated crawler logs",
+      "No email delivery test or external writes",
+      "Bot UA, WAF and Lighthouse handled in main audit"
+    ]
+  },
+  "ai_http": {
+    "checked_at": "2026-10-18T14:12:44.414941+00:00",
+    "ua_matrix": [
+      {
+        "url": "https://www.investdom.com.pl/",
+        "final_url": "https://www.investdom.com.pl/",
+        "status": 200,
+        "headers": {
+          "content-type": "text/html; charset=utf-8",
+          "cache-control": "public, max-age=0, must-revalidate",
+          "content-length": "57399",
+          "strict-transport-security": "max-age=63072000"
+        },
+        "bytes": 57399,
+        "sha256": "67ee839921e77e9d689443496b96d071332d5ec20e61f7e6cf8584304a32bf02",
+        "token": "Googlebot",
+        "purpose": "search",
+        "robots_allows": true,
+        "title": "Budowa Domów Bielsko-Biała | Nowe Domy na Sprzedaż | INVESTDOM",
+        "unverified_ua_only": true
+      },
+      {
+        "url": "https://www.investdom.com.pl/",
+        "final_url": "https://www.investdom.com.pl/",
+        "status": 200,
+        "headers": {
+          "content-type": "text/html; charset=utf-8",
+          "cache-control": "public, max-age=0, must-revalidate",
+          "content-length": "57399",
+          "strict-transport-security": "max-age=63072000"
+        },
+        "bytes": 57399,
+        "sha256": "67ee839921e77e9d689443496b96d071332d5ec20e61f7e6cf8584304a32bf02",
+        "token": "Bingbot",
+        "purpose": "search",
+        "robots_allows": true,
+        "title": "Budowa Domów Bielsko-Biała | Nowe Domy na Sprzedaż | INVESTDOM",
+        "unverified_ua_only": true
+      },
+      {
+        "url": "https://www.investdom.com.pl/",
+        "final_url": "https://www.investdom.com.pl/",
+        "status": 200,
+        "headers": {
+          "content-type": "text/html; charset=utf-8",
+          "cache-control": "public, max-age=0, must-revalidate",
+          "content-length": "57399",
+          "strict-transport-security": "max-age=63072000"
+        },
+        "bytes": 57399,
+        "sha256": "67ee839921e77e9d689443496b96d071332d5ec20e61f7e6cf8584304a32bf02",
+        "token": "OAI-SearchBot",
+        "purpose": "search",
+        "robots_allows": true,
+        "title": "Budowa Domów Bielsko-Biała | Nowe Domy na Sprzedaż | INVESTDOM",
+        "unverified_ua_only": true
+      },
+      {
+        "url": "https://www.investdom.com.pl/",
+        "final_url": "https://www.investdom.com.pl/",
+        "status": 200,
+        "headers": {
+          "content-type": "text/html; charset=utf-8",
+          "cache-control": "public, max-age=0, must-revalidate",
+          "content-length": "57399",
+          "strict-transport-security": "max-age=63072000"
+        },
+        "bytes": 57399,
+        "sha256": "67ee839921e77e9d689443496b96d071332d5ec20e61f7e6cf8584304a32bf02",
+        "token": "Claude-SearchBot",
+        "purpose": "search",
+        "robots_allows": true,
+        "title": "Budowa Domów Bielsko-Biała | Nowe Domy na Sprzedaż | INVESTDOM",
+        "unverified_ua_only": true
+      },
+      {
+        "url": "https://www.investdom.com.pl/",
+        "final_url": "https://www.investdom.com.pl/",
+        "status": 200,
+        "headers": {
+          "content-type": "text/html; charset=utf-8",
+          "cache-control": "public, max-age=0, must-revalidate",
+          "content-length": "57399",
+          "strict-transport-security": "max-age=63072000"
+        },
+        "bytes": 57399,
+        "sha256": "67ee839921e77e9d689443496b96d071332d5ec20e61f7e6cf8584304a32bf02",
+        "token": "PerplexityBot",
+        "purpose": "search",
+        "robots_allows": true,
+        "title": "Budowa Domów Bielsko-Biała | Nowe Domy na Sprzedaż | INVESTDOM",
+        "unverified_ua_only": true
+      },
+      {
+        "url": "https://www.investdom.com.pl/",
+        "final_url": "https://www.investdom.com.pl/",
+        "status": 200,
+        "headers": {
+          "content-type": "text/html; charset=utf-8",
+          "cache-control": "public, max-age=0, must-revalidate",
+          "content-length": "57399",
+          "strict-transport-security": "max-age=63072000"
+        },
+        "bytes": 57399,
+        "sha256": "67ee839921e77e9d689443496b96d071332d5ec20e61f7e6cf8584304a32bf02",
+        "token": "ChatGPT-User",
+        "purpose": "user-triggered",
+        "robots_allows": true,
+        "title": "Budowa Domów Bielsko-Biała | Nowe Domy na Sprzedaż | INVESTDOM",
+        "unverified_ua_only": true
+      },
+      {
+        "url": "https://www.investdom.com.pl/",
+        "final_url": "https://www.investdom.com.pl/",
+        "status": 200,
+        "headers": {
+          "content-type": "text/html; charset=utf-8",
+          "cache-control": "public, max-age=0, must-revalidate",
+          "content-length": "57399",
+          "strict-transport-security": "max-age=63072000"
+        },
+        "bytes": 57399,
+        "sha256": "67ee839921e77e9d689443496b96d071332d5ec20e61f7e6cf8584304a32bf02",
+        "token": "Claude-User",
+        "purpose": "user-triggered",
+        "robots_allows": true,
+        "title": "Budowa Domów Bielsko-Biała | Nowe Domy na Sprzedaż | INVESTDOM",
+        "unverified_ua_only": true
+      },
+      {
+        "url": "https://www.investdom.com.pl/",
+        "final_url": "https://www.investdom.com.pl/",
+        "status": 200,
+        "headers": {
+          "content-type": "text/html; charset=utf-8",
+          "cache-control": "public, max-age=0, must-revalidate",
+          "content-length": "57399",
+          "strict-transport-security": "max-age=63072000"
+        },
+        "bytes": 57399,
+        "sha256": "67ee839921e77e9d689443496b96d071332d5ec20e61f7e6cf8584304a32bf02",
+        "token": "Perplexity-User",
+        "purpose": "user-triggered",
+        "robots_allows": true,
+        "title": "Budowa Domów Bielsko-Biała | Nowe Domy na Sprzedaż | INVESTDOM",
+        "unverified_ua_only": true
+      },
+      {
+        "url": "https://www.investdom.com.pl/",
+        "final_url": "https://www.investdom.com.pl/",
+        "status": 200,
+        "headers": {
+          "content-type": "text/html; charset=utf-8",
+          "cache-control": "public, max-age=0, must-revalidate",
+          "content-length": "57399",
+          "strict-transport-security": "max-age=63072000"
+        },
+        "bytes": 57399,
+        "sha256": "67ee839921e77e9d689443496b96d071332d5ec20e61f7e6cf8584304a32bf02",
+        "token": "GPTBot",
+        "purpose": "training",
+        "robots_allows": true,
+        "title": "Budowa Domów Bielsko-Biała | Nowe Domy na Sprzedaż | INVESTDOM",
+        "unverified_ua_only": true
+      },
+      {
+        "url": "https://www.investdom.com.pl/",
+        "final_url": "https://www.investdom.com.pl/",
+        "status": 200,
+        "headers": {
+          "content-type": "text/html; charset=utf-8",
+          "cache-control": "public, max-age=0, must-revalidate",
+          "content-length": "57399",
+          "strict-transport-security": "max-age=63072000"
+        },
+        "bytes": 57399,
+        "sha256": "67ee839921e77e9d689443496b96d071332d5ec20e61f7e6cf8584304a32bf02",
+        "token": "ClaudeBot",
+        "purpose": "training",
+        "robots_allows": true,
+        "title": "Budowa Domów Bielsko-Biała | Nowe Domy na Sprzedaż | INVESTDOM",
+        "unverified_ua_only": true
+      }
+    ],
+    "checks": [
+      {
+        "url": "https://www.investdom.com.pl/llms.txt",
+        "final_url": "https://www.investdom.com.pl/llms.txt",
+        "status": 404,
+        "headers": {
+          "content-type": "text/plain; charset=utf-8",
+          "cache-control": "public, max-age=0, must-revalidate",
+          "content-length": "79",
+          "strict-transport-security": "max-age=63072000"
+        },
+        "bytes": 79,
+        "sha256": "44fdba56ce72261755de728d0d138869845a5d15ad6dd1192b6d941713d00d82",
+        "body_preview": "The page could not be found\n\nNOT_FOUND\n\ncle1::ldgjz-1792332759624-ff9a063e8147\n"
+      },
+      {
+        "url": "https://www.investdom.com.pl/.well-known/ai-catalog.json",
+        "final_url": "https://www.investdom.com.pl/.well-known/ai-catalog.json",
+        "status": 404,
+        "headers": {
+          "content-type": "text/plain; charset=utf-8",
+          "cache-control": "public, max-age=0, must-revalidate",
+          "content-length": "79",
+          "strict-transport-security": "max-age=63072000"
+        },
+        "bytes": 79,
+        "sha256": "262a9683fb31c18e9681bb1fdfb95dcd6dd5f6d8d0a68b03f97c470b74709c47",
+        "body_preview": "The page could not be found\n\nNOT_FOUND\n\ncle1::xk2f5-1792332761384-33e7f54c1c85\n"
+      },
+      {
+        "url": "https://www.investdom.com.pl/api/contact",
+        "final_url": "https://www.investdom.com.pl/api/contact",
+        "status": 404,
+        "headers": {
+          "content-type": "text/html",
+          "cache-control": "public, max-age=0, must-revalidate",
+          "strict-transport-security": "max-age=63072000"
+        },
+        "bytes": 4305,
+        "sha256": "2650b43699981c50f67520b862a16989583680f9f1ccebe6d03a2bf6d2c36cc0",
+        "body_preview": "<!doctype html>\n<html lang=\"en\">\n\t<head>\n\t\t<meta charset=\"UTF-8\">\n\t\t<title>404: Not Found</title>\n\t\t<style>\n\t\t\t:root {\n\t"
+      },
+      {
+        "url": "https://www.investdom.com.pl/",
+        "final_url": "https://www.investdom.com.pl/",
+        "status": 200,
+        "headers": {
+          "content-type": "text/html; charset=utf-8",
+          "cache-control": "public, max-age=0, must-revalidate",
+          "content-length": "57399",
+          "strict-transport-security": "max-age=63072000"
+        },
+        "bytes": 57399,
+        "sha256": "67ee839921e77e9d689443496b96d071332d5ec20e61f7e6cf8584304a32bf02",
+        "body_preview": "<!DOCTYPE html><html lang=\"pl\" class=\"scroll-smooth\"> <head><meta charset=\"UTF-8\"><meta name=\"description\" content=\"Szuk"
+      }
+    ],
+    "robots": {
+      "url": "https://www.investdom.com.pl/robots.txt",
+      "final_url": "https://www.investdom.com.pl/robots.txt",
+      "status": 200,
+      "headers": {
+        "content-type": "text/plain; charset=utf-8",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "content-length": "133",
+        "strict-transport-security": "max-age=63072000"
+      },
+      "bytes": 133,
+      "sha256": "d46c2837df8aaf66789b5fbc314a23aee0bc6a5e210370b34c2214fbb02327cc",
+      "body": "# robots.txt for investdom.com.pl\nUser-agent: *\nAllow: /\n\n# Sitemap location\nSitemap: https://www.investdom.com.pl/sitemap-index.xml\n"
+    },
+    "limitations": [
+      "User-Agent strings are unverified traffic from one environment; not proof of verified crawler visits, indexing or citations.",
+      "No production form submitted.",
+      "Search, training and user-triggered purposes assessed separately."
+    ]
+  },
+  "agent_readiness": {
+    "provider": "isitagentready.com",
+    "scannedAt": "2026-10-18T14:14:26.195Z",
+    "level": 1,
+    "levelName": "Basic Web Presence",
+    "passed": 3,
+    "counted": 15,
+    "overall": 20,
+    "counting": "Non-neutral pass/fail, no commerce or informational PersonalAgentProtocol; same16selected checks as baseline.",
+    "checks": [
+      {
+        "group": "discoverability",
+        "id": "robotsTxt",
+        "status": "pass",
+        "counted": true,
+        "message": "robots.txt exists with valid format"
+      },
+      {
+        "group": "discoverability",
+        "id": "sitemap",
+        "status": "pass",
+        "counted": true,
+        "message": "sitemap.xml exists with valid structure"
+      },
+      {
+        "group": "discoverability",
+        "id": "linkHeaders",
+        "status": "fail",
+        "counted": true,
+        "message": "No Link headers found on target page"
+      },
+      {
+        "group": "discoverability",
+        "id": "dnsAid",
+        "status": "fail",
+        "counted": true,
+        "message": "DNS for AI Discovery (DNS-AID) well-known entrypoint records not found"
+      },
+      {
+        "group": "contentAccessibility",
+        "id": "markdownNegotiation",
+        "status": "fail",
+        "counted": true,
+        "message": "Site does not support Markdown for Agents"
+      },
+      {
+        "group": "botAccessControl",
+        "id": "robotsTxtAiRules",
+        "status": "pass",
+        "counted": true,
+        "message": "No AI-specific bot rules; wildcard rules apply to all crawlers including AI bots"
+      },
+      {
+        "group": "botAccessControl",
+        "id": "contentSignals",
+        "status": "fail",
+        "counted": true,
+        "message": "No Content Signals found in robots.txt"
+      },
+      {
+        "group": "botAccessControl",
+        "id": "webBotAuth",
+        "status": "neutral",
+        "counted": false,
+        "message": "Web Bot Auth directory not found (informational only)"
+      },
+      {
+        "group": "discovery",
+        "id": "apiCatalog",
+        "status": "fail",
+        "counted": true,
+        "message": "API Catalog not found"
+      },
+      {
+        "group": "discovery",
+        "id": "oauthDiscovery",
+        "status": "fail",
+        "counted": true,
+        "message": "No OAuth/OIDC discovery metadata found"
+      },
+      {
+        "group": "discovery",
+        "id": "oauthProtectedResource",
+        "status": "fail",
+        "counted": true,
+        "message": "No OAuth Protected Resource Metadata found"
+      },
+      {
+        "group": "discovery",
+        "id": "authMd",
+        "status": "fail",
+        "counted": true,
+        "message": "auth.md not found"
+      },
+      {
+        "group": "discovery",
+        "id": "mcpServerCard",
+        "status": "fail",
+        "counted": true,
+        "message": "MCP Server Card not found"
+      },
+      {
+        "group": "discovery",
+        "id": "a2aAgentCard",
+        "status": "neutral",
+        "counted": false,
+        "message": "A2A Agent Card not found (excluded by scan configuration)"
+      },
+      {
+        "group": "discovery",
+        "id": "agentSkills",
+        "status": "fail",
+        "counted": true,
+        "message": "Agent Skills index not found"
+      },
+      {
+        "group": "discovery",
+        "id": "webMcp",
+        "status": "fail",
+        "counted": true,
+        "message": "No WebMCP tools detected on page load"
+      },
+      {
+        "group": "discovery",
+        "id": "ard",
+        "status": "fail",
+        "counted": true,
+        "message": "ARD capability manifest not found"
+      },
+      {
+        "group": "discovery",
+        "id": "personalAgentProtocol",
+        "status": "neutral",
+        "counted": false,
+        "message": "Excluded by scan configuration"
+      },
+      {
+        "group": "commerce",
+        "id": "x402",
+        "status": "neutral",
+        "counted": false,
+        "message": "x402 payment protocol not detected (not a commerce site) (excluded by scan configuration)"
+      },
+      {
+        "group": "commerce",
+        "id": "mpp",
+        "status": "neutral",
+        "counted": false,
+        "message": "MPP payment discovery not detected (not a commerce site) (excluded by scan configuration)"
+      },
+      {
+        "group": "commerce",
+        "id": "ucp",
+        "status": "neutral",
+        "counted": false,
+        "message": "UCP profile not found (not a commerce site) (excluded by scan configuration)"
+      },
+      {
+        "group": "commerce",
+        "id": "acp",
+        "status": "neutral",
+        "counted": false,
+        "message": "ACP discovery document not found (not a commerce site) (excluded by scan configuration)"
+      },
+      {
+        "group": "commerce",
+        "id": "ap2",
+        "status": "neutral",
+        "counted": false,
+        "message": "AP2 not detected (no A2A Agent Card) (not a commerce site) (excluded by scan configuration)"
+      }
+    ],
+    "request": {
+      "url": "https://www.investdom.com.pl",
+      "enabledChecks": [
+        "robotsTxt",
+        "sitemap",
+        "linkHeaders",
+        "dnsAid",
+        "markdownNegotiation",
+        "robotsTxtAiRules",
+        "contentSignals",
+        "webBotAuth",
+        "apiCatalog",
+        "oauthDiscovery",
+        "oauthProtectedResource",
+        "authMd",
+        "mcpServerCard",
+        "agentSkills",
+        "webMcp",
+        "ard"
+      ]
+    },
+    "not_measured": [
+      "real bot visits",
+      "indexation",
+      "AI citations",
+      "customer enquiries"
+    ]
+  },
+  "field_data": {
+    "source": "Public PageSpeed Insights v5 request",
+    "http_status": 429,
+    "loadingExperience": null,
+    "originLoadingExperience": null,
+    "error_status": "RESOURCE_EXHAUSTED",
+    "reason": "Shared API quota exhausted; not a site failure. No retry or credential bypass."
+  },
+  "raw_artifacts_local": "/workspace/shared/investdom-postdeploy-audit-2026-10-18/",
+  "evidence_integrity": {
+    "lighthouse_json_sha256": {
+      "home-desktop-1.json": "0fd3d8eccf0cbcda8f8f04ed5b704a34a4ec6d9e29101b7accc8db4357aa6667",
+      "home-desktop-2.json": "11d49bd0364a87c0646351cb73c492e645b6fee8ddee6ed47dde201bbbfe4ea8",
+      "home-desktop-3.json": "3283b82eb568306d80b0626b81c81e40f6dd4ceb223de5c44cf8fe9743050ac8",
+      "home-mobile-1.json": "d8110cc0d5b80b50837f11b9468c2ebba7647463068de38a8b8a28286860c867",
+      "home-mobile-2.json": "59cd55d1a4f1c6e5fea984412ffed264363c8ad6a3f3bfbba1da147ca518d78e",
+      "home-mobile-3.json": "9a4c223c6cbcc90c023479656c68717ed021b9d9624fa5e047fe8bc3bbc37190",
+      "offers-mobile-1.json": "d10c1eb5aba8dbe6d81ad8314100fadecdf93b0cec945ecf44199a4da53acf92",
+      "projects-mobile-1.json": "3489ce8ed86a9fe578bee4dfccefdb890f3260cf1b85654d5115a9bd2968fb81",
+      "service-mobile-1.json": "1e39d820169fae3ff973b302edc27bd38538fe8546091176637463cb514fdf14"
+    },
+    "source_helpers_sha256": {
+      "run-lighthouse.py": "2d46b89438751d2722d416d41da4968cc9405ab84d3380f463d29eb3bacb819b",
+      "run-http.py": "49c94dec4dcefb3cde873795ab3074505adfce97afd640bc5691e6a5b7336dc3",
+      "run-browser.py": "2828bc44f0e08291fb17dceee6166bedbe2dbfbd09f3c0a58d725a9d1caf4a43"
+    },
+    "technical_json_sha256": "074d5229ca07621c7ef7e8bd934905e9ef9497b7aab7d2d9b05cd461cb8450da"
+  },
+  "limitations": [
+    "No GSC, GBP, GA4, WAF/DNS or mail-provider account access.",
+    "No authenticated bot logs or live LLM citation/product ranking measurement.",
+    "No valid form submitted, no real emails, no application changes.",
+    "Manual image/gradient contrast and physical Safari/screen-reader assessment remain.",
+    "Schema syntax/content checks are not Google RichResultsTest or indexing proof."
+  ]
+}
