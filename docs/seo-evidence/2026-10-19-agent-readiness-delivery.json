@@ -1,0 +1,560 @@
+{
+  "date": "2026-10-19",
+  "baseCommit": "2c3193a8059063d8176f116b061d448df330892d",
+  "environment": "Local compiled Astro build with Routing Middleware emulator, not Vercel deployment",
+  "commands": {
+    "check": "PASS; 0 errors, 0 warnings, 4 existing hints",
+    "build": "PASS; 4 Markdown pages and 5 discovery assets",
+    "test": {
+      "passed": 52,
+      "failed": 0
+    }
+  },
+  "http": {
+    "passed": 88,
+    "total": 88,
+    "checks": [
+      {
+        "name": "/ text/html",
+        "passed": true
+      },
+      {
+        "name": "/ unchanged HTML",
+        "passed": true
+      },
+      {
+        "name": "/ text/markdown",
+        "passed": true
+      },
+      {
+        "name": "/ Markdown body and canonical",
+        "passed": true
+      },
+      {
+        "name": "/ text/html",
+        "passed": true
+      },
+      {
+        "name": "/ unchanged HTML",
+        "passed": true
+      },
+      {
+        "name": "/ text/markdown;q=0,*/*;q=1",
+        "passed": true
+      },
+      {
+        "name": "/ unchanged HTML",
+        "passed": true
+      },
+      {
+        "name": "/ text/*",
+        "passed": true
+      },
+      {
+        "name": "/ unchanged HTML",
+        "passed": true
+      },
+      {
+        "name": "/ text/html;q=0.1,text/markdown;q=0.8",
+        "passed": true
+      },
+      {
+        "name": "/ Markdown body and canonical",
+        "passed": true
+      },
+      {
+        "name": "/ text/html",
+        "passed": true
+      },
+      {
+        "name": "/ unchanged HTML",
+        "passed": true
+      },
+      {
+        "name": "/ HEAD text/html",
+        "passed": true
+      },
+      {
+        "name": "/ HEAD text/markdown",
+        "passed": true
+      },
+      {
+        "name": "/budowa-domow-pod-klucz text/html",
+        "passed": true
+      },
+      {
+        "name": "/budowa-domow-pod-klucz unchanged HTML",
+        "passed": true
+      },
+      {
+        "name": "/budowa-domow-pod-klucz text/markdown",
+        "passed": true
+      },
+      {
+        "name": "/budowa-domow-pod-klucz Markdown body and canonical",
+        "passed": true
+      },
+      {
+        "name": "/budowa-domow-pod-klucz text/html",
+        "passed": true
+      },
+      {
+        "name": "/budowa-domow-pod-klucz unchanged HTML",
+        "passed": true
+      },
+      {
+        "name": "/budowa-domow-pod-klucz text/markdown;q=0,*/*;q=1",
+        "passed": true
+      },
+      {
+        "name": "/budowa-domow-pod-klucz unchanged HTML",
+        "passed": true
+      },
+      {
+        "name": "/budowa-domow-pod-klucz text/*",
+        "passed": true
+      },
+      {
+        "name": "/budowa-domow-pod-klucz unchanged HTML",
+        "passed": true
+      },
+      {
+        "name": "/budowa-domow-pod-klucz text/html;q=0.1,text/markdown;q=0.8",
+        "passed": true
+      },
+      {
+        "name": "/budowa-domow-pod-klucz Markdown body and canonical",
+        "passed": true
+      },
+      {
+        "name": "/budowa-domow-pod-klucz text/html",
+        "passed": true
+      },
+      {
+        "name": "/budowa-domow-pod-klucz unchanged HTML",
+        "passed": true
+      },
+      {
+        "name": "/budowa-domow-pod-klucz HEAD text/html",
+        "passed": true
+      },
+      {
+        "name": "/budowa-domow-pod-klucz HEAD text/markdown",
+        "passed": true
+      },
+      {
+        "name": "/domy-na-sprzedaz-bielsko text/html",
+        "passed": true
+      },
+      {
+        "name": "/domy-na-sprzedaz-bielsko unchanged HTML",
+        "passed": true
+      },
+      {
+        "name": "/domy-na-sprzedaz-bielsko text/markdown",
+        "passed": true
+      },
+      {
+        "name": "/domy-na-sprzedaz-bielsko Markdown body and canonical",
+        "passed": true
+      },
+      {
+        "name": "/domy-na-sprzedaz-bielsko text/html",
+        "passed": true
+      },
+      {
+        "name": "/domy-na-sprzedaz-bielsko unchanged HTML",
+        "passed": true
+      },
+      {
+        "name": "/domy-na-sprzedaz-bielsko text/markdown;q=0,*/*;q=1",
+        "passed": true
+      },
+      {
+        "name": "/domy-na-sprzedaz-bielsko unchanged HTML",
+        "passed": true
+      },
+      {
+        "name": "/domy-na-sprzedaz-bielsko text/*",
+        "passed": true
+      },
+      {
+        "name": "/domy-na-sprzedaz-bielsko unchanged HTML",
+        "passed": true
+      },
+      {
+        "name": "/domy-na-sprzedaz-bielsko text/html;q=0.1,text/markdown;q=0.8",
+        "passed": true
+      },
+      {
+        "name": "/domy-na-sprzedaz-bielsko Markdown body and canonical",
+        "passed": true
+      },
+      {
+        "name": "/domy-na-sprzedaz-bielsko text/html",
+        "passed": true
+      },
+      {
+        "name": "/domy-na-sprzedaz-bielsko unchanged HTML",
+        "passed": true
+      },
+      {
+        "name": "/domy-na-sprzedaz-bielsko HEAD text/html",
+        "passed": true
+      },
+      {
+        "name": "/domy-na-sprzedaz-bielsko HEAD text/markdown",
+        "passed": true
+      },
+      {
+        "name": "/projekty-domow text/html",
+        "passed": true
+      },
+      {
+        "name": "/projekty-domow unchanged HTML",
+        "passed": true
+      },
+      {
+        "name": "/projekty-domow text/markdown",
+        "passed": true
+      },
+      {
+        "name": "/projekty-domow Markdown body and canonical",
+        "passed": true
+      },
+      {
+        "name": "/projekty-domow text/html",
+        "passed": true
+      },
+      {
+        "name": "/projekty-domow unchanged HTML",
+        "passed": true
+      },
+      {
+        "name": "/projekty-domow text/markdown;q=0,*/*;q=1",
+        "passed": true
+      },
+      {
+        "name": "/projekty-domow unchanged HTML",
+        "passed": true
+      },
+      {
+        "name": "/projekty-domow text/*",
+        "passed": true
+      },
+      {
+        "name": "/projekty-domow unchanged HTML",
+        "passed": true
+      },
+      {
+        "name": "/projekty-domow text/html;q=0.1,text/markdown;q=0.8",
+        "passed": true
+      },
+      {
+        "name": "/projekty-domow Markdown body and canonical",
+        "passed": true
+      },
+      {
+        "name": "/projekty-domow text/html",
+        "passed": true
+      },
+      {
+        "name": "/projekty-domow unchanged HTML",
+        "passed": true
+      },
+      {
+        "name": "/projekty-domow HEAD text/html",
+        "passed": true
+      },
+      {
+        "name": "/projekty-domow HEAD text/markdown",
+        "passed": true
+      },
+      {
+        "name": "/index.md direct",
+        "passed": true
+      },
+      {
+        "name": "/index.md canonical",
+        "passed": true
+      },
+      {
+        "name": "/budowa-domow-pod-klucz.md direct",
+        "passed": true
+      },
+      {
+        "name": "/budowa-domow-pod-klucz.md canonical",
+        "passed": true
+      },
+      {
+        "name": "/domy-na-sprzedaz-bielsko.md direct",
+        "passed": true
+      },
+      {
+        "name": "/domy-na-sprzedaz-bielsko.md canonical",
+        "passed": true
+      },
+      {
+        "name": "/projekty-domow.md direct",
+        "passed": true
+      },
+      {
+        "name": "/projekty-domow.md canonical",
+        "passed": true
+      },
+      {
+        "name": "/agent-guide.md direct",
+        "passed": true
+      },
+      {
+        "name": "/agent-guide.md helper noindex",
+        "passed": true
+      },
+      {
+        "name": "/llms.txt direct",
+        "passed": true
+      },
+      {
+        "name": "/llms.txt helper noindex",
+        "passed": true
+      },
+      {
+        "name": "/.well-known/agent-skills/index.json direct",
+        "passed": true
+      },
+      {
+        "name": "/.well-known/agent-skills/index.json helper noindex",
+        "passed": true
+      },
+      {
+        "name": "/.well-known/agent-skills/poznaj-investdom/SKILL.md direct",
+        "passed": true
+      },
+      {
+        "name": "/.well-known/agent-skills/poznaj-investdom/SKILL.md helper noindex",
+        "passed": true
+      },
+      {
+        "name": "/.well-known/ai-catalog.json direct",
+        "passed": true
+      },
+      {
+        "name": "/.well-known/ai-catalog.json helper noindex",
+        "passed": true
+      },
+      {
+        "name": "skill exact UTF-8 digest",
+        "passed": true
+      },
+      {
+        "name": "catalog points to actual skill",
+        "passed": true
+      },
+      {
+        "name": "robots content signal",
+        "passed": true
+      },
+      {
+        "name": "sitemap only four canonical HTML URLs",
+        "passed": true
+      },
+      {
+        "name": "unknown page stays 404 text/html",
+        "passed": true
+      },
+      {
+        "name": "unknown page stays 404 text/markdown",
+        "passed": true
+      }
+    ]
+  },
+  "browser": {
+    "chromium": "154.0.8037.57",
+    "cases": [
+      {
+        "path": "/",
+        "device": "mobile",
+        "status": 200,
+        "axeViolations": 0,
+        "axeIncompleteRules": [
+          "color-contrast"
+        ],
+        "pageErrors": [],
+        "horizontalOverflow": false
+      },
+      {
+        "path": "/budowa-domow-pod-klucz",
+        "device": "mobile",
+        "status": 200,
+        "axeViolations": 0,
+        "axeIncompleteRules": [],
+        "pageErrors": [],
+        "horizontalOverflow": false
+      },
+      {
+        "path": "/domy-na-sprzedaz-bielsko",
+        "device": "mobile",
+        "status": 200,
+        "axeViolations": 0,
+        "axeIncompleteRules": [],
+        "pageErrors": [],
+        "horizontalOverflow": false
+      },
+      {
+        "path": "/projekty-domow",
+        "device": "mobile",
+        "status": 200,
+        "axeViolations": 0,
+        "axeIncompleteRules": [],
+        "pageErrors": [],
+        "horizontalOverflow": false
+      },
+      {
+        "path": "/",
+        "device": "desktop",
+        "status": 200,
+        "axeViolations": 0,
+        "axeIncompleteRules": [
+          "color-contrast"
+        ],
+        "pageErrors": [],
+        "horizontalOverflow": false
+      },
+      {
+        "path": "/budowa-domow-pod-klucz",
+        "device": "desktop",
+        "status": 200,
+        "axeViolations": 0,
+        "axeIncompleteRules": [],
+        "pageErrors": [],
+        "horizontalOverflow": false
+      },
+      {
+        "path": "/domy-na-sprzedaz-bielsko",
+        "device": "desktop",
+        "status": 200,
+        "axeViolations": 0,
+        "axeIncompleteRules": [],
+        "pageErrors": [],
+        "horizontalOverflow": false
+      },
+      {
+        "path": "/projekty-domow",
+        "device": "desktop",
+        "status": 200,
+        "axeViolations": 0,
+        "axeIncompleteRules": [],
+        "pageErrors": [],
+        "horizontalOverflow": false
+      }
+    ],
+    "interactions": [
+      {
+        "name": "Direct contact URL focuses form; settled scrollspy marks contact",
+        "passed": true,
+        "details": {
+          "focus": "contact-form",
+          "active": [
+            "kontakt",
+            "kontakt"
+          ]
+        }
+      },
+      {
+        "name": "Scrollspy follows actual section without changing hash",
+        "passed": true,
+        "details": {
+          "active": "domy",
+          "urlUnchanged": true
+        }
+      },
+      {
+        "name": "Mobile menu accessibility and Escape focus",
+        "passed": true,
+        "details": {
+          "escapeFocusRestored": true,
+          "closedMenuInert": true
+        }
+      },
+      {
+        "name": "Important content and native POST available with JavaScript off",
+        "passed": true,
+        "details": true
+      }
+    ]
+  },
+  "lighthouse": {
+    "version": "13.5.0",
+    "categories": {
+      "accessibility": 1,
+      "best-practices": 1,
+      "seo": 1,
+      "agentic-browsing": 1
+    },
+    "agenticChecks": [
+      {
+        "id": "agent-accessibility-tree",
+        "score": 1,
+        "mode": "binary"
+      },
+      {
+        "id": "webmcp-form-coverage",
+        "score": null,
+        "mode": "notApplicable"
+      },
+      {
+        "id": "webmcp-registered-tools",
+        "score": null,
+        "mode": "notApplicable"
+      },
+      {
+        "id": "webmcp-schema-validity",
+        "score": null,
+        "mode": "notApplicable"
+      },
+      {
+        "id": "cumulative-layout-shift",
+        "score": 1,
+        "mode": "numeric"
+      },
+      {
+        "id": "llms-txt",
+        "score": 1,
+        "mode": "binary"
+      },
+      {
+        "id": "ard-schema",
+        "score": 1,
+        "mode": "binary"
+      }
+    ]
+  },
+  "isitagentready": {
+    "lastKnownProductionScore": 20,
+    "forecastAfterDeployment": 53,
+    "forecastPassed": 8,
+    "forecastTotal": 15,
+    "newPublicScanPerformed": false
+  },
+  "limitations": [
+    "Catalog absolute production URLs were mapped to their local path for this isolated check.",
+    "No real cache HIT/MISS, deployment protection, or Vercel routing packaging verified.",
+    "Read-only GET/HEAD requests; contact endpoint not invoked.",
+    "Chromium emulation, not physical Safari or screen-reader audit.",
+    "GA/gtag transport blocked as in pre-deployment baseline; service workers allowed.",
+    "No form submitted or filled; no production messages.",
+    "axe incomplete contrast checks need manual assessment.",
+    "Lighthouse performance category not run; these scores do not measure production Core Web Vitals.",
+    "No production deployment, real CDN HIT/MISS, or LLM citation measurement."
+  ],
+  "review": {
+    "independent": true,
+    "critical": 0,
+    "importantFindingsFixed": 2,
+    "newRegressionTests": 4,
+    "fixesVerifiedRedThenGreen": true,
+    "deferredMinor": [
+      "An unmatched literal opening brace can gain a closing brace when parsed as Astro source; present pages unaffected."
+    ]
+  }
+}

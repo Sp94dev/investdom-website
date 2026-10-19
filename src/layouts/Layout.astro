@@ -5,6 +5,7 @@ import "@fontsource/inter/500.css";
 import "../styles/global.css";
 import { getCanonicalUrl, getBusinessSchema, serializeJsonLd } from "../lib/seo.mjs";
 import { company } from "../data/company.mjs";
+import { getMarkdownPath } from "../lib/agent-representation.mjs";
 
 interface Props {
   title: string;
@@ -24,6 +25,7 @@ const {
 } = Astro.props;
 
 const canonicalUrl = getCanonicalUrl(Astro.url.pathname, site);
+const markdownPath = getMarkdownPath(Astro.url.pathname);
 ---
 
 <!doctype html>
@@ -35,6 +37,13 @@ const canonicalUrl = getCanonicalUrl(Astro.url.pathname, site);
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    {markdownPath && (
+      <>
+        <link rel="alternate" type="text/markdown" href={markdownPath} />
+        <link rel="describedby" type="text/markdown" href="/agent-guide.md" />
+        <link rel="ai-catalog" type="application/json" href="/.well-known/ai-catalog.json" />
+      </>
+    )}
 
     <!-- SEO Meta Tags -->
     <meta
