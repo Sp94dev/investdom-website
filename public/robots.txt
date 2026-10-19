@@ -1,6 +1,7 @@
 # robots.txt for investdom.com.pl
 User-agent: *
 Allow: /
+Content-Signal: search=yes, ai-input=yes
 
 # Sitemap location
 Sitemap: https://www.investdom.com.pl/sitemap-index.xml
