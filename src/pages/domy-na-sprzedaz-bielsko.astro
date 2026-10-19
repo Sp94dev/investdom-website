@@ -7,13 +7,14 @@ import Header from "../components/layout/Header.astro";
 import Footer from "../components/layout/Footer.astro";
 import Container from "../components/ui/Container.astro";
 import Button from "../components/ui/Button.astro";
+import PhotoCaption from "../components/ui/PhotoCaption.astro";
 import { Picture } from "astro:assets";
 import { propertyLocations as districts } from "../data/properties";
 ---
 
 <Layout
-  title="Nowe domy na sprzedaż Bielsko-Biała | Inwestycje | INVESTDOM"
-  description="Poznaj inwestycję INVESTDOM w Pisarzowicach koło Bielska-Białej. Sprawdź informacje o drugim etapie budowy domów i skontaktuj się w sprawie oferty."
+  title="Domy na sprzedaż Bielsko-Biała i okolice | INVESTDOM"
+  description="Dom na sprzedaż w Pisarzowicach koło Bielska-Białej. Etap II inwestycji INVESTDOM w trakcie realizacji. Poznaj ofertę i skontaktuj się z nami."
 >
   <Header />
   <main class="pt-32 pb-16 bg-stone-50 min-h-screen">
@@ -26,12 +27,10 @@ import { propertyLocations as districts } from "../data/properties";
         <h1
           class="font-heading font-bold text-4xl md:text-5xl text-navy-900 mb-6"
         >
-          Nowe domy na sprzedaż w Bielsku-Białej
+          Domy na sprzedaż w Bielsku-Białej i okolicach
         </h1>
         <p class="text-lg text-slate-600">
-          Zrealizowane w wysokim standardzie, nowoczesne domy jednorodzinne
-          czekają na nowych właścicieli. Wybierz dzielnicę i znajdź dom dla
-          swojej rodziny.
+          Poznaj ofertę drugiego etapu inwestycji w Pisarzowicach koło Bielska-Białej.
         </p>
       </div>
 
@@ -50,12 +49,12 @@ import { propertyLocations as districts } from "../data/properties";
                       <Picture
                         src={offer.image}
                         alt={offer.imageAlt}
-                        class="absolute inset-0 w-full h-full object-cover"
+                        class="absolute inset-0 w-full h-full object-cover object-[75%_center]"
                         pictureAttributes={{ class: "contents" }}
                         width={800}
-                        height={600}
+                        height={450}
                         widths={[400, 640, 800, 1200, 1600]}
-                        sizes="(min-width: 1280px) 592px, (min-width: 1024px) calc((100vw - 96px) / 2), (min-width: 640px) calc(100vw - 48px), max(calc(100vw - 32px), 342px)"
+                        sizes="(min-width: 1280px) 592px, (min-width: 1024px) max(calc((100vw - 96px) / 2), 456px), (min-width: 640px) calc(100vw - 48px), max(calc(100vw - 32px), 456px)"
                         formats={["avif", "webp"]}
                         fallbackFormat="webp"
                         quality={45}
@@ -68,12 +67,14 @@ import { propertyLocations as districts } from "../data/properties";
                           {offer.status}
                         </span>
                       </div>
+                      <PhotoCaption />
                     </div>
 
                     <div class="p-8 flex flex-col flex-grow">
                       <h3 class="font-bold text-2xl text-navy-900 mb-4">
                         {offer.title}
                       </h3>
+                      <p class="text-sm font-medium text-navy-900 mb-4">{offer.stage}</p>
 
                       <PropertySpecs size={offer.size} plot={offer.plot} />
 
