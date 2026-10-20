@@ -102,6 +102,11 @@ test('investment exposes facts, project plans and usable image links in HTML wit
   assert.match(main, /Joanna Srokosz/);
   const imageLinks = [...main.matchAll(/<a\b[^>]*href="([^"]+)"[^>]*aria-label="(?:Powiększ zdjęcie|Powiększ rzut)/g)];
   assert.equal(imageLinks.length, 8, 'Six photos and two plans open through native links');
+  const diagrams = parsePage(main).images.filter((image) => new URL(image.src, base).pathname.endsWith('.svg'));
+  assert.equal(diagrams.length, 2, 'Presentation plans remain crisp as vector images');
+  assert.match(main, /aria-label="Pomieszczenia — parter"/);
+  assert.match(main, /aria-label="Pomieszczenia — poddasze"/);
+  assert.equal([...main.matchAll(/aria-label="Rzut projektu z wymiarami — /g)].length, 2);
   const hero = parsePage(main).images[0];
   assert.equal(hero.loading, 'eager');
   assert.equal(hero.fetchpriority, 'high');

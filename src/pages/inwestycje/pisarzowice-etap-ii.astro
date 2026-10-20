@@ -92,16 +92,25 @@ const gallery = await Promise.all(property.gallery.map(async (photo) => ({
 
       <section aria-labelledby="plans-title" class="mb-12">
         <h2 id="plans-title" class="font-heading font-bold text-3xl text-navy-900 mb-4">Układ pomieszczeń projektu</h2>
-        <p class="text-slate-600 mb-6 max-w-3xl">Parter i poddasze tego samego projektu. Rzuty przedstawiają układ projektu, nie dokumentację powykonawczą oferowanego domu. Szczegóły układu potwierdzimy podczas oglądania.</p>
+        <p class="text-slate-600 mb-6 max-w-3xl">Uproszczone schematy parteru i poddasza z nazwami pomieszczeń. Rzuty z wymiarami otworzysz osobno. To układ projektu; szczegóły oferowanego domu potwierdzimy podczas oglądania.</p>
         <div class="grid lg:grid-cols-2 gap-6">
           {property.plans.map((plan, index) => (
             <figure class="bg-white p-4 md:p-6 rounded-2xl border border-stone-200">
               <h3 class="font-bold text-xl text-navy-900 mb-4">Układ pomieszczeń projektu — {index === 0 ? 'parter' : 'poddasze'}</h3>
               <a href={plan.image.src} class="block" aria-label={`Powiększ rzut: ${index === 0 ? 'parter' : 'poddasze'}`}>
-                <Picture src={plan.image} alt={plan.alt} widths={[640, 960, 1440]} sizes="(min-width: 1280px) 542px, (min-width: 1024px) 44vw, 100vw" formats={["avif", "webp"]} fallbackFormat="png" quality={95} loading="lazy" class="w-full h-auto" />
+                <img src={plan.image.src} width={plan.image.width} height={plan.image.height} alt={plan.alt} loading="lazy" decoding="async" class="w-full h-auto" />
                 <span class="inline-block py-3 text-navy-900 underline underline-offset-4">Powiększ rzut {index === 0 ? 'parteru' : 'poddasza'}</span>
               </a>
+              <ol class="grid grid-cols-2 gap-x-4 gap-y-3 my-4 text-sm text-slate-700" aria-label={`Pomieszczenia — ${index === 0 ? 'parter' : 'poddasze'}`}>
+                {plan.rooms.map((room, roomIndex) => (
+                  <li class="flex items-center gap-2">
+                    <span class="inline-flex shrink-0 items-center justify-center w-7 h-7 rounded-full bg-navy-900 text-white font-medium" aria-hidden="true">{roomIndex + 1}</span>
+                    <span><span class="sr-only">{roomIndex + 1}. </span>{room}</span>
+                  </li>
+                ))}
+              </ol>
               <figcaption class="text-slate-600 text-sm leading-relaxed">{plan.caption}</figcaption>
+              <a href={plan.sourceImage.src} class="inline-block py-3 mt-2 text-sm text-navy-900 underline underline-offset-4" aria-label={`Rzut projektu z wymiarami — ${index === 0 ? 'parter' : 'poddasze'}`}>Rzut projektu z wymiarami</a>
             </figure>
           ))}
         </div>

@@ -8,11 +8,21 @@ import rear from '../assets/images/pisarzowice/IMG_3320.jpg';
 import rearSide from '../assets/images/pisarzowice/IMG_3324.jpg';
 import groundFloor from '../assets/images/pisarzowice/uklad-projektu-parter.png';
 import upperFloor from '../assets/images/pisarzowice/uklad-projektu-poddasze.png';
+import groundFloorDiagram from '../assets/images/pisarzowice/uklad-projektu-parter-czytelny.svg?url&no-inline';
+import upperFloorDiagram from '../assets/images/pisarzowice/uklad-projektu-poddasze-czytelny.svg?url&no-inline';
 
 export interface PropertyMedia {
   image: ImageMetadata;
   alt: string;
   caption: string;
+}
+
+export interface PropertyPlan {
+  image: { src: string; width: number; height: number };
+  sourceImage: ImageMetadata;
+  alt: string;
+  caption: string;
+  rooms: readonly string[];
 }
 
 // Owner-approved edited view; the surroundings include visualized changes.
@@ -32,18 +42,22 @@ export const propertyGallery: readonly PropertyMedia[] = [
   { image: rearSide, alt: 'Dom w Pisarzowicach z oknami poddasza i boczną elewacją', caption: 'Widok na poddasze i boczną elewację' },
 ];
 
-// Crops from the owner's two-page PDF, preserving the plan and dimension lines.
+// Presentation diagrams traced from the source scans; originals retain dimension lines.
 // The owner confirmed this is the same project; its original site address is not the offer location.
-export const propertyPlans: readonly PropertyMedia[] = [
+export const propertyPlans: readonly PropertyPlan[] = [
   {
-    image: groundFloor,
+    image: { src: groundFloorDiagram, width: 1260, height: 800 },
+    sourceImage: groundFloor,
     alt: 'Układ pomieszczeń projektu — parter z garażem, salonem, kuchnią, pokojem i łazienką',
     caption: 'Parter: salon z jadalnią, kuchnia, pokój, łazienka, hall, przedsionek i garaż.',
+    rooms: ['Przedsionek', 'Hall', 'Łazienka', 'Salon z jadalnią', 'Kuchnia', 'Pokój', 'Garaż'],
   },
   {
-    image: upperFloor,
+    image: { src: upperFloorDiagram, width: 815, height: 750 },
+    sourceImage: upperFloor,
     alt: 'Układ pomieszczeń projektu — poddasze z trzema pokojami, łazienką i hallem',
     caption: 'Poddasze: trzy pokoje, łazienka i hall ze schodami.',
+    rooms: ['Hall', 'Łazienka', 'Sypialnia', 'Sypialnia', 'Sypialnia'],
   },
 ];
 

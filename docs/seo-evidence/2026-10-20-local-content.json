@@ -21,8 +21,8 @@
     "date": "2026-10-20",
     "server": "Local static build emulator, real root middleware; no Vercel CDN simulation",
     "pages": 5,
-    "checks": 335,
-    "assetURLs": 118,
+    "checks": 299,
+    "assetURLs": 100,
     "passed": true
   },
   "browser": {
@@ -194,6 +194,7 @@
       "mobileMenuEscape": true,
       "keyboardPhoto": true,
       "keyboardPlan": true,
+      "keyboardDimensionedSource": true,
       "contact": {
         "focused": true,
         "top": 185.25,
@@ -254,7 +255,7 @@
       {
         "path": "/inwestycje/pisarzowice-etap-ii",
         "h1": "Dom na sprzedaż w Pisarzowicach — etap II",
-        "mainTextLength": 1702
+        "mainTextLength": 1935
       }
     ]
   },
@@ -290,9 +291,19 @@
       "bytes": 704123
     },
     {
+      "file": "src/assets/images/pisarzowice/uklad-projektu-parter-czytelny.svg",
+      "sha256": "b57ca0d019beee2f87177e19524765446f54af64b4935538ffe5099d9c4088ef",
+      "bytes": 3811
+    },
+    {
       "file": "src/assets/images/pisarzowice/uklad-projektu-parter.png",
       "sha256": "5b832cdc9d564e0b2613601af72746a3ef6dcab969a6438622092741a2e808f0",
       "bytes": 1024090
+    },
+    {
+      "file": "src/assets/images/pisarzowice/uklad-projektu-poddasze-czytelny.svg",
+      "sha256": "9fcceb4ff0242b42ac44b00693ad54e779d183a4b8257df6d1ebc0008bae46c3",
+      "bytes": 3034
     },
     {
       "file": "src/assets/images/pisarzowice/uklad-projektu-poddasze.png",
@@ -311,5 +322,15 @@
     "access": "redirected to vercel.com/login; title Login – Vercel",
     "deploymentStatusAtInspection": "PENDING",
     "applicationVerified": false
+  },
+  "planPresentation": {
+    "format": "SVG traced from source scan coordinates; labels and numbered HTML legend",
+    "sourceDimensions": "Original cropped PNG scans remain linked separately",
+    "generatedProposals": "Two built-in imagegen edits rejected after architecture comparison; no AI-generated image used in application",
+    "floorRooms": [
+      7,
+      5
+    ],
+    "withoutJavaScript": true
   }
 }

@@ -48,7 +48,11 @@ Produkcyjne pliki JPG powstały z oryginałów przez `sharp`: orientacja EXIF, s
 
 Źródło rzutów: [dwustronicowy PDF przekazany przez właściciela](https://drive.google.com/file/d/1aQFwBB2SxQoQQn8mFMItR6Ge0I7YFuBR/view), lokalnie `RzutyOkregowa-1.pdf`. Z każdej strony wyodrębniono osadzony skan 3307 × 2338 px, zachowując oryginalne piksele i proporcje. Kadry `(left, top, right, bottom)`: parter `(410, 230, 2190, 1530)` → 1780 × 1300 px; poddasze `(740, 208, 2200, 1435)` → 1460 × 1227 px. Bez rekonstrukcji AI, zmiany wymiarów lub wyliczania powierzchni. Pełne arkusze, pieczątki, podpisy i adres z metryki nie są publikowane. Autor i opracowanie są podani w HTML zgodnie z metryką.
 
-Na telefonie rzut zajmuje szerokość karty, opis pomieszczeń jest tekstem HTML, a link otwiera pełny PNG w tej samej karcie przeglądarki. Natywne powiększenie umożliwia odczyt wymiarów; powrót działa standardowym „Wstecz”. Brak modala i nowej biblioteki. Rzuty są podpisane jako układ projektu, z informacją o potwierdzeniu szczegółów podczas oglądania; 135 m² i liczba pokoi pozostają zgodne z ofertą właściciela.
+Na prośbę właściciela o większą czytelność prezentacja otrzymała dwa schematy wektorowe: `uklad-projektu-parter-czytelny.svg` i `uklad-projektu-poddasze-czytelny.svg`. Zachowują orientację, proporcje obrysu, podział pomieszczeń, położenie schodów i widoczne otwory ze skanów. Pominięto wymiary i notatki konstrukcyjne; wyposażenia nie dopowiadano. Nazwy, delikatne wypełnienia i kontrastowe numery pomagają odczytać układ. Legenda pomieszczeń jest również tekstem HTML, dostępnym bez JS. Numeracja odpowiada identyfikatorom pomieszczeń ze źródła (np. 1/4 → 4).
+
+Schemat SVG otwiera się osobnym linkiem i pozostaje ostry po powiększeniu. Osobny link „Rzut projektu z wymiarami” otwiera niezmieniony PNG ze skanu. Grafiki są emitowane jako lokalne pliki (`?url&no-inline`), aby natywne otwieranie oraz generowany Markdown miały działające adresy HTTP. Brak modala i nowej biblioteki. 135 m² i liczba pokoi pozostają zgodne z ofertą właściciela; to prezentacja układu projektu, nie dokumentacja powykonawcza oferowanego egzemplarza.
+
+Pierwsze dwie propozycje powstały przez wbudowane `imagegen` w trybie edycji skanów, z poleceniem zachowania geometrii i otworów oraz usunięcia oznaczeń technicznych. Odrzucono je po porównaniu: parter miał zamknięte wejście do pokoju, a poddasze dodane otwory w ścianach. Żadna wygenerowana propozycja nie jest użyta w aplikacji. Docelowe SVG są autorską grafiką kodową odwzorowaną z widocznej geometrii skanów, bez generatywnej rekonstrukcji. Kontrola obejmowała także zbliżenia źródłowych połączeń pokój–hall–łazienka–przedsionek i otworów na poddaszu.
 
 ## Weryfikacja
 
@@ -61,11 +65,11 @@ Na telefonie rzut zajmuje szerokość karty, opis pomieszczeń jest tekstem HTML
 | `npm run build` | Poprawny build Vercel/Astro, 5 stron prerenderowanych i 5 reprezentacji Markdown. |
 | `npm test` | 53/53. |
 | `npm run check:seo -- http://localhost:4321 https://www.investdom.com.pl` | Wszystkie 5 stron: 200, unikalne metadane, canonical, OG/Twitter, jeden H1 i main. |
-| Lokalny HTTP gotowego buildu | 335/335 kontroli, w tym 118 adresów zasobów: wszystkie `src`, warianty `srcset`, powiększenia, Markdown i discovery. HTML → Markdown → HTML, q=0, GET/HEAD, query, 308 bez utraty query i 404. |
+| Lokalny HTTP gotowego buildu | 299/299 kontroli, w tym 100 adresów zasobów: wszystkie `src`, warianty `srcset`, powiększenia, Markdown i discovery. HTML → Markdown → HTML, q=0, GET/HEAD, query, 308 bez utraty query i 404. |
 | Chromium + axe | 5 stron × 375/768/1440 px; bez poziomego przepełnienia, zgłoszonych naruszeń axe i błędów JS. |
 | Bez JavaScript | Wszystkie 5 stron zachowuje główną treść/H1; na inwestycji dostępne parametry, opisy i linki rzutów. |
-| Interakcje | Menu mobilne, Escape/inert/focus, zdjęcie i rzut otwierane Enterem, focus formularza po „Umów oglądanie”, scrollspy czterech sekcji: poprawne. |
-| Ocena wzrokowa | Sprawdzone nowe widoki, oryginalne kadry rzutów oraz natywne powiększenie PNG przy 375 px; wymiary pozostają czytelne po powiększeniu. |
+| Interakcje | Menu mobilne, Escape/inert/focus, zdjęcie, schemat SVG i oryginał z wymiarami otwierane Enterem, focus formularza po „Umów oglądanie”, scrollspy czterech sekcji: poprawne. |
+| Ocena wzrokowa | Sprawdzone schematy i legendy przy 375/768/1440 px, porównanie ze skanami i otwieranie oryginału z wymiarami. Prezentacja SVG pozostaje ostra przy powiększaniu; wymiary są w osobnym źródłowym PNG. |
 | `git diff --check` | Poprawny. |
 
 [Wyniki maszynowe i sumy kontrolne materiałów](seo-evidence/2026-10-20-local-content.json).
