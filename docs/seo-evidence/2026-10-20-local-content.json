@@ -305,5 +305,11 @@
     "Analytics requests were blocked in the browser audit. No real contact message was sent.",
     "Chromium desktop viewport emulation; no physical phone or screen reader audit.",
     "Floor plans are project layouts, not as-built documentation for the offered house."
-  ]
+  ],
+  "vercelPreview": {
+    "url": "https://investdom-git-feat-local-seo-in-fc42e7-admins-projects-2bc10d0e.vercel.app/inwestycje/pisarzowice-etap-ii",
+    "access": "redirected to vercel.com/login; title Login – Vercel",
+    "deploymentStatusAtInspection": "PENDING",
+    "applicationVerified": false
+  }
 }
