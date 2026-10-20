@@ -39,7 +39,7 @@ export function getServiceSchema(site) {
     '@context': 'https://schema.org',
     '@type': 'Service',
     '@id': `${url}#service`,
-    name: 'Budowa domów pod klucz',
+    name: 'Budowa domów w Bielsku-Białej i okolicach',
     serviceType: 'Budowa domów pod klucz',
     description: 'Budowa domów jednorodzinnych w Bielsku-Białej i okolicach: od fundamentów przez stan surowy i deweloperski po wykończenie pod klucz.',
     url,

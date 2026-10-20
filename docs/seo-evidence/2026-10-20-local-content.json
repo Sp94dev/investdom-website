@@ -1,0 +1,395 @@
+{
+  "date": "2026-10-20",
+  "baseCommit": "1d6a0737257955f834d72ee27e81e3ff18cbc28c",
+  "node": "24.13.0",
+  "checks": {
+    "npmCi": "passed; lockfile unchanged",
+    "astroCheck": {
+      "errors": 0,
+      "warnings": 0,
+      "existingHints": 4
+    },
+    "build": "passed; 5 prerendered HTML pages and 5 generated Markdown pages",
+    "tests": {
+      "passed": 53,
+      "failed": 0
+    },
+    "checkSeo": "passed against http://localhost:4321; canonical https://www.investdom.com.pl",
+    "diffCheck": "passed"
+  },
+  "http": {
+    "date": "2026-10-20",
+    "server": "Local static build emulator, real root middleware; no Vercel CDN simulation",
+    "pages": 5,
+    "checks": 299,
+    "assetURLs": 100,
+    "passed": true
+  },
+  "browser": {
+    "browser": "155.0.8059.85",
+    "date": "2026-10-20",
+    "views": [
+      {
+        "path": "/",
+        "width": 375,
+        "viewport": 375,
+        "document": 375,
+        "h1": 1,
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      },
+      {
+        "path": "/budowa-domow-pod-klucz",
+        "width": 375,
+        "viewport": 375,
+        "document": 375,
+        "h1": 1,
+        "violations": [],
+        "incomplete": []
+      },
+      {
+        "path": "/domy-na-sprzedaz-bielsko",
+        "width": 375,
+        "viewport": 375,
+        "document": 375,
+        "h1": 1,
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      },
+      {
+        "path": "/projekty-domow",
+        "width": 375,
+        "viewport": 375,
+        "document": 375,
+        "h1": 1,
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      },
+      {
+        "path": "/inwestycje/pisarzowice-etap-ii",
+        "width": 375,
+        "viewport": 375,
+        "document": 375,
+        "h1": 1,
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      },
+      {
+        "path": "/",
+        "width": 768,
+        "viewport": 768,
+        "document": 768,
+        "h1": 1,
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      },
+      {
+        "path": "/budowa-domow-pod-klucz",
+        "width": 768,
+        "viewport": 768,
+        "document": 768,
+        "h1": 1,
+        "violations": [],
+        "incomplete": []
+      },
+      {
+        "path": "/domy-na-sprzedaz-bielsko",
+        "width": 768,
+        "viewport": 768,
+        "document": 768,
+        "h1": 1,
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      },
+      {
+        "path": "/projekty-domow",
+        "width": 768,
+        "viewport": 768,
+        "document": 768,
+        "h1": 1,
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      },
+      {
+        "path": "/inwestycje/pisarzowice-etap-ii",
+        "width": 768,
+        "viewport": 768,
+        "document": 768,
+        "h1": 1,
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      },
+      {
+        "path": "/",
+        "width": 1440,
+        "viewport": 1440,
+        "document": 1440,
+        "h1": 1,
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      },
+      {
+        "path": "/budowa-domow-pod-klucz",
+        "width": 1440,
+        "viewport": 1440,
+        "document": 1440,
+        "h1": 1,
+        "violations": [],
+        "incomplete": []
+      },
+      {
+        "path": "/domy-na-sprzedaz-bielsko",
+        "width": 1440,
+        "viewport": 1440,
+        "document": 1440,
+        "h1": 1,
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      },
+      {
+        "path": "/projekty-domow",
+        "width": 1440,
+        "viewport": 1440,
+        "document": 1440,
+        "h1": 1,
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      },
+      {
+        "path": "/inwestycje/pisarzowice-etap-ii",
+        "width": 1440,
+        "viewport": 1440,
+        "document": 1440,
+        "h1": 1,
+        "violations": [],
+        "incomplete": [
+          "color-contrast"
+        ]
+      }
+    ],
+    "errors": [],
+    "interactions": {
+      "mobileMenuEscape": true,
+      "keyboardPhoto": true,
+      "keyboardPlan": true,
+      "keyboardDimensionedSource": true,
+      "contact": {
+        "focused": true,
+        "top": 184.5,
+        "required": 4
+      },
+      "scrollspy": [
+        {
+          "id": "o-firmie",
+          "active": [
+            "o-firmie",
+            "o-firmie"
+          ]
+        },
+        {
+          "id": "domy",
+          "active": [
+            "domy",
+            "domy"
+          ]
+        },
+        {
+          "id": "uslugi",
+          "active": [
+            "uslugi",
+            "uslugi"
+          ]
+        },
+        {
+          "id": "kontakt",
+          "active": [
+            "kontakt",
+            "kontakt"
+          ]
+        }
+      ]
+    },
+    "withoutJS": [
+      {
+        "path": "/",
+        "h1": "\nBudowa domów w  Bielsku-Białej i na Śląsku\n",
+        "mainTextLength": 4006
+      },
+      {
+        "path": "/budowa-domow-pod-klucz",
+        "h1": "\nBudowa domów w Bielsku-Białej i okolicach\n",
+        "mainTextLength": 1080
+      },
+      {
+        "path": "/domy-na-sprzedaz-bielsko",
+        "h1": "\nDomy na sprzedaż w Bielsku-Białej i okolicach\n",
+        "mainTextLength": 560
+      },
+      {
+        "path": "/projekty-domow",
+        "h1": "\nProjekt domu jednorodzinnego\n",
+        "mainTextLength": 380
+      },
+      {
+        "path": "/inwestycje/pisarzowice-etap-ii",
+        "h1": "Dom na sprzedaż w Pisarzowicach — etap II",
+        "mainTextLength": 1216
+      }
+    ]
+  },
+  "productionAssets": [
+    {
+      "file": "src/assets/images/pisarzowice/IMG_3244.jpg",
+      "sha256": "a7ccb0f5e20cad0c839679c9456df6d394f7eae7eedff2e1bd13d67e9d21d635",
+      "bytes": 772226
+    },
+    {
+      "file": "src/assets/images/pisarzowice/IMG_3252.jpg",
+      "sha256": "a6b3e74af45e38b71364af2100b6446469e7c95026410c8679e387c643aff266",
+      "bytes": 504248
+    },
+    {
+      "file": "src/assets/images/pisarzowice/IMG_3254.jpg",
+      "sha256": "e884dc58386dc7d0eb25281c7b546d4717d86a08c0be154f1b04c9cd16fd50b1",
+      "bytes": 667675
+    },
+    {
+      "file": "src/assets/images/pisarzowice/IMG_3320.jpg",
+      "sha256": "51555f8967e4b6a116c2adb57041bea60dcf63abf6b4ec5f46b871b33d4d9ef5",
+      "bytes": 751351
+    },
+    {
+      "file": "src/assets/images/pisarzowice/IMG_3321.jpg",
+      "sha256": "911f5f948f917f85ddea27628fb2456e0ad0c0e7121179efea3f21a8e3ff1069",
+      "bytes": 665750
+    },
+    {
+      "file": "src/assets/images/pisarzowice/IMG_3324.jpg",
+      "sha256": "019c909410c49e047390d666967fd7da567656eee91e48e19df0ab5fde078503",
+      "bytes": 704123
+    },
+    {
+      "file": "src/assets/images/pisarzowice/uklad-projektu-parter-czytelny.svg",
+      "sha256": "18d1a67f8b8f793ea17fb19912db3098c1f9c36ec168cb054928f09a313b71b7",
+      "bytes": 3936
+    },
+    {
+      "file": "src/assets/images/pisarzowice/uklad-projektu-parter.png",
+      "sha256": "5b832cdc9d564e0b2613601af72746a3ef6dcab969a6438622092741a2e808f0",
+      "bytes": 1024090
+    },
+    {
+      "file": "src/assets/images/pisarzowice/uklad-projektu-poddasze-czytelny.svg",
+      "sha256": "e6ec896f415fa14c420b798244821964c17c46d4e19f4b974a3b8e4bc21d17ec",
+      "bytes": 3129
+    },
+    {
+      "file": "src/assets/images/pisarzowice/uklad-projektu-poddasze.png",
+      "sha256": "6a8600861ca85ad3b3eef5b9c238f901d23b7129cb9ad8cfe230b02a10530f70",
+      "bytes": 809857
+    }
+  ],
+  "limitations": [
+    "Local build emulator is not the Vercel edge/CDN runtime.",
+    "Analytics requests were blocked in the browser audit. No real contact message was sent.",
+    "Chromium desktop viewport emulation; no physical phone or screen reader audit.",
+    "Floor plans are project layouts, not as-built documentation for the offered house."
+  ],
+  "vercelPreview": {
+    "url": "https://investdom-git-feat-local-seo-in-fc42e7-admins-projects-2bc10d0e.vercel.app/inwestycje/pisarzowice-etap-ii",
+    "access": "redirected to vercel.com/login; title Login – Vercel",
+    "deploymentStatusAtInspection": "PENDING",
+    "applicationVerified": false
+  },
+  "planPresentation": {
+    "format": "SVG traced from source scan coordinates; labels and numbered HTML legend",
+    "sourceDimensions": "Original cropped PNG scans remain linked separately",
+    "generatedProposals": "Two built-in imagegen edits rejected after architecture comparison; no AI-generated image used in application",
+    "floorRooms": [
+      7,
+      5
+    ],
+    "withoutJavaScript": true
+  },
+  "planColorValidation": {
+    "geometryUnchanged": true,
+    "contrast": [
+      {
+        "color": "#ede2d3",
+        "ratio": 8.984645438086146
+      },
+      {
+        "color": "#f7d19b",
+        "ratio": 7.960472571003899
+      },
+      {
+        "color": "#f8e7a8",
+        "ratio": 9.294899163643764
+      },
+      {
+        "color": "#c8dfc5",
+        "ratio": 8.107584457153571
+      },
+      {
+        "color": "#b9dbef",
+        "ratio": 7.90221769966052
+      },
+      {
+        "color": "#d3dce5",
+        "ratio": 8.283391106660865
+      }
+    ],
+    "legendItems": 12,
+    "views": [
+      {
+        "width": 375,
+        "overflow": false,
+        "violations": 0
+      },
+      {
+        "width": 768,
+        "overflow": false,
+        "violations": 0
+      },
+      {
+        "width": 1440,
+        "overflow": false,
+        "violations": 0
+      }
+    ]
+  },
+  "contentEditing": {
+    "skill": "copy-editing (coreyhaines31/marketingskills)",
+    "scope": "All five public pages, shared property copy, metadata, FAQ and contact",
+    "invitation": "Separate HTML paragraph on property detail and listing",
+    "removed": "Gallery instructions, project author/source message, duplicate plan captions and unsupported marketing claims",
+    "facts": "Confirmed property facts unchanged",
+    "visualReviewWidths": [
+      375,
+      1440
+    ],
+    "checks": "Repeated Astro check/build, 53 tests, SEO, HTTP and browser audit after editing"
+  }
+}

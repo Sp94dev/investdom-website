@@ -1,8 +1,9 @@
 import type { ImageMetadata } from 'astro';
-import { propertyPhoto } from './property-media';
+import { propertyPhoto, propertyGallery, propertyPlans } from './property-media';
 
 export interface Property {
   id: string;
+  href: string;
   title: string;
   location: string;
   price: string;
@@ -15,15 +16,19 @@ export interface Property {
   features: readonly string[];
   image: ImageMetadata;
   imageAlt: string;
+  gallery: typeof propertyGallery;
+  plans: typeof propertyPlans;
   description: string;
 }
 
 // Investment data confirmed on 2026-10-17; stage/photo clarified on 2026-10-19.
+// Ready house and both gallery groups confirmed in the handover/session on 2026-10-20.
 // Home, offers and projects must all read this source.
 export const properties: readonly Property[] = [
   {
     id: 'pisarzowice-etap-ii',
-    title: 'Dom Wolnostojący Pisarzowice (Etap II)',
+    href: '/inwestycje/pisarzowice-etap-ii',
+    title: 'Dom wolnostojący w Pisarzowicach (etap II)',
     location: 'Pisarzowice',
     price: '895 000 zł',
     size: '135 m²',
@@ -35,8 +40,10 @@ export const properties: readonly Property[] = [
     features: ['Ogrzewanie gazowe', 'Garaż', '2 łazienki', '3 sypialnie'],
     image: propertyPhoto.image,
     imageAlt: propertyPhoto.alt,
+    gallery: propertyGallery,
+    plans: propertyPlans,
     description:
-      'Dom jednorodzinny w Pisarzowicach koło Bielska-Białej. Zapraszamy do kontaktu w sprawie oferty.',
+      'Dom wolnostojący w Pisarzowicach koło Bielska-Białej, gotowy w stanie deweloperskim.\n\nZapraszamy do oglądania.',
   },
 ];
 

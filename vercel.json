@@ -102,6 +102,27 @@
       ]
     },
     {
+      "source": "/inwestycje/pisarzowice-etap-ii.md",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/markdown; charset=utf-8"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "private, no-store"
+        },
+        {
+          "key": "Link",
+          "value": "<https://www.investdom.com.pl/inwestycje/pisarzowice-etap-ii>; rel=\"canonical\""
+        },
+        {
+          "key": "Vary",
+          "value": "Accept"
+        }
+      ]
+    },
+    {
       "source": "/agent-guide.md",
       "headers": [
         {

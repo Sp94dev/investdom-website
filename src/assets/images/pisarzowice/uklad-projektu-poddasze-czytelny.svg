@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="815" height="750" viewBox="270 245 815 750" role="img" aria-labelledby="title desc">
+  <title id="title">Poddasze — schemat układu projektu</title>
+  <desc id="desc">Trzy sypialnie, łazienka i hall ze schodami. Numery odpowiadają legendzie. Układ odwzorowany ze skanu projektu; wymiary dostępne w oryginalnym rzucie.</desc>
+  <style>
+    .wall{fill:none;stroke:#1a3b5d;stroke-width:12;stroke-linecap:butt;stroke-linejoin:miter}
+    .outer{stroke-width:34}
+    .opening{stroke:#fff;stroke-width:38}
+    .detail{fill:none;stroke:#58718a;stroke-width:2.5}
+    .window{fill:#fff;stroke:#58718a;stroke-width:2.5}
+    .label{fill:#1a3b5d;font-family:Arial,Helvetica,sans-serif;font-size:39px;font-weight:600;text-anchor:middle}
+    .number circle{stroke:#1a3b5d;stroke-width:2}
+    .number text{fill:#1a3b5d;font-family:Arial,Helvetica,sans-serif;font-size:29px;font-weight:700;text-anchor:middle;dominant-baseline:central}
+  </style>
+  <path fill="#fff" d="M270 245h815v750H270z"/>
+  <!-- Source coordinates and four facade openings retained; no invented gable windows. -->
+  <path fill="#ede2d3" d="M320 293H1027V938H320Z"/>
+  <path fill="#c8dfc5" d="M337 310H662V612H337Z"/>
+  <path fill="#c8dfc5" d="M668 310H1010V612H668Z"/>
+  <path fill="#c8dfc5" d="M337 620H592V921H337Z"/>
+  <path fill="#b9dbef" d="M792 620H1010V921H792Z"/>
+  <path class="wall outer" d="M320 293H1027V938H320Z"/>
+  <path class="wall" d="M665 310V613 M337 613H596 M742 613H1010 M596 620V658 M596 730V921 M786 620V658 M786 730V921"/>
+  <path class="opening" d="M320 490V574 M320 663V744 M1027 447V565 M1027 659V778"/>
+  <g class="window">
+    <path d="M308 490h24v84h-24Z M308 663h24v81h-24Z M1015 447h24v118h-24Z M1015 659h24v119h-24Z"/>
+  </g>
+  <path class="detail" d="M320 490h81a81 81 0 0 1-81 81 M320 663h78a78 78 0 0 1-78 78 M1027 447V565 M1027 659V778 M662 613V547a66 66 0 0 0-66 66 M676 613V547a66 66 0 0 1 66 66 M596 658H524a72 72 0 0 0 72 72 M786 658h72a72 72 0 0 1-72 72"/>
+  <g class="detail">
+    <path d="M603 921V747H779V921Z M603 769H779 M603 791H779 M603 813H779 M603 835H690 M603 857L690 835 M603 901L690 835 M647 921L690 835 M690 921V835"/>
+    <!-- Roof-light marker from the original, separate from facade openings. -->
+    <path stroke-dasharray="5 5" d="M701 839H771V912H701Z"/>
+  </g>
+  <g class="label">
+    <text x="500" y="471">Sypialnia</text>
+    <text x="840" y="471">Sypialnia</text>
+    <text x="464" y="823">Sypialnia</text>
+    <text x="902" y="847" font-size="34">Łazienka</text>
+    <text x="690" y="713" font-size="32">Hall</text>
+    <text x="690" y="985" font-size="23">Schody</text>
+  </g>
+  <g class="number">
+    <g transform="translate(690 665)"><circle r="23" fill="#ede2d3"/><text>1</text></g>
+    <g transform="translate(902 790)"><circle r="23" fill="#b9dbef"/><text>2</text></g>
+    <g transform="translate(840 405)"><circle r="23" fill="#c8dfc5"/><text>3</text></g>
+    <g transform="translate(500 405)"><circle r="23" fill="#c8dfc5"/><text>4</text></g>
+    <g transform="translate(464 762)"><circle r="23" fill="#c8dfc5"/><text>5</text></g>
+  </g>
+</svg>

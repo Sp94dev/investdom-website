@@ -30,7 +30,7 @@ import { propertyLocations as districts } from "../data/properties";
           Domy na sprzedaż w Bielsku-Białej i okolicach
         </h1>
         <p class="text-lg text-slate-600">
-          Poznaj ofertę drugiego etapu inwestycji w Pisarzowicach koło Bielska-Białej.
+          Obecnie mamy na sprzedaż dom w Pisarzowicach koło Bielska-Białej.
         </p>
       </div>
 
@@ -39,7 +39,7 @@ import { propertyLocations as districts } from "../data/properties";
           districts.map((district, districtIndex) => (
             <div>
               <h2 class="text-3xl font-bold text-navy-900 mb-8 border-b border-stone-200 pb-4">
-                Inwestycje: {district.name}
+                {district.name}
               </h2>
 
               <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -98,7 +98,7 @@ import { propertyLocations as districts } from "../data/properties";
                         ))}
                       </div>
 
-                      <div class="mt-auto flex items-center justify-between pt-6 border-t border-stone-100">
+                      <div class="mt-auto flex flex-wrap gap-4 items-center justify-between pt-6 border-t border-stone-100">
                         <div>
                           <span class="block text-slate-500 text-sm">
                             Cena:
@@ -107,8 +107,8 @@ import { propertyLocations as districts } from "../data/properties";
                             {offer.price}
                           </span>
                         </div>
-                        <Button href="/#kontakt" variant="primary">
-                          Zapytaj o detale
+                        <Button href={offer.href} variant="primary">
+                          Zobacz szczegóły domu
                         </Button>
                       </div>
                     </div>

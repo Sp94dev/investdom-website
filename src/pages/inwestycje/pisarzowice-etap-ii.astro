@@ -1,0 +1,127 @@
+---
+export const prerender = true;
+
+import Layout from "../../layouts/Layout.astro";
+import Header from "../../components/layout/Header.astro";
+import Footer from "../../components/layout/Footer.astro";
+import Container from "../../components/ui/Container.astro";
+import Button from "../../components/ui/Button.astro";
+import PropertySpecs from "../../components/ui/PropertySpecs.astro";
+import PhotoCaption from "../../components/ui/PhotoCaption.astro";
+import { Picture, getImage } from "astro:assets";
+import { properties } from "../../data/properties";
+import { getCanonicalUrl } from "../../lib/seo.mjs";
+
+const property = properties.find((item) => item.id === 'pisarzowice-etap-ii');
+if (!property || !Astro.site) throw new Error('Investment and canonical site must be configured.');
+const breadcrumbs = [
+  { name: 'Strona główna', href: '/' },
+  { name: 'Domy na sprzedaż', href: '/domy-na-sprzedaz-bielsko' },
+  { name: 'Pisarzowice — etap II', href: property.href },
+];
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: breadcrumbs.map((item, index) => ({
+    '@type': 'ListItem', position: index + 1, name: item.name, item: getCanonicalUrl(item.href, Astro.site!),
+  })),
+};
+const gallery = await Promise.all(property.gallery.map(async (photo) => ({
+  ...photo, full: await getImage({ src: photo.image, width: 2000, format: 'webp', quality: 85 }),
+})));
+---
+
+<Layout
+  title="Dom na sprzedaż Pisarzowice — 135 m², etap II | INVESTDOM"
+  description={`Dom wolnostojący w Pisarzowicach koło Bielska-Białej: ${property.size}, działka ${property.plot}, ${property.price}. Zdjęcia, układ pomieszczeń i kontakt w sprawie oglądania.`}
+  structuredData={[breadcrumbSchema]}
+>
+  <Header />
+  <main class="pt-28 pb-16 bg-stone-50 min-h-screen">
+    <Container>
+      <nav aria-label="Okruszki" class="mb-8 text-sm text-slate-600">
+        <ol class="flex flex-wrap items-center gap-x-3 gap-y-2">
+          {breadcrumbs.map((item, index) => (
+            <li class="flex items-center gap-3">
+              {index > 0 && <span aria-hidden="true">/</span>}
+              {index === breadcrumbs.length - 1
+                ? <span aria-current="page">{item.name}</span>
+                : <a href={item.href} class="inline-block py-2 underline underline-offset-4 hover:text-navy-900">{item.name}</a>}
+            </li>
+          ))}
+        </ol>
+      </nav>
+
+      <section aria-labelledby="investment-title" class="bg-white rounded-3xl border border-stone-200 overflow-hidden mb-12">
+        <div class="grid lg:grid-cols-2">
+          <div class="relative self-start lg:self-center">
+            <Picture src={property.image} alt={property.imageAlt} widths={[400, 640, 960, 1280, 1600]} sizes="(min-width: 1280px) 600px, (min-width: 1024px) 50vw, 100vw" formats={["avif", "webp"]} fallbackFormat="webp" quality={55} loading="eager" fetchpriority="high" class="w-full h-auto" />
+            <PhotoCaption />
+          </div>
+          <div class="p-6 md:p-10">
+            <p class="text-sm font-medium text-navy-900 mb-4">{property.stage}</p>
+            <h1 id="investment-title" class="font-heading font-bold text-3xl md:text-4xl text-navy-900 mb-6 leading-tight">Dom na sprzedaż w Pisarzowicach — etap II</h1>
+            <div class="text-slate-600 mb-6 space-y-3">
+              {property.description.split("\n\n").map((paragraph) => <p>{paragraph}</p>)}
+            </div>
+            <PropertySpecs size={property.size} plot={property.plot} status={property.status} />
+            <p class="text-slate-600 mb-4">{property.rooms} pokoje · {property.bathrooms} łazienki</p>
+            <ul class="flex flex-wrap gap-2 mb-6">
+              {property.features.map((feature) => <li class="px-3 py-1.5 bg-navy-900/5 text-navy-900 text-sm rounded-full">{feature}</li>)}
+            </ul>
+            <p class="text-slate-600 text-sm">Cena</p>
+            <p class="font-heading font-bold text-3xl text-navy-900 mb-6">{property.price}</p>
+            <Button href="/#kontakt">Umów się na oglądanie</Button>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="gallery-title" class="mb-12">
+        <h2 id="gallery-title" class="font-heading font-bold text-3xl text-navy-900 mb-4">Zdjęcia domu</h2>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {gallery.map((photo) => (
+            <figure class="bg-white rounded-2xl border border-stone-200 overflow-hidden">
+              <a href={photo.full.src} class="block rounded-t-2xl" aria-label={`Powiększ zdjęcie: ${photo.caption}`}>
+                <Picture src={photo.image} alt={photo.alt} widths={[400, 640, 960]} sizes="(min-width: 1280px) 384px, (min-width: 1024px) 30vw, (min-width: 640px) 46vw, 100vw" formats={["avif", "webp"]} fallbackFormat="webp" quality={65} loading="lazy" class="w-full aspect-[4/3] object-cover" />
+              </a>
+              <figcaption class="p-4 text-sm text-slate-600">{photo.caption}</figcaption>
+            </figure>
+          ))}
+        </div>
+      </section>
+
+      <section aria-labelledby="plans-title" class="mb-12">
+        <h2 id="plans-title" class="font-heading font-bold text-3xl text-navy-900 mb-4">Układ pomieszczeń</h2>
+        <p class="text-slate-600 mb-6 max-w-3xl">Na parterze zaplanowano salon z jadalnią, kuchnię i garaż. Na poddaszu są trzy sypialnie i łazienka.</p>
+        <div class="grid lg:grid-cols-2 gap-6">
+          {property.plans.map((plan, index) => (
+            <figure class="bg-white p-4 md:p-6 rounded-2xl border border-stone-200">
+              <h3 class="font-bold text-xl text-navy-900 mb-4">{index === 0 ? 'Parter' : 'Poddasze'}</h3>
+              <a href={plan.image.src} class="block" aria-label={`Powiększ rzut: ${index === 0 ? 'parter' : 'poddasze'}`}>
+                <img src={plan.image.src} width={plan.image.width} height={plan.image.height} alt={plan.alt} loading="lazy" decoding="async" class="w-full h-auto" />
+                <span class="inline-block py-3 text-navy-900 underline underline-offset-4">Powiększ rzut {index === 0 ? 'parteru' : 'poddasza'}</span>
+              </a>
+              <ol class="grid grid-cols-2 gap-x-4 gap-y-3 my-4 text-sm text-slate-700" aria-label={`Pomieszczenia — ${index === 0 ? 'parter' : 'poddasze'}`}>
+                {plan.rooms.map((room, roomIndex) => (
+                  <li class="flex items-center gap-2">
+                    <span class="inline-flex shrink-0 items-center justify-center w-7 h-7 rounded-full border border-navy-900/25 text-navy-900 font-medium" style={{ backgroundColor: room.color }} aria-hidden="true">{roomIndex + 1}</span>
+                    <span><span class="sr-only">{roomIndex + 1}. </span>{room.name}</span>
+                  </li>
+                ))}
+              </ol>
+              <a href={plan.sourceImage.src} class="inline-block py-3 mt-2 text-sm text-navy-900 underline underline-offset-4" aria-label={`Rzut z wymiarami — ${index === 0 ? 'parter' : 'poddasze'}`}>Rzut z wymiarami</a>
+            </figure>
+          ))}
+        </div>
+      </section>
+
+      <section aria-labelledby="contact-title" class="bg-white p-6 md:p-10 rounded-3xl border border-stone-200">
+        <h2 id="contact-title" class="font-heading font-bold text-2xl text-navy-900 mb-4">Obejrzyj dom w Pisarzowicach</h2>
+        <p class="text-slate-600 mb-6">Zadzwoń lub napisz do nas. Ustalimy dogodny termin oglądania.</p>
+        <Button href="/#kontakt">Umów się na oglądanie</Button>
+        <p class="mt-6 text-slate-600">Masz własną działkę? Sprawdź naszą <a href="/budowa-domow-pod-klucz" class="text-navy-900 underline underline-offset-4">ofertę budowy domu</a>.</p>
+      </section>
+    </Container>
+  </main>
+  <Footer />
+</Layout>

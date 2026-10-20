@@ -72,16 +72,11 @@ test('unknown pages remain HTTP 404 and never become indexable content', async (
   }
 });
 
-test('built sitemap contains only the four canonical, indexable URLs', async () => {
+test('built sitemap contains all canonical, indexable public URLs', async () => {
   const index = await readFile('dist/client/sitemap-index.xml', 'utf8');
   assert.match(index, /<loc>https:\/\/www\.investdom\.com\.pl\/sitemap-0\.xml<\/loc>/);
   const sitemap = await readFile('dist/client/sitemap-0.xml', 'utf8');
-  assert.deepEqual([...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map(([, url]) => new URL(url).href).sort(), [
-    'https://www.investdom.com.pl/',
-    'https://www.investdom.com.pl/budowa-domow-pod-klucz',
-    'https://www.investdom.com.pl/domy-na-sprzedaz-bielsko',
-    'https://www.investdom.com.pl/projekty-domow',
-  ]);
+  assert.deepEqual([...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map(([, url]) => new URL(url).href).sort(), paths.map((path) => 'https://www.investdom.com.pl' + path).sort());
 });
 
 test('visible contact details and telephone links use the confirmed business data', () => {
@@ -92,6 +87,38 @@ test('visible contact details and telephone links use the confirmed business dat
     assert.match(body, /ul\. Do lasu 25/);
     assert.doesNotMatch(body, /571\s*328\s*983|Na Lasu/);
   }
+});
+
+test('investment exposes facts, project plans and usable image links in HTML without JavaScript', () => {
+  const page = pages.find((page) => page.path === '/inwestycje/pisarzowice-etap-ii');
+  assert.ok(page, 'The investment must be part of public page verification');
+  const main = page.html.match(/<main\b[^>]*>([\s\S]*?)<\/main>/)[1];
+  for (const fact of ['Pisarzowicach', 'koło Bielska-Białej', '895 000 zł', '135 m²', '700 m²', '4 pokoje', '3 sypialnie', '2 łazienki', 'Etap II w trakcie realizacji', 'Wizualizacja otoczenia']) {
+    assert.ok(main.includes(fact), fact);
+  }
+  assert.doesNotMatch(main, /Okręgow|sprzedany|remont/i);
+  assert.match(main, /id="plans-title"[^>]*>Układ pomieszczeń<\/h2>/);
+  assert.match(main, /<h3[^>]*>Parter<\/h3>/);
+  assert.match(main, /<h3[^>]*>Poddasze<\/h3>/);
+  assert.doesNotMatch(main, /Joanna Srokosz|Piotr Pezda|Źródło: dokumentacja|Uproszczone schematy|Wybierz zdjęcie/);
+  assert.match(main, /<p\b[^>]*>[^<]*stanie deweloperskim\.<\/p>\s*<p\b[^>]*>Zapraszamy do oglądania\.<\/p>/);
+  const imageLinks = [...main.matchAll(/<a\b[^>]*href="([^"]+)"[^>]*aria-label="(?:Powiększ zdjęcie|Powiększ rzut)/g)];
+  assert.equal(imageLinks.length, 8, 'Six photos and two plans open through native links');
+  const diagrams = parsePage(main).images.filter((image) => new URL(image.src, base).pathname.endsWith('.svg'));
+  assert.equal(diagrams.length, 2, 'Presentation plans remain crisp as vector images');
+  assert.match(main, /aria-label="Pomieszczenia — parter"/);
+  assert.match(main, /aria-label="Pomieszczenia — poddasze"/);
+  assert.equal([...main.matchAll(/aria-label="Rzut z wymiarami — /g)].length, 2);
+  const hero = parsePage(main).images[0];
+  assert.equal(hero.loading, 'eager');
+  assert.equal(hero.fetchpriority, 'high');
+  const breadcrumbs = page.schemas.find((schema) => schema['@type'] === 'BreadcrumbList');
+  assert.deepEqual(breadcrumbs.itemListElement.map((item) => item.item), [
+    'https://www.investdom.com.pl/',
+    'https://www.investdom.com.pl/domy-na-sprzedaz-bielsko',
+    'https://www.investdom.com.pl/inwestycje/pisarzowice-etap-ii',
+  ]);
+  assert.match(main, /href="\/#kontakt"[^>]*>\s*Umów się na oglądanie/);
 });
 
 test('business JSON-LD describes the confirmed builder without unsupported claims', () => {
