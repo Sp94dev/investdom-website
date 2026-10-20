@@ -22,8 +22,17 @@ export interface PropertyPlan {
   sourceImage: ImageMetadata;
   alt: string;
   caption: string;
-  rooms: readonly string[];
+  rooms: readonly { name: string; color: string }[];
 }
+
+const planColors = {
+  circulation: '#ede2d3',
+  living: '#f7d19b',
+  kitchen: '#f8e7a8',
+  bedroom: '#c8dfc5',
+  bathroom: '#b9dbef',
+  garage: '#d3dce5',
+};
 
 // Owner-approved edited view; the surroundings include visualized changes.
 export const propertyPhoto = {
@@ -50,14 +59,28 @@ export const propertyPlans: readonly PropertyPlan[] = [
     sourceImage: groundFloor,
     alt: 'Układ pomieszczeń projektu — parter z garażem, salonem, kuchnią, pokojem i łazienką',
     caption: 'Parter: salon z jadalnią, kuchnia, pokój, łazienka, hall, przedsionek i garaż.',
-    rooms: ['Przedsionek', 'Hall', 'Łazienka', 'Salon z jadalnią', 'Kuchnia', 'Pokój', 'Garaż'],
+    rooms: [
+      { name: 'Przedsionek', color: planColors.circulation },
+      { name: 'Hall', color: planColors.circulation },
+      { name: 'Łazienka', color: planColors.bathroom },
+      { name: 'Salon z jadalnią', color: planColors.living },
+      { name: 'Kuchnia', color: planColors.kitchen },
+      { name: 'Pokój', color: planColors.bedroom },
+      { name: 'Garaż', color: planColors.garage },
+    ],
   },
   {
     image: { src: upperFloorDiagram, width: 815, height: 750 },
     sourceImage: upperFloor,
     alt: 'Układ pomieszczeń projektu — poddasze z trzema pokojami, łazienką i hallem',
     caption: 'Poddasze: trzy pokoje, łazienka i hall ze schodami.',
-    rooms: ['Hall', 'Łazienka', 'Sypialnia', 'Sypialnia', 'Sypialnia'],
+    rooms: [
+      { name: 'Hall', color: planColors.circulation },
+      { name: 'Łazienka', color: planColors.bathroom },
+      { name: 'Sypialnia', color: planColors.bedroom },
+      { name: 'Sypialnia', color: planColors.bedroom },
+      { name: 'Sypialnia', color: planColors.bedroom },
+    ],
   },
 ];
 

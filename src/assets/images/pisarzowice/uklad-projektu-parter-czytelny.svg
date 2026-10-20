@@ -8,18 +8,18 @@
     .detail{fill:none;stroke:#58718a;stroke-width:3}
     .window{fill:#fff;stroke:#58718a;stroke-width:3}
     .label{fill:#1a3b5d;font-family:Arial,Helvetica,sans-serif;font-size:46px;font-weight:600;text-anchor:middle}
-    .number circle{fill:#1a3b5d}
-    .number text{fill:#fff;font-family:Arial,Helvetica,sans-serif;font-size:31px;font-weight:700;text-anchor:middle;dominant-baseline:central}
+    .number circle{stroke:#1a3b5d;stroke-width:2}
+    .number text{fill:#1a3b5d;font-family:Arial,Helvetica,sans-serif;font-size:31px;font-weight:700;text-anchor:middle;dominant-baseline:central}
   </style>
   <path fill="#fff" d="M245 240h1260v800H245z"/>
   <!-- Presentation geometry follows the source scan's coordinates; no inferred dimensions. -->
   <path fill="#f3f6f8" stroke="#b7c6d0" stroke-width="3" d="M266 355H444V874H266Z M929 942h272v87H929z"/>
-  <path fill="#f5f4f0" d="M460 280h710v95h285v495h-285v55H460Z"/>
-  <path fill="#f6edde" d="M477 297H935V632H477Z"/>
-  <path fill="#f7f0e4" d="M477 738H720V909H477Z"/>
-  <path fill="#edf3ee" d="M942 297H1154V626H942Z"/>
-  <path fill="#e9f0f5" d="M1032 638H1154V782H1032Z"/>
-  <path fill="#edf1f4" d="M1186 391H1439V854H1186Z"/>
+  <path fill="#ede2d3" d="M460 280h710v95h285v495h-285v55H460Z"/>
+  <path fill="#f7d19b" d="M477 297H935V632H477Z"/>
+  <path fill="#f8e7a8" d="M477 738H720V909H477Z"/>
+  <path fill="#c8dfc5" d="M942 297H1154V626H942Z"/>
+  <path fill="#b9dbef" d="M1032 638H1154V782H1032Z"/>
+  <path fill="#d3dce5" d="M1186 391H1439V854H1186Z"/>
   <path class="wall outer" d="M460 280H1170V375H1455V870H1170V925H460Z M1170 375V870"/>
   <path class="wall" d="M935 296V632H830 M1016 632H1154 M1026 638V671 M1026 746V785H1154 M720 740V909 M893 756V909 M893 756H908 M985 756H1026"/>
   <path fill="#1a3b5d" d="M700 622h20v20h-20z"/>
@@ -42,12 +42,12 @@
     <text x="813" y="884" font-size="25">Schody</text>
   </g>
   <g class="number">
-    <g transform="translate(1055 846)"><circle r="25"/><text>1</text></g>
-    <g transform="translate(785 657)"><circle r="25"/><text>2</text></g>
-    <g transform="translate(1092 707)"><circle r="25"/><text>3</text></g>
-    <g transform="translate(695 373)"><circle r="25"/><text>4</text></g>
-    <g transform="translate(594 793)"><circle r="25"/><text>5</text></g>
-    <g transform="translate(1045 410)"><circle r="25"/><text>6</text></g>
-    <g transform="translate(1305 581)"><circle r="25"/><text>7</text></g>
+    <g transform="translate(1055 846)"><circle r="25" fill="#ede2d3"/><text>1</text></g>
+    <g transform="translate(785 657)"><circle r="25" fill="#ede2d3"/><text>2</text></g>
+    <g transform="translate(1092 707)"><circle r="25" fill="#b9dbef"/><text>3</text></g>
+    <g transform="translate(695 373)"><circle r="25" fill="#f7d19b"/><text>4</text></g>
+    <g transform="translate(594 793)"><circle r="25" fill="#f8e7a8"/><text>5</text></g>
+    <g transform="translate(1045 410)"><circle r="25" fill="#c8dfc5"/><text>6</text></g>
+    <g transform="translate(1305 581)"><circle r="25" fill="#d3dce5"/><text>7</text></g>
   </g>
 </svg>

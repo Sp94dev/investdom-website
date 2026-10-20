@@ -292,8 +292,8 @@
     },
     {
       "file": "src/assets/images/pisarzowice/uklad-projektu-parter-czytelny.svg",
-      "sha256": "b57ca0d019beee2f87177e19524765446f54af64b4935538ffe5099d9c4088ef",
-      "bytes": 3811
+      "sha256": "18d1a67f8b8f793ea17fb19912db3098c1f9c36ec168cb054928f09a313b71b7",
+      "bytes": 3936
     },
     {
       "file": "src/assets/images/pisarzowice/uklad-projektu-parter.png",
@@ -302,8 +302,8 @@
     },
     {
       "file": "src/assets/images/pisarzowice/uklad-projektu-poddasze-czytelny.svg",
-      "sha256": "9fcceb4ff0242b42ac44b00693ad54e779d183a4b8257df6d1ebc0008bae46c3",
-      "bytes": 3034
+      "sha256": "e6ec896f415fa14c420b798244821964c17c46d4e19f4b974a3b8e4bc21d17ec",
+      "bytes": 3129
     },
     {
       "file": "src/assets/images/pisarzowice/uklad-projektu-poddasze.png",
@@ -332,5 +332,52 @@
       5
     ],
     "withoutJavaScript": true
+  },
+  "planColorValidation": {
+    "geometryUnchanged": true,
+    "contrast": [
+      {
+        "color": "#ede2d3",
+        "ratio": 8.984645438086146
+      },
+      {
+        "color": "#f7d19b",
+        "ratio": 7.960472571003899
+      },
+      {
+        "color": "#f8e7a8",
+        "ratio": 9.294899163643764
+      },
+      {
+        "color": "#c8dfc5",
+        "ratio": 8.107584457153571
+      },
+      {
+        "color": "#b9dbef",
+        "ratio": 7.90221769966052
+      },
+      {
+        "color": "#d3dce5",
+        "ratio": 8.283391106660865
+      }
+    ],
+    "legendItems": 12,
+    "views": [
+      {
+        "width": 375,
+        "overflow": false,
+        "violations": 0
+      },
+      {
+        "width": 768,
+        "overflow": false,
+        "violations": 0
+      },
+      {
+        "width": 1440,
+        "overflow": false,
+        "violations": 0
+      }
+    ]
   }
 }
