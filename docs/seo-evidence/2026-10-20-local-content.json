@@ -197,7 +197,7 @@
       "keyboardDimensionedSource": true,
       "contact": {
         "focused": true,
-        "top": 185.25,
+        "top": 184.5,
         "required": 4
       },
       "scrollspy": [
@@ -234,28 +234,28 @@
     "withoutJS": [
       {
         "path": "/",
-        "h1": "\nKompleksowa Budowa Domów w  Bielsku-Białej i na Śląsku\n",
-        "mainTextLength": 4957
+        "h1": "\nBudowa domów w  Bielsku-Białej i na Śląsku\n",
+        "mainTextLength": 4006
       },
       {
         "path": "/budowa-domow-pod-klucz",
         "h1": "\nBudowa domów w Bielsku-Białej i okolicach\n",
-        "mainTextLength": 1181
+        "mainTextLength": 1080
       },
       {
         "path": "/domy-na-sprzedaz-bielsko",
         "h1": "\nDomy na sprzedaż w Bielsku-Białej i okolicach\n",
-        "mainTextLength": 610
+        "mainTextLength": 560
       },
       {
         "path": "/projekty-domow",
-        "h1": "\nAutorskie Projekty Domów\n",
-        "mainTextLength": 444
+        "h1": "\nProjekt domu jednorodzinnego\n",
+        "mainTextLength": 380
       },
       {
         "path": "/inwestycje/pisarzowice-etap-ii",
         "h1": "Dom na sprzedaż w Pisarzowicach — etap II",
-        "mainTextLength": 1935
+        "mainTextLength": 1216
       }
     ]
   },
@@ -379,5 +379,17 @@
         "violations": 0
       }
     ]
+  },
+  "contentEditing": {
+    "skill": "copy-editing (coreyhaines31/marketingskills)",
+    "scope": "All five public pages, shared property copy, metadata, FAQ and contact",
+    "invitation": "Separate HTML paragraph on property detail and listing",
+    "removed": "Gallery instructions, project author/source message, duplicate plan captions and unsupported marketing claims",
+    "facts": "Confirmed property facts unchanged",
+    "visualReviewWidths": [
+      375,
+      1440
+    ],
+    "checks": "Repeated Astro check/build, 53 tests, SEO, HTTP and browser audit after editing"
   }
 }

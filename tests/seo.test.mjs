@@ -97,16 +97,18 @@ test('investment exposes facts, project plans and usable image links in HTML wit
     assert.ok(main.includes(fact), fact);
   }
   assert.doesNotMatch(main, /Okręgow|sprzedany|remont/i);
-  assert.match(main, /Układ pomieszczeń projektu — parter/);
-  assert.match(main, /Układ pomieszczeń projektu — poddasze/);
-  assert.match(main, /Joanna Srokosz/);
+  assert.match(main, /id="plans-title"[^>]*>Układ pomieszczeń<\/h2>/);
+  assert.match(main, /<h3[^>]*>Parter<\/h3>/);
+  assert.match(main, /<h3[^>]*>Poddasze<\/h3>/);
+  assert.doesNotMatch(main, /Joanna Srokosz|Piotr Pezda|Źródło: dokumentacja|Uproszczone schematy|Wybierz zdjęcie/);
+  assert.match(main, /<p\b[^>]*>[^<]*stanie deweloperskim\.<\/p>\s*<p\b[^>]*>Zapraszamy do oglądania\.<\/p>/);
   const imageLinks = [...main.matchAll(/<a\b[^>]*href="([^"]+)"[^>]*aria-label="(?:Powiększ zdjęcie|Powiększ rzut)/g)];
   assert.equal(imageLinks.length, 8, 'Six photos and two plans open through native links');
   const diagrams = parsePage(main).images.filter((image) => new URL(image.src, base).pathname.endsWith('.svg'));
   assert.equal(diagrams.length, 2, 'Presentation plans remain crisp as vector images');
   assert.match(main, /aria-label="Pomieszczenia — parter"/);
   assert.match(main, /aria-label="Pomieszczenia — poddasze"/);
-  assert.equal([...main.matchAll(/aria-label="Rzut projektu z wymiarami — /g)].length, 2);
+  assert.equal([...main.matchAll(/aria-label="Rzut z wymiarami — /g)].length, 2);
   const hero = parsePage(main).images[0];
   assert.equal(hero.loading, 'eager');
   assert.equal(hero.fetchpriority, 'high');
@@ -116,7 +118,7 @@ test('investment exposes facts, project plans and usable image links in HTML wit
     'https://www.investdom.com.pl/domy-na-sprzedaz-bielsko',
     'https://www.investdom.com.pl/inwestycje/pisarzowice-etap-ii',
   ]);
-  assert.match(main, /href="\/#kontakt"[^>]*>\s*Umów oglądanie/);
+  assert.match(main, /href="\/#kontakt"[^>]*>\s*Umów się na oglądanie/);
 });
 
 test('business JSON-LD describes the confirmed builder without unsupported claims', () => {

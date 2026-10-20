@@ -13,17 +13,31 @@ Handover `HANDOVER-INVESTDOM-2026-10-20.md` przekazany lokalnie przez właścici
 ## Zwięzłe teksty
 
 - H1 usługi: „Budowa domów w Bielsku-Białej i okolicach”.
-- Wstęp: „Budujemy domy jednorodzinne w Bielsku-Białej i okolicach. Ustalamy zakres współpracy dla Twojego projektu: stan surowy, deweloperski lub budowa pod klucz.”
+- Wstęp: „Masz działkę i planujesz budowę domu? Budujemy w Bielsku-Białej i okolicach, od fundamentów po wykończenie. Możesz zlecić nam stan surowy, deweloperski lub budowę pod klucz.”
 - CTA usługi: „Zapytaj o wycenę” → `/#kontakt`.
 - H1 inwestycji: „Dom na sprzedaż w Pisarzowicach — etap II”.
 - Status: „Etap II w trakcie realizacji”. Cena i parametry wyłącznie z `src/data/properties.ts`.
-- CTA inwestycji: „Umów oglądanie” → `/#kontakt`.
-- Rzuty: „Układ pomieszczeń projektu — parter/poddasze”. To ten sam projekt według właściciela, nie dokumentacja powykonawcza oferowanego egzemplarza.
+- CTA inwestycji: „Umów się na oglądanie” → `/#kontakt`.
+- Rzuty: „Układ pomieszczeń”, osobne nagłówki „Parter” i „Poddasze”. To ten sam projekt według właściciela, nie dokumentacja powykonawcza oferowanego egzemplarza.
+
+## Redakcja całej strony po uwagach właściciela
+
+Użyto zainstalowanego skilla `copy-editing` z repozytorium `coreyhaines31/marketingskills`. Przejrzano wszystkie pięć stron, wspólne dane, metadane, FAQ i kontakt.
+
+- „Zapraszamy do oglądania.” jest osobnym akapitem HTML, również na liście ofert.
+- Usunięto instrukcję nad galerią, skrócono podpisy zdjęć i opisy ALT.
+- „Układ pomieszczeń” opisuje teraz rozkład domu w dwóch zdaniach. Nagłówki rzutów to „Parter” i „Poddasze”; legenda zastępuje powtarzające ją podpisy.
+- Zgodnie z najnowszą prośbą właściciela całkowicie usunięto publiczną wiadomość o autorach i źródle projektu. To świadoma zmiana względem wcześniejszej wytycznej handoveru. Źródłowe materiały i pochodzenie pozostają udokumentowane w tym raporcie.
+- Ujednolicono zaproszenia do kontaktu: „Umów się na oglądanie” i „Zapytaj o wycenę budowy”.
+- Na stronie głównej, stronie usługi i projektu zastąpiono slogany konkretnym opisem oferty. Usunięto niepotwierdzone gwarancje, liczby dotyczące doświadczenia i satysfakcji, widełki cen/czasu budowy, darmową wycenę, odpowiedź w 24 h oraz deklarację autorskich projektów.
+- Cena, lokalizacja, powierzchnia, działka, liczba pokoi, łazienek i status inwestycji nie zostały zmienione. Wygenerowane Markdown i FAQ JSON-LD korzystają z aktualnych tekstów.
+
+Po redakcji powtórzono check/build, wszystkie 53 testy, SEO dla pięciu stron, 299 kontroli HTTP i audyt 15 widoków (375/768/1440 px). Bez błędów JS, poziomego przepełnienia i zgłoszonych naruszeń axe. Osobno sprawdzono odstęp między akapitami oraz widoki galerii, rzutów i kontaktu na telefonie i desktopie.
 
 ## Dostarczone zmiany
 
 - Strona budowy: lokalny H1/wstęp, trzy zakresy współpracy, krótki proces ustalenia prac, dwie fotografie i bezpośrednie CTA. Usunięte niepotwierdzone standardy materiałowe i obietnice ze starego opisu. `Service` JSON-LD odpowiada widocznej usłudze.
-- Nowa prerenderowana strona inwestycji: parametry ze wspólnego źródła, status etapu, cena, sześć zdjęć, dwa rzuty, autorstwo projektu i CTA. Własny canonical i metadane; `BreadcrumbList` odpowiada widocznej nawigacji.
+- Nowa prerenderowana strona inwestycji: parametry ze wspólnego źródła, status etapu, cena, sześć zdjęć, dwa rzuty i CTA. Własny canonical i metadane; `BreadcrumbList` odpowiada widocznej nawigacji.
 - Linki do szczegółów z listy ofert, karty na stronie głównej i projektu. Powiązanie usługa ↔ inwestycja. Nowa podstrona zachowuje zaznaczenie „Domy” w menu.
 - Nowa trasa jest w allowliście Markdown, literalnym matcherze root middleware, nagłówkach Vercel, discovery i sitemap. Pliki Markdown nadal powstają z HTML; bez ręcznej kopii opisów.
 - Walidator SEO oraz testy sitemap/generowania nie zakładają czterech stron. Rozszerzone kontrole obejmują nową trasę, dane, bezpośrednie linki obrazów, eager hero, breadcrumbs, GET/HEAD i nagłówki Markdown.
@@ -44,15 +58,15 @@ Pobrano oryginały 16 zdjęć z [folderu zdjęć właściciela](https://drive.go
 | IMG_3320 | Elewacja ogrodowa na wprost | [Drive](https://drive.google.com/file/d/1ODiL-NxvmP6RzpMNGNU0JD1z3CDw8KuA/view) |
 | IMG_3324 | Poddasze i elewacja boczna | [Drive](https://drive.google.com/file/d/1WqbxjHu8yvLX29lE5NNDJDCWCP-Hlt-t/view) |
 
-Produkcyjne pliki JPG powstały z oryginałów przez `sharp`: orientacja EXIF, szerokość 2000 px bez powiększania, JPEG quality 90/mozjpeg, usunięcie metadanych. Astro generuje responsywne AVIF/WebP i osobne obrazy WebP 2000 px do powiększania. IMG_3244 i IMG_3321 są również na stronie budowy. Podpis galerii wyjaśnia różnice w przygotowaniu otoczenia między sesjami zdjęciowymi. Retusz hero nie był zmieniany; ALT, klimatyzatory i podpis „Wizualizacja otoczenia” pozostały.
+Produkcyjne pliki JPG powstały z oryginałów przez `sharp`: orientacja EXIF, szerokość 2000 px bez powiększania, JPEG quality 90/mozjpeg, usunięcie metadanych. Astro generuje responsywne AVIF/WebP i osobne obrazy WebP 2000 px do powiększania. IMG_3244 i IMG_3321 są również na stronie budowy. Galeria ma krótkie podpisy ujęć. Zdjęcia pochodzą z różnych sesji i nie stanowią deklaracji dzisiejszego stanu otoczenia. Retusz hero nie był zmieniany; ALT, klimatyzatory i podpis „Wizualizacja otoczenia” pozostały.
 
-Źródło rzutów: [dwustronicowy PDF przekazany przez właściciela](https://drive.google.com/file/d/1aQFwBB2SxQoQQn8mFMItR6Ge0I7YFuBR/view), lokalnie `RzutyOkregowa-1.pdf`. Z każdej strony wyodrębniono osadzony skan 3307 × 2338 px, zachowując oryginalne piksele i proporcje. Kadry `(left, top, right, bottom)`: parter `(410, 230, 2190, 1530)` → 1780 × 1300 px; poddasze `(740, 208, 2200, 1435)` → 1460 × 1227 px. Bez rekonstrukcji AI, zmiany wymiarów lub wyliczania powierzchni. Pełne arkusze, pieczątki, podpisy i adres z metryki nie są publikowane. Autor i opracowanie są podani w HTML zgodnie z metryką.
+Źródło rzutów: [dwustronicowy PDF przekazany przez właściciela](https://drive.google.com/file/d/1aQFwBB2SxQoQQn8mFMItR6Ge0I7YFuBR/view), lokalnie `RzutyOkregowa-1.pdf`. Z każdej strony wyodrębniono osadzony skan 3307 × 2338 px, zachowując oryginalne piksele i proporcje. Kadry `(left, top, right, bottom)`: parter `(410, 230, 2190, 1530)` → 1780 × 1300 px; poddasze `(740, 208, 2200, 1435)` → 1460 × 1227 px. Bez rekonstrukcji AI, zmiany wymiarów lub wyliczania powierzchni. Pełne arkusze, pieczątki, podpisy i adres z metryki nie są publikowane. Na późniejsze, wyraźne polecenie właściciela usunięto z publicznej strony wiadomość o autorach i źródle projektu.
 
 Na prośbę właściciela o większą czytelność prezentacja otrzymała dwa schematy wektorowe: `uklad-projektu-parter-czytelny.svg` i `uklad-projektu-poddasze-czytelny.svg`. Zachowują orientację, proporcje obrysu, podział pomieszczeń, położenie schodów i widoczne otwory ze skanów. Pominięto wymiary i notatki konstrukcyjne; wyposażenia nie dopowiadano. Nazwy, delikatne wypełnienia i kontrastowe numery pomagają odczytać układ. Legenda pomieszczeń jest również tekstem HTML, dostępnym bez JS. Numeracja odpowiada identyfikatorom pomieszczeń ze źródła (np. 1/4 → 4).
 
 Na kolejną prośbę właściciela wzmocniono kolorystykę: salon pomarańczowy, kuchnia żółta, pokoje zielone, łazienki niebieskie, komunikacja beżowa i garaż szaroniebieski. Numery w SVG i legenda HTML mają odpowiadające sobie kolory; nazwy i numeracja nadal przekazują znaczenie niezależnie od koloru. Porównanie wszystkich atrybutów geometrycznych SVG z poprzednim commitem potwierdziło brak zmian układu. Kontrast granatowego tekstu do każdego z sześciu wypełnień wynosi co najmniej **7,90:1**. Po zmianie kolorów powtórzono check/build, 53 testy, SEO i axe na stronie inwestycji przy 375/768/1440 px: bez naruszeń i poziomego przepełnienia.
 
-Schemat SVG otwiera się osobnym linkiem i pozostaje ostry po powiększeniu. Osobny link „Rzut projektu z wymiarami” otwiera niezmieniony PNG ze skanu. Grafiki są emitowane jako lokalne pliki (`?url&no-inline`), aby natywne otwieranie oraz generowany Markdown miały działające adresy HTTP. Brak modala i nowej biblioteki. 135 m² i liczba pokoi pozostają zgodne z ofertą właściciela; to prezentacja układu projektu, nie dokumentacja powykonawcza oferowanego egzemplarza.
+Schemat SVG otwiera się osobnym linkiem i pozostaje ostry po powiększeniu. Osobny link „Rzut z wymiarami” otwiera niezmieniony PNG ze skanu. Grafiki są emitowane jako lokalne pliki (`?url&no-inline`), aby natywne otwieranie oraz generowany Markdown miały działające adresy HTTP. Brak modala i nowej biblioteki. 135 m² i liczba pokoi pozostają zgodne z ofertą właściciela; to prezentacja układu projektu, nie dokumentacja powykonawcza oferowanego egzemplarza.
 
 Pierwsze dwie propozycje powstały przez wbudowane `imagegen` w trybie edycji skanów, z poleceniem zachowania geometrii i otworów oraz usunięcia oznaczeń technicznych. Odrzucono je po porównaniu: parter miał zamknięte wejście do pokoju, a poddasze dodane otwory w ścianach. Żadna wygenerowana propozycja nie jest użyta w aplikacji. Docelowe SVG są autorską grafiką kodową odwzorowaną z widocznej geometrii skanów, bez generatywnej rekonstrukcji. Kontrola obejmowała także zbliżenia źródłowych połączeń pokój–hall–łazienka–przedsionek i otworów na poddaszu.
 
@@ -70,7 +84,7 @@ Pierwsze dwie propozycje powstały przez wbudowane `imagegen` w trybie edycji sk
 | Lokalny HTTP gotowego buildu | 299/299 kontroli, w tym 100 adresów zasobów: wszystkie `src`, warianty `srcset`, powiększenia, Markdown i discovery. HTML → Markdown → HTML, q=0, GET/HEAD, query, 308 bez utraty query i 404. |
 | Chromium + axe | 5 stron × 375/768/1440 px; bez poziomego przepełnienia, zgłoszonych naruszeń axe i błędów JS. |
 | Bez JavaScript | Wszystkie 5 stron zachowuje główną treść/H1; na inwestycji dostępne parametry, opisy i linki rzutów. |
-| Interakcje | Menu mobilne, Escape/inert/focus, zdjęcie, schemat SVG i oryginał z wymiarami otwierane Enterem, focus formularza po „Umów oglądanie”, scrollspy czterech sekcji: poprawne. |
+| Interakcje | Menu mobilne, Escape/inert/focus, zdjęcie, schemat SVG i oryginał z wymiarami otwierane Enterem, focus formularza po „Umów się na oglądanie”, scrollspy czterech sekcji: poprawne. |
 | Ocena wzrokowa | Sprawdzone schematy i legendy przy 375/768/1440 px, porównanie ze skanami i otwieranie oryginału z wymiarami. Prezentacja SVG pozostaje ostra przy powiększaniu; wymiary są w osobnym źródłowym PNG. |
 | `git diff --check` | Poprawny. |
 

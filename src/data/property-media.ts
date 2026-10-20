@@ -21,7 +21,6 @@ export interface PropertyPlan {
   image: { src: string; width: number; height: number };
   sourceImage: ImageMetadata;
   alt: string;
-  caption: string;
   rooms: readonly { name: string; color: string }[];
 }
 
@@ -43,12 +42,12 @@ export const propertyPhoto = {
 // Both original photo groups were confirmed as the offered house on 2026-10-20.
 // The garden varies between sessions; no claim that every photo shows today's surroundings.
 export const propertyGallery: readonly PropertyMedia[] = [
-  { image: garden, alt: 'Dom w Pisarzowicach widziany z ogrodu z trawnikiem', caption: 'Widok od strony ogrodu' },
-  { image: terrace, alt: 'Elewacja domu w Pisarzowicach z wyjściem na taras', caption: 'Elewacja z wyjściem na taras' },
+  { image: garden, alt: 'Dom w Pisarzowicach widziany z ogrodu z trawnikiem', caption: 'Dom i ogród' },
+  { image: terrace, alt: 'Elewacja domu w Pisarzowicach z wyjściem na taras', caption: 'Wyjście na taras' },
   { image: entrance, alt: 'Wejście do domu i brama garażowa od strony ulicy', caption: 'Wejście i garaż' },
-  { image: side, alt: 'Boczna elewacja domu w Pisarzowicach od strony ogrodu', caption: 'Dom od strony bocznej elewacji' },
-  { image: rear, alt: 'Elewacja ogrodowa domu w Pisarzowicach na wprost', caption: 'Elewacja ogrodowa' },
-  { image: rearSide, alt: 'Dom w Pisarzowicach z oknami poddasza i boczną elewacją', caption: 'Widok na poddasze i boczną elewację' },
+  { image: side, alt: 'Boczna elewacja domu w Pisarzowicach od strony ogrodu', caption: 'Dom z boku' },
+  { image: rear, alt: 'Elewacja ogrodowa domu w Pisarzowicach na wprost', caption: 'Dom od strony ogrodu' },
+  { image: rearSide, alt: 'Boczna elewacja domu w Pisarzowicach z oknami poddasza', caption: 'Boczna elewacja' },
 ];
 
 // Presentation diagrams traced from the source scans; originals retain dimension lines.
@@ -57,8 +56,7 @@ export const propertyPlans: readonly PropertyPlan[] = [
   {
     image: { src: groundFloorDiagram, width: 1260, height: 800 },
     sourceImage: groundFloor,
-    alt: 'Układ pomieszczeń projektu — parter z garażem, salonem, kuchnią, pokojem i łazienką',
-    caption: 'Parter: salon z jadalnią, kuchnia, pokój, łazienka, hall, przedsionek i garaż.',
+    alt: 'Rzut parteru z garażem, salonem, kuchnią, pokojem i łazienką',
     rooms: [
       { name: 'Przedsionek', color: planColors.circulation },
       { name: 'Hall', color: planColors.circulation },
@@ -72,8 +70,7 @@ export const propertyPlans: readonly PropertyPlan[] = [
   {
     image: { src: upperFloorDiagram, width: 815, height: 750 },
     sourceImage: upperFloor,
-    alt: 'Układ pomieszczeń projektu — poddasze z trzema pokojami, łazienką i hallem',
-    caption: 'Poddasze: trzy pokoje, łazienka i hall ze schodami.',
+    alt: 'Rzut poddasza z trzema pokojami, łazienką i hallem',
     rooms: [
       { name: 'Hall', color: planColors.circulation },
       { name: 'Łazienka', color: planColors.bathroom },
@@ -83,5 +80,3 @@ export const propertyPlans: readonly PropertyPlan[] = [
     ],
   },
 ];
-
-export const projectPlanCredit = 'Projekt architektoniczny: mgr inż. arch. Joanna Srokosz. Opracowanie: Projektowanie i Nadzory inż. Piotr Pezda. Źródło: dokumentacja projektu przekazana przez INVESTDOM.';

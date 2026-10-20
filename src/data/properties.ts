@@ -28,7 +28,7 @@ export const properties: readonly Property[] = [
   {
     id: 'pisarzowice-etap-ii',
     href: '/inwestycje/pisarzowice-etap-ii',
-    title: 'Dom Wolnostojący Pisarzowice (Etap II)',
+    title: 'Dom wolnostojący w Pisarzowicach (etap II)',
     location: 'Pisarzowice',
     price: '895 000 zł',
     size: '135 m²',
@@ -43,7 +43,7 @@ export const properties: readonly Property[] = [
     gallery: propertyGallery,
     plans: propertyPlans,
     description:
-      'Gotowy dom wolnostojący na sprzedaż w Pisarzowicach koło Bielska-Białej, w stanie deweloperskim. Zapraszamy do kontaktu i umówienia oglądania.',
+      'Dom wolnostojący w Pisarzowicach koło Bielska-Białej, gotowy w stanie deweloperskim.\n\nZapraszamy do oglądania.',
   },
 ];
 

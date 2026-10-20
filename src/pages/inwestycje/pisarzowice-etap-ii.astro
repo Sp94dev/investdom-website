@@ -10,7 +10,6 @@ import PropertySpecs from "../../components/ui/PropertySpecs.astro";
 import PhotoCaption from "../../components/ui/PhotoCaption.astro";
 import { Picture, getImage } from "astro:assets";
 import { properties } from "../../data/properties";
-import { projectPlanCredit } from "../../data/property-media";
 import { getCanonicalUrl } from "../../lib/seo.mjs";
 
 const property = properties.find((item) => item.id === 'pisarzowice-etap-ii');
@@ -34,7 +33,7 @@ const gallery = await Promise.all(property.gallery.map(async (photo) => ({
 
 <Layout
   title="Dom na sprzedaż Pisarzowice — 135 m², etap II | INVESTDOM"
-  description={`Dom wolnostojący w Pisarzowicach koło Bielska-Białej: ${property.size}, działka ${property.plot}, ${property.price}. Zobacz zdjęcia, układ projektu i umów oglądanie.`}
+  description={`Dom wolnostojący w Pisarzowicach koło Bielska-Białej: ${property.size}, działka ${property.plot}, ${property.price}. Zdjęcia, układ pomieszczeń i kontakt w sprawie oglądania.`}
   structuredData={[breadcrumbSchema]}
 >
   <Header />
@@ -62,7 +61,9 @@ const gallery = await Promise.all(property.gallery.map(async (photo) => ({
           <div class="p-6 md:p-10">
             <p class="text-sm font-medium text-navy-900 mb-4">{property.stage}</p>
             <h1 id="investment-title" class="font-heading font-bold text-3xl md:text-4xl text-navy-900 mb-6 leading-tight">Dom na sprzedaż w Pisarzowicach — etap II</h1>
-            <p class="text-slate-600 mb-6">{property.description}</p>
+            <div class="text-slate-600 mb-6 space-y-3">
+              {property.description.split("\n\n").map((paragraph) => <p>{paragraph}</p>)}
+            </div>
             <PropertySpecs size={property.size} plot={property.plot} status={property.status} />
             <p class="text-slate-600 mb-4">{property.rooms} pokoje · {property.bathrooms} łazienki</p>
             <ul class="flex flex-wrap gap-2 mb-6">
@@ -70,14 +71,13 @@ const gallery = await Promise.all(property.gallery.map(async (photo) => ({
             </ul>
             <p class="text-slate-600 text-sm">Cena</p>
             <p class="font-heading font-bold text-3xl text-navy-900 mb-6">{property.price}</p>
-            <Button href="/#kontakt">Umów oglądanie</Button>
+            <Button href="/#kontakt">Umów się na oglądanie</Button>
           </div>
         </div>
       </section>
 
       <section aria-labelledby="gallery-title" class="mb-12">
         <h2 id="gallery-title" class="font-heading font-bold text-3xl text-navy-900 mb-4">Zdjęcia domu</h2>
-        <p class="text-slate-600 mb-6 max-w-3xl">Zdjęcia oferowanego domu wykonane na różnych etapach przygotowania otoczenia. Wybierz zdjęcie, aby otworzyć je w pełnym rozmiarze.</p>
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {gallery.map((photo) => (
             <figure class="bg-white rounded-2xl border border-stone-200 overflow-hidden">
@@ -91,12 +91,12 @@ const gallery = await Promise.all(property.gallery.map(async (photo) => ({
       </section>
 
       <section aria-labelledby="plans-title" class="mb-12">
-        <h2 id="plans-title" class="font-heading font-bold text-3xl text-navy-900 mb-4">Układ pomieszczeń projektu</h2>
-        <p class="text-slate-600 mb-6 max-w-3xl">Uproszczone schematy parteru i poddasza z nazwami pomieszczeń. Rzuty z wymiarami otworzysz osobno. To układ projektu; szczegóły oferowanego domu potwierdzimy podczas oglądania.</p>
+        <h2 id="plans-title" class="font-heading font-bold text-3xl text-navy-900 mb-4">Układ pomieszczeń</h2>
+        <p class="text-slate-600 mb-6 max-w-3xl">Na parterze zaplanowano salon z jadalnią, kuchnię i garaż. Na poddaszu są trzy sypialnie i łazienka.</p>
         <div class="grid lg:grid-cols-2 gap-6">
           {property.plans.map((plan, index) => (
             <figure class="bg-white p-4 md:p-6 rounded-2xl border border-stone-200">
-              <h3 class="font-bold text-xl text-navy-900 mb-4">Układ pomieszczeń projektu — {index === 0 ? 'parter' : 'poddasze'}</h3>
+              <h3 class="font-bold text-xl text-navy-900 mb-4">{index === 0 ? 'Parter' : 'Poddasze'}</h3>
               <a href={plan.image.src} class="block" aria-label={`Powiększ rzut: ${index === 0 ? 'parter' : 'poddasze'}`}>
                 <img src={plan.image.src} width={plan.image.width} height={plan.image.height} alt={plan.alt} loading="lazy" decoding="async" class="w-full h-auto" />
                 <span class="inline-block py-3 text-navy-900 underline underline-offset-4">Powiększ rzut {index === 0 ? 'parteru' : 'poddasza'}</span>
@@ -109,19 +109,17 @@ const gallery = await Promise.all(property.gallery.map(async (photo) => ({
                   </li>
                 ))}
               </ol>
-              <figcaption class="text-slate-600 text-sm leading-relaxed">{plan.caption}</figcaption>
-              <a href={plan.sourceImage.src} class="inline-block py-3 mt-2 text-sm text-navy-900 underline underline-offset-4" aria-label={`Rzut projektu z wymiarami — ${index === 0 ? 'parter' : 'poddasze'}`}>Rzut projektu z wymiarami</a>
+              <a href={plan.sourceImage.src} class="inline-block py-3 mt-2 text-sm text-navy-900 underline underline-offset-4" aria-label={`Rzut z wymiarami — ${index === 0 ? 'parter' : 'poddasze'}`}>Rzut z wymiarami</a>
             </figure>
           ))}
         </div>
-        <p class="mt-4 text-sm text-slate-600">{projectPlanCredit}</p>
       </section>
 
       <section aria-labelledby="contact-title" class="bg-white p-6 md:p-10 rounded-3xl border border-stone-200">
-        <h2 id="contact-title" class="font-heading font-bold text-2xl text-navy-900 mb-4">Zobacz dom na miejscu</h2>
-        <p class="text-slate-600 mb-6">Napisz do nas, aby ustalić termin oglądania domu w Pisarzowicach koło Bielska-Białej.</p>
-        <Button href="/#kontakt">Umów oglądanie</Button>
-        <p class="mt-6 text-slate-600">Planujesz budowę na swojej działce? Poznaj <a href="/budowa-domow-pod-klucz" class="text-navy-900 underline underline-offset-4">budowę domów w Bielsku-Białej i okolicach</a>.</p>
+        <h2 id="contact-title" class="font-heading font-bold text-2xl text-navy-900 mb-4">Obejrzyj dom w Pisarzowicach</h2>
+        <p class="text-slate-600 mb-6">Zadzwoń lub napisz do nas. Ustalimy dogodny termin oglądania.</p>
+        <Button href="/#kontakt">Umów się na oglądanie</Button>
+        <p class="mt-6 text-slate-600">Masz własną działkę? Sprawdź naszą <a href="/budowa-domow-pod-klucz" class="text-navy-900 underline underline-offset-4">ofertę budowy domu</a>.</p>
       </section>
     </Container>
   </main>
