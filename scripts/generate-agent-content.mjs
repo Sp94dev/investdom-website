@@ -7,7 +7,7 @@ import { getDiscoveryAssets, getDeploymentOrigin } from './lib/agent-discovery.m
 
 export async function generateAgentContent(root = resolve('.vercel/output/static')) {
   const deploymentOrigin = getDeploymentOrigin();
-  // Read only the four allowlisted outputs of the just-completed Astro build.
+  // Read only allowlisted outputs of the just-completed Astro build.
   const pages = await Promise.all(publicPages.map(async (page) => ({
     ...page,
     markdownBody: await renderBuiltPage(await readFile(join(root, page.file), 'utf8'), page.pathname, deploymentOrigin),

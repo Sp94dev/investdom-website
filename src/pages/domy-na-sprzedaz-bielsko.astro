@@ -98,7 +98,7 @@ import { propertyLocations as districts } from "../data/properties";
                         ))}
                       </div>
 
-                      <div class="mt-auto flex items-center justify-between pt-6 border-t border-stone-100">
+                      <div class="mt-auto flex flex-wrap gap-4 items-center justify-between pt-6 border-t border-stone-100">
                         <div>
                           <span class="block text-slate-500 text-sm">
                             Cena:
@@ -107,8 +107,8 @@ import { propertyLocations as districts } from "../data/properties";
                             {offer.price}
                           </span>
                         </div>
-                        <Button href="/#kontakt" variant="primary">
-                          Zapytaj o detale
+                        <Button href={offer.href} variant="primary">
+                          Zobacz dom i rzuty
                         </Button>
                       </div>
                     </div>

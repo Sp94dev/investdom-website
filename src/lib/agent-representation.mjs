@@ -4,6 +4,7 @@ export const publicPages = Object.freeze([
   { pathname: '/budowa-domow-pod-klucz', markdown: '/budowa-domow-pod-klucz.md', file: 'budowa-domow-pod-klucz/index.html' },
   { pathname: '/domy-na-sprzedaz-bielsko', markdown: '/domy-na-sprzedaz-bielsko.md', file: 'domy-na-sprzedaz-bielsko/index.html' },
   { pathname: '/projekty-domow', markdown: '/projekty-domow.md', file: 'projekty-domow/index.html' },
+  { pathname: '/inwestycje/pisarzowice-etap-ii', markdown: '/inwestycje/pisarzowice-etap-ii.md', file: 'inwestycje/pisarzowice-etap-ii/index.html' },
 ]);
 
 export function getMarkdownPath(pathname) {

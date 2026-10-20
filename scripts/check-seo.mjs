@@ -1,7 +1,8 @@
 import assert from 'node:assert/strict';
 import { fileURLToPath } from 'node:url';
+import { publicPages } from '../src/lib/agent-representation.mjs';
 
-export const paths = ['/', '/budowa-domow-pod-klucz', '/domy-na-sprzedaz-bielsko', '/projekty-domow'];
+export const paths = publicPages.map((page) => page.pathname);
 
 function attributes(tag) {
   return Object.fromEntries([...tag.matchAll(/([\w:-]+)\s*=\s*(?:"([^"]*)"|'([^']*)')/g)]
@@ -33,8 +34,8 @@ export async function loadPages(base) {
 }
 
 export function checkMetadata(pages, origin = 'https://www.investdom.com.pl') {
-  assert.equal(new Set(pages.map((page) => page.title)).size, 4, 'Titles must be unique');
-  assert.equal(new Set(pages.map((page) => page.description)).size, 4, 'Descriptions must be unique');
+  assert.equal(new Set(pages.map((page) => page.title)).size, pages.length, 'Titles must be unique');
+  assert.equal(new Set(pages.map((page) => page.description)).size, pages.length, 'Descriptions must be unique');
   for (const page of pages) {
     assert.ok(page.title?.trim() && page.description?.trim(), page.path);
     assert.deepEqual(page.canonical, [origin + page.path], page.path);

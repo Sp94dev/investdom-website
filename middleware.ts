@@ -4,7 +4,7 @@ import { getDiscoveryLinks, getMarkdownPath, selectRepresentation } from './src/
 // Vercel Routing Middleware, outside src/: runs before the static-file cache.
 // Keep a literal matcher so Vercel can analyze it without executing imports.
 export const config = {
-  matcher: ['/', '/budowa-domow-pod-klucz', '/domy-na-sprzedaz-bielsko', '/projekty-domow'],
+  matcher: ['/', '/budowa-domow-pod-klucz', '/domy-na-sprzedaz-bielsko', '/projekty-domow', '/inwestycje/pisarzowice-etap-ii'],
 };
 
 export default function middleware(request: Request) {

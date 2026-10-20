@@ -50,5 +50,5 @@ test('regeneration is deterministic and does not modify public HTML or sitemap',
   await generateAgentContent(root);
   const after = await Promise.all(paths.map(read));
   assert.deepEqual(before, after);
-  assert.equal([...after[8].matchAll(/<loc>/g)].length, 4);
+  assert.equal([...(await read('/sitemap-0.xml')).matchAll(/<loc>/g)].length, publicPages.length);
 });

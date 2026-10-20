@@ -3,7 +3,7 @@ import { test } from 'node:test';
 import { readFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 
-import { selectRepresentation, getMarkdownPath, getDiscoveryLinks } from '../src/lib/agent-representation.mjs';
+import { selectRepresentation, getMarkdownPath, getDiscoveryLinks, publicPages } from '../src/lib/agent-representation.mjs';
 
 for (const [accept, expected] of [
   [null, 'html'], ['', 'html'], ['*/*', 'html'], ['text/*', 'html'],
@@ -27,9 +27,9 @@ for (const [accept, expected] of [
   assert.equal(selectRepresentation(accept), expected);
 });
 
-test('only the four canonical public pages map to Markdown', () => {
+test('only allowlisted canonical public pages map to Markdown', () => {
   assert.equal(getMarkdownPath('/'), '/index.md');
-  for (const slug of ['budowa-domow-pod-klucz', 'domy-na-sprzedaz-bielsko', 'projekty-domow']) {
+  for (const slug of ['budowa-domow-pod-klucz', 'domy-na-sprzedaz-bielsko', 'projekty-domow', 'inwestycje/pisarzowice-etap-ii']) {
     assert.equal(getMarkdownPath('/' + slug), '/' + slug + '.md');
   }
   for (const path of ['/api/contact', '/404', '/missing', '/index.html', '/projekty-domow/', '/projekty-domow?x=1', '/__proto__']) {
@@ -47,7 +47,7 @@ test('discovery links describe real resources without client query parameters', 
 
 test('routing middleware preserves HTML and rewrites only selected GET/HEAD Markdown', async () => {
   const { default: middleware, config } = await import('../middleware.ts');
-  assert.deepEqual(config.matcher, ['/', '/budowa-domow-pod-klucz', '/domy-na-sprzedaz-bielsko', '/projekty-domow']);
+  assert.deepEqual(config.matcher, publicPages.map((page) => page.pathname));
   const request = (path, method, accept) => new Request('https://preview.example' + path, { method, headers: { Accept: accept } });
   for (const accept of ['*/*', 'text/html', 'text/markdown;q=0', 'text/html;q=1,text/markdown;q=0.2']) {
     const response = middleware(request('/', 'GET', accept));
@@ -57,6 +57,10 @@ test('routing middleware preserves HTML and rewrites only selected GET/HEAD Mark
     assert.equal(response.headers.get('vary'), 'Accept');
   }
   for (const method of ['GET', 'HEAD']) {
+    for (const page of publicPages) {
+      const response = middleware(request(page.pathname + '?utm_source=x', method, 'text/markdown'));
+      assert.equal(response.headers.get('x-middleware-rewrite'), 'https://preview.example' + page.markdown);
+    }
     const response = middleware(request('/projekty-domow?utm_source=x', method, 'text/markdown'));
     assert.equal(response.headers.get('x-middleware-rewrite'), 'https://preview.example/projekty-domow.md');
     assert.equal(response.headers.get('cache-control'), 'private, no-store');
@@ -88,6 +92,8 @@ test('built HTML produces deterministic Markdown with visible semantics and safe
   assert.match(markdown, /!\[Dom z etapu I\]\(https:\/\/www.investdom.com.pl\/dom.webp\)/);
   assert.match(markdown, /135 m², działka 700 m², 895 000 zł/);
   assert.doesNotMatch(markdown, /Nawigacja|Stopka/);
+  const linkedPlan = await renderBuiltPage(sampleHtml('<h1>Projekt</h1><a href="/plan.png"><img src="/plan-small.png" alt="Parter"><span>Powiększ rzut</span></a>'), '/');
+  assert.match(linkedPlan, /\[!\[Parter\]\(https:\/\/www\.investdom\.com\.pl\/plan-small\.png\) Powiększ rzut\]\(https:\/\/www\.investdom\.com\.pl\/plan\.png\)/);
 });
 
 test('HTML conversion drops executable, hidden and form content without executing expressions', async () => {
@@ -183,6 +189,15 @@ test('robots declares search/input preferences without choosing a training polic
 
 test('auxiliary assets have types/noindex and HTML head advertises real resources', async () => {
   const config = JSON.parse(await readFile('vercel.json', 'utf8'));
+  for (const page of publicPages) {
+    const rule = config.headers.find((rule) => rule.source === page.markdown);
+    assert.ok(rule, page.markdown);
+    const headers = Object.fromEntries(rule.headers.map((header) => [header.key.toLowerCase(), header.value]));
+    assert.equal(headers['content-type'], 'text/markdown; charset=utf-8');
+    assert.equal(headers['cache-control'], 'private, no-store');
+    assert.equal(headers.link, `<https://www.investdom.com.pl${page.pathname}>; rel="canonical"`);
+    assert.equal(headers.vary, 'Accept');
+  }
   for (const path of ['/index.md', '/agent-guide.md', '/.well-known/agent-skills/poznaj-investdom/SKILL.md', '/.well-known/agent-skills/index.json', '/.well-known/ai-catalog.json', '/llms.txt']) {
     const rules = config.headers.filter((rule) => rule.source === path);
     const headers = Object.fromEntries(rules.flatMap((rule) => rule.headers.map((h) => [h.key.toLowerCase(), h.value])));

@@ -57,7 +57,10 @@ function render(node, canonical) {
   if (name === 'ul' || name === 'ol') return `\n\n${content.trim()}\n\n`;
   if (name === 'a') {
     const href = safeUrl(attrs.href, canonical);
-    return href && content.trim() ? `[${content.trim()}](${href})` : content;
+    // Link labels are inline Markdown, including linked images with a caption.
+    // Block spacing from an image must not split the label into paragraphs.
+    const label = content.trim().replace(/\s+/g, ' ');
+    return href && label ? `[${label}](${href})` : content;
   }
   if (name === 'img') {
     const src = safeUrl(attrs.src, canonical);
