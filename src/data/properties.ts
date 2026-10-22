@@ -23,6 +23,7 @@ export interface Property {
 
 // Investment data confirmed on 2026-10-17; stage/photo clarified on 2026-10-19.
 // Ready house and both gallery groups confirmed in the handover/session on 2026-10-20.
+// Plot corrected to 6.5 a (650 m²) and heat pump confirmed on 2026-10-22.
 // Home, offers and projects must all read this source.
 export const properties: readonly Property[] = [
   {
@@ -32,12 +33,12 @@ export const properties: readonly Property[] = [
     location: 'Pisarzowice',
     price: '895 000 zł',
     size: '135 m²',
-    plot: '700 m²',
+    plot: '650 m²',
     status: 'Stan deweloperski',
     stage: 'Etap II w trakcie realizacji',
     rooms: 4,
     bathrooms: 2,
-    features: ['Ogrzewanie gazowe', 'Garaż', '2 łazienki', '3 sypialnie'],
+    features: ['Pompa ciepła', 'Garaż', '2 łazienki', '3 sypialnie'],
     image: propertyPhoto.image,
     imageAlt: propertyPhoto.alt,
     gallery: propertyGallery,
