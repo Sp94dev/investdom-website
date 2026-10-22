@@ -25,7 +25,7 @@ test('every generated page exists, has its canonical source and only real local 
   assert.ok(home.includes(company.address.streetAddress));
   assert.match(home, /895 000 zł/);
   assert.match(home, /135 m²/);
-  assert.match(home, /700 m²/);
+  assert.match(home, /650 m²/);
 });
 
 test('built discovery resolves to the exact skill bytes and one truthful resource', async () => {

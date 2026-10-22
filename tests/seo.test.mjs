@@ -93,7 +93,7 @@ test('investment exposes facts, project plans and usable image links in HTML wit
   const page = pages.find((page) => page.path === '/inwestycje/pisarzowice-etap-ii');
   assert.ok(page, 'The investment must be part of public page verification');
   const main = page.html.match(/<main\b[^>]*>([\s\S]*?)<\/main>/)[1];
-  for (const fact of ['Pisarzowicach', 'koło Bielska-Białej', '895 000 zł', '135 m²', '700 m²', '4 pokoje', '3 sypialnie', '2 łazienki', 'Etap II w trakcie realizacji', 'Wizualizacja otoczenia']) {
+  for (const fact of ['Pisarzowicach', 'koło Bielska-Białej', '895 000 zł', '135 m²', '650 m²', 'Pompa ciepła', '4 pokoje', '3 sypialnie', '2 łazienki', 'Etap II w trakcie realizacji', 'Wizualizacja otoczenia']) {
     assert.ok(main.includes(fact), fact);
   }
   assert.doesNotMatch(main, /Okręgow|sprzedany|remont/i);
